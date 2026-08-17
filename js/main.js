@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const MAIL_TO = 'tiktokmarch2024@outlook.com';
 
   function openInquiry(data) {
-    if (!overlay) return;
+    if (!overlay) { alert('弹窗初始化失败，请刷新页面重试'); return; }
     const subject = `Inquiry from ${data.name} (${data.country || 'N/A'})`;
     const body = `Name: ${data.name}\nEmail: ${data.email}\nCountry: ${data.country || ''}\n\nMessage:\n${data.message}`;
     const text = `Hello Haogeng,\n\n${body}\n\n--\nSent from https://haogeng.net`;
@@ -54,6 +54,16 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
   }
+  // 暴露到全局，让 inline onsubmit 可以调用
+  window.__openInquiry = function(formEl) {
+    const fd = new FormData(formEl);
+    openInquiry({
+      name: fd.get('name') || '',
+      email: fd.get('email') || '',
+      country: fd.get('country') || '',
+      message: fd.get('message') || '',
+    });
+  };
   function closeInquiry() {
     if (!overlay) return;
     overlay.classList.remove('open');
