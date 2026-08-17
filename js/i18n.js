@@ -6,7 +6,7 @@
 
 const I18N = {
   en: {
-    brand: { name: "HAOGENG", full: "Liuzhou Haogeng International Trade Co., Ltd." },
+    brand: { name: "HAOGENG", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Guigeng Agricultural Machinery", lichuang: "Guangxi Lichuang Machinery" },
     topbar: { hint: "Factory-Direct · OEM/ODM Welcome" },
     nav: { home: "Home", about: "About", products: "Products", why: "Why Us", contact: "Contact", inquiry: "Get a Quote", news: "News" },
     hero: {
@@ -68,7 +68,7 @@ const I18N = {
   },
 
   zh: {
-    brand: { name: "浩耕", full: "柳州浩耕国际贸易有限公司" },
+    brand: { name: "浩耕", full: "柳州浩耕国际贸易有限公司", guigeng: "桂耕农机", lichuang: "立创机械" },
     topbar: { hint: "工厂直供 · 支持OEM/ODM定制" },
     nav: { home: "首页", about: "关于我们", products: "产品中心", why: "我们的优势", contact: "联系我们", inquiry: "获取报价", news: "媒体报道" },
     hero: {
@@ -130,7 +130,7 @@ const I18N = {
   },
 
   es: {
-    brand: { name: "HAOGENG", full: "Liuzhou Haogeng International Trade Co., Ltd." },
+    brand: { name: "HAOGENG", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Guigeng Maquinaria Agrícola", lichuang: "Lichuang Maquinaria Guangxi" },
     topbar: { hint: "Directo de fábrica · OEM/ODM bienvenido" },
     nav: { home: "Inicio", about: "Nosotros", products: "Productos", why: "Ventajas", contact: "Contacto", inquiry: "Solicitar cotización" },
     hero: {
@@ -179,7 +179,7 @@ const I18N = {
   },
 
   ru: {
-    brand: { name: "HAOGENG", full: "Liuzhou Haogeng International Trade Co., Ltd." },
+    brand: { name: "HAOGENG", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Гуйгэн Сельхозтехника", lichuang: "Гуанси Личуан Машиностроение" },
     topbar: { hint: "Напрямую с завода · OEM/ODM приветствуется" },
     nav: { home: "Главная", about: "О нас", products: "Продукция", why: "Преимущества", contact: "Контакты", inquiry: "Запросить цену" },
     hero: {
@@ -228,7 +228,7 @@ const I18N = {
   },
 
   fr: {
-    brand: { name: "HAOGENG", full: "Liuzhou Haogeng International Trade Co., Ltd." },
+    brand: { name: "HAOGENG", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Guigeng Machinisme Agricole", lichuang: "Lichuang Guangxi Machines" },
     topbar: { hint: "Direct usine · OEM/ODM bienvenu" },
     nav: { home: "Accueil", about: "À propos", products: "Produits", why: "Nos atouts", contact: "Contact", inquiry: "Demander un devis" },
     hero: {
