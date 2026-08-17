@@ -172,7 +172,7 @@
           <input type="text" name="country" data-i18n-placeholder="contact.form.country">
           <textarea name="message" rows="4" data-i18n-placeholder="contact.form.message" required></textarea>
           <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Send Inquiry</button>
-          <p class="form-note" data-i18n="contact.form.note">This form opens your email client. For fastest reply, email us directly.</p>
+          <p class="form-note" data-i18n="contact.form.note">Pick WhatsApp (fastest), email, or copy. We reply within 24 hours.</p>
         </form>
       </div>
     </div>
@@ -184,6 +184,38 @@
       <p data-i18n="footer.rights">All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- ===== 询盘方式弹窗 ===== -->
+  <div class="inquiry-overlay" id="inquiryOverlay" aria-hidden="true">
+    <div class="inquiry-modal" role="dialog" aria-labelledby="inquiryTitle">
+      <button class="inquiry-close" id="inquiryClose" aria-label="Close">×</button>
+      <h3 id="inquiryTitle" data-i18n="inquiry.modal.title">Choose how to send your inquiry</h3>
+      <p class="inquiry-preview" id="inquiryPreview"></p>
+      <div class="inquiry-actions">
+        <a href="#" class="inquiry-action wa" id="inquiryWA" target="_blank" rel="noopener">
+          <span class="inquiry-icon">💬</span>
+          <span class="inquiry-label">
+            <strong>WhatsApp</strong>
+            <small data-i18n="inquiry.modal.wa">Fastest · Recommended</small>
+          </span>
+        </a>
+        <a href="#" class="inquiry-action mail" id="inquiryMail">
+          <span class="inquiry-icon">✉️</span>
+          <span class="inquiry-label">
+            <strong data-i18n="inquiry.modal.mail">Email</strong>
+            <small data-i18n="inquiry.modal.mailSub">Opens your email client</small>
+          </span>
+        </a>
+        <button type="button" class="inquiry-action copy" id="inquiryCopy">
+          <span class="inquiry-icon">📋</span>
+          <span class="inquiry-label">
+            <strong data-i18n="inquiry.modal.copy">Copy Inquiry</strong>
+            <small data-i18n="inquiry.modal.copySub">Paste anywhere</small>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
 
   <script src="js/i18n.js"></script>
   <script src="js/products.js"></script>
