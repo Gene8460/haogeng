@@ -15,28 +15,28 @@ const PRODUCTS = [
     model: "1WG-4.0AQ",
     cat: "tiller",
     specs: { en: ["Ball cast iron reinforced", "Gasoline engine"], zh: ["球墨铸铁加强型", "汽油发动机"] },
-    img: ""
+    img: "tiller-001.jpg"
   },
   {
     name: { en: "170 Diesel Micro Tiller", zh: "170柴油微耕机" },
     model: "1WG-4.0A",
     cat: "tiller",
     specs: { en: ["Ball cast iron reinforced", "Diesel engine"], zh: ["球墨铸铁加强型", "柴油发动机"] },
-    img: ""
+    img: "tiller-002.jpg"
   },
   {
     name: { en: "173 Diesel Micro Tiller", zh: "173柴油微耕机" },
     model: "1WG-4.05A",
     cat: "tiller",
     specs: { en: ["Ball cast iron reinforced", "Diesel engine"], zh: ["球墨铸铁加强型", "柴油发动机"] },
-    img: ""
+    img: "tiller-003.jpg"
   },
   {
     name: { en: "178 Diesel Micro Tiller", zh: "178柴油微耕机" },
     model: "1WG-4.1B",
     cat: "tiller",
     specs: { en: ["23 / 32 shaft option", "7 gears", "Left-right steering", "All-gear transmission"], zh: ["可选23轴/32轴", "7档位", "左右转向", "全齿轮传动"] },
-    img: ""
+    img: "tiller-004.jpg"
   },
 
   // ===== 开沟培土机 Ditching Machines =====
@@ -45,44 +45,44 @@ const PRODUCTS = [
     model: "1WG-4.0PT",
     cat: "ditching",
     specs: { en: ["23V shaft", "Front rotary"], zh: ["23V轴", "前旋款"] },
-    img: ""
+    img: "ditch-001.jpg"
   },
   {
     name: { en: "173 Diesel Ditching Machine", zh: "173柴油开沟培土机" },
     model: "1WG-4.05PT",
     cat: "ditching",
     specs: { en: ["23V shaft", "Front rotary"], zh: ["23V轴", "前旋款"] },
-    img: ""
+    img: "ditch-002.jpg"
   },
   {
     name: { en: "178 Diesel Ditching Machine", zh: "178柴油开沟培土机" },
     model: "1WG-4.1ZM",
     cat: "ditching",
     specs: { en: ["23V shaft", "Rear rotary"], zh: ["23V轴", "后旋款"] },
-    img: ""
+    img: "ditch-003.jpg"
   },
   {
     name: { en: "186 Diesel Ditching Machine", zh: "186柴油开沟培土机" },
     model: "1WG-6.3PT",
     cat: "ditching",
     specs: { en: ["32 flat shaft", "Rear rotary"], zh: ["32平轴", "后旋款"] },
-    img: ""
+    img: "ditch-004.jpg"
   },
 
   // ===== 抽水机 Water Pumps =====
   {
-    name: { en: "High-Pressure Water Pump (Belt)", zh: "高压抽水机（皮带）" },
-    model: "200-5",
+    name: { en: "170F Gasoline Water Pump", zh: "170F汽油抽水机" },
+    model: "WP-170F",
     cat: "pump",
-    specs: { en: ["Head 200m", "Flow 3.6m³/h", "Inlet/Outlet 1.5\""], zh: ["扬程200m", "流量3.6m³/h", "进出口1.5寸"] },
-    img: ""
+    specs: { en: ["Portable", "High head", "Gasoline engine"], zh: ["便携式", "高扬程", "汽油发动机"] },
+    img: "pump-001.jpg"
   },
   {
-    name: { en: "High-Pressure Water Pump (Direct)", zh: "高压抽水机（直连）" },
-    model: "200-5",
+    name: { en: "7.5HP Heavy-Duty Water Pump", zh: "7.5马力重型抽水机" },
+    model: "WP-7.5",
     cat: "pump",
-    specs: { en: ["Head 200m", "Flow 3.6m³/h", "Inlet/Outlet 1.5\""], zh: ["扬程200m", "流量3.6m³/h", "进出口1.5寸"] },
-    img: ""
+    specs: { en: ["Cast iron impeller", "Industrial use", "21CC"], zh: ["铸铁叶轮", "工业级", "21CC排量"] },
+    img: "pump-002.jpg"
   },
   {
     name: { en: "2-inch Centrifugal Pump", zh: "2寸离心泵" },
