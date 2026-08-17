@@ -56,11 +56,14 @@ const I18N = {
       title: "In the News",
       source: "Guangxi Dept. of Agriculture and Rural Affairs · Liuzhou Daily · 2025-02-24",
       headline: "\u201cSpeeding Up Production to Support Spring Plowing\u201d",
-      p1: "Exported 300 micro tillers to Sri Lanka last year",
-      p2: "Products sell across Southeast Asia — India, Vietnam and more",
-      p3: "Two production lines at full capacity, ~130 units per day",
-      p4: "Guigeng 4WD front-rotary micro tiller — a best-seller for spring plowing",
-      link: "Read the original report \u2192"
+      intro: "After the Rain Water solar term, while fields are busy with spring plowing, agricultural machinery production is also in full swing. On February 19, reporters visited a farm machinery manufacturer on Liugong Avenue and saw production lines running at full capacity to accelerate micro tillers for spring plowing.",
+      quote: "\u201cGeneral Manager Wu, when can our shipment be sent?\u201d That morning, Mr. Zeng, a farm machinery dealer from Hunan, came to Guangxi Lichuang Machinery Manufacturing Co., Ltd. to collect goods. \u201cSpring plowing season is peak sales time, so we rushed to Liuzhou to pick up the goods.\u201d Company head Wu Siyu replied: \u201cWe are speeding up production \u2014 whatever we have ready, we'll send first.\u201d He immediately arranged truck delivery.",
+      factory: "Lichuang Machinery specializes in producing and developing new 4WD micro tillers, field management machines, and ditching machines. Wu Siyu introduced that the Guigeng 4WD front-rotary micro tiller is designed for hilly and mountainous areas with small plots and large elevation differences. It is lightweight, compact, powerful, and easy to operate \u2014 ideal for southern regions and the best-selling farm machinery product during spring plowing season. Besides supplying the local market, products are also sold to Hunan, Jiangxi, Hainan, and Hubei.",
+      capacity: "In the production workshop, workers were busy assembling parts on the production line. As soon as a machine came off the line, it underwent quality inspection, packaging, and waited for shipment. \u201cWe started work on the fourth day of the Lunar New Year. Now two production lines are running at full capacity, producing about 130 micro tillers per day,\u201d Wu said. However, this still cannot meet current order demand. Next month, the company will open a new production line for four-wheel large agricultural machinery to increase capacity.",
+      export: "In recent years, Lichuang Machinery has seized opportunities from the Belt and Road Initiative, exporting products to Southeast Asian markets. Wu said micro tillers are also very popular in India, Vietnam, and other markets. Last year, the company exported 300 micro tillers to Sri Lanka. This year they will further explore Southeast Asian market potential and develop machinery for harvesting areca nuts based on local agricultural needs, enhancing competitiveness in Southeast Asian markets.",
+      h1: { num: "300", label: "Units Exported to Sri Lanka" },
+      h2: { num: "130", label: "Units Per Day Capacity" },
+      h3: { num: "2", label: "Production Lines at Full Capacity" }
     }
   },
 
@@ -115,11 +118,14 @@ const I18N = {
       title: "媒体报道",
       source: "广西壮族自治区农业农村厅 · 柳州日报 · 2025-02-24",
       headline: "加速生产 助力春耕",
-      p1: "去年向斯里兰卡出口300台微型农机",
-      p2: "产品销往印度、越南等东南亚市场",
-      p3: "两条生产线满负荷，日产能约130台",
-      p4: "桂耕四驱前旋微耕机为春耕热销产品",
-      link: "查看原文报道 →"
+      intro: "雨水节气过后，田间地头春耕忙，农机生产也热火朝天。2月19日，记者在位于柳工大道的一家农机生产企业看到，生产线开足马力，加速生产微型农机，助力春耕生产。",
+      quote: "\u201c伍总，我们的货什么时候能发？\u201d当天上午，来自湖南的农机经销商曾先生来到广西立创机械制造有限公司收货。他说，春耕时期是农机销售旺季，他们特地赶来柳州提货。公司负责人伍思裕回答：\u201c我们在加速生产了，有多少先发多少给你们。\u201d他立即安排货车送货。",
+      factory: "据了解，立创机械是一家专门从事生产、研发新型四驱微耕机、田园管理机、开沟培土机等微型农机的企业。伍思裕介绍，该公司生产的桂耕四驱前旋微耕机根据丘陵、山区地块小、高差大而设计生产，重量轻、体积小、马力大、操作简单，非常适合南方地区使用，是春耕时期最热销的农机产品。除了供应本地市场，还销往湖南、江西、海南、湖北等地。",
+      capacity: "记者在生产车间看到，工人们在生产线上忙碌地将零配件组装，刚下线一台农机，就马上进行质检、打包，等待发货。\u201c我们大年初四就上班了，现在两条生产线满负荷开工，每天能生产微型农机约130台。\u201d伍思裕说，但仍不能满足当下订单需求，下个月公司将新开一条生产四轮大型农机的生产线以提升产能。",
+      export: "近年来，立创机械还抓住\u201c一带一路\u201d发展机遇，产品出口东南亚市场。伍思裕说，微型农机在印度、越南等市场也很受欢迎，去年该公司向斯里兰卡出口了300台微型农机。今年他们将进一步深挖东南亚市场潜力，并根据当地农产品生产需求，研发可采摘槟榔的农机，提升农机在东南亚市场的竞争力。",
+      h1: { num: "300", label: "向斯里兰卡出口（台）" },
+      h2: { num: "130", label: "日产能（台）" },
+      h3: { num: "2", label: "满负荷生产线" }
     }
   },
 
