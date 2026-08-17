@@ -65,8 +65,11 @@ a:hover { color: var(--green-dark); }
 /* ===== Hero ===== */
 .hero { position: relative; background: linear-gradient(135deg, var(--green-dark), var(--green)); color: #fff; overflow: hidden; }
 .hero-bg {
-  position: absolute; inset: 0; opacity: .12;
-  background-image: radial-gradient(circle at 20% 30%, #fff 0, transparent 30%), radial-gradient(circle at 80% 70%, #fff 0, transparent 30%);
+  position: absolute; inset: 0; opacity: .18;
+  background-image: url('images/hero-tiller.jpg'), radial-gradient(circle at 20% 30%, #fff 0, transparent 30%), radial-gradient(circle at 80% 70%, #fff 0, transparent 30%);
+  background-size: cover, auto, auto;
+  background-position: center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
 }
 .hero-inner { position: relative; padding: 90px 20px; text-align: center; }
 .hero-title { font-size: 44px; line-height: 1.2; margin-bottom: 18px; }
