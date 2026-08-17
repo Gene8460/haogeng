@@ -39,12 +39,9 @@ a:hover { color: var(--green-dark); }
 .header { position: sticky; top: 0; background: #fff; border-bottom: 1px solid var(--border); z-index: 50; }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 20px; }
 .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 20px; color: var(--ink); }
-.logo-mark {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 40px; height: 40px; border-radius: 10px; background: var(--green); color: #fff;
-  font-weight: 800; font-size: 18px;
-}
+.logo-img { height: 42px; width: auto; border-radius: 6px; }
 .logo-text { letter-spacing: 1px; }
+.about-logo { height: 64px; width: auto; margin-bottom: 14px; }
 .menu { display: flex; gap: 24px; }
 .menu a { color: var(--ink-soft); font-weight: 500; }
 .menu a:hover { color: var(--green); }
