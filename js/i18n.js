@@ -8,7 +8,7 @@ const I18N = {
   en: {
     brand: { name: "HAOGENG", full: "Liuzhou Haogeng International Trade Co., Ltd." },
     topbar: { hint: "Factory-Direct · OEM/ODM Welcome" },
-    nav: { home: "Home", about: "About", products: "Products", why: "Why Us", contact: "Contact", inquiry: "Get a Quote" },
+    nav: { home: "Home", about: "About", products: "Products", why: "Why Us", contact: "Contact", inquiry: "Get a Quote", news: "News" },
     hero: {
       title: "Factory-Direct Agricultural Machinery",
       sub: "Micro tillers · Ditching machines · Water pumps. Backed by our own manufacturing plant — better price, guaranteed delivery.",
@@ -19,8 +19,8 @@ const I18N = {
     },
     about: {
       title: "About Us",
-      lead: "Liuzhou Haogeng International Trade Co., Ltd. is the export arm of Guigeng Agricultural Machinery factory — a true factory-direct, integrated trade & manufacturing company.",
-      c1: { title: "Our Own Factory", text: "We are backed by Guangxi Lichuang Machinery Manufacturing Co., Ltd. (brand: Guigeng), a modern agricultural machinery manufacturer with full in-house design and production capability." },
+      lead: "Liuzhou Haogeng International Trade Co., Ltd. (Haogeng) is the export and trading arm of Guigeng Agricultural Machinery. As the brand's international sales company, we work directly with our own manufacturing plant — giving overseas buyers true factory-direct pricing and reliable supply.",
+      c1: { title: "One Company, Factory-Backed", text: "Guigeng Agricultural Machinery is manufactured by Guangxi Lichuang Machinery Manufacturing Co., Ltd. — our own factory. Haogeng handles all international trade: export, documentation and after-sales. When you buy from Haogeng, you buy straight from the Guigeng factory, with no middlemen." },
       c2: { title: "Patented Technology", text: "Our R&D team holds national utility-model patents and agricultural machinery certification, ensuring every design is tested and field-proven." },
       c3: { title: "Advanced Equipment", text: "CNC laser cutting, CNC bending, laser pipe cutting and laser welding lines guarantee precision, durability and a consistent finish." }
     },
@@ -51,13 +51,23 @@ const I18N = {
         note: "This form opens your email client. For fastest reply, email us directly."
       }
     },
-    footer: { rights: "All rights reserved." }
+    footer: { rights: "All rights reserved." },
+    news: {
+      title: "In the News",
+      source: "Guangxi Dept. of Agriculture and Rural Affairs · Liuzhou Daily · 2025-02-24",
+      headline: "\u201cSpeeding Up Production to Support Spring Plowing\u201d",
+      p1: "Exported 300 micro tillers to Sri Lanka last year",
+      p2: "Products sell across Southeast Asia — India, Vietnam and more",
+      p3: "Two production lines at full capacity, ~130 units per day",
+      p4: "Guigeng 4WD front-rotary micro tiller — a best-seller for spring plowing",
+      link: "Read the original report \u2192"
+    }
   },
 
   zh: {
     brand: { name: "浩耕", full: "柳州浩耕国际贸易有限公司" },
     topbar: { hint: "工厂直供 · 支持OEM/ODM定制" },
-    nav: { home: "首页", about: "关于我们", products: "产品中心", why: "我们的优势", contact: "联系我们", inquiry: "获取报价" },
+    nav: { home: "首页", about: "关于我们", products: "产品中心", why: "我们的优势", contact: "联系我们", inquiry: "获取报价", news: "媒体报道" },
     hero: {
       title: "工厂直供农业机械",
       sub: "微耕机 · 开沟培土机 · 抽水机。自有工厂生产，价格更优、交货有保障。",
@@ -68,8 +78,8 @@ const I18N = {
     },
     about: {
       title: "关于我们",
-      lead: "柳州浩耕国际贸易有限公司是桂耕农机工厂的出口对接公司，真正的工贸一体企业。",
-      c1: { title: "自有工厂", text: "依托广西立创机械制造有限公司（桂耕品牌），拥有自主研发和生产能力的现代化农机企业。" },
+      lead: "柳州浩耕国际贸易有限公司（浩耕）是桂耕农机品牌的对外贸易公司，直接对接背后的自有工厂。工贸一体，让海外买家享受真正的工厂直供价格与稳定货源。",
+      c1: { title: "工贸一体 · 自有工厂", text: "桂耕农机由广西立创机械制造有限公司生产制造，浩耕国际负责全部国际贸易业务——出口、单证、售后。从浩耕采购，就是从桂耕工厂直接采购，没有中间商。" },
       c2: { title: "专利技术", text: "研发团队拥有国家实用新型专利和农机鉴定证书，每项设计均经过反复验证。" },
       c3: { title: "先进设备", text: "数控激光切割、数控折弯、激光切管、激光焊接生产线，保证精度与耐用性。" }
     },
@@ -100,7 +110,17 @@ const I18N = {
         note: "此表单会打开您的邮件客户端，最快回复请直接发邮件。"
       }
     },
-    footer: { rights: "版权所有。" }
+    footer: { rights: "版权所有。" },
+    news: {
+      title: "媒体报道",
+      source: "广西壮族自治区农业农村厅 · 柳州日报 · 2025-02-24",
+      headline: "加速生产 助力春耕",
+      p1: "去年向斯里兰卡出口300台微型农机",
+      p2: "产品销往印度、越南等东南亚市场",
+      p3: "两条生产线满负荷，日产能约130台",
+      p4: "桂耕四驱前旋微耕机为春耕热销产品",
+      link: "查看原文报道 →"
+    }
   },
 
   es: {
