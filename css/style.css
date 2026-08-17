@@ -166,3 +166,114 @@ a:hover { color: var(--green-dark); }
   .hero-inner { padding: 60px 20px; }
   .topbar-hint { display: none; }
 }
+
+/* ===== 询盘弹窗 ===== */
+.inquiry-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+.inquiry-overlay.open {
+  display: flex;
+}
+.inquiry-modal {
+  background: #fff;
+  border-radius: 16px;
+  max-width: 480px;
+  width: 100%;
+  padding: 30px 28px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.inquiry-modal h3 {
+  margin: 0 0 14px 0;
+  color: #0f5527;
+  font-size: 22px;
+}
+.inquiry-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  color: #888;
+  cursor: pointer;
+  padding: 4px 10px;
+}
+.inquiry-close:hover { color: #333; }
+.inquiry-preview {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 13px;
+  white-space: pre-wrap;
+  font-family: ui-monospace, Consolas, monospace;
+  color: #555;
+  margin-bottom: 20px;
+  max-height: 140px;
+  overflow-y: auto;
+}
+.inquiry-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.inquiry-action {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.2s;
+  font-family: inherit;
+  font-size: 15px;
+}
+.inquiry-action:hover {
+  border-color: #1a7a3a;
+  background: #f9fdf7;
+  transform: translateY(-1px);
+}
+.inquiry-icon {
+  font-size: 26px;
+  flex-shrink: 0;
+}
+.inquiry-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.inquiry-label strong {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+.inquiry-label small {
+  font-size: 12px;
+  color: #888;
+}
+.inquiry-action.wa:hover {
+  border-color: #25D366;
+  background: #f0fff4;
+}
+.inquiry-action.mail:hover {
+  border-color: #0078D4;
+  background: #f0f8ff;
+}
+.inquiry-action.copy:hover {
+  border-color: #666;
+}
