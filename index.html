@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liuzhou Haogeng International Trade Co., Ltd. | Agricultural Machinery</title>
+  <meta name="description" content="Factory-direct agricultural machinery: micro tillers, ditching machines, water pumps. OEM/ODM welcome.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== 顶栏：语言切换 ===== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-hint" data-i18n="topbar.hint">Factory-Direct · OEM/ODM Welcome</div>
+      <div class="lang-switch" id="langSwitch">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="zh">中文</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="fr">FR</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 导航 ===== -->
+  <header class="header">
+    <div class="container nav">
+      <a href="#home" class="logo">
+        <span class="logo-mark">HG</span>
+        <span class="logo-text" data-i18n="brand.name">HAOGENG</span>
+      </a>
+      <nav class="menu" id="menu">
+        <a href="#home" data-i18n="nav.home">Home</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#products" data-i18n="nav.products">Products</a>
+        <a href="#why" data-i18n="nav.why">Why Us</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-primary nav-cta" data-i18n="nav.inquiry">Get a Quote</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <h1 class="hero-title" data-i18n="hero.title">Factory-Direct Agricultural Machinery</h1>
+      <p class="hero-sub" data-i18n="hero.sub">Micro tillers · Ditching machines · Water pumps. Backed by our own manufacturing plant — better price, guaranteed delivery.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary btn-lg" data-i18n="hero.cta1">View Products</a>
+        <a href="#contact" class="btn btn-ghost btn-lg" data-i18n="hero.cta2">Send Inquiry</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong data-i18n="hero.stat1.num">15+</strong><span data-i18n="hero.stat1.label">Years Experience</span></div>
+        <div class="stat"><strong data-i18n="hero.stat2.num">30+</strong><span data-i18n="hero.stat2.label">Product Models</span></div>
+        <div class="stat"><strong data-i18n="hero.stat3.num">50+</strong><span data-i18n="hero.stat3.label">Export Countries</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title" data-i18n="about.title">About Us</h2>
+      <p class="section-lead" data-i18n="about.lead">Liuzhou Haogeng International Trade Co., Ltd. is the export arm of Guigeng Agricultural Machinery factory — a true factory-direct, integrated trade &amp; manufacturing company.</p>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3 data-i18n="about.c1.title">Our Own Factory</h3>
+          <p data-i18n="about.c1.text">We are backed by Guangxi Lichuang Machinery Manufacturing Co., Ltd. (brand: Guigeng), a modern agricultural machinery manufacturer with full in-house design and production capability.</p>
+        </div>
+        <div class="about-card">
+          <h3 data-i18n="about.c2.title">Patented Technology</h3>
+          <p data-i18n="about.c2.text">Our R&amp;D team holds national utility-model patents and agricultural machinery certification, ensuring every design is tested and field-proven.</p>
+        </div>
+        <div class="about-card">
+          <h3 data-i18n="about.c3.title">Advanced Equipment</h3>
+          <p data-i18n="about.c3.text">CNC laser cutting, CNC bending, laser pipe cutting and laser welding lines guarantee precision, durability and a consistent finish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Products ===== -->
+  <section class="section section-alt" id="products">
+    <div class="container">
+      <h2 class="section-title" data-i18n="products.title">Our Products</h2>
+      <p class="section-lead" data-i18n="products.lead">Three main product lines. Custom OEM/ODM available — tell us your market and requirements.</p>
+
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-cat="all" data-i18n="products.filter.all">All</button>
+        <button class="filter-btn" data-cat="tiller" data-i18n="products.filter.tiller">Micro Tillers</button>
+        <button class="filter-btn" data-cat="ditching" data-i18n="products.filter.ditching">Ditching Machines</button>
+        <button class="filter-btn" data-cat="pump" data-i18n="products.filter.pump">Water Pumps</button>
+      </div>
+
+      <div class="product-grid" id="productGrid"><!-- products injected by JS --></div>
+    </div>
+  </section>
+
+  <!-- ===== Why Us ===== -->
+  <section class="section" id="why">
+    <div class="container">
+      <h2 class="section-title" data-i18n="why.title">Why Choose Us</h2>
+      <div class="why-grid">
+        <div class="why-item"><span class="why-icon">🏭</span><h3 data-i18n="why.w1.title">Factory-Direct Price</h3><p data-i18n="why.w1.text">No middlemen — you buy straight from the manufacturer.</p></div>
+        <div class="why-item"><span class="why-icon">🎯</span><h3 data-i18n="why.w2.title">OEM / ODM</h3><p data-i18n="why.w2.text">Custom brand, color and specifications for your market.</p></div>
+        <div class="why-item"><span class="why-icon">🔧</span><h3 data-i18n="why.w3.title">Quality Control</h3><p data-i18n="why.w3.text">Strict QC on every unit before shipment, durable in the field.</p></div>
+        <div class="why-item"><span class="why-icon">🚚</span><h3 data-i18n="why.w4.title">Reliable Delivery</h3><p data-i18n="why.w4.text">Steady production capacity ensures on-time delivery.</p></div>
+        <div class="why-item"><span class="why-icon">🌍</span><h3 data-i18n="why.w5.title">Export Experience</h3><p data-i18n="why.w5.text">Exporting to 50+ countries with full documentation support.</p></div>
+        <div class="why-item"><span class="why-icon">🤝</span><h3 data-i18n="why.w6.title">After-Sales</h3><p data-i18n="why.w6.text">Spare parts and technical support available for all models.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
+      <p class="section-lead" data-i18n="contact.lead">Send us your inquiry — we reply within 24 hours.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3 data-i18n="brand.full">Liuzhou Haogeng International Trade Co., Ltd.</h3>
+          <ul class="contact-list">
+            <li><span data-i18n="contact.label.phone">Phone / WhatsApp</span>: <a href="tel:+8613877228460">+86 138 7722 8460</a></li>
+            <li><span data-i18n="contact.label.email">Email</span>: <a href="mailto:tiktokmarch2024@outlook.com">tiktokmarch2024@outlook.com</a></li>
+            <li><span data-i18n="contact.label.addr">Address</span>: <span data-i18n="contact.addr">Liuzhou City, Guangxi, China</span></li>
+          </ul>
+        </div>
+        <form class="contact-form" id="inquiryForm">
+          <input type="text" name="name" data-i18n-placeholder="contact.form.name" required>
+          <input type="email" name="email" data-i18n-placeholder="contact.form.email" required>
+          <input type="text" name="country" data-i18n-placeholder="contact.form.country">
+          <textarea name="message" rows="4" data-i18n-placeholder="contact.form.message" required></textarea>
+          <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Send Inquiry</button>
+          <p class="form-note" data-i18n="contact.form.note">This form opens your email client. For fastest reply, email us directly.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> <span data-i18n="brand.full">Liuzhou Haogeng International Trade Co., Ltd.</span></p>
+      <p data-i18n="footer.rights">All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
