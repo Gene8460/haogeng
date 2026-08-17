@@ -51,6 +51,16 @@ const I18N = {
         note: "This form opens your email client. For fastest reply, email us directly."
       }
     },
+        inquiry: {
+      modal: {
+        title: "Choose how to send your inquiry",
+        wa: "Fastest · Recommended",
+        mail: "Email",
+        mailSub: "Opens your email client",
+        copy: "Copy Inquiry",
+        copySub: "Paste anywhere"
+      }
+    },
     footer: { rights: "All rights reserved." },
     news: {
       title: "In the News",
@@ -111,6 +121,16 @@ const I18N = {
         message: "留言（产品、数量、目的港等）",
         submit: "发送询盘",
         note: "此表单会打开您的邮件客户端，最快回复请直接发邮件。"
+      }
+    },
+        inquiry: {
+      modal: {
+        title: "选择询盘发送方式",
+        wa: "最快 · 推荐",
+        mail: "邮件",
+        mailSub: "打开您的邮箱客户端",
+        copy: "复制询盘",
+        copySub: "可粘贴到任何地方"
       }
     },
     footer: { rights: "版权所有。" },
@@ -175,6 +195,16 @@ const I18N = {
         note: "Este formulario abre su cliente de correo. Para respuesta rápida, escríbanos directamente."
       }
     },
+        inquiry: {
+      modal: {
+        title: "Elija cómo enviar su consulta",
+        wa: "Más rápido · Recomendado",
+        mail: "Correo",
+        mailSub: "Abre su cliente de correo",
+        copy: "Copiar consulta",
+        copySub: "Pegar en cualquier lugar"
+      }
+    },
     footer: { rights: "Todos los derechos reservados." }
   },
 
@@ -224,6 +254,16 @@ const I18N = {
         note: "Форма открывает ваш почтовый клиент. Для быстрого ответа напишите нам напрямую."
       }
     },
+        inquiry: {
+      modal: {
+        title: "Выберите способ отправки запроса",
+        wa: "Быстрее всего · Рекомендуем",
+        mail: "Email",
+        mailSub: "Откроет почтовый клиент",
+        copy: "Скопировать запрос",
+        copySub: "Вставьте куда угодно"
+      }
+    },
     footer: { rights: "Все права защищены." }
   },
 
@@ -271,6 +311,16 @@ const I18N = {
         message: "Message (produit, quantité, port de destination...)",
         submit: "Envoyer la demande",
         note: "Ce formulaire ouvre votre client mail. Pour une réponse rapide, écrivez-nous directement."
+      }
+    },
+        inquiry: {
+      modal: {
+        title: "Choisissez comment envoyer votre demande",
+        wa: "Le plus rapide · Recommandé",
+        mail: "Email",
+        mailSub: "Ouvre votre client email",
+        copy: "Copier la demande",
+        copySub: "Coller n'importe où"
       }
     },
     footer: { rights: "Tous droits réservés." }
