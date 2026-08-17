@@ -68,7 +68,7 @@ const I18N = {
   },
 
   zh: {
-    brand: { name: "浩耕", full: "柳州浩耕国际贸易有限公司", guigeng: "桂耕农机", lichuang: "立创机械" },
+    brand: { name: "浩耕", full: "柳州浩耕国际贸易有限责任公司", guigeng: "桂耕农机", lichuang: "立创机械" },
     topbar: { hint: "工厂直供 · 支持OEM/ODM定制" },
     nav: { home: "首页", about: "关于我们", products: "产品中心", why: "我们的优势", contact: "联系我们", inquiry: "获取报价", news: "媒体报道" },
     hero: {
