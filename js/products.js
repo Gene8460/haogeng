@@ -200,7 +200,7 @@ function renderProducts(category) {
     const catLabel = t(CAT_LABEL_KEY[p.cat]) || p.cat;
     const inquire = t('products.inquire') || 'Send Inquiry';
     const imgHtml = p.img
-      ? `<div class="product-img"><picture><source srcset="images/${p.img.replace(/\.(jpg|jpeg|png)$/i, '.webp')}" type="image/webp"><img src="images/${p.img}" alt="${name}" loading="lazy"></picture></div>`
+      ? `<div class="product-img"><picture><source srcset="images/${p.img.replace(/\.(jpg|jpeg|png)$/i, '.webp')}" type="image/webp"><img src="images/${p.img}" alt="${name}" loading="lazy" style="width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;"></picture></div>`
       : `<div class="product-img">📷 <span style="margin-left:8px">${name}</span></div>`;
 
     return `
