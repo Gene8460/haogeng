@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const copyBtn = document.getElementById('inquiryCopy');
   const closeBtn = document.getElementById('inquiryClose');
   const WA_NUMBER = '8613877228460'; // +86 138 7722 8460 (无+号)
-  const MAIL_TO = 'tiktokmarch2024@outlook.com';
+  const MAIL_TO = 'haogengmachinery.tk@outlook.com';
 
   function openInquiry(data) {
     if (!overlay) { alert('弹窗初始化失败，请刷新页面重试'); return; }
