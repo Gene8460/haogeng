@@ -37,6 +37,34 @@ document.addEventListener('DOMContentLoaded', () => {
   const WA_NUMBER = '8613877228460'; // +86 138 7722 8460 (无+号)
   const MAIL_TO = 'haogengmachinery.tk@outlook.com';
 
+  // ===== 事件追踪助手（GA4 only — FB Pixel 周末再加）=====
+  function trackEvent(name, params) {
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', name, params || {});
+      }
+    } catch (e) { /* gtag 还没加载完，不报错 */ }
+  }
+  // 转换事件（GA4 推荐命名）
+  function trackGenerateLead(method, country) {
+    trackEvent('generate_lead', { method, country: country || 'N/A' });
+  }
+  function trackContact(method, country) {
+    trackEvent('contact', { method, country: country || 'N/A' });
+  }
+  // 产品卡片点击追踪
+  document.addEventListener('click', (e) => {
+    const card = e.target.closest('.product-card, [data-product]');
+    if (card) {
+      const id = card.dataset.product || card.dataset.id || (card.querySelector('[data-id]') || {}).dataset?.id;
+      trackEvent('view_product', { product_id: id || 'unknown' });
+    }
+  });
+  // 语言切换追踪
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => trackEvent('language_switch', { lang: btn.dataset.lang }));
+  });
+
   function openInquiry(data) {
     if (!overlay) { alert('弹窗初始化失败，请刷新页面重试'); return; }
     const subject = `Inquiry from ${data.name} (${data.country || 'N/A'})`;
@@ -75,14 +103,26 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const fd = new FormData(form);
-      openInquiry({
+      const data = {
         name: fd.get('name') || '',
         email: fd.get('email') || '',
         country: fd.get('country') || '',
         message: fd.get('message') || '',
-      });
+      };
+      // 关键转化事件：询盘提交
+      trackGenerateLead('inquiry_form', data.country);
+      openInquiry(data);
     });
   }
+  // WhatsApp / Email 链接点击追踪
+  if (waLink) waLink.addEventListener('click', () => {
+    const fd = form ? new FormData(form) : null;
+    trackContact('whatsapp', fd ? fd.get('country') : '');
+  });
+  if (mailLink) mailLink.addEventListener('click', () => {
+    const fd = form ? new FormData(form) : null;
+    trackContact('email', fd ? fd.get('country') : '');
+  });
   if (closeBtn) closeBtn.addEventListener('click', closeInquiry);
   if (overlay) overlay.addEventListener('click', (e) => { if (e.target === overlay) closeInquiry(); });
   if (copyBtn) {
