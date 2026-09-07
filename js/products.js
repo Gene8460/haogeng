@@ -1832,6 +1832,7 @@ var PRODUCTS = [
       ]
     },
     "img": "tiller-011.jpg",
+    "accessoriesImg": "tiller_acc_v11.jpg",
     "desc": {
       "en": "Top-tier 186cc diesel tiller in 'Tiger' configuration — adds electric start to the Beast platform plus upgraded gearbox bearings and reinforced handlebar mount. Built for professional operators who want diesel torque, electric convenience, and the heaviest-duty construction in the 186 class.",
       "zh": "「战虎」顶配 186cc 柴油微耕机——在战豹平台之上加电启动、齿轮箱轴承升级、把手座加固。面向专业操作员：要柴油机大扭矩，要电启动便利，还要 186 级最重载的做工。",
