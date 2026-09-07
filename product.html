@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product | Liuzhou Haogeng International Trade Co., Ltd.</title>
+  <meta name="description" content="Factory-direct agricultural machinery product detail page.">
+  <link rel="stylesheet" href="css/style.css?v=12">
+  <link rel="stylesheet" href="css/product.css?v=5">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Liuzhou Haogeng">
+  <meta property="og:url" content="https://haogeng.net/product.html">
+  <meta property="og:image" content="https://haogeng.net/images/og-image.jpg">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="images/logo-haogeng.jpg">
+
+  <!-- ============ Analytics & Tracking ============ -->
+  <!-- 1. Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EN7BG78YJV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EN7BG78YJV');
+  </script>
+
+  <!-- 2. Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yc0hril0fu");
+  </script>
+</head>
+<body>
+
+  <!-- ===== 顶栏:语言切换 ===== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-hint" data-i18n="topbar.hint">Factory-Direct · OEM/ODM Welcome</div>
+      <div class="lang-switch" id="langSwitch">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="zh">中文</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="fr">FR</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 导航 ===== -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="index.html#home">
+        <img src="images/logo-haogeng.jpg" alt="Haogeng" class="logo-img">
+        <span class="logo-text"><strong>Haogeng</strong><small data-i18n="brand.tagline">Agricultural Machinery</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+        <li><a href="index.html#products" data-i18n="nav.products">Products</a></li>
+        <li><a href="index.html#why" data-i18n="nav.why">Why Us</a></li>
+        <li><a href="index.html#news" data-i18n="nav.news">News</a></li>
+        <li><a href="index.html#contact" data-i18n="nav.inquiry">Get a Quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== 产品详情页容器 (JS 注入内容) ===== -->
+  <main id="productDetail" class="product-detail">
+    <!-- Loading 占位 -->
+    <div class="pd-loading">
+      <div class="container">
+        <p style="text-align:center; padding:60px 0; color:#6c757d;">Loading product...</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== 询盘方式弹窗 (复用 index.html 的弹窗) ===== -->
+  <div class="inquiry-overlay" id="inquiryOverlay" aria-hidden="true">
+    <div class="inquiry-modal" role="dialog" aria-labelledby="inquiryTitle">
+      <button class="inquiry-close" id="inquiryClose" aria-label="Close">×</button>
+      <h3 id="inquiryTitle" data-i18n="inquiry.modal.title">Choose how to send your inquiry</h3>
+      <p class="inquiry-preview" id="inquiryPreview"></p>
+      <div class="inquiry-actions">
+        <a href="#" class="inquiry-action wa" id="inquiryWA" target="_blank" rel="noopener">
+          <span class="inquiry-icon">💬</span>
+          <span class="inquiry-label">
+            <strong>WhatsApp</strong>
+            <small data-i18n="inquiry.modal.wa">Fastest · Recommended</small>
+          </span>
+        </a>
+        <a href="#" class="inquiry-action mail" id="inquiryMail">
+          <span class="inquiry-icon">✉</span>
+          <span class="inquiry-label">
+            <strong data-i18n="inquiry.modal.mail">Email</strong>
+            <small data-i18n="inquiry.modal.mailSub">Opens your email client</small>
+          </span>
+        </a>
+        <button type="button" class="inquiry-action copy" id="inquiryCopy">
+          <span class="inquiry-icon">📋</span>
+          <span class="inquiry-label">
+            <strong data-i18n="inquiry.modal.copy">Copy Inquiry</strong>
+            <small data-i18n="inquiry.modal.copySub">Paste anywhere</small>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> <span data-i18n="brand.full">Liuzhou Haogeng International Trade Co., Ltd.</span></p>
+      <p data-i18n="footer.rights">All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js?v=9"></script>
+  <script src="js/products.js?v=9"></script>
+  <script src="js/product.js?v=3"></script>
+  <script src="js/main.js?v=8"></script>
+</body>
+</html>
