@@ -443,6 +443,7 @@ let currentLang = 'en';
 function setLang(lang) {
   if (!I18N[lang]) lang = 'en';
   currentLang = lang;
+  try { window.currentLang = lang; } catch(e) {}
   localStorage.setItem('haogeng_lang', lang);
 
   // 更新所有带 data-i18n 的元素

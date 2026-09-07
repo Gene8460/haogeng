@@ -5,7 +5,6 @@
 
 (function() {
   'use strict';
-  console.log('[product.js] booted. PRODUCTS=', (window.PRODUCTS||[]).length, 'I18N langs=', Object.keys(window.I18N||{}), 'id from URL=', location.search);
 
   function getQueryParam(name) {
     const m = location.search.match(new RegExp('[?&]' + name + '=([^&#]*)'));
@@ -41,7 +40,7 @@
     };
     const catLabel = (catLabelMap[cat] && catLabelMap[cat][lang]) || (catLabelMap[cat] && catLabelMap[cat].en) || cat;
 
-    const t = (key) => (typeof window.t === 'function' ? window.t(key) : key);
+    const t = (key) => getByPath((window.I18N && window.I18N[lang]) || {}, key);
 
     const imgFile = product.img || '';
     const imgWebp = imgFile.replace(/\.(jpg|jpeg|png)$/i, '.webp');
@@ -246,13 +245,34 @@
     });
   }
 
+  function bindGallery() {
+    const prev = document.getElementById('pdGalleryPrev');
+    const next = document.getElementById('pdGalleryNext');
+    const track = document.getElementById('pdGalleryTrack');
+    const dots = document.querySelectorAll('.pd-gallery-dot');
+    if (!track) return;
+    const slides = track.querySelectorAll('.pd-gallery-slide');
+    const total = slides.length;
+    if (total <= 1) return;
+    let idx = 0;
+    function show(i) {
+      idx = (i + total) % total;
+      slides.forEach((s, j) => s.classList.toggle('active', j === idx));
+      dots.forEach((d, j) => d.classList.toggle('active', j === idx));
+    }
+    if (prev) prev.addEventListener('click', () => show(idx - 1));
+    if (next) next.addEventListener('click', () => show(idx + 1));
+    dots.forEach((d, i) => d.addEventListener('click', () => show(i)));
+  }
+
   function init() {
     const id = getQueryParam('id');
     const main = document.getElementById('productDetail');
     if (!main) return;
 
-    const lang = (typeof window.currentLang === 'string' ? window.currentLang : null)
-      || (localStorage.getItem('haogeng_lang') || 'en');
+    const lang = localStorage.getItem('haogeng_lang')
+      || (typeof window.currentLang === 'string' ? window.currentLang : null)
+      || 'en';
 
     if (!id) {
       main.innerHTML = renderError('Missing product ID. Please return to the product list.');
@@ -273,6 +293,8 @@
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) metaDesc.setAttribute('content', desc.substring(0, 160));
 
+    injectProductJsonLd(product, lang);
+
     bindQuoteButtons(product, lang);
     bindGallery();
 
@@ -282,7 +304,54 @@
       main.innerHTML = renderDetail(product, newLang);
       bindQuoteButtons(product, newLang);
       bindGallery();
+      injectProductJsonLd(product, newLang);
     });
+  }
+
+  // ===== JSON-LD Product schema (SEO) =====
+  function injectProductJsonLd(product, lang) {
+    let script = document.getElementById('product-jsonld');
+    if (!script) {
+      script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.id = 'product-jsonld';
+      document.head.appendChild(script);
+    }
+    const name = pickI18n(product.name, lang);
+    const desc = pickI18n(product.desc, lang);
+    const imgFile = product.img || '';
+    const gallery = Array.isArray(product.gallery) ? product.gallery : [];
+    const images = [imgFile, ...gallery].filter(Boolean).map(f => `https://haogeng.net/images/${f}`);
+
+    const ld = {
+      '@context': 'https://schema.org/',
+      '@type': 'Product',
+      name: name,
+      model: product.model || '',
+      sku: product.id || '',
+      description: desc,
+      image: images.length ? images : undefined,
+      brand: { '@type': 'Brand', name: 'Guigeng / Haogeng' },
+      manufacturer: {
+        '@type': 'Organization',
+        name: 'Guangxi Lichuang Machinery Manufacturing Co., Ltd.',
+        address: 'No. 86, Liugong Avenue, Liunan District, Liuzhou City, Guangxi, China'
+      },
+      offers: {
+        '@type': 'Offer',
+        url: `https://haogeng.net/product.html?id=${encodeURIComponent(product.id || '')}`,
+        priceCurrency: 'USD',
+        price: '0',
+        priceValidUntil: '2027-12-31',
+        availability: 'https://schema.org/InStock',
+        itemCondition: 'https://schema.org/NewCondition',
+        seller: {
+          '@type': 'Organization',
+          name: 'Liuzhou Haogeng International Trade Co., Ltd.'
+        }
+      }
+    };
+    script.textContent = JSON.stringify(ld);
   }
 
   if (document.readyState === 'loading') {

@@ -9,6 +9,9 @@
   --border: #e5e7eb;
   --radius: 14px;
   --shadow: 0 4px 20px rgba(0,0,0,.06);
+  --orange: #e07b1a;
+  --blue: #1e5fb4;
+  --text-light: #6b7280;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -66,7 +69,7 @@ a:hover { color: var(--green-dark); }
 .hero { position: relative; background: linear-gradient(135deg, var(--green-dark), var(--green)); color: #fff; overflow: hidden; }
 .hero-bg {
   position: absolute; inset: 0; opacity: .18;
-  background-image: url('images/hero-tiller.jpg'), radial-gradient(circle at 20% 30%, #fff 0, transparent 30%), radial-gradient(circle at 80% 70%, #fff 0, transparent 30%);
+  background-image: url('images/tiller-001.jpg'), radial-gradient(circle at 20% 30%, #fff 0, transparent 30%), radial-gradient(circle at 80% 70%, #fff 0, transparent 30%);
   background-size: cover, auto, auto;
   background-position: center, center, center;
   background-repeat: no-repeat, no-repeat, no-repeat;
