@@ -2533,7 +2533,7 @@ var PRODUCTS =
         "Engine: 173cc Zhanma 4-stroke or 2-stroke diesel engine, air-cooled single cylinder, 8-15 HP in stock across the full model range",
         "Transmission: Direct gear drive, fuel-efficient and economical",
         "Power: 4.05 kW / 5.4 HP @ 3600 rpm",
-        "Ditching depth: Ditch: 300-450 mm mm",
+        "Ditching depth: 300-450 mm",
         "Ditching width: 200-400 mm adjustable",
         "Tilling width (rotary mode): 600-1050 mm",
         "Gearbox: ductile iron, 2 forward + 1 reverse",
@@ -2549,7 +2549,7 @@ var PRODUCTS =
         "发动机：173战马号四冲程或两冲程柴油机，风冷单缸，马力8-15匹各种型号都有货",
         "传动方式：齿轮直连，省油经济实惠",
         "功率：4.05 kW / 5.4 HP @ 3600 rpm",
-        "开沟深度：Ditch: 300-450 mm mm",
+        "开沟深度：300-450 mm",
         "开沟宽度：200-400 mm 可调",
         "旋耕模式耕幅：600-1050 mm",
         "变速箱：球墨铸铁，2 前进 + 1 倒档",
@@ -2565,7 +2565,7 @@ var PRODUCTS =
         "Motor: Zhanma 173cc 4-tiempos o 2-tiempos diésel, monocilíndrico refrigerado por aire, 8-15 HP en stock en toda la gama",
         "Transmisión: directa por engranajes, bajo consumo y económica",
         "Potencia: 4.05 kW / 5.4 HP @ 3600 rpm",
-        "Profundidad de zanja: Ditch: 300-450 mm mm",
+        "Profundidad de zanja: 300-450 mm",
         "Ancho de zanja: 200-400 mm ajustable",
         "Ancho rotativa: 600-1050 mm",
         "Caja: hierro dúctil, 2 adelante + 1 atrás",
@@ -2581,7 +2581,7 @@ var PRODUCTS =
         "Двигатель: 173cc Чжаньма 4-тактный или 2-тактный дизельный, один цилиндр воздушное охлаждение, 8-15 л.с. в наличии во всей линейке",
         "Привод: прямой зубчатый, экономичный расход топлива",
         "Мощность: 4.05 кВт / 5.4 л.с. @ 3600 об/мин",
-        "Глубина канавы: Ditch: 300-450 mm мм",
+        "Глубина канавы: 300-450 мм",
         "Ширина канавы: 200-400 мм регулируемая",
         "Ширина фрезы: 600-1050 мм",
         "Коробка: ковкий чугун, 2 передних + 1 задняя",
@@ -2597,7 +2597,7 @@ var PRODUCTS =
         "Moteur: Zhanma 173cc 4-temps ou 2-temps diesel, monocylindre refroidi par air, 8-15 HP en stock sur toute la gamme",
         "Transmission: directe par engrenages, économique en carburant",
         "Puissance: 4.05 kW / 5.4 HP @ 3600 rpm",
-        "Profondeur tranchée: Ditch: 300-450 mm mm",
+        "Profondeur tranchée: 300-450 mm",
         "Largeur tranchée: 200-400 mm réglable",
         "Largeur rotative: 600-1050 mm",
         "Boîte: fonte ductile, 2 avant + 1 arrière",
@@ -2612,11 +2612,11 @@ var PRODUCTS =
     },
     "img": "ditch-002.jpg",
     "desc": {
-      "en": "173Cc Gasoline ditching-ridger attachment (1WG-4-05ZM) delivers 4.05 kW / 5.4 HP for digging Ditch: 300-450 mm mm furrows in one pass. Converts any compatible micro tiller into a dedicated ridger. Reinforced ductile-iron gearbox handles heavy clay and rocky soil. Same recoil start, adjustable handlebar, full compatibility with the 1WG.4.05ZM tiller base.",
-      "zh": "173cc gasoline 开沟培土机（1WG-4-05ZM）额定 4.05 kW / 5.4 马力，一次完成 Ditch: 300-450 mm mm 深沟起垄。适配同系列微耕主机，一机两用。加强型球墨铸铁变速箱，可应对重粘土碎石地。手拉反启动、把手可调、与 1WG.4.05ZM 系列主机完全兼容。",
-      "es": "Zanjador-aporcador 173cc gasoline (1WG-4-05ZM) entrega 4.05 kW / 5.4 HP para abrir surcos de Ditch: 300-450 mm mm en una pasada. Convierte cualquier motocultor compatible en aporcador dedicado. Caja hierro dúctil reforzada para suelo arcilloso y rocoso. Mismo arranque por cuerda, manillar ajustable, compatible con la base 1WG.4.05ZM.",
-      "ru": "173cc gasoline окучник-канавокопатель (1WG-4-05ZM): 4.05 кВт / 5.4 л.с. для борозд Ditch: 300-450 mm мм за один проход. Превращает любой совместимый мотокультиватор в грядоделатель. Усиленная коробка из ковкого чугуна для тяжёлой глины и каменистой почвы. Тот же ручной стартер, регулируемая рукоятка, совместим с базой 1WG.4.05ZM.",
-      "fr": "Trancheuse-buttoir 173cc gasoline (1WG-4-05ZM) : 4.05 kW / 5.4 HP pour ouvrir des tranchées de Ditch: 300-450 mm mm en une passe. Convertit tout motoculteur compatible en buttoir dédié. Boîte fonte ductile renforcée pour sol argileux et rocheux. Même lanceur, guidon réglable, compatible avec la base 1WG.4.05ZM."
+      "en": "173Cc Gasoline ditching-ridger attachment (1WG-4-05ZM) delivers 4.05 kW / 5.4 HP for digging 300-450 mm furrows in one pass. Converts any compatible micro tiller into a dedicated ridger. Reinforced ductile-iron gearbox handles heavy clay and rocky soil. Same recoil start, adjustable handlebar, full compatibility with the 1WG.4.05ZM tiller base.",
+      "zh": "173cc gasoline 开沟培土机（1WG-4-05ZM）额定 4.05 kW / 5.4 马力，一次完成 300-450 mm 深沟起垄。适配同系列微耕主机，一机两用。加强型球墨铸铁变速箱，可应对重粘土碎石地。手拉反启动、把手可调、与 1WG.4.05ZM 系列主机完全兼容。",
+      "es": "Zanjador-aporcador 173cc gasoline (1WG-4-05ZM) entrega 4.05 kW / 5.4 HP para abrir surcos de 300-450 mm en una pasada. Convierte cualquier motocultor compatible en aporcador dedicado. Caja hierro dúctil reforzada para suelo arcilloso y rocoso. Mismo arranque por cuerda, manillar ajustable, compatible con la base 1WG.4.05ZM.",
+      "ru": "173cc gasoline окучник-канавокопатель (1WG-4-05ZM): 4.05 кВт / 5.4 л.с. для борозд 300-450 мм за один проход. Превращает любой совместимый мотокультиватор в грядоделатель. Усиленная коробка из ковкого чугуна для тяжёлой глины и каменистой почвы. Тот же ручной стартер, регулируемая рукоятка, совместим с базой 1WG.4.05ZM.",
+      "fr": "Trancheuse-buttoir 173cc gasoline (1WG-4-05ZM) : 4.05 kW / 5.4 HP pour ouvrir des tranchées de 300-450 mm en une passe. Convertit tout motoculteur compatible en buttoir dédié. Boîte fonte ductile renforcée pour sol argileux et rocheux. Même lanceur, guidon réglable, compatible avec la base 1WG.4.05ZM."
     },
     "bestFor": {
       "en": [
@@ -2658,7 +2658,7 @@ var PRODUCTS =
     "features": {
       "en": [
         "173Cc Gasoline 4-stroke air-cooled — 4.05 kW / 5.4 HP",
-        "Ditching depth: Ditch: 300-450 mm mm",
+        "Ditching depth: 300-450 mm",
         "Adjustable ditching width 200-400 mm",
         "Direct-drive rotary tiller + ridger combo",
         "Ductile-iron gearbox, 2 forward + 1 reverse",
@@ -2670,7 +2670,7 @@ var PRODUCTS =
       ],
       "zh": [
         "173cc gasoline 四冲程风冷 — 4.05 kW / 5.4 HP",
-        "开沟深度：Ditch: 300-450 mm mm",
+        "开沟深度：300-450 mm",
         "开沟宽度可调 200-400 mm",
         "旋耕 + 培土直连",
         "球墨铸铁变速箱，2 前进 + 1 倒档",
@@ -2682,7 +2682,7 @@ var PRODUCTS =
       ],
       "es": [
         "173Cc Gasoline 4-tiempos refrigerado por aire — 4.05 kW / 5.4 HP",
-        "Profundidad de zanja: Ditch: 300-450 mm mm",
+        "Profundidad de zanja: 300-450 mm",
         "Ancho de zanja ajustable 200-400 mm",
         "Conexión directa rotativa + aporcador",
         "Caja hierro dúctil, 2 adelante + 1 atrás",
@@ -2694,7 +2694,7 @@ var PRODUCTS =
       ],
       "ru": [
         "173cc gasoline 4-тактный воздушное охлаждение — 4.05 кВт / 5.4 л.с.",
-        "Глубина канавы: Ditch: 300-450 mm мм",
+        "Глубина канавы: 300-450 мм",
         "Ширина канавы регулируемая 200-400 мм",
         "Прямой привод фреза + окучник",
         "Коробка ковкий чугун, 2 передних + 1 задняя",
@@ -2706,7 +2706,7 @@ var PRODUCTS =
       ],
       "fr": [
         "Moteur 173cc gasoline 4-temps refroidi par air — 4.05 kW / 5.4 HP",
-        "Profondeur tranchée: Ditch: 300-450 mm mm",
+        "Profondeur tranchée: 300-450 mm",
         "Largeur tranchée réglable 200-400 mm",
         "Connexion directe rotative + buttoir",
         "Boîte fonte ductile, 2 avant + 1 arrière",
@@ -2738,7 +2738,7 @@ var PRODUCTS =
         "Engine: 178cc Zhanma 4-stroke or 2-stroke diesel engine, air-cooled single cylinder, 8-15 HP in stock across the full model range",
         "Transmission: Direct gear drive, fuel-efficient and economical",
         "Power: 4.0 kW / 5.4 HP @ 3600 rpm",
-        "Ditching depth: Ditch: 300-500 mm mm",
+        "Ditching depth: 300-500 mm",
         "Ditching width: 200-400 mm adjustable",
         "Tilling width (rotary mode): 600-1050 mm",
         "Gearbox: ductile iron, 2 forward + 1 reverse",
@@ -2754,7 +2754,7 @@ var PRODUCTS =
         "发动机：178战马号四冲程或两冲程柴油机，风冷单缸，马力8-15匹各种型号都有货",
         "传动方式：齿轮直连，省油经济实惠",
         "功率：4.0 kW / 5.4 HP @ 3600 rpm",
-        "开沟深度：Ditch: 300-500 mm mm",
+        "开沟深度：300-500 mm",
         "开沟宽度：200-400 mm 可调",
         "旋耕模式耕幅：600-1050 mm",
         "变速箱：球墨铸铁，2 前进 + 1 倒档",
@@ -2770,7 +2770,7 @@ var PRODUCTS =
         "Motor: Zhanma 178cc 4-tiempos o 2-tiempos diésel, monocilíndrico refrigerado por aire, 8-15 HP en stock en toda la gama",
         "Transmisión: directa por engranajes, bajo consumo y económica",
         "Potencia: 4.0 kW / 5.4 HP @ 3600 rpm",
-        "Profundidad de zanja: Ditch: 300-500 mm mm",
+        "Profundidad de zanja: 300-500 mm",
         "Ancho de zanja: 200-400 mm ajustable",
         "Ancho rotativa: 600-1050 mm",
         "Caja: hierro dúctil, 2 adelante + 1 atrás",
@@ -2786,7 +2786,7 @@ var PRODUCTS =
         "Двигатель: 178cc Чжаньма 4-тактный или 2-тактный дизельный, один цилиндр воздушное охлаждение, 8-15 л.с. в наличии во всей линейке",
         "Привод: прямой зубчатый, экономичный расход топлива",
         "Мощность: 4.0 кВт / 5.4 л.с. @ 3600 об/мин",
-        "Глубина канавы: Ditch: 300-500 mm мм",
+        "Глубина канавы: 300-500 мм",
         "Ширина канавы: 200-400 мм регулируемая",
         "Ширина фрезы: 600-1050 мм",
         "Коробка: ковкий чугун, 2 передних + 1 задняя",
@@ -2802,7 +2802,7 @@ var PRODUCTS =
         "Moteur: Zhanma 178cc 4-temps ou 2-temps diesel, monocylindre refroidi par air, 8-15 HP en stock sur toute la gamme",
         "Transmission: directe par engrenages, économique en carburant",
         "Puissance: 4.0 kW / 5.4 HP @ 3600 rpm",
-        "Profondeur tranchée: Ditch: 300-500 mm mm",
+        "Profondeur tranchée: 300-500 mm",
         "Largeur tranchée: 200-400 mm réglable",
         "Largeur rotative: 600-1050 mm",
         "Boîte: fonte ductile, 2 avant + 1 arrière",
@@ -2817,11 +2817,11 @@ var PRODUCTS =
     },
     "img": "ditch-003.jpg",
     "desc": {
-      "en": "178Cc Diesel ditching-ridger attachment (1WG-4-1ZN) delivers 4.0 kW / 5.4 HP for digging Ditch: 300-500 mm mm furrows in one pass. Converts any compatible micro tiller into a dedicated ridger. Reinforced ductile-iron gearbox handles loamy and sandy soil. Same recoil start, adjustable handlebar, full compatibility with the 1WG.4.1ZN tiller base.",
-      "zh": "178cc diesel 开沟培土机（1WG-4-1ZN）额定 4.0 kW / 5.4 马力，一次完成 Ditch: 300-500 mm mm 深沟起垄。适配同系列微耕主机，一机两用。加强型球墨铸铁变速箱，可应对壤土沙土地。手拉反启动、把手可调、与 1WG.4.1ZN 系列主机完全兼容。",
-      "es": "Zanjador-aporcador 178cc diesel (1WG-4-1ZN) entrega 4.0 kW / 5.4 HP para abrir surcos de Ditch: 300-500 mm mm en una pasada. Convierte cualquier motocultor compatible en aporcador dedicado. Caja hierro dúctil reforzada para suelo franco y arenoso. Mismo arranque por cuerda, manillar ajustable, compatible con la base 1WG.4.1ZN.",
-      "ru": "178cc diesel окучник-канавокопатель (1WG-4-1ZN): 4.0 кВт / 5.4 л.с. для борозд Ditch: 300-500 mm мм за один проход. Превращает любой совместимый мотокультиватор в грядоделатель. Усиленная коробка из ковкого чугуна для суглинка и песка. Тот же ручной стартер, регулируемая рукоятка, совместим с базой 1WG.4.1ZN.",
-      "fr": "Trancheuse-buttoir 178cc diesel (1WG-4-1ZN) : 4.0 kW / 5.4 HP pour ouvrir des tranchées de Ditch: 300-500 mm mm en une passe. Convertit tout motoculteur compatible en buttoir dédié. Boîte fonte ductile renforcée pour sol limoneux et sableux. Même lanceur, guidon réglable, compatible avec la base 1WG.4.1ZN."
+      "en": "178Cc Diesel ditching-ridger attachment (1WG-4-1ZN) delivers 4.0 kW / 5.4 HP for digging 300-500 mm furrows in one pass. Converts any compatible micro tiller into a dedicated ridger. Reinforced ductile-iron gearbox handles loamy and sandy soil. Same recoil start, adjustable handlebar, full compatibility with the 1WG.4.1ZN tiller base.",
+      "zh": "178cc diesel 开沟培土机（1WG-4-1ZN）额定 4.0 kW / 5.4 马力，一次完成 300-500 mm 深沟起垄。适配同系列微耕主机，一机两用。加强型球墨铸铁变速箱，可应对壤土沙土地。手拉反启动、把手可调、与 1WG.4.1ZN 系列主机完全兼容。",
+      "es": "Zanjador-aporcador 178cc diesel (1WG-4-1ZN) entrega 4.0 kW / 5.4 HP para abrir surcos de 300-500 mm en una pasada. Convierte cualquier motocultor compatible en aporcador dedicado. Caja hierro dúctil reforzada para suelo franco y arenoso. Mismo arranque por cuerda, manillar ajustable, compatible con la base 1WG.4.1ZN.",
+      "ru": "178cc diesel окучник-канавокопатель (1WG-4-1ZN): 4.0 кВт / 5.4 л.с. для борозд 300-500 мм за один проход. Превращает любой совместимый мотокультиватор в грядоделатель. Усиленная коробка из ковкого чугуна для суглинка и песка. Тот же ручной стартер, регулируемая рукоятка, совместим с базой 1WG.4.1ZN.",
+      "fr": "Trancheuse-buttoir 178cc diesel (1WG-4-1ZN) : 4.0 kW / 5.4 HP pour ouvrir des tranchées de 300-500 mm en une passe. Convertit tout motoculteur compatible en buttoir dédié. Boîte fonte ductile renforcée pour sol limoneux et sableux. Même lanceur, guidon réglable, compatible avec la base 1WG.4.1ZN."
     },
     "bestFor": {
       "en": [
@@ -2863,7 +2863,7 @@ var PRODUCTS =
     "features": {
       "en": [
         "178Cc Diesel 4-stroke air-cooled — 4.0 kW / 5.4 HP",
-        "Ditching depth: Ditch: 300-500 mm mm",
+        "Ditching depth: 300-500 mm",
         "Adjustable ditching width 200-400 mm",
         "Direct-drive rotary tiller + ridger combo",
         "Ductile-iron gearbox, 2 forward + 1 reverse",
@@ -2875,7 +2875,7 @@ var PRODUCTS =
       ],
       "zh": [
         "178cc diesel 四冲程风冷 — 4.0 kW / 5.4 HP",
-        "开沟深度：Ditch: 300-500 mm mm",
+        "开沟深度：300-500 mm",
         "开沟宽度可调 200-400 mm",
         "旋耕 + 培土直连",
         "球墨铸铁变速箱，2 前进 + 1 倒档",
@@ -2887,7 +2887,7 @@ var PRODUCTS =
       ],
       "es": [
         "178Cc Diesel 4-tiempos refrigerado por aire — 4.0 kW / 5.4 HP",
-        "Profundidad de zanja: Ditch: 300-500 mm mm",
+        "Profundidad de zanja: 300-500 mm",
         "Ancho de zanja ajustable 200-400 mm",
         "Conexión directa rotativa + aporcador",
         "Caja hierro dúctil, 2 adelante + 1 atrás",
@@ -2899,7 +2899,7 @@ var PRODUCTS =
       ],
       "ru": [
         "178cc diesel 4-тактный воздушное охлаждение — 4.0 кВт / 5.4 л.с.",
-        "Глубина канавы: Ditch: 300-500 mm мм",
+        "Глубина канавы: 300-500 мм",
         "Ширина канавы регулируемая 200-400 мм",
         "Прямой привод фреза + окучник",
         "Коробка ковкий чугун, 2 передних + 1 задняя",
@@ -2911,7 +2911,7 @@ var PRODUCTS =
       ],
       "fr": [
         "Moteur 178cc diesel 4-temps refroidi par air — 4.0 kW / 5.4 HP",
-        "Profondeur tranchée: Ditch: 300-500 mm mm",
+        "Profondeur tranchée: 300-500 mm",
         "Largeur tranchée réglable 200-400 mm",
         "Connexion directe rotative + buttoir",
         "Boîte fonte ductile, 2 avant + 1 arrière",
@@ -2943,7 +2943,7 @@ var PRODUCTS =
         "Engine: 186cc Zhanma 4-stroke or 2-stroke diesel engine, air-cooled single cylinder, 8-15 HP in stock across the full model range",
         "Transmission: Direct gear drive, fuel-efficient and economical",
         "Power: 6.3 kW / 8.4 HP @ 3600 rpm",
-        "Ditching depth: Ditch: 350-600 mm mm",
+        "Ditching depth: 350-600 mm",
         "Ditching width: 200-400 mm adjustable",
         "Tilling width (rotary mode): 600-1050 mm",
         "Gearbox: ductile iron, 2 forward + 1 reverse",
@@ -2959,7 +2959,7 @@ var PRODUCTS =
         "发动机：186战马号四冲程或两冲程柴油机，风冷单缸，马力8-15匹各种型号都有货",
         "传动方式：齿轮直连，省油经济实惠",
         "功率：6.3 kW / 8.4 HP @ 3600 rpm",
-        "开沟深度：Ditch: 350-600 mm mm",
+        "开沟深度：350-600 mm",
         "开沟宽度：200-400 mm 可调",
         "旋耕模式耕幅：600-1050 mm",
         "变速箱：球墨铸铁，2 前进 + 1 倒档",
@@ -2975,7 +2975,7 @@ var PRODUCTS =
         "Motor: Zhanma 186cc 4-tiempos o 2-tiempos diésel, monocilíndrico refrigerado por aire, 8-15 HP en stock en toda la gama",
         "Transmisión: directa por engranajes, bajo consumo y económica",
         "Potencia: 6.3 kW / 8.4 HP @ 3600 rpm",
-        "Profundidad de zanja: Ditch: 350-600 mm mm",
+        "Profundidad de zanja: 350-600 mm",
         "Ancho de zanja: 200-400 mm ajustable",
         "Ancho rotativa: 600-1050 mm",
         "Caja: hierro dúctil, 2 adelante + 1 atrás",
@@ -2991,7 +2991,7 @@ var PRODUCTS =
         "Двигатель: 186cc Чжаньма 4-тактный или 2-тактный дизельный, один цилиндр воздушное охлаждение, 8-15 л.с. в наличии во всей линейке",
         "Привод: прямой зубчатый, экономичный расход топлива",
         "Мощность: 6.3 кВт / 8.4 л.с. @ 3600 об/мин",
-        "Глубина канавы: Ditch: 350-600 mm мм",
+        "Глубина канавы: 350-600 мм",
         "Ширина канавы: 200-400 мм регулируемая",
         "Ширина фрезы: 600-1050 мм",
         "Коробка: ковкий чугун, 2 передних + 1 задняя",
@@ -3007,7 +3007,7 @@ var PRODUCTS =
         "Moteur: Zhanma 186cc 4-temps ou 2-temps diesel, monocylindre refroidi par air, 8-15 HP en stock sur toute la gamme",
         "Transmission: directe par engrenages, économique en carburant",
         "Puissance: 6.3 kW / 8.4 HP @ 3600 rpm",
-        "Profondeur tranchée: Ditch: 350-600 mm mm",
+        "Profondeur tranchée: 350-600 mm",
         "Largeur tranchée: 200-400 mm réglable",
         "Largeur rotative: 600-1050 mm",
         "Boîte: fonte ductile, 2 avant + 1 arrière",
@@ -3022,11 +3022,11 @@ var PRODUCTS =
     },
     "img": "ditch-004.jpg",
     "desc": {
-      "en": "186Cc Diesel ditching-ridger attachment (1WG-6-3ZN) delivers 6.3 kW / 8.4 HP for digging Ditch: 350-600 mm mm furrows in one pass. Converts any compatible micro tiller into a dedicated ridger. Reinforced ductile-iron gearbox handles heavy clay and rocky soil. Same recoil start, adjustable handlebar, full compatibility with the 1WG.6.3ZN tiller base.",
-      "zh": "186cc diesel 开沟培土机（1WG-6-3ZN）额定 6.3 kW / 8.4 马力，一次完成 Ditch: 350-600 mm mm 深沟起垄。适配同系列微耕主机，一机两用。加强型球墨铸铁变速箱，可应对重粘土碎石地。手拉反启动、把手可调、与 1WG.6.3ZN 系列主机完全兼容。",
-      "es": "Zanjador-aporcador 186cc diesel (1WG-6-3ZN) entrega 6.3 kW / 8.4 HP para abrir surcos de Ditch: 350-600 mm mm en una pasada. Convierte cualquier motocultor compatible en aporcador dedicado. Caja hierro dúctil reforzada para suelo arcilloso y rocoso. Mismo arranque por cuerda, manillar ajustable, compatible con la base 1WG.6.3ZN.",
-      "ru": "186cc diesel окучник-канавокопатель (1WG-6-3ZN): 6.3 кВт / 8.4 л.с. для борозд Ditch: 350-600 mm мм за один проход. Превращает любой совместимый мотокультиватор в грядоделатель. Усиленная коробка из ковкого чугуна для тяжёлой глины и каменистой почвы. Тот же ручной стартер, регулируемая рукоятка, совместим с базой 1WG.6.3ZN.",
-      "fr": "Trancheuse-buttoir 186cc diesel (1WG-6-3ZN) : 6.3 kW / 8.4 HP pour ouvrir des tranchées de Ditch: 350-600 mm mm en une passe. Convertit tout motoculteur compatible en buttoir dédié. Boîte fonte ductile renforcée pour sol argileux et rocheux. Même lanceur, guidon réglable, compatible avec la base 1WG.6.3ZN."
+      "en": "186Cc Diesel ditching-ridger attachment (1WG-6-3ZN) delivers 6.3 kW / 8.4 HP for digging 350-600 mm furrows in one pass. Converts any compatible micro tiller into a dedicated ridger. Reinforced ductile-iron gearbox handles heavy clay and rocky soil. Same recoil start, adjustable handlebar, full compatibility with the 1WG.6.3ZN tiller base.",
+      "zh": "186cc diesel 开沟培土机（1WG-6-3ZN）额定 6.3 kW / 8.4 马力，一次完成 350-600 mm 深沟起垄。适配同系列微耕主机，一机两用。加强型球墨铸铁变速箱，可应对重粘土碎石地。手拉反启动、把手可调、与 1WG.6.3ZN 系列主机完全兼容。",
+      "es": "Zanjador-aporcador 186cc diesel (1WG-6-3ZN) entrega 6.3 kW / 8.4 HP para abrir surcos de 350-600 mm en una pasada. Convierte cualquier motocultor compatible en aporcador dedicado. Caja hierro dúctil reforzada para suelo arcilloso y rocoso. Mismo arranque por cuerda, manillar ajustable, compatible con la base 1WG.6.3ZN.",
+      "ru": "186cc diesel окучник-канавокопатель (1WG-6-3ZN): 6.3 кВт / 8.4 л.с. для борозд 350-600 мм за один проход. Превращает любой совместимый мотокультиватор в грядоделатель. Усиленная коробка из ковкого чугуна для тяжёлой глины и каменистой почвы. Тот же ручной стартер, регулируемая рукоятка, совместим с базой 1WG.6.3ZN.",
+      "fr": "Trancheuse-buttoir 186cc diesel (1WG-6-3ZN) : 6.3 kW / 8.4 HP pour ouvrir des tranchées de 350-600 mm en une passe. Convertit tout motoculteur compatible en buttoir dédié. Boîte fonte ductile renforcée pour sol argileux et rocheux. Même lanceur, guidon réglable, compatible avec la base 1WG.6.3ZN."
     },
     "bestFor": {
       "en": [
@@ -3068,7 +3068,7 @@ var PRODUCTS =
     "features": {
       "en": [
         "186Cc Diesel 4-stroke air-cooled — 6.3 kW / 8.4 HP",
-        "Ditching depth: Ditch: 350-600 mm mm",
+        "Ditching depth: 350-600 mm",
         "Adjustable ditching width 200-400 mm",
         "Direct-drive rotary tiller + ridger combo",
         "Ductile-iron gearbox, 2 forward + 1 reverse",
@@ -3080,7 +3080,7 @@ var PRODUCTS =
       ],
       "zh": [
         "186cc diesel 四冲程风冷 — 6.3 kW / 8.4 HP",
-        "开沟深度：Ditch: 350-600 mm mm",
+        "开沟深度：350-600 mm",
         "开沟宽度可调 200-400 mm",
         "旋耕 + 培土直连",
         "球墨铸铁变速箱，2 前进 + 1 倒档",
@@ -3092,7 +3092,7 @@ var PRODUCTS =
       ],
       "es": [
         "186Cc Diesel 4-tiempos refrigerado por aire — 6.3 kW / 8.4 HP",
-        "Profundidad de zanja: Ditch: 350-600 mm mm",
+        "Profundidad de zanja: 350-600 mm",
         "Ancho de zanja ajustable 200-400 mm",
         "Conexión directa rotativa + aporcador",
         "Caja hierro dúctil, 2 adelante + 1 atrás",
@@ -3104,7 +3104,7 @@ var PRODUCTS =
       ],
       "ru": [
         "186cc diesel 4-тактный воздушное охлаждение — 6.3 кВт / 8.4 л.с.",
-        "Глубина канавы: Ditch: 350-600 mm мм",
+        "Глубина канавы: 350-600 мм",
         "Ширина канавы регулируемая 200-400 мм",
         "Прямой привод фреза + окучник",
         "Коробка ковкий чугун, 2 передних + 1 задняя",
@@ -3116,7 +3116,7 @@ var PRODUCTS =
       ],
       "fr": [
         "Moteur 186cc diesel 4-temps refroidi par air — 6.3 kW / 8.4 HP",
-        "Profondeur tranchée: Ditch: 350-600 mm mm",
+        "Profondeur tranchée: 350-600 mm",
         "Largeur tranchée réglable 200-400 mm",
         "Connexion directe rotative + buttoir",
         "Boîte fonte ductile, 2 avant + 1 arrière",
