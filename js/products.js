@@ -521,7 +521,12 @@ var PRODUCTS = [
         "Économie du diésel",
         "Pièces standard"
       ]
-    }
+    },
+    "gallery": [
+      "tiller-003-2.jpg",
+      "tiller-003-3.jpg",
+      "tiller-003-4.jpg"
+    ]
   },
   {
     "id": "1WG-4-05A-Pro",
@@ -692,7 +697,11 @@ var PRODUCTS = [
         "Châssis renforcé usage commercial",
         "Di moins cher"
       ]
-    }
+    },
+    "gallery": [
+      "tiller-004-2.jpg",
+      "tiller-004-3.jpg"
+    ]
   },
   {
     "id": "1WG-4-1A",
@@ -863,7 +872,11 @@ var PRODUCTS = [
         "Économie diésel",
         "Pièces standard"
       ]
-    }
+    },
+    "gallery": [
+      "tiller-005-2.jpg",
+      "tiller-005-3.jpg"
+    ]
   },
   {
     "id": "1WG-6-3A",
@@ -1034,7 +1047,10 @@ var PRODUCTS = [
         "Économie en charge élevée",
         "Pièces standard"
       ]
-    }
+    },
+    "gallery": [
+      "tiller-006-2.jpg"
+    ]
   },
   {
     "id": "1WG-4-0BQ",
@@ -1205,7 +1221,12 @@ var PRODUCTS = [
         "Guidon réglable",
         "Pièces standard"
       ]
-    }
+    },
+    "gallery": [
+      "tiller-007-2.jpg",
+      "tiller-007-3.jpg",
+      "tiller-007-4.jpg"
+    ]
   },
   {
     "id": "1WG-4-05B",
@@ -1376,7 +1397,10 @@ var PRODUCTS = [
         "Plus silencieux que diésel",
         "Pièces standard"
       ]
-    }
+    },
+    "gallery": [
+      "tiller-008-2.jpg"
+    ]
   },
   {
     "id": "1WG-4-1B",
@@ -1547,7 +1571,13 @@ var PRODUCTS = [
         "Corps compact",
         "Pièces standard"
       ]
-    }
+    },
+    "gallery": [
+      "tiller-009-2.jpg",
+      "tiller-009-3.jpg",
+      "tiller-009-4.jpg",
+      "tiller-009-5.jpg"
+    ]
   },
   {
     "id": "1WG-6-3B",
@@ -1718,7 +1748,10 @@ var PRODUCTS = [
         "Châssis plus lourd — labour stable",
         "Pièces standard"
       ]
-    }
+    },
+    "gallery": [
+      "tiller-010-2.jpg"
+    ]
   },
   {
     "id": "1WG-6-3B-T",
@@ -3653,6 +3686,8 @@ var PRODUCTS = [
     }
   }
 ];
+
+
 
 
 ;
