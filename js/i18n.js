@@ -4,7 +4,7 @@
    键名对应 HTML 里的 data-i18n="..."
    ========================================================= */
 
-const I18N = {
+var I18N = {
   en: {
     brand: { name: "HAOGENG", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Guigeng Agricultural Machinery", lichuang: "Guangxi Lichuang Machinery" },
     topbar: { hint: "Factory-Direct · OEM/ODM Welcome" },
@@ -28,7 +28,29 @@ const I18N = {
       title: "Our Products",
       lead: "Three main product lines. Custom OEM/ODM available — tell us your market and requirements.",
       filter: { all: "All", tiller: "Micro Tillers", ditching: "Ditching Machines", pump: "Water Pumps" },
-      inquire: "Send Inquiry"
+      inquire: "Send Inquiry",
+      detail: {
+        back: "← Back to Products",
+        description: "Overview",
+        bestFor: "Best For",
+        features: "Features",
+        specs: "Specifications",
+        getQuote: "Get Quote Now",
+        copyInquiry: "Copy Inquiry",
+        copy: "Copy",
+        copied: "Copied!",
+        whatsapp: "WhatsApp",
+        email: "Email",
+        contactSection: "Send us your requirements and we will reply within 24 hours.",
+        accessories: {
+          title: "What's in the Box",
+          subtitle: "All accessories shown below are included FREE when you purchase this machine — ready to use straight out of the crate.",
+          item1: { name: "Paddy Field Wheel Set", qty: "1 set", desc: "Wide paddle wheels designed for soft, waterlogged paddy fields. Slip directly onto the rotor shaft in place of the dry-land blades when working in wet conditions." },
+          item2: { name: "Anti-Wrap Blade Set", qty: "1 set", desc: "Curved blades engineered to resist weed and vine wrap. The swept geometry keeps tall grass and crop residue from tangling around the rotor during heavy tillage." },
+          item3: { name: "Rubber Tire Set", qty: "1 set", desc: "Treaded rubber transport wheels with metal hubs and a square axle bore. Swap on when you need to roll the machine between plots without scarring the ground." },
+          item4: { name: "Dry-Land Blade Set", qty: "1 set", desc: "Hardened H-pattern rotary blades for breaking firm, dry soil. Pre-assembled on the cage frame, ready to mount on the rotor shaft straight out of the crate." }
+        }
+      }
     },
     why: {
       title: "Why Choose Us",
@@ -100,7 +122,29 @@ const I18N = {
       title: "产品中心",
       lead: "三大产品线，支持OEM/ODM定制，告诉我们您的市场和需求。",
       filter: { all: "全部", tiller: "微耕机", ditching: "开沟培土机", pump: "抽水机" },
-      inquire: "发送询盘"
+      inquire: "发送询盘",
+      detail: {
+        back: "← 返回产品中心",
+        description: "产品简介",
+        bestFor: "适用场景",
+        features: "核心特性",
+        specs: "详细参数",
+        getQuote: "立即询盘",
+        copyInquiry: "复制询盘",
+        copy: "复制",
+        copied: "已复制！",
+        whatsapp: "WhatsApp",
+        email: "邮件",
+        contactSection: "告诉我们您的需求，24 小时内回复。",
+        accessories: {
+          title: "随箱配件清单",
+          subtitle: "购买本机即免费赠送下图全部配件，开箱即用，无需另购。",
+          item1: { name: "水田轮一套", qty: "1套", desc: "加宽桨叶式水田轮，专为松软水田作业设计。换装时直接替换旱地刀，无需改轴，即可在湿田里稳定推进。" },
+          item2: { name: "防缠刀一套", qty: "1套", desc: "防缠草专用弯刀，刀身弧度经过优化。高草与作物残茬不易缠绕旋耕轴，重负载翻地也能保持稳定作业。" },
+          item3: { name: "橡胶轮胎一套", qty: "1套", desc: "带胎纹橡胶行走轮，金属轮毂配方形轴孔。换上后机器可在田块之间推行转移，不伤地面、不陷车。" },
+          item4: { name: "旱地刀一套", qty: "1套", desc: "加硬 H 型旋耕弯刀，专攻板结旱地。出厂预装于刀笼架上，拆箱后直接换装到旋耕轴即可下地作业。" }
+        }
+      }
     },
     why: {
       title: "为什么选择我们",
@@ -172,7 +216,29 @@ const I18N = {
       title: "Nuestros productos",
       lead: "Tres líneas principales. OEM/ODM disponible — cuéntenos su mercado y requisitos.",
       filter: { all: "Todos", tiller: "Motocultores", ditching: "Máquinas de zanjeo", pump: "Bombas de agua" },
-      inquire: "Enviar consulta"
+      inquire: "Enviar consulta",
+      detail: {
+        back: "← Volver a Productos",
+        description: "Descripción",
+        bestFor: "Ideal Para",
+        features: "Características",
+        specs: "Especificaciones",
+        getQuote: "Solicitar Cotización",
+        copyInquiry: "Copiar Consulta",
+        copy: "Copiar",
+        copied: "¡Copiado!",
+        whatsapp: "WhatsApp",
+        email: "Correo",
+        contactSection: "Envíenos sus requisitos y responderemos en 24 horas.",
+        accessories: {
+          title: "Qué Incluye la Caja",
+          subtitle: "Todos los accesorios mostrados abajo están INCLUIDOS GRATIS al comprar esta máquina — lista para usar al sacarla de la caja.",
+          item1: { name: "Juego de Ruedas para Arrozales", qty: "1 juego", desc: "Ruedas de paletas anchas dise馻das para arrozales blandos e inundados. Se montan directo en el eje del rotor reemplazando las cuchillas de tierra seca." },
+          item2: { name: "Juego de Cuchillas Anti-Enredo", qty: "1 juego", desc: "Cuchillas curvas dise馻das para resistir el enredo de maleza. La geometr韆 swept evita que el pasto alto y los residuos de cultivo se enrollen en el rotor." },
+          item3: { name: "Juego de Neumáticos de Caucho", qty: "1 juego", desc: "Ruedas de caucho con tacos para transporte, con cubos metálicos y eje cuadrado. Ideales para trasladar la máquina entre parcelas sin dañar el suelo." },
+          item4: { name: "Juego de Cuchillas para Tierra Seca", qty: "1 juego", desc: "Cuchillas rotativas tipo H endurecidas para romper tierra firme y seca. Pre-ensambladas en el bastidor, listas para montar al sacarlas de la caja." }
+        }
+      }
     },
     why: {
       title: "Por qué elegirnos",
@@ -231,7 +297,29 @@ const I18N = {
       title: "Наша продукция",
       lead: "Три основные линейки. OEM/ODM доступно — расскажите о вашем рынке.",
       filter: { all: "Все", tiller: "Мотокультиваторы", ditching: "Машины для канав", pump: "Водяные насосы" },
-      inquire: "Отправить запрос"
+      inquire: "Отправить запрос",
+      detail: {
+        back: "← Назад к продуктам",
+        description: "Описание",
+        bestFor: "Подходит Для",
+        features: "Особенности",
+        specs: "Характеристики",
+        getQuote: "Запросить цену",
+        copyInquiry: "Копировать запрос",
+        copy: "Копировать",
+        copied: "Скопировано!",
+        whatsapp: "WhatsApp",
+        email: "Email",
+        contactSection: "Отправьте ваши требования, ответим в течение 24 часов.",
+        accessories: {
+          title: "Что в комплекте",
+          subtitle: "Все аксессуары ниже БЕСПЛАТНО входят в комплект при покупке этой машины — готова к работе прямо из коробки.",
+          item1: { name: "Комплект колёс для рисовых полей", qty: "1 комплект", desc: "Широкие веслообразные колёса, специально разработанные для мягких и заболоченных рисовых полей. Устанавливаются прямо на вал ротора вместо сухих ножей при работе в мокрых условиях." },
+          item2: { name: "Комплект противозаматывающих ножей", qty: "1 комплект", desc: "Усиленные изогнутые ножи против наматывания сорняков. Геометрия лопастей не допускает запутывания высокой травы и растительных остатков на роторе при тяжёлой вспашке." },
+          item3: { name: "Комплект резиновых шин", qty: "1 комплект", desc: "Транспортировочные резиновые колёса с грунто-зацепами, металлическими ступицами и квадратным отверстием под вал. Удобно для перемещения машины между участками без вреда почве." },
+          item4: { name: "Комплект ножей для сухой земли", qty: "1 комплект", desc: "Закалённые ножи типа H для разрыхления плотной сухой почвы. Предварительно установлены на каркасе клетки, готовы к монтажу на вал ротора сразу после распаковки." }
+        }
+      }
     },
     why: {
       title: "Почему мы",
@@ -290,7 +378,29 @@ const I18N = {
       title: "Nos produits",
       lead: "Trois gammes principales. OEM/ODM disponible — parlez-nous de votre marché.",
       filter: { all: "Tous", tiller: "Motoculteurs", ditching: "Machines à fossés", pump: "Pompes à eau" },
-      inquire: "Envoyer une demande"
+      inquire: "Envoyer une demande",
+      detail: {
+        back: "← Retour aux Produits",
+        description: "Description",
+        bestFor: "Idéal Pour",
+        features: "Caractéristiques",
+        specs: "Spécifications",
+        getQuote: "Demander un devis",
+        copyInquiry: "Copier la demande",
+        copy: "Copier",
+        copied: "Copié !",
+        whatsapp: "WhatsApp",
+        email: "Courriel",
+        contactSection: "Envoyez-nous vos besoins, nous répondrons sous 24 heures.",
+        accessories: {
+          title: "Ce Que Comprend la Boîte",
+          subtitle: "Tous les accessoires ci-dessous sont INCLUS GRATUITEMENT à l'achat de cette machine — prête à l'emploi dès la sortie du carton.",
+          item1: { name: "Jeu de Roues pour Rizi猫res", qty: "1 jeu", desc: "Roues 脿 palettes larges con莽ues pour les rizi猫res meubles et inond茅es. Se montent directement sur l'arbre du rotor en remplacement des lames pour terre s猫che." },
+          item2: { name: "Jeu de Lames Anti-Enroulement", qty: "1 jeu", desc: "Lames courbes con莽ues pour r茅sister 脿 l'enroulement des mauvaises herbes. La g茅om茅trie swept emp锚che l'herbe haute et les r茅sidus de culture de s'enrouler autour du rotor." },
+          item3: { name: "Jeu de Pneumatiques en Caoutchouc", qty: "1 jeu", desc: "Roues de transport en caoutchouc cramponn茅 avec moyeux m茅talliques et al茅sage carr茅. Id茅ales pour d茅placer la machine entre parcelles sans ab卯mer le sol." },
+          item4: { name: "Jeu de Lames pour Terre S猫che", qty: "1 jeu", desc: "Lames rotatives type H tremp茅es pour briser les sols fermes et secs. Pr茅-assembl茅es sur le cadre de cage, pr锚tes 脿 monter d猫s la sortie du carton." }
+        }
+      }
     },
     why: {
       title: "Pourquoi nous choisir",
@@ -359,6 +469,8 @@ function setLang(lang) {
 
   // 重新渲染产品（产品名可能有翻译）
   if (typeof renderProducts === 'function') renderProducts(currentCategory);
+  // 通知详情页等需要重新渲染的组件
+  document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
 }
 
 function getByPath(obj, path) {
@@ -369,3 +481,8 @@ function getByPath(obj, path) {
 function t(key) {
   return getByPath(I18N[currentLang], key);
 }
+
+;try { window.I18N = I18N; } catch(e) {}
+;try { if (typeof t === "function") window.t = t; } catch(e) {}
+;try { if (typeof setLang === "function") window.setLang = setLang; } catch(e) {}
+;try { window.currentLang = currentLang; } catch(e) {}
