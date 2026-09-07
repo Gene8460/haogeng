@@ -52,6 +52,28 @@
          </picture>`
       : `<div style="color:#adb5bd;">📷 No image available</div>`;
 
+    const galleryImgs = Array.isArray(product.gallery) ? product.gallery : [];
+    const galleryHtml = galleryImgs.length
+      ? `<div class="pd-gallery" id="pdGallery">
+           <button type="button" class="pd-gallery-prev" id="pdGalleryPrev" aria-label="Previous">‹</button>
+           <div class="pd-gallery-track" id="pdGalleryTrack">
+             ${galleryImgs.map((g, i) => {
+               const gWebp = g.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+               return `<div class="pd-gallery-slide${i === 0 ? ' active' : ''}" data-idx="${i}">
+                 <picture>
+                   <source srcset="images/${gWebp}" type="image/webp">
+                   <img src="images/${g}" alt="${escapeHtml(name)} — view ${i + 1}" loading="lazy">
+                 </picture>
+               </div>`;
+             }).join('')}
+           </div>
+           <button type="button" class="pd-gallery-next" id="pdGalleryNext" aria-label="Next">›</button>
+           <div class="pd-gallery-dots">
+             ${galleryImgs.map((_, i) => `<span class="pd-gallery-dot${i === 0 ? ' active' : ''}" data-idx="${i}"></span>`).join('')}
+           </div>
+         </div>`
+      : '';
+
     const specsRows = (specs || []).map(line => {
       const idx = line.indexOf(':');
       if (idx === -1) return `<tr><td colspan="2">${escapeHtml(line)}</td></tr>`;
@@ -121,7 +143,6 @@
             <span class="pd-cat-tag">${escapeHtml(catLabel)}</span>
             <h1 class="pd-title">${escapeHtml(name)}</h1>
             <div class="pd-model">Model: ${escapeHtml(product.model || '')}</div>
-            <p class="pd-desc">${escapeHtml(desc)}</p>
             <div class="pd-cta-row">
               <button class="pd-cta-primary" id="pdGetQuoteBtn" data-product-id="${escapeHtml(product.id || '')}">
                 📩 ${getQuoteText}
@@ -132,7 +153,9 @@
           <div class="pd-hero-image">${imgHtml}</div>
         </section>
 
-        <section class="pd-section">
+        ${galleryHtml}
+
+        <section class="pd-section" id="pd-overview">
           <h2 class="pd-section-title">${descLabel}</h2>
           <p style="font-size:15px; line-height:1.8; color:#495057;">${escapeHtml(desc)}</p>
         </section>
@@ -251,12 +274,14 @@
     if (metaDesc) metaDesc.setAttribute('content', desc.substring(0, 160));
 
     bindQuoteButtons(product, lang);
+    bindGallery();
 
     document.addEventListener('langChanged', (e) => {
       const newLang = e.detail && e.detail.lang;
       if (!newLang) return;
       main.innerHTML = renderDetail(product, newLang);
       bindQuoteButtons(product, newLang);
+      bindGallery();
     });
   }
 

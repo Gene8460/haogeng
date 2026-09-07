@@ -3722,14 +3722,16 @@ function renderProducts(category) {
 
     return `
       <div class="product-card" data-cat="${p.cat}">
-        ${imgHtml}
-        <div class="product-body">
-          <span class="product-cat">${catLabel}</span>
-          <h3 class="product-name">${name}</h3>
-          <div class="product-model">${p.model}</div>
-          <ul class="product-specs">${specs.map(s => `<li>· ${s}</li>`).join('')}</ul>
-          <a href="#contact" class="product-cta">${inquire} →</a>
-        </div>
+        <a class="product-link" href="product.html?id=${encodeURIComponent(p.id)}">
+          ${imgHtml}
+          <div class="product-body">
+            <span class="product-cat">${catLabel}</span>
+            <h3 class="product-name">${name}</h3>
+            <div class="product-model">${p.model}</div>
+            <ul class="product-specs">${specs.map(s => `<li>· ${s}</li>`).join('')}</ul>
+            <span class="product-cta">${inquire} →</span>
+          </div>
+        </a>
       </div>`;
   }).join('');
 }
