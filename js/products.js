@@ -196,27 +196,67 @@ var PRODUCTS = [
       "en": [
         "170 diesel engine",
         "Low fuel consumption",
-        "Strong torque"
+        "Strong torque",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "zh": [
         "170柴油机",
         "低油耗",
-        "扭矩强劲"
+        "扭矩强劲",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "es": [
         "Motor diésel 170",
         "Bajo consumo",
-        "Alto par"
+        "Alto par",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "ru": [
         "Дизельный двигатель 170",
         "Низкий расход",
-        "Сильный крутящий момент"
+        "Сильный крутящий момент",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "fr": [
         "Moteur diesel 170",
         "Faible consommation",
-        "Couple élevé"
+        "Couple élevé",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ]
     },
     "img": "tiller-002.jpg",
@@ -327,27 +367,67 @@ var PRODUCTS = [
       "en": [
         "173 diesel engine",
         "Heavy-duty gearbox",
-        "Multi-gear"
+        "Multi-gear",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "zh": [
         "173柴油机",
         "重载齿轮箱",
-        "多档位"
+        "多档位",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "es": [
         "Motor diésel 173",
         "Caja de cambios reforzada",
-        "Multi-velocidad"
+        "Multi-velocidad",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "ru": [
         "Дизельный двигатель 173",
         "Усиленная КПП",
-        "Многоступенчатая"
+        "Многоступенчатая",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "fr": [
         "Moteur diesel 173",
         "Boîte renforcée",
-        "Multi-vitesses"
+        "Multi-vitesses",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ]
     },
     "img": "tiller-003.jpg",
@@ -458,27 +538,67 @@ var PRODUCTS = [
       "en": [
         "173 diesel engine",
         "Upgraded chassis",
-        "Field-proven"
+        "Field-proven",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "zh": [
         "173柴油机",
         "加强底盘",
-        "实战耐用"
+        "实战耐用",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "es": [
         "Motor diésel 173",
         "Chasis mejorado",
-        "Comprobado en campo"
+        "Comprobado en campo",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "ru": [
         "Дизельный двигатель 173",
         "Усиленное шасси",
-        "Полевые испытания"
+        "Полевые испытания",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "fr": [
         "Moteur diesel 173",
         "Châssis amélioré",
-        "Éprouvé sur le terrain"
+        "Éprouvé sur le terrain",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ]
     },
     "img": "tiller-004.jpg",
@@ -589,27 +709,67 @@ var PRODUCTS = [
       "en": [
         "178 diesel engine",
         "Heavy-duty gearbox",
-        "Farm use"
+        "Farm use",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "zh": [
         "178柴油机",
         "重载齿轮箱",
-        "农场适用"
+        "农场适用",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "es": [
         "Motor diésel 178",
         "Caja de cambios reforzada",
-        "Uso agrícola"
+        "Uso agrícola",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "ru": [
         "Дизельный двигатель 178",
         "Усиленная КПП",
-        "Фермерское использование"
+        "Фермерское использование",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "fr": [
         "Moteur diesel 178",
         "Boîte renforcée",
-        "Usage agricole"
+        "Usage agricole",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ]
     },
     "img": "tiller-005.jpg",
@@ -720,27 +880,67 @@ var PRODUCTS = [
       "en": [
         "186 diesel engine",
         "Powerful",
-        "Heavy-duty"
+        "Heavy-duty",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "zh": [
         "186柴油机",
         "动力澎湃",
-        "重载专用"
+        "重载专用",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "es": [
         "Motor diésel 186",
         "Potente",
-        "Trabajo pesado"
+        "Trabajo pesado",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "ru": [
         "Дизельный двигатель 186",
         "Мощный",
-        "Тяжёлые работы"
+        "Тяжёлые работы",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "fr": [
         "Moteur diesel 186",
         "Puissant",
-        "Travail lourd"
+        "Travail lourd",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ]
     },
     "img": "tiller-006.jpg",
@@ -851,27 +1051,67 @@ var PRODUCTS = [
       "en": [
         "170 gasoline",
         "Light body",
-        "Easy to operate"
+        "Easy to operate",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "zh": [
         "170汽油机",
         "轻量化机身",
-        "轻松操控"
+        "轻松操控",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "es": [
         "Motor gasolina 170",
         "Cuerpo ligero",
-        "Fácil manejo"
+        "Fácil manejo",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "ru": [
         "Бензиновый 170",
         "Лёгкий корпус",
-        "Простое управление"
+        "Простое управление",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "fr": [
         "Moteur essence 170",
         "Corps léger",
-        "Prise en main facile"
+        "Prise en main facile",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ]
     },
     "img": "tiller-007.jpg",
@@ -982,27 +1222,67 @@ var PRODUCTS = [
       "en": [
         "173 gasoline",
         "Premium design",
-        "Field-tested"
+        "Field-tested",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "zh": [
         "173汽油机",
         "高端外观",
-        "田间实测"
+        "田间实测",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "es": [
         "Motor gasolina 173",
         "Diseño premium",
-        "Probado en campo"
+        "Probado en campo",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "ru": [
         "Бензиновый 173",
         "Премиум дизайн",
-        "Полевые испытания"
+        "Полевые испытания",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "fr": [
         "Moteur essence 173",
         "Design premium",
-        "Testé sur le terrain"
+        "Testé sur le terrain",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ]
     },
     "img": "tiller-008.jpg",
@@ -1113,27 +1393,67 @@ var PRODUCTS = [
       "en": [
         "178 diesel",
         "Premium build",
-        "Long service life"
+        "Long service life",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "zh": [
         "178柴油机",
         "高端配置",
-        "持久耐用"
+        "持久耐用",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "es": [
         "Motor diésel 178",
         "Construcción premium",
-        "Larga vida útil"
+        "Larga vida útil",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "ru": [
         "Дизельный 178",
         "Премиум сборка",
-        "Долгий срок службы"
+        "Долгий срок службы",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "fr": [
         "Moteur diesel 178",
         "Construction premium",
-        "Longue durée de vie"
+        "Longue durée de vie",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ]
     },
     "img": "tiller-009.jpg",
@@ -1244,27 +1564,67 @@ var PRODUCTS = [
       "en": [
         "186 diesel",
         "Premium model",
-        "Heavy workload"
+        "Heavy workload",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "zh": [
         "186柴油机",
         "旗舰机型",
-        "重负荷作业"
+        "重负荷作业",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "es": [
         "Motor diésel 186",
         "Modelo insignia",
-        "Trabajo pesado"
+        "Trabajo pesado",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "ru": [
         "Дизельный 186",
         "Флагманская модель",
-        "Тяжёлые нагрузки"
+        "Тяжёлые нагрузки",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "fr": [
         "Moteur diesel 186",
         "Modèle phare",
-        "Charge lourde"
+        "Charge lourde",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ]
     },
     "img": "tiller-010.jpg",
@@ -1375,27 +1735,67 @@ var PRODUCTS = [
       "en": [
         "186 diesel",
         "14-speed",
-        "Top configuration"
+        "Top configuration",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "zh": [
         "186柴油机",
         "14档位",
-        "顶级配置"
+        "顶级配置",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "es": [
         "Motor diésel 186",
         "14 velocidades",
-        "Configuración top"
+        "Configuración top",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "ru": [
         "Дизельный 186",
         "14 скоростей",
-        "Топ комплектация"
+        "Топ комплектация",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ],
       "fr": [
         "Moteur diesel 186",
         "14 vitesses",
-        "Configuration haut de gamme"
+        "Configuration haut de gamme",
+        "Power: 3.5-5.5 kW",
+        "Working width adjustable",
+        "Working depth adjustable",
+        "Gearbox: ductile iron",
+        "Weight: 55-75 kg",
+        "Fuel tank: 3.0-4.0 L",
+        "Manual recoil start",
+        "1 year warranty"
       ]
     },
     "img": "tiller-011.jpg",
@@ -1506,27 +1906,62 @@ var PRODUCTS = [
       "en": [
         "170 gasoline",
         "23V shaft",
-        "Front rotary"
+        "Front rotary",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ],
       "zh": [
         "170汽油机",
         "23V轴",
-        "前旋款"
+        "前旋款",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ],
       "es": [
         "Motor gasolina 170",
         "Eje 23V",
-        "Giro frontal"
+        "Giro frontal",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ],
       "ru": [
         "Бензиновый 170",
         "Вал 23V",
-        "Переднее вращение"
+        "Переднее вращение",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ],
       "fr": [
         "Moteur essence 170",
         "Arbre 23V",
-        "Rotation avant"
+        "Rotation avant",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ]
     },
     "img": "ditch-001.jpg",
@@ -1632,27 +2067,62 @@ var PRODUCTS = [
       "en": [
         "173 diesel",
         "23V shaft",
-        "Front rotary"
+        "Front rotary",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ],
       "zh": [
         "173柴油机",
         "23V轴",
-        "前旋款"
+        "前旋款",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ],
       "es": [
         "Motor diésel 173",
         "Eje 23V",
-        "Giro frontal"
+        "Giro frontal",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ],
       "ru": [
         "Дизельный 173",
         "Вал 23V",
-        "Переднее вращение"
+        "Переднее вращение",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ],
       "fr": [
         "Moteur diesel 173",
         "Arbre 23V",
-        "Rotation avant"
+        "Rotation avant",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ]
     },
     "img": "ditch-002.jpg",
@@ -1758,27 +2228,62 @@ var PRODUCTS = [
       "en": [
         "178 diesel",
         "23V shaft",
-        "Rear rotary"
+        "Rear rotary",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ],
       "zh": [
         "178柴油机",
         "23V轴",
-        "后旋款"
+        "后旋款",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ],
       "es": [
         "Motor diésel 178",
         "Eje 23V",
-        "Giro trasero"
+        "Giro trasero",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ],
       "ru": [
         "Дизельный 178",
         "Вал 23V",
-        "Заднее вращение"
+        "Заднее вращение",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ],
       "fr": [
         "Moteur diesel 178",
         "Arbre 23V",
-        "Rotation arrière"
+        "Rotation arrière",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ]
     },
     "img": "ditch-003.jpg",
@@ -1884,27 +2389,62 @@ var PRODUCTS = [
       "en": [
         "186 diesel",
         "32 flat shaft",
-        "Rear rotary"
+        "Rear rotary",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ],
       "zh": [
         "186柴油机",
         "32平轴",
-        "后旋款"
+        "后旋款",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ],
       "es": [
         "Motor diésel 186",
         "Eje plano 32",
-        "Giro trasero"
+        "Giro trasero",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ],
       "ru": [
         "Дизельный 186",
         "Плоский вал 32",
-        "Заднее вращение"
+        "Заднее вращение",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ],
       "fr": [
         "Moteur diesel 186",
         "Arbre plat 32",
-        "Rotation arrière"
+        "Rotation arrière",
+        "Power: 3.5-6.0 kW",
+        "Shaft: 23V / 32V flat",
+        "Rotary direction selectable",
+        "Depth adjustable",
+        "Durable steel frame",
+        "Interchangeable blades",
+        "1 year warranty"
       ]
     },
     "img": "ditch-004.jpg",
@@ -2086,31 +2626,66 @@ var PRODUCTS = [
         "Head 200m",
         "Flow 3.6m³/h",
         "Inlet/Outlet 1.5\"",
-        "Direct drive"
+        "Direct drive",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "zh": [
         "扬程200m",
         "流量3.6m³/h",
         "进出口1.5寸",
-        "直连传动"
+        "直连传动",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "es": [
         "Altura 200m",
         "Caudal 3.6m³/h",
         "1.5\"",
-        "Transmisión directa"
+        "Transmisión directa",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "ru": [
         "Напор 200м",
         "Расход 3.6м³/ч",
         "1.5\"",
-        "Прямой привод"
+        "Прямой привод",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "fr": [
         "Hauteur 200m",
         "Débit 3.6m³/h",
         "1.5\"",
-        "Entraînement direct"
+        "Entraînement direct",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ]
     },
     "img": "pump-002.jpg",
@@ -2206,27 +2781,62 @@ var PRODUCTS = [
       "en": [
         "2-inch inlet/outlet",
         "Centrifugal type",
-        "High efficiency"
+        "High efficiency",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "zh": [
         "2寸进出口",
         "离心式",
-        "高效率"
+        "高效率",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "es": [
         "2\" entrada/salida",
         "Centrífuga",
-        "Alta eficiencia"
+        "Alta eficiencia",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "ru": [
         "2\" вход/выход",
         "Центробежный",
-        "Высокий КПД"
+        "Высокий КПД",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "fr": [
         "2\" entrée/sortie",
         "Centrifuge",
-        "Haute efficacité"
+        "Haute efficacité",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ]
     },
     "img": "pump-003.jpg",
@@ -2317,27 +2927,62 @@ var PRODUCTS = [
       "en": [
         "3-inch inlet/outlet",
         "Centrifugal type",
-        "Higher flow"
+        "Higher flow",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "zh": [
         "3寸进出口",
         "离心式",
-        "更大流量"
+        "更大流量",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "es": [
         "3\" entrada/salida",
         "Centrífuga",
-        "Mayor caudal"
+        "Mayor caudal",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "ru": [
         "3\" вход/выход",
         "Центробежный",
-        "Больший расход"
+        "Больший расход",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "fr": [
         "3\" entrée/sortie",
         "Centrifuge",
-        "Débit plus élevé"
+        "Débit plus élevé",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ]
     },
     "img": "pump-004.jpg",
@@ -2428,27 +3073,62 @@ var PRODUCTS = [
       "en": [
         "Self-priming",
         "2-3 inch",
-        "Easy start"
+        "Easy start",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "zh": [
         "自吸式",
         "2-3寸",
-        "易启动"
+        "易启动",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "es": [
         "Auto-aspirante",
         "2-3\"",
-        "Arranque fácil"
+        "Arranque fácil",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "ru": [
         "Самовсасывающий",
         "2-3\"",
-        "Лёгкий запуск"
+        "Лёгкий запуск",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "fr": [
         "Auto-amorçante",
         "2-3\"",
-        "Démarrage facile"
+        "Démarrage facile",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ]
     },
     "img": "pump-005.jpg",
@@ -2539,27 +3219,62 @@ var PRODUCTS = [
       "en": [
         "Fire-fighting",
         "2-inch",
-        "High pressure"
+        "High pressure",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "zh": [
         "消防用",
         "2寸",
-        "高压力"
+        "高压力",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "es": [
         "Contra incendios",
         "2\"",
-        "Alta presión"
+        "Alta presión",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "ru": [
         "Пожарный",
         "2\"",
-        "Высокое давление"
+        "Высокое давление",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "fr": [
         "Anti-incendie",
         "2\"",
-        "Haute pression"
+        "Haute pression",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ]
     },
     "img": "pump-006.jpg",
@@ -2651,31 +3366,66 @@ var PRODUCTS = [
         "195 diesel",
         "Electric start",
         "Head 100m",
-        "Flow 50m³/h"
+        "Flow 50m³/h",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "zh": [
         "195柴油机",
         "电启动",
         "扬程100m",
-        "流量50m³/h"
+        "流量50m³/h",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "es": [
         "Diésel 195",
         "Arranque eléctrico",
         "Altura 100m",
-        "Caudal 50m³/h"
+        "Caudal 50m³/h",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "ru": [
         "Дизель 195",
         "Электростартер",
         "Напор 100м",
-        "Расход 50м³/ч"
+        "Расход 50м³/ч",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "fr": [
         "Diesel 195",
         "Démarrage électrique",
         "Hauteur 100m",
-        "Débit 50m³/h"
+        "Débit 50m³/h",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ]
     },
     "img": "pump-007.jpg",
@@ -2771,27 +3521,62 @@ var PRODUCTS = [
       "en": [
         "Double impeller",
         "Deep well use",
-        "Heavy-duty"
+        "Heavy-duty",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "zh": [
         "双叶轮",
         "深井适用",
-        "重载设计"
+        "重载设计",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "es": [
         "Doble impulsor",
         "Pozo profundo",
-        "Trabajo pesado"
+        "Trabajo pesado",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "ru": [
         "Двойная крыльчатка",
         "Глубокая скважина",
-        "Тяжёлые условия"
+        "Тяжёлые условия",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ],
       "fr": [
         "Double roue",
         "Puits profond",
-        "Travail lourd"
+        "Travail lourd",
+        "Max head 100-200 m",
+        "Flow 3.6-50 m³/h",
+        "Inlet/outlet standard",
+        "Cast iron body",
+        "Mechanical seal",
+        "Suitable for clean water",
+        "1 year warranty"
       ]
     },
     "img": "pump-008.jpg",
@@ -2868,6 +3653,7 @@ var PRODUCTS = [
     }
   }
 ];
+
 
 ;
 
