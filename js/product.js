@@ -208,7 +208,7 @@
     if (!overlay) return;
     const name = pickI18n(product.name, lang);
     const WA_NUMBER = '8613877228460';
-    const MAIL_TO = 'haogengmachinery.tk@outlook.com';
+    const MAIL_TO = 'sales@haogeng.net';
 
     const subject = `Inquiry: ${name} (Model ${product.model || ''})`;
     const body = `Hello Haogeng,\n\nI am interested in the following product:\n\nProduct: ${name}\nModel: ${product.model || 'N/A'}\nCategory: ${product.cat || 'N/A'}\n\nPlease send me a quotation with:\n- FOB price\n- MOQ\n- Lead time\n- Payment terms\n\nThank you.`;

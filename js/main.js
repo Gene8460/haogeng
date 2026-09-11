@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const copyBtn = document.getElementById('inquiryCopy');
   const closeBtn = document.getElementById('inquiryClose');
   const WA_NUMBER = '8613877228460'; // +86 138 7722 8460 (无+号)
-  const MAIL_TO = 'haogengmachinery.tk@outlook.com';
+  const MAIL_TO = 'sales@haogeng.net';
 
   // ===== 事件追踪助手（GA4 only — FB Pixel 周末再加）=====
   function trackEvent(name, params) {

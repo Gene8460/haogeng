@@ -69,7 +69,7 @@ title: "Your New Title Here",
 
 ### 3. 换联系方式（邮箱/电话/地址）
 
-打开 `index.html`，搜索 `138 7722 8460` 和 `haogengmachinery.tk@outlook.com`，换成你的真实信息。
+打开 `index.html`，搜索 `138 7722 8460` 和 `sales@haogeng.net`，换成你的真实信息。
 **三处都要改**：
 1. 页面显示的 `contact-info` 区块
 2. `js/main.js` 里 `WA_NUMBER` 和 `MAIL_TO` 两个常量
@@ -86,7 +86,7 @@ title: "Your New Title Here",
 ## 当前联系方式
 
 - **WhatsApp / Phone**：+86 138 7722 8460
-- **Email**：haogengmachinery.tk@outlook.com
+- **Email**：sales@haogeng.net
 - **地址**：No. 86, Liugong Avenue, Liunan District, Liuzhou City, Guangxi, China
 
 ## SEO 必做项
@@ -115,7 +115,7 @@ title: "Your New Title Here",
 
 ## 需要改的重要事项（上线前必做）
 
-- [ ] 把邮箱 `haogengmachinery.tk@outlook.com` 换成企业邮箱（建议 `info@haogeng.net`）
+- [x] 把邮箱换成企业邮箱 `sales@haogeng.net`
 - [ ] 把电话 `+86 138 7722 8460` 确认无误
 - [ ] 上传所有产品真实图片到 `images/`（当前可能缺 `hero-tiller.jpg`、`tiller_acc_v10.jpg`、`tiller_acc_v11.jpg`）
 - [ ] 绑定自己的域名 `haogeng.net`（`CNAME` 文件已写好）
