@@ -34,8 +34,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const mailLink = document.getElementById('inquiryMail');
   const copyBtn = document.getElementById('inquiryCopy');
   const closeBtn = document.getElementById('inquiryClose');
+  const gmailLink = document.getElementById('inquiryGmail');
+  const outlookLink = document.getElementById('inquiryOutlook');
+  const webmailRow = document.getElementById('inquiryWebmail');
+  const autoCopyHint = document.getElementById('inquiryAutoCopy');
   const WA_NUMBER = '8613877228460'; // +86 138 7722 8460 (无+号)
   const MAIL_TO = 'sales@haogeng.net';
+
+  // 静默复制 + 显示提示（不阻塞，失败也不报错）
+  async function silentCopy(text, hintEl) {
+    try {
+      await navigator.clipboard.writeText(text || '');
+      if (hintEl) {
+        hintEl.style.display = 'block';
+        setTimeout(() => { hintEl.style.display = 'none'; }, 4000);
+      }
+    } catch (_) { /* 剪贴板权限被拒就静默 */ }
+  }
 
   // ===== 事件追踪助手（GA4 only — FB Pixel 周末再加）=====
   function trackEvent(name, params) {
@@ -74,8 +89,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (preview) preview.textContent = `Subject: ${subject}\n\n${body}`;
     // WhatsApp
     if (waLink) waLink.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
-    // Email
+    // Email (mailto)
     if (mailLink) mailLink.href = `mailto:${MAIL_TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    // Webmail 后备：邮件客户端没装时用
+    if (gmailLink) gmailLink.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(MAIL_TO)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    if (outlookLink) outlookLink.href = `https://outlook.live.com/mail/0/deeplink/compose?to=${encodeURIComponent(MAIL_TO)}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    // 始终显示 webmail 后备行 — 不知道用户机器装没装客户端
+    if (webmailRow) webmailRow.style.display = 'flex';
+    if (autoCopyHint) autoCopyHint.style.display = 'none';
     // Copy 按钮存当前内容
     if (copyBtn) copyBtn.dataset.text = text;
     overlay.classList.add('open');
@@ -114,12 +135,14 @@ document.addEventListener('DOMContentLoaded', () => {
       openInquiry(data);
     });
   }
-  // WhatsApp / Email 链接点击追踪
+  // WhatsApp / Email 链接点击追踪 + 静默复制（兜底：万一 WA/邮件客户端没响应，文本已在剪贴板）
   if (waLink) waLink.addEventListener('click', () => {
+    silentCopy(copyBtn && copyBtn.dataset.text, autoCopyHint);
     const fd = form ? new FormData(form) : null;
     trackContact('whatsapp', fd ? fd.get('country') : '');
   });
   if (mailLink) mailLink.addEventListener('click', () => {
+    silentCopy(copyBtn && copyBtn.dataset.text, autoCopyHint);
     const fd = form ? new FormData(form) : null;
     trackContact('email', fd ? fd.get('country') : '');
   });

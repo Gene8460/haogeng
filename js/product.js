@@ -218,11 +218,19 @@
     const waLink = document.getElementById('inquiryWA');
     const mailLink = document.getElementById('inquiryMail');
     const copyBtn = document.getElementById('inquiryCopy');
+    const gmailLink = document.getElementById('inquiryGmail');
+    const outlookLink = document.getElementById('inquiryOutlook');
+    const webmailRow = document.getElementById('inquiryWebmail');
+    const autoCopyHint = document.getElementById('inquiryAutoCopy');
 
     if (preview) preview.textContent = `Subject: ${subject}\n\n${body}`;
     if (waLink) waLink.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
     if (mailLink) mailLink.href = `mailto:${MAIL_TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    if (gmailLink) gmailLink.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(MAIL_TO)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    if (outlookLink) outlookLink.href = `https://outlook.live.com/mail/0/deeplink/compose?to=${encodeURIComponent(MAIL_TO)}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     if (copyBtn) copyBtn.dataset.text = text;
+    if (webmailRow) webmailRow.style.display = 'flex';
+    if (autoCopyHint) autoCopyHint.style.display = 'none';
 
     overlay.classList.add('open');
     overlay.setAttribute('aria-hidden', 'false');

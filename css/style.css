@@ -285,3 +285,48 @@ a:hover { color: var(--green-dark); }
 .inquiry-action.copy:hover {
   border-color: #666;
 }
+/* Webmail 后备行：邮件客户端没装时使用 */
+.inquiry-webmail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 4px 4px;
+  border-top: 1px dashed #e0e0e0;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+.inquiry-webmail-label {
+  font-size: 12px;
+  color: #888;
+  margin-right: 4px;
+}
+.inquiry-webmail-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 16px;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+  font-size: 13px;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+.inquiry-webmail-btn:hover {
+  border-color: #1a7a3a;
+  background: #f9fdf7;
+  color: #1a7a3a;
+}
+/* 静默复制提示 */
+.inquiry-auto-copy {
+  margin: 8px 0 0;
+  padding: 8px 12px;
+  background: #f0fff4;
+  border: 1px solid #b7e4c7;
+  border-radius: 8px;
+  color: #1a7a3a;
+  font-size: 13px;
+  text-align: center;
+}
