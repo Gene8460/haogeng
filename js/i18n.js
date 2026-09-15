@@ -434,6 +434,89 @@ var I18N = {
       }
     },
     footer: { rights: "Tous droits réservés." }
+  },
+
+  sw: {
+    brand: { name: "HAOGENG", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Mashine za Kilimo za Guigeng", lichuang: "Mashine za Lichuang Guangxi" },
+    topbar: { hint: "Moja kwa moja kutoka kiwanda · OEM/ODM yanakaribishwa" },
+    nav: { home: "Mwanzo", about: "Kuhusu sisi", products: "Bidhaa", why: "Kwa nini sisi", contact: "Wasiliana nasi", inquiry: "Omba bei", news: "Habari" },
+    hero: {
+      title: "Mashine za Kilimo Moja kwa Moja kutoka Kiwanda",
+      sub: "Matrekta · Vifaa vya mifuko · Pampu za maji. Zinazozalishwa na kiwanda chetu mwenyewe — bei nzuri, utoaji unaohakikishwa.",
+      cta1: "Tazama Bidhaa",
+      cta2: "Tuma Uchunguzi",
+      stat1: { num: "15+", label: "Miaka ya Uzoefu" },
+      stat2: { num: "30+", label: "Mifano ya Bidhaa" },
+      stat3: { num: "50+", label: "Nchi za Usafirishaji" }
+    },
+    about: {
+      title: "Kuhusu Sisi",
+      lead: "Liuzhou Haogeng International Trade Co., Ltd. (Haogeng) ndiye mkono wa nje wa mauzo wa Guigeng Agricultural Machinery. Kama kampuni ya mauzo ya kimataifa ya chapa hii, tunafanya kazi moja kwa moja na kiwanda chetu mwenyewe — tukitoa wateja wa nje bei ya kweli ya moja kwa moja kutoka kiwanda na ugavi unaotegemewa.",
+      c1: { title: "Kampuni Moja, Inayoungwa mkono na Kiwanda", text: "Mashine za Kilimo za Guigeng zinazalishwa na Guangxi Lichuang Machinery Manufacturing Co., Ltd. — kiwanda chetu mwenyewe. Haogeng inashughulikia biashara yote ya kimataifa: usafirishaji, nyaraka na huduma baada ya kuuza. Unaponunua kutoka Haogeng, unanunua moja kwa moja kutoka kiwanda cha Guigeng, bila mawakala wa kati." },
+      c2: { title: "Teknolojia Iliyopata Hataza", text: "Timu yetu ya R&D ina hataza za kitaifa za muundo wa vitendo na vyeti vya mashine za kilimo, kuhakikisha kila muundo unajaribiwa na kuthibitishwa shambani." },
+      c3: { title: "Vifaa vya Kisasa", text: "Kukata kwa laser ya CNC, kupinda kwa CNC, kukata kwa mabomba kwa laser na mistari ya kulehemu kwa laser vinahakikisha usahihi, uimara na kumaliza thabiti." }
+    },
+    products: {
+      title: "Bidhaa Zetu",
+      lead: "Mistari mitatu kuu ya bidhaa. OEM/ODM maalum inapatikana — tuambie soko lako na mahitaji.",
+      filter: { all: "Zote", tiller: "Matrekta", ditching: "Vifaa vya Mifuko", pump: "Pampu za Maji" },
+      inquire: "Tuma Uchunguzi",
+      detail: {
+        back: "← Rudi kwa Bidhaa",
+        description: "Muhtasari",
+        bestFor: "Inafaa Kwa",
+        features: "Sifa",
+        specs: "Vipimo",
+        getQuote: "Omba Bei Sasa",
+        copyInquiry: "Nakili Uchunguzi",
+        copy: "Nakili",
+        copied: "Imenakiliwa!",
+        whatsapp: "WhatsApp",
+        email: "Barua pepe",
+        contactSection: "Tuambie mahitaji yako na tutajibu ndani ya masaa 24.",
+        accessories: {
+          title: "Kile Kilichomo ndani ya Sanduku",
+          subtitle: "Vifaa vyote vilivyoonyeshwa hapa chini vinajumuishwa BURE unaponunua mashine hii — tayari kutumika moja kwa moja toka kwenye sanduku.",
+          item1: { name: "Seti ya Magurudumu ya Shamba la Mchele", qty: "Seti 1", desc: "Magurudumu mapana ya mapepe yaliyoundwa kwa mashamba laini, yaliyolowana ya mchele. Yanaingia moja kwa moja kwenye mhimili wa rotor mahali pa mato ya nchi kavu wakati wa kufanya kazi katika hali mvua." },
+          item2: { name: "Seti ya Mato yasiyozungushwa na Magugu", qty: "Seti 1", desc: "Mato yaliyopinda yaliyoundwa kupinga kuzungushwa kwa magugu na mimea ya kutambaa. Jiometri iliyochongoka inazuia nyasi za juu na mabaki ya mazao kuzunguka rotor wakati wa kulima nzito." },
+          item3: { name: "Seti ya Tairi za Mpira", qty: "Seti 1", desc: "Magurudumu ya usafirishaji ya mpira yenye mfumo wa kukanyaga, vichwa vya chuma na tundu la mhimili mraba. Yanaingizwa unapohitaji kuviringisha mashine kati ya mazao bila kuchubua ardhi." },
+          item4: { name: "Seti ya Mato ya Nchi Kavu", qty: "Seti 1", desc: "Mato ya rotary ya H yaliyokolezwa kwa kuvunja udongo mgumu, kavu. Yamekusanywa tayari kwenye fremu ya cage, tayari kufungwa kwenye mhimili wa rotor moja kwa moja toka kwenye sanduku." }
+        }
+      }
+    },
+    why: {
+      title: "Kwa Nini Utuchague",
+      w1: { title: "Bei ya Moja kwa Moja kutoka Kiwanda", text: "Hakuna mawakala wa kati — unanunua moja kwa moja kutoka kwa mtengenezaji." },
+      w2: { title: "OEM / ODM", text: "Chapa, rangi na vipimo vilivyobinafsishwa kwa soko lako." },
+      w3: { title: "Udhibiti wa Ubora", text: "Udhibiti mkali wa ubora kwa kila kitengo kabla ya kusafirishwa, kudumu shambani." },
+      w4: { title: "Utoaji Unaotegemewa", text: "Uwezo thabiti wa uzalishaji unahakikisha utoaji kwa wakati." },
+      w5: { title: "Uzoefu wa Usafirishaji", text: "Kusafirisha bidhaa kwa nchi 50+ kwa msaada kamili wa nyaraka." },
+      w6: { title: "Huduma Baada ya Kuuza", text: "Vipuri na msaada wa kiufundi unapatikana kwa mifano yote." }
+    },
+    contact: {
+      title: "Wasiliana Nasi",
+      lead: "Tuma uchunguzi wako — tunajibu ndani ya masaa 24.",
+      label: { phone: "Simu / WhatsApp", email: "Barua pepe", addr: "Anwani" },
+      addr: "No. 86, Liugong Avenue, Liunan District, Liuzhou City, Guangxi, China",
+      form: { name: "Jina lako", email: "Barua pepe yako", country: "Nchi yako", message: "Ujumbe (bidhaa, kiasi, bandari ya marudio...)", submit: "Tuma Uchunguzi", note: "Fomu hii inafungua mteja wako wa barua pepe. Kwa jibu la haraka zaidi, tutumie barua pepe moja kwa moja." }
+    },
+    inquiry: {
+      modal: { title: "Chagua jinsi ya kutuma uchunguzi wako", wa: "Haraka zaidi · Inapendekezwa", mail: "Barua pepe", mailSub: "Inafungua mteja wako wa barua pepe", copy: "Nakili Uchunguzi", copySub: "Bandika mahali popote" }
+    },
+    footer: { rights: "Haki zote zimehifadhiwa." },
+    news: {
+      title: "Katika Habari",
+      source: "Idara ya Kilimo na Mambo ya Vijijini Guangxi · Gazeti la Liuzhou · 2025-02-24",
+      headline: "\"Kuharakisha Uzalishaji Kusaidia Kulima Kwa Masika\"",
+      intro: "Baada ya kipindi cha jua la Rain Water, wakati mashamba yamejaa kazi ya kulima masika, uzalishaji wa mashine za kilimo pia uko katika kasi kamili. Tarehe 19 Februari, waandishi wa habari walitembelea mtengenezaji wa mashine za kilimo katika Liugong Avenue na kuona mistari ya uzalishaji ikifanya kazi kwa uwezo kamili kuharakisha matrekta madogo kwa kulima kwa masika.",
+      quote: "\"Meneja Mkuu Wu, ni lini mzigo wetu unaweza kutumwa?\" Asubuhi hiyo, Bw. Zeng, mfanyabiashara wa mashine za kilimo kutoka Hunan, alikuja Guangxi Lichuang Machinery Manufacturing Co., Ltd. kuchukua bidhaa. \"Kipindi cha kulima masika ni msimu wa kilele wa mauzo, kwa hivyo tulitimbuka kuja Liuzhou kuchukua bidhaa.\" Mkuu wa kampuni Wu Siyu alijibu: \"Tunaharakisha uzalishaji — chochote tulichokuwa tukiwa nacho, tutakitumia kwanza.\" Mara moja alipanga utoaji wa lori.",
+      factory: "Lichuang Machinery inajishughulisha kwa uzalishaji na maendeleo ya matrekta madogo mapya ya 4WD, mashine za usimamizi wa shamba, na vifaa vya mifuko. Wu Siyu alieleza kwamba trekta ndogo ya 4WD ya mbele ya rotary ya Guigeng imeundwa kwa maeneo ya vilima na milima yenye mazao madogo na tofauti kubwa za mwinuko. Ni nyepesi, ndogo, yenye nguvu, na rahisi kufanya kazi — bora kwa maeneo ya kusini na bidhaa inayouzwa zaidi ya mashine za kilimo wakati wa kipindi cha kulima masika. Mbali na kuhudumia soko la ndani, bidhaa pia zinauzwa kwa Hunan, Jiangxi, Hainan, na Hubei.",
+      capacity: "Katika karakana ya uzalishaji, wafanyakazi walikuwa busy wakikusanya vipuri kwenye mstari wa uzalishaji. Mashine iliposhuka kwenye mstari, ilipata ukaguzi wa ubora, kufungashwa, na kusubiri kusafirishwa. \"Tulianza kazi siku ya nne ya Mwaka Mpya wa Lunar. Sasa mistari miwili ya uzalishaji inafanya kazi kwa uwezo kamili, ikizalisha matrekta madogo takriban 130 kwa siku,\" Wu alisema. Hata hivyo, hii haiwezi bado kutimiza mahitaji ya sasa ya oda. Mwezi ujao, kampuni itafungua mstari mpya wa uzalishaji wa mashine kubwa za kilimo za magurudumu manne ili kuongeza uwezo.",
+      export: "Miaka ya hivi karibuni, Lichuang Machinery imeshika fursa kutoka kwa Mkakati wa Belt and Road, ikisafirisha bidhaa kwa masoko ya Asia ya Kusini-mashariki. Wu alisema matrekta madogo pia ni maarufu sana katika India, Vietnam, na masoko mengine. Mwaka jana, kampuni ilisafirisha matrekta madogo 300 hadi Sri Lanka. Mwaka huu wataangalia zaidi uwezekano wa soko la Asia ya Kusini-mashariki na kuendeleza mashine za kuvuna areca kulingana na mahitaji ya kilimo ya eneo hilo, kuboresha ushindani katika masoko ya Asia ya Kusini-mashariki.",
+      h1: { num: "300", label: "Vifaa vilivyotumwa Sri Lanka" },
+      h2: { num: "130", label: "Vifaa kwa Siku Uwezo" },
+      h3: { num: "2", label: "Mistari ya Uzalishaji kwa Uwezo Kamili" }
+    }
   }
 };
 

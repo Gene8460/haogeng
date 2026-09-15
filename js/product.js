@@ -34,9 +34,9 @@
     const specs = pickI18n(product.specs, lang);
     const cat = product.cat || '';
     const catLabelMap = {
-      tiller: { en: 'Micro Tiller', zh: '微耕机', es: 'Motocultor', ru: 'Мотокультиватор', fr: 'Motoculteur' },
-      ditching: { en: 'Ditching Machine', zh: '开沟培土机', es: 'Máquina Zanjas', ru: 'Машина для канав', fr: 'Machine à Fossés' },
-      pump: { en: 'Water Pump', zh: '抽水机', es: 'Bomba de Agua', ru: 'Водяной насос', fr: 'Pompe à Eau' }
+      tiller: { en: 'Micro Tiller', zh: '微耕机', es: 'Motocultor', ru: 'Мотокультиватор', fr: 'Motoculteur', sw: 'Matrekta' },
+      ditching: { en: 'Ditching Machine', zh: '开沟培土机', es: 'Máquina Zanjas', ru: 'Машина для канав', fr: 'Machine à Fossés', sw: 'Mashine ya Makorongo' },
+      pump: { en: 'Water Pump', zh: '抽水机', es: 'Bomba de Agua', ru: 'Водяной насос', fr: 'Pompe à Eau', sw: 'Pampu ya Maji' }
     };
     const catLabel = (catLabelMap[cat] && catLabelMap[cat][lang]) || (catLabelMap[cat] && catLabelMap[cat].en) || cat;
 

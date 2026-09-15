@@ -7,7 +7,8 @@ var PRODUCTS =
       "zh": "170汽油微耕机",
       "es": "Motocultor 170 Gasolina",
       "ru": "Мотокультиватор 170 бензин",
-      "fr": "Motoculteur 170 Essence"
+      "fr": "Motoculteur 170 Essence",
+      "sw": "Trekta Ndogo ya Mafuta ya petroli 170"
     },
     "model": "1WG-4.0AQ",
     "cat": "tiller",
@@ -91,6 +92,22 @@ var PRODUCTS =
         "Démarrage: lanceur manuel",
         "Dimensions: 1380 x 650 x 900 mm",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 170cc 4-stroke au 2-stroke injini ya mafuta ya petroli, silinda moja inayochuja hewa, 5-15 HP zinapatikana katika safu kamili ya mifano",
+        "Uhamishaji: Gia ya moja kwa moja, inaokoa mafuta na kiuchumi",
+        "Ujazo: 170 cc",
+        "Nguvu iliyokadiriwa: 4 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 600-900 mm (inaweza kurekebishwa)",
+        "Kina cha kazi: 100-250 mm",
+        "Sanduku la gia: chuma ductile, 2 mbele + 1 nyuma",
+        "Kibandiko: aina ya sahani ya msuguano, kawaida wazi",
+        "Mato: 24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Uzito wa wavu: 68 kg",
+        "Tanki la mafuta: 3.6 L",
+        "Kuanzisha: Kuvuta mkono",
+        "Vipimo: 1380 x 650 x 900 mm",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "tiller-001.jpg",
@@ -100,7 +117,8 @@ var PRODUCTS =
       "zh": "入门级 170cc 汽油微耕机，适合首次购买的小农户和家庭用户。整机仅 68 kg，机身紧凑（1380×650×900 mm），皮卡装卸方便，小菜园穿梭灵活。4.0 kW 反启动汽油机，耕幅 600-900 mm，耕深 100-250 mm，做苗床整地、果园行间耕作、菜园翻土都顺手。2F+1R 球墨铸铁变速箱，3.6 L 油箱加满可连续作业约 2.4 小时。",
       "es": "Motocultor nivel inicial 170cc gasolina para compradores primerizos y pequeños agricultores. Solo 68 kg con bastidor compacto 1380×650×900 mm — fácil de cargar en pickup y maniobrar en huertos. Motor 4.0 kW arranque por cuerda, ancho de labor 600-900 mm y profundidad 100-250 mm. Caja 2A+1R hierro dúctil, tanque 3.6 L para ~2.4 h de trabajo continuo.",
       "ru": "Стартовый 170cc бензиновый мотокультиватор для новичков и мелких фермеров. Вес всего 68 кг, компактная рама 1380×650×900 мм — легко грузить в пикап и работать в тесных грядках. Двигатель 4.0 кВт с ручным стартером, ширина 600-900 мм, глубина 100-250 мм. Коробка 2В+1Н из ковкого чугуна, бак 3.6 л — около 2.4 ч непрерывной работы.",
-      "fr": "Motoculteur 170cc essence d'entrée de gamme pour primo-accédants et petits exploitants. 68 kg seulement avec châssis compact 1380×650×900 mm — facile à charger sur pick-up et manœuvrer en jardin. Moteur 4.0 kW lanceur, largeur 600-900 mm, profondeur 100-250 mm. Boîte 2A+1R fonte ductile, réservoir 3.6 L — environ 2.4 h de travail continu."
+      "fr": "Motoculteur 170cc essence d'entrée de gamme pour primo-accédants et petits exploitants. 68 kg seulement avec châssis compact 1380×650×900 mm — facile à charger sur pick-up et manœuvrer en jardin. Moteur 4.0 kW lanceur, largeur 600-900 mm, profondeur 100-250 mm. Boîte 2A+1R fonte ductile, réservoir 3.6 L — environ 2.4 h de travail continu.",
+      "sw": "Trekta ndogo ya kuanzia ya mafuta ya petroli 170cc kwa wanunuzi wa kwanza na wakulima wadogo. Ina uzito wa kilo 68 tu na fremu ndogo ya 1380×650×900 mm — rahisi kupakia kwenye lori ndogo na kuzunguka katika ploti za bustani ndogo. Injini ya kuanzisha kwa kuvuta mkono ya 4.0 kW inatoa upana wa kazi wa 600-900 mm kwa kina cha 100-250 mm, bora kwa maandalizi ya mbegu za mbegu, kilimo cha safu kati na bustani za mboga za nyumbani. Sanduku la gia la chuma ductile la 2 mbele + 1 nyuma na tanki la mafuta la 3.6 L linatoa takriban masaa 2.4 ya muda wa kufanya kazi kwa kujaza."
     },
     "bestFor": {
       "en": [
@@ -137,6 +155,13 @@ var PRODUCTS =
         "Cultures intercalaires en vergers et vignobles",
         "Préparation des semis pour repiquage",
         "Sols limoneux et sableux meubles"
+      ],
+      "sw": [
+        "Bustani za mboga za familia chini ya hekta 0.5",
+        "Wanunuzi wa trekta wa kwanza wenye bajeti ndogo",
+        "Kilimo cha safu kati katika mizabibu na mashamba ya matunda",
+        "Maandalizi ya mbegu za mbegu kwa upandaji",
+        "Udongo tifu na ploti za mchanga"
       ]
     },
     "features": {
@@ -199,6 +224,18 @@ var PRODUCTS =
         "24 lames rotatives terre sèche (3 jeux × 4 + disques latéraux)",
         "Guidon réglable: horizontal 360°, vertical 100°",
         "Compatible avec buttoir, trancheuse, arracheuse de pommes de terre"
+      ],
+      "sw": [
+        "Injini ya mafuta ya petroli ya 170F yenye kuchuja hewa 4-stroke — 4.0 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi 600-900 mm, kina cha kazi 100-250 mm",
+        "Gia ya moja kwa moja yenye kasi 2 mbele + 1 nyuma",
+        "Sanduku la gia la chuma ductile — maisha marefu chini ya mzigo mzito",
+        "Kuanzisha kwa kuvuta mkono — betri haihitajiki",
+        "Tanki la mafuta la 3.6 L, takriban masaa 2.4 ya muda wa kufanya kazi kwa kujaza",
+        "Uzito wa wavu wa kilo 68 — mtu mmoja anaweza kupakia",
+        "Mato 24 ya rotary ya nchi kavu (seti 3 × 4 + sahani za pembeni)",
+        "Mpini unaoweza kurekebishwa: mlalo 360°, wima 100°",
+        "Inaoana na vifaa vya ridger, ditcher, kuchimba viazi"
       ]
     },
     "gallery": [
@@ -213,7 +250,8 @@ var PRODUCTS =
       "zh": "170柴油微耕机",
       "es": "Motocultor 170 Diésel",
       "ru": "Мотокультиватор 170 дизель",
-      "fr": "Motoculteur 170 Diesel"
+      "fr": "Motoculteur 170 Diesel",
+      "sw": "Trekta Ndogo ya Dizeli 170"
     },
     "model": "1WG-4.0A",
     "cat": "tiller",
@@ -297,6 +335,22 @@ var PRODUCTS =
         "Démarrage: lanceur manuel",
         "Dimensions: 1480 x 700 x 950 mm",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 170cc 4-stroke au 2-stroke injini ya dizeli, silinda moja inayochuja hewa, 5-15 HP zinapatikana katika safu kamili ya mifano",
+        "Uhamishaji: Gia ya moja kwa moja, inaokoa mafuta na kiuchumi",
+        "Ujazo: 170 cc",
+        "Nguvu iliyokadiriwa: 2.9 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 600-1000 mm (inaweza kurekebishwa)",
+        "Kina cha kazi: 100-250 mm",
+        "Sanduku la gia: chuma ductile, 2 mbele + 1 nyuma",
+        "Kibandiko: aina ya sahani ya msuguano, kawaida wazi",
+        "Mato: 24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Uzito wa wavu: 95 kg",
+        "Tanki la mafuta: 3.5 L",
+        "Kuanzisha: Kuvuta mkono",
+        "Vipimo: 1480 x 700 x 950 mm",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "tiller-002.jpg",
@@ -306,7 +360,8 @@ var PRODUCTS =
       "zh": "适合偏远无汽油供应地区的 170cc 柴油微耕机。压燃式发动机比同级别汽油机省油约 30%，加 0 号柴油即可使用。2.9 kW @ 3600 rpm 动力，耕幅 600-1000 mm，特别适合中小型农场、旱地、果园行间作业。加强型球墨铸铁变速箱可承受每天 8 小时以上的重负荷作业。",
       "es": "Motocultor diésel 170cc para granjas sin suministro de gasolina cercano. El motor de compresión ahorra hasta 30% combustible vs equivalente gasolina y funciona con diésel #0 estándar. 2.9 kW @ 3600 rpm con ancho 600-1000 mm — ideal para pequeñas y medianas granjas, parcelas de secano y entre hileras. Caja de hierro dúctil reforzada para 8+ horas diarias de trabajo pesado.",
       "ru": "Рабочая лошадка — 170cc дизельный мотокультиватор для хозяйств без бензина. Двигатель с воспламенением от сжатия экономит до 30% топлива по сравнению с бензиновым, работает на стандартной солярке. 2.9 кВт @ 3600 об/мин, ширина 600-1000 мм — идеален для средних ферм, сухих полей, междурядий. Усиленная коробка из ковкого чугуна выдерживает 8+ часов тяжёлой работы в день.",
-      "fr": "Motoculteur diésel 170cc pour exploitations sans essence à proximité. Le moteur à compression économise jusqu'à 30% de carburant vs essence et roule au gazole #0 standard. 2.9 kW @ 3600 rpm, largeur 600-1000 mm — parfait pour petites et moyennes fermes, terres sèches et entre-rangs. Boîte fonte ductile renforcée pour 8+ heures de travail intensif par jour."
+      "fr": "Motoculteur diésel 170cc pour exploitations sans essence à proximité. Le moteur à compression économise jusqu'à 30% de carburant vs essence et roule au gazole #0 standard. 2.9 kW @ 3600 rpm, largeur 600-1000 mm — parfait pour petites et moyennes fermes, terres sèches et entre-rangs. Boîte fonte ductile renforcée pour 8+ heures de travail intensif par jour.",
+      "sw": "Trekta ndogo ya dizeli 170cc ya kufanya kazi kwa kasi kwa mashamba yasiyo na ugavi wa mafuta ya petroli karibu. Injini inayowaka kwa shinikizo inaokoa hadi 30% ya mafuta ikilinganishwa na ile ya petroli na inaendesha kwa dizeli ya kawaida #0. 2.9 kW kwa 3600 rpm imeochana na upana wa kazi wa 600-1000 mm — kamili kwa mashamba madogo hadi ya kati, ploti za nchi kavu na safu kati za mashamba ya matunda. Sanduku la gia la chuma ductile lililimishwa linaweza kushughulikia mzigo mzito unaoendelea kwa masaa 8+ kwa siku."
     },
     "bestFor": {
       "en": [
@@ -343,6 +398,13 @@ var PRODUCTS =
         "Entre-rangs vergers et vignobles",
         "Travail quotidien long 6-10 heures",
         "Acheteurs cherchant un coût carburant réduit"
+      ],
+      "sw": [
+        "Mashamba yasiyo na ugavi wa mafuta ya petroli (maeneo ya mbali)",
+        "Kilimo cha mazao ya nchi kavu, ploti za mahindi/ngano",
+        "Kazi ya safu kati katika mashamba ya matunda na mizabibu",
+        "Uendeshaji wa kila siku kwa muda mrefu wa masaa 6-10",
+        "Wanunuzi wanaotaka gharama ya chini ya mafuta kuliko ya petroli"
       ]
     },
     "features": {
@@ -405,6 +467,18 @@ var PRODUCTS =
         "Leviers d'embrayage latéraux pour virages faciles",
         "Guidon réglable (hauteur + horizontal)",
         "Compatible avec trancheuse, buttoir, pompe, remorque"
+      ],
+      "sw": [
+        "Dizeli 170F 4-stroke, silinda moja, inayochuja hewa",
+        "2.9 kW / 5-15 HP @ 3600 rpm — matumizi madogo ya mafuta",
+        "Upana wa kazi 600-1000 mm, kina 100-250 mm",
+        "Gia ya moja kwa moja, 2 mbele + 1 nyuma",
+        "Sanduku la gia la chuma ductile lililimishwa kwa kazi ya kila siku ya masaa 8+",
+        "Kuanzisha kwa kuvuta mkono — rahisi na kutegemewa",
+        "Fremu nzito ya kilo 95 kwa kilimo cha kina thabiti",
+        "Mareko ya kibandiko ya pembeni kwa kugeuza kwa urahisi",
+        "Mpini unaoweza kurekebishwa (urefu + mlalo)",
+        "Inaoana na ditcher, ridger, pampu ya maji, trela"
       ]
     },
     "gallery": [
@@ -419,7 +493,8 @@ var PRODUCTS =
       "zh": "173柴油微耕机",
       "es": "Motocultor 173 Diésel",
       "ru": "Мотокультиватор 173 дизель",
-      "fr": "Motoculteur 173 Diesel"
+      "fr": "Motoculteur 173 Diesel",
+      "sw": "Trekta Ndogo ya Dizeli 173"
     },
     "model": "1WG-4.05A",
     "cat": "tiller",
@@ -503,6 +578,22 @@ var PRODUCTS =
         "Démarrage: lanceur manuel",
         "Dimensions: 1550 x 750 x 980 mm",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 173cc 4-stroke au 2-stroke injini ya dizeli, silinda moja inayochuja hewa, 5-15 HP zinapatikana katika safu kamili ya mifano",
+        "Uhamishaji: Gia ya moja kwa moja, inaokoa mafuta na kiuchumi",
+        "Ujazo: 173 cc",
+        "Nguvu iliyokadiriwa: 3.5 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 800-1050 mm (inaweza kurekebishwa)",
+        "Kina cha kazi: 150-300 mm",
+        "Sanduku la gia: chuma ductile, 2 mbele + 1 nyuma",
+        "Kibandiko: aina ya sahani ya msuguano, kawaida wazi",
+        "Mato: 24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Uzito wa wavu: 105 kg",
+        "Tanki la mafuta: 4.5 L",
+        "Kuanzisha: Kuvuta mkono",
+        "Vipimo: 1550 x 750 x 980 mm",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "tiller-003.jpg",
@@ -512,7 +603,8 @@ var PRODUCTS =
       "zh": "Small Angel Pro 173cc diesel 微耕机（1WG-4-05A）额定功率 3.5 kW / 4.7 马力，耕幅 800-1050 mm 可调，耕深 150-300 mm。加强型球墨铸铁变速箱，耐用可靠，适合日常农场作业。手拉反启动，把手可调，全系配件兼容。",
       "es": "Motocultor Small Angel Pro 173cc diesel (1WG-4-05A) entrega 3.5 kW / 5-15 HP @ 3600 rpm con ancho 800-1050 mm ajustable y profundidad 150-300 mm. Caja hierro dúctil reforzada, motor uso agrícola diario. Arranque por cuerda, manillar ajustable, accesorios compatibles.",
       "ru": "Мотокультиватор Small Angel Pro 173cc diesel (1WG-4-05A): 3.5 кВт / 4.7 л.с., ширина 800-1050 мм регулируемая, глубина 150-300 мм. Усиленная коробка из ковкого чугуна, двигатель для ежедневной фермерской работы. Ручной стартер, регулируемая рукоятка, совместимые аксессуары.",
-      "fr": "Motoculteur Small Angel Pro 173cc diesel (1WG-4-05A) : 3.5 kW / 5-15 HP @ 3600 rpm, largeur 800-1050 mm réglable, profondeur 150-300 mm. Boîte fonte ductile renforcée, moteur travail agricole quotidien. Lanceur, guidon réglable, accessoires compatibles."
+      "fr": "Motoculteur Small Angel Pro 173cc diesel (1WG-4-05A) : 3.5 kW / 5-15 HP @ 3600 rpm, largeur 800-1050 mm réglable, profondeur 150-300 mm. Boîte fonte ductile renforcée, moteur travail agricole quotidien. Lanceur, guidon réglable, accessoires compatibles.",
+      "sw": "Trekta ndogo ya dizeli Small Angel Pro 173cc (1WG-4-05A) inatoa 3.5 kW / 5-15 HP @ 3600 rpm yenye upana wa kazi unaoweza kurekebishwa wa 800-1050 mm kwa kina cha 150-300 mm. Sanduku la gia la chuma ductile lililimishwa na injini ya dizeli yaliyoboreshwa kwa kazi ya kila siku ya shamba. Kuanzisha kwa kuvuta mkono, mpini unaoweza kurekebishwa, uoanifu kamili wa vifaa."
     },
     "bestFor": {
       "en": [
@@ -549,6 +641,13 @@ var PRODUCTS =
         "Sol limoneux, sableux ou mixte",
         "Entre-rangs vergers, vignobles, potagers",
         "Diésel pour économie carburant"
+      ],
+      "sw": [
+        "Mashamba ya familia madogo hadi ya kati ya hekta 0.5-2",
+        "Kazi ya kila siku ya shamba ya masaa 4-6",
+        "Udongo tifu, mchanga au mseto wa ardhi ya shamba",
+        "Kazi ya safu kati ya bustani, mizabibu, mboga",
+        "Kupendelea dizeli kwa gharama ya chini ya mafuta"
       ]
     },
     "features": {
@@ -616,6 +715,19 @@ var PRODUCTS =
         "24 lames rotatives terre sèche (3+1 jeux)",
         "Guidon réglable — hauteur + horizontal",
         "Compatible avec trancheuse, buttoir, pompe, remorque"
+      ],
+      "sw": [
+        "Injini ya dizeli 173cc 4-stroke silinda moja inayochuja hewa",
+        "Nguvu: 3.5 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 800-1050 mm, kina: 150-300 mm",
+        "Gia ya moja kwa moja, kasi 2 mbele + 1 nyuma",
+        "Sanduku la gia la chuma ductile lililimishwa",
+        "Kuanzisha: Kuvuta mkono",
+        "Uzito wa wavu: 105 kg",
+        "Tanki la mafuta: 3.5 L",
+        "24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Mpini unaoweza kurekebishwa — urefu + mlalo",
+        "Inaoana na ditcher, ridger, pampu ya maji, trela"
       ]
     },
     "gallery": [
@@ -631,7 +743,8 @@ var PRODUCTS =
       "zh": "173柴油微耕机(升级款)",
       "es": "Motocultor 173 Pro Diésel",
       "ru": "Мотокультиватор 173 Pro дизель",
-      "fr": "Motoculteur 173 Pro Diesel"
+      "fr": "Motoculteur 173 Pro Diesel",
+      "sw": "Trekta ya Dizeli 173 (Pro)"
     },
     "model": "1WG-4.05A Pro",
     "cat": "tiller",
@@ -715,6 +828,22 @@ var PRODUCTS =
         "Démarrage: lanceur manuel",
         "Dimensions: 1550 x 750 x 980 mm",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 173cc 4-stroke au 2-stroke injini ya dizeli, silinda moja inayochuja hewa, 5-15 HP zinapatikana katika safu kamili ya mifano",
+        "Uhamishaji: Gia ya moja kwa moja, inaokoa mafuta na kiuchumi",
+        "Ujazo: 173 cc",
+        "Nguvu iliyokadiriwa: 3.8 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 800-1050 mm (inaweza kurekebishwa)",
+        "Kina cha kazi: 150-300 mm",
+        "Sanduku la gia: chuma ductile, 2 mbele + 1 nyuma",
+        "Kibandiko: aina ya sahani ya msuguano, kawaida wazi",
+        "Mato: 24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Uzito wa wavu: 110 kg",
+        "Tanki la mafuta: 4.5 L",
+        "Kuanzisha: Kuvuta mkono",
+        "Vipimo: 1550 x 750 x 980 mm",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "tiller-004.jpg",
@@ -724,7 +853,8 @@ var PRODUCTS =
       "zh": "Small Angel Pro+ 173cc diesel 微耕机（1WG-4-05A-Pro）额定功率 3.8 kW / 5.1 马力，耕幅 800-1050 mm 可调，耕深 150-300 mm。加强型球墨铸铁变速箱，耐用可靠，适合日常农场作业。手拉反启动，把手可调，全系配件兼容。",
       "es": "Motocultor Small Angel Pro+ 173cc diesel (1WG-4-05A-Pro) entrega 3.8 kW / 5-15 HP @ 3600 rpm con ancho 800-1050 mm ajustable y profundidad 150-300 mm. Caja hierro dúctil reforzada, motor uso agrícola diario. Arranque por cuerda, manillar ajustable, accesorios compatibles.",
       "ru": "Мотокультиватор Small Angel Pro+ 173cc diesel (1WG-4-05A-Pro): 3.8 кВт / 5.1 л.с., ширина 800-1050 мм регулируемая, глубина 150-300 мм. Усиленная коробка из ковкого чугуна, двигатель для ежедневной фермерской работы. Ручной стартер, регулируемая рукоятка, совместимые аксессуары.",
-      "fr": "Motoculteur Small Angel Pro+ 173cc diesel (1WG-4-05A-Pro) : 3.8 kW / 5-15 HP @ 3600 rpm, largeur 800-1050 mm réglable, profondeur 150-300 mm. Boîte fonte ductile renforcée, moteur travail agricole quotidien. Lanceur, guidon réglable, accessoires compatibles."
+      "fr": "Motoculteur Small Angel Pro+ 173cc diesel (1WG-4-05A-Pro) : 3.8 kW / 5-15 HP @ 3600 rpm, largeur 800-1050 mm réglable, profondeur 150-300 mm. Boîte fonte ductile renforcée, moteur travail agricole quotidien. Lanceur, guidon réglable, accessoires compatibles.",
+      "sw": "Trekta ndogo ya dizeli Small Angel Pro+ 173cc (1WG-4-05A-Pro) inatoa 3.8 kW / 5-15 HP @ 3600 rpm yenye upana wa kazi unaoweza kurekebishwa wa 800-1050 mm kwa kina cha 150-300 mm. Sanduku la gia la chuma ductile lililimishwa na injini ya dizeli yaliyoboreshwa kwa kazi ya kila siku ya shamba. Kuanzisha kwa kuvuta mkono, mpini unaoweza kurekebishwa, uoanifu kamili wa vifaa."
     },
     "bestFor": {
       "en": [
@@ -761,6 +891,13 @@ var PRODUCTS =
         "Sol limoneux, sableux ou mixte",
         "Entre-rangs vergers, vignobles, potagers",
         "Diésel pour économie carburant"
+      ],
+      "sw": [
+        "Mashamba ya familia madogo hadi ya kati ya hekta 0.5-2",
+        "Kazi ya kila siku ya shamba ya masaa 4-6",
+        "Udongo tifu, mchanga au mseto wa ardhi ya shamba",
+        "Kazi ya safu kati ya bustani, mizabibu, mboga",
+        "Kupendelea dizeli kwa gharama ya chini ya mafuta"
       ]
     },
     "features": {
@@ -828,6 +965,19 @@ var PRODUCTS =
         "24 lames rotatives terre sèche (3+1 jeux)",
         "Guidon réglable — hauteur + horizontal",
         "Compatible avec trancheuse, buttoir, pompe, remorque"
+      ],
+      "sw": [
+        "Injini ya dizeli 173cc 4-stroke silinda moja inayochuja hewa",
+        "Nguvu: 3.8 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 800-1050 mm, kina: 150-300 mm",
+        "Gia ya moja kwa moja, kasi 2 mbele + 1 nyuma",
+        "Sanduku la gia la chuma ductile lililimishwa",
+        "Kuanzisha: Kuvuta mkono",
+        "Uzito wa wavu: 110 kg",
+        "Tanki la mafuta: 4.5 L",
+        "24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Mpini unaoweza kurekebishwa — urefu + mlalo",
+        "Inaoana na ditcher, ridger, pampu ya maji, trela"
       ]
     },
     "gallery": [
@@ -842,7 +992,8 @@ var PRODUCTS =
       "zh": "178柴油微耕机",
       "es": "Motocultor 178 Diésel",
       "ru": "Мотокультиватор 178 дизель",
-      "fr": "Motoculteur 178 Diesel"
+      "fr": "Motoculteur 178 Diesel",
+      "sw": "Trekta ya Dizeli 178"
     },
     "model": "1WG-4.1A",
     "cat": "tiller",
@@ -926,6 +1077,22 @@ var PRODUCTS =
         "Démarrage: lanceur manuel",
         "Dimensions: 1580 x 760 x 990 mm",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 178cc 4-stroke au 2-stroke injini ya dizeli, silinda moja inayochuja hewa, 5-15 HP zinapatikana katika safu kamili ya mifano",
+        "Uhamishaji: Gia ya moja kwa moja, inaokoa mafuta na kiuchumi",
+        "Ujazo: 178 cc",
+        "Nguvu iliyokadiriwa: 4 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 800-1050 mm (inaweza kurekebishwa)",
+        "Kina cha kazi: 150-300 mm",
+        "Sanduku la gia: chuma ductile, 2 mbele + 1 nyuma",
+        "Kibandiko: aina ya sahani ya msuguano, kawaida wazi",
+        "Mato: 24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Uzito wa wavu: 115 kg",
+        "Tanki la mafuta: 4.5 L",
+        "Kuanzisha: Kuvuta mkono",
+        "Vipimo: 1580 x 760 x 990 mm",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "tiller-005.jpg",
@@ -935,7 +1102,8 @@ var PRODUCTS =
       "zh": "War General 178cc diesel 微耕机（1WG-4-1A）额定功率 4.0 kW / 5.4 马力，耕幅 800-1050 mm 可调，耕深 150-300 mm。加强型球墨铸铁变速箱，耐用可靠，适合日常农场作业。手拉反启动，把手可调，全系配件兼容。",
       "es": "Motocultor War General 178cc diesel (1WG-4-1A) entrega 4.0 kW / 5-15 HP @ 3600 rpm con ancho 800-1050 mm ajustable y profundidad 150-300 mm. Caja hierro dúctil reforzada, motor uso agrícola diario. Arranque por cuerda, manillar ajustable, accesorios compatibles.",
       "ru": "Мотокультиватор War General 178cc diesel (1WG-4-1A): 4.0 кВт / 5.4 л.с., ширина 800-1050 мм регулируемая, глубина 150-300 мм. Усиленная коробка из ковкого чугуна, двигатель для ежедневной фермерской работы. Ручной стартер, регулируемая рукоятка, совместимые аксессуары.",
-      "fr": "Motoculteur War General 178cc diesel (1WG-4-1A) : 4.0 kW / 5-15 HP @ 3600 rpm, largeur 800-1050 mm réglable, profondeur 150-300 mm. Boîte fonte ductile renforcée, moteur travail agricole quotidien. Lanceur, guidon réglable, accessoires compatibles."
+      "fr": "Motoculteur War General 178cc diesel (1WG-4-1A) : 4.0 kW / 5-15 HP @ 3600 rpm, largeur 800-1050 mm réglable, profondeur 150-300 mm. Boîte fonte ductile renforcée, moteur travail agricole quotidien. Lanceur, guidon réglable, accessoires compatibles.",
+      "sw": "Trekta ndogo ya dizeli War General 178cc (1WG-4-1A) inatoa 4.0 kW / 5-15 HP @ 3600 rpm yenye upana wa kazi unaoweza kurekebishwa wa 800-1050 mm kwa kina cha 150-300 mm. Sanduku la gia la chuma ductile lililimishwa na injini ya dizeli yaliyoboreshwa kwa kazi ya kila siku ya shamba. Kuanzisha kwa kuvuta mkono, mpini unaoweza kurekebishwa, uoanifu kamili wa vifaa."
     },
     "bestFor": {
       "en": [
@@ -972,6 +1140,13 @@ var PRODUCTS =
         "Sol limoneux, sableux ou mixte",
         "Entre-rangs vergers, vignobles, potagers",
         "Diésel pour économie carburant"
+      ],
+      "sw": [
+        "Mashamba ya familia madogo hadi ya kati ya hekta 0.5-2",
+        "Kazi ya kila siku ya shamba ya masaa 4-6",
+        "Udongo tifu, mchanga au mseto wa ardhi ya shamba",
+        "Kazi ya safu kati ya bustani, mizabibu, mboga",
+        "Kupendelea dizeli kwa gharama ya chini ya mafuta"
       ]
     },
     "features": {
@@ -1039,6 +1214,19 @@ var PRODUCTS =
         "24 lames rotatives terre sèche (3+1 jeux)",
         "Guidon réglable — hauteur + horizontal",
         "Compatible avec trancheuse, buttoir, pompe, remorque"
+      ],
+      "sw": [
+        "Injini ya dizeli 178cc 4-stroke silinda moja inayochuja hewa",
+        "Nguvu: 4.0 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 800-1050 mm, kina: 150-300 mm",
+        "Gia ya moja kwa moja, kasi 2 mbele + 1 nyuma",
+        "Sanduku la gia la chuma ductile lililimishwa",
+        "Kuanzisha: Kuvuta mkono",
+        "Uzito wa wavu: 115 kg",
+        "Tanki la mafuta: 4.5 L",
+        "24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Mpini unaoweza kurekebishwa — urefu + mlalo",
+        "Inaoana na ditcher, ridger, pampu ya maji, trela"
       ]
     },
     "gallery": [
@@ -1053,7 +1241,8 @@ var PRODUCTS =
       "zh": "186柴油微耕机(战将)",
       "es": "Motocultor 186 Diésel",
       "ru": "Мотокультиватор 186 дизель",
-      "fr": "Motoculteur 186 Diesel"
+      "fr": "Motoculteur 186 Diesel",
+      "sw": "Trekta ya Dizeli 186 (Jenerali)"
     },
     "model": "1WG-6.3A",
     "cat": "tiller",
@@ -1137,6 +1326,22 @@ var PRODUCTS =
         "Démarrage: lanceur manuel",
         "Dimensions: 1690 x 1000 x 1010 mm",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 186cc 4-stroke au 2-stroke injini ya dizeli, silinda moja inayochuja hewa, 5-15 HP zinapatikana katika safu kamili ya mifano",
+        "Uhamishaji: Gia ya moja kwa moja, inaokoa mafuta na kiuchumi",
+        "Ujazo: 186 cc",
+        "Nguvu iliyokadiriwa: 6.3 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 900-1200 mm (inaweza kurekebishwa)",
+        "Kina cha kazi: 180-350 mm",
+        "Sanduku la gia: chuma ductile, 2 mbele + 1 nyuma",
+        "Kibandiko: aina ya sahani ya msuguano, kawaida wazi",
+        "Mato: 24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Uzito wa wavu: 135 kg",
+        "Tanki la mafuta: 5.5 L",
+        "Kuanzisha: Kuvuta mkono",
+        "Vipimo: 1690 x 1000 x 1010 mm",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "tiller-006.jpg",
@@ -1146,7 +1351,8 @@ var PRODUCTS =
       "zh": "War General Pro 186cc diesel 微耕机（1WG-6-3A）额定功率 6.3 kW / 8.4 马力，耕幅 900-1200 mm 可调，耕深 180-350 mm。加强型球墨铸铁变速箱，动力强劲，适合重负荷商业农场。手拉反启动，把手可调，全系配件兼容。",
       "es": "Motocultor War General Pro 186cc diesel (1WG-6-3A) entrega 6.3 kW / 5-15 HP @ 3600 rpm con ancho 900-1200 mm ajustable y profundidad 180-350 mm. Caja hierro dúctil reforzada, motor comercial pesado. Arranque por cuerda, manillar ajustable, accesorios compatibles.",
       "ru": "Мотокультиватор War General Pro 186cc diesel (1WG-6-3A): 6.3 кВт / 8.4 л.с., ширина 900-1200 мм регулируемая, глубина 180-350 мм. Усиленная коробка из ковкого чугуна, двигатель для тяжёлой коммерческой работы. Ручной стартер, регулируемая рукоятка, совместимые аксессуары.",
-      "fr": "Motoculteur War General Pro 186cc diesel (1WG-6-3A) : 6.3 kW / 5-15 HP @ 3600 rpm, largeur 900-1200 mm réglable, profondeur 180-350 mm. Boîte fonte ductile renforcée, moteur commercial lourd. Lanceur, guidon réglable, accessoires compatibles."
+      "fr": "Motoculteur War General Pro 186cc diesel (1WG-6-3A) : 6.3 kW / 5-15 HP @ 3600 rpm, largeur 900-1200 mm réglable, profondeur 180-350 mm. Boîte fonte ductile renforcée, moteur commercial lourd. Lanceur, guidon réglable, accessoires compatibles.",
+      "sw": "Trekta ndogo ya dizeli War General Pro 186cc (1WG-6-3A) inatoa 6.3 kW / 5-15 HP @ 3600 rpm yenye upana wa kazi unaoweza kurekebishwa wa 900-1200 mm kwa kina cha 180-350 mm. Sanduku la gia la chuma ductile lililimishwa na injini ya dizeli yaliyoboreshwa kwa mashamba ya kibiashara ya kazi nzito. Kuanzisha kwa kuvuta mkono, mpini unaoweza kurekebishwa, uoanifu kamili wa vifaa."
     },
     "bestFor": {
       "en": [
@@ -1183,6 +1389,13 @@ var PRODUCTS =
         "Sol argileux dur de secano",
         "Entre-rangs vergers, vignobles, potagers",
         "Diésel pour économie carburant"
+      ],
+      "sw": [
+        "Mashamba makubwa ya kibiashara ya hekta 2-5+",
+        "Uendeshaji wa kitaalamu wa siku nzima wa masaa 8+",
+        "Udongo wa udongo wa kauri wa nchi kavu au uliogandamizwa",
+        "Kazi ya safu kati ya bustani, mizabibu, mboga",
+        "Kupendelea dizeli kwa gharama ya chini ya mafuta"
       ]
     },
     "features": {
@@ -1250,6 +1463,19 @@ var PRODUCTS =
         "24 lames rotatives terre sèche (3+1 jeux)",
         "Guidon réglable — hauteur + horizontal",
         "Compatible avec trancheuse, buttoir, pompe, remorque"
+      ],
+      "sw": [
+        "Injini ya dizeli 186cc 4-stroke silinda moja inayochuja hewa",
+        "Nguvu: 6.3 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 900-1200 mm, kina: 180-350 mm",
+        "Gia ya moja kwa moja, kasi 2 mbele + 1 nyuma",
+        "Sanduku la gia la chuma ductile lililimishwa",
+        "Kuanzisha: Kuvuta mkono",
+        "Uzito wa wavu: 135 kg",
+        "Tanki la mafuta: 5.5 L",
+        "24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Mpini unaoweza kurekebishwa — urefu + mlalo",
+        "Inaoana na ditcher, ridger, pampu ya maji, trela"
       ]
     },
     "gallery": [
@@ -1263,7 +1489,8 @@ var PRODUCTS =
       "zh": "170汽油微耕机(女神)",
       "es": "Motocultor 170 Gasolina (Dama)",
       "ru": "Мотокультиватор 170 бензин (Леди)",
-      "fr": "Motoculteur 170 Essence (Dame)"
+      "fr": "Motoculteur 170 Essence (Dame)",
+      "sw": "Trekta ya Mafuta ya petroli 170 (Bibi)"
     },
     "model": "1WG-4.0BQ",
     "cat": "tiller",
@@ -1347,6 +1574,22 @@ var PRODUCTS =
         "Démarrage: lanceur manuel",
         "Dimensions: 1400 x 680 x 920 mm",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 170cc 4-stroke au 2-stroke injini ya mafuta ya petroli, silinda moja inayochuja hewa, 5-15 HP zinapatikana katika safu kamili ya mifano",
+        "Uhamishaji: Gia ya moja kwa moja, inaokoa mafuta na kiuchumi",
+        "Ujazo: 170 cc",
+        "Nguvu iliyokadiriwa: 4 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 600-1000 mm (inaweza kurekebishwa)",
+        "Kina cha kazi: 100-250 mm",
+        "Sanduku la gia: chuma ductile, 2 mbele + 1 nyuma",
+        "Kibandiko: aina ya sahani ya msuguano, kawaida wazi",
+        "Mato: 24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Uzito wa wavu: 70 kg",
+        "Tanki la mafuta: 3.6 L",
+        "Kuanzisha: Kuvuta mkono",
+        "Vipimo: 1400 x 680 x 920 mm",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "tiller-007.jpg",
@@ -1356,7 +1599,8 @@ var PRODUCTS =
       "zh": "Lady 170cc gasoline 微耕机（1WG-4-0BQ）额定功率 4.0 kW / 5.4 马力，耕幅 600-1000 mm 可调，耕深 100-250 mm。加强型球墨铸铁变速箱，耐用可靠，适合日常农场作业。手拉反启动，把手可调，全系配件兼容。",
       "es": "Motocultor Lady 170cc gasoline (1WG-4-0BQ) entrega 4.0 kW / 5-15 HP @ 3600 rpm con ancho 600-1000 mm ajustable y profundidad 100-250 mm. Caja hierro dúctil reforzada, motor uso agrícola diario. Arranque por cuerda, manillar ajustable, accesorios compatibles.",
       "ru": "Мотокультиватор Lady 170cc gasoline (1WG-4-0BQ): 4.0 кВт / 5.4 л.с., ширина 600-1000 мм регулируемая, глубина 100-250 мм. Усиленная коробка из ковкого чугуна, двигатель для ежедневной фермерской работы. Ручной стартер, регулируемая рукоятка, совместимые аксессуары.",
-      "fr": "Motoculteur Lady 170cc gasoline (1WG-4-0BQ) : 4.0 kW / 5-15 HP @ 3600 rpm, largeur 600-1000 mm réglable, profondeur 100-250 mm. Boîte fonte ductile renforcée, moteur travail agricole quotidien. Lanceur, guidon réglable, accessoires compatibles."
+      "fr": "Motoculteur Lady 170cc gasoline (1WG-4-0BQ) : 4.0 kW / 5-15 HP @ 3600 rpm, largeur 600-1000 mm réglable, profondeur 100-250 mm. Boîte fonte ductile renforcée, moteur travail agricole quotidien. Lanceur, guidon réglable, accessoires compatibles.",
+      "sw": "Trekta ndogo ya mafuta ya petroli Lady 170cc (1WG-4-0BQ) inatoa 4.0 kW / 5-15 HP @ 3600 rpm yenye upana wa kazi unaoweza kurekebishwa wa 600-1000 mm kwa kina cha 100-250 mm. Sanduku la gia la chuma ductile lililimishwa na injini ya mafuta ya petroli yaliyoboreshwa kwa kazi ya kila siku ya shamba. Kuanzisha kwa kuvuta mkono, mpini unaoweza kurekebishwa, uoanifu kamili wa vifaa."
     },
     "bestFor": {
       "en": [
@@ -1393,6 +1637,13 @@ var PRODUCTS =
         "Sol limoneux, sableux ou mixte",
         "Entre-rangs vergers, vignobles, potagers",
         "Essence pour démarrage facile"
+      ],
+      "sw": [
+        "Mashamba ya familia madogo hadi ya kati ya hekta 0.5-2",
+        "Kazi ya kila siku ya shamba ya masaa 4-6",
+        "Udongo tifu, mchanga au mseto wa ardhi ya shamba",
+        "Kazi ya safu kati ya bustani, mizabibu, mboga",
+        "Kupendelea mafuta ya petroli kwa kuanzisha kwa urahisi"
       ]
     },
     "features": {
@@ -1460,6 +1711,19 @@ var PRODUCTS =
         "24 lames rotatives terre sèche (3+1 jeux)",
         "Guidon réglable — hauteur + horizontal",
         "Compatible avec trancheuse, buttoir, pompe, remorque"
+      ],
+      "sw": [
+        "Injini ya mafuta ya petroli 170cc 4-stroke silinda moja inayochuja hewa",
+        "Nguvu: 4.0 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 600-1000 mm, kina: 100-250 mm",
+        "Gia ya moja kwa moja, kasi 2 mbele + 1 nyuma",
+        "Sanduku la gia la chuma ductile lililimishwa",
+        "Kuanzisha: Kuvuta mkono",
+        "Uzito wa wavu: 70 kg",
+        "Tanki la mafuta: 4.5 L",
+        "24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Mpini unaoweza kurekebishwa — urefu + mlalo",
+        "Inaoana na ditcher, ridger, pampu ya maji, trela"
       ]
     },
     "gallery": [
@@ -1475,7 +1739,8 @@ var PRODUCTS =
       "zh": "173汽油微耕机(男神)",
       "es": "Motocultor 173 Gasolina (Caballero)",
       "ru": "Мотокультиватор 173 бензин (Джентльмен)",
-      "fr": "Motoculteur 173 Essence (Seigneur)"
+      "fr": "Motoculteur 173 Essence (Seigneur)",
+      "sw": "Trekta ya Mafuta ya petroli 173 (Bwana)"
     },
     "model": "1WG-4.05B",
     "cat": "tiller",
@@ -1559,6 +1824,22 @@ var PRODUCTS =
         "Démarrage: lanceur manuel",
         "Dimensions: 1520 x 720 x 960 mm",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 173cc 4-stroke au 2-stroke injini ya mafuta ya petroli, silinda moja inayochuja hewa, 5-15 HP zinapatikana katika safu kamili ya mifano",
+        "Uhamishaji: Gia ya moja kwa moja, inaokoa mafuta na kiuchumi",
+        "Ujazo: 173 cc",
+        "Nguvu iliyokadiriwa: 4.05 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 800-1050 mm (inaweza kurekebishwa)",
+        "Kina cha kazi: 150-300 mm",
+        "Sanduku la gia: chuma ductile, 2 mbele + 1 nyuma",
+        "Kibandiko: aina ya sahani ya msuguano, kawaida wazi",
+        "Mato: 24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Uzito wa wavu: 78 kg",
+        "Tanki la mafuta: 4.5 L",
+        "Kuanzisha: Kuvuta mkono",
+        "Vipimo: 1520 x 720 x 960 mm",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "tiller-008.jpg",
@@ -1568,7 +1849,8 @@ var PRODUCTS =
       "zh": "Lord 173cc gasoline 微耕机（1WG-4-05B）额定功率 4.05 kW / 5.4 马力，耕幅 800-1050 mm 可调，耕深 150-300 mm。加强型球墨铸铁变速箱，耐用可靠，适合日常农场作业。手拉反启动，把手可调，全系配件兼容。",
       "es": "Motocultor Lord 173cc gasoline (1WG-4-05B) entrega 4.05 kW / 5-15 HP @ 3600 rpm con ancho 800-1050 mm ajustable y profundidad 150-300 mm. Caja hierro dúctil reforzada, motor uso agrícola diario. Arranque por cuerda, manillar ajustable, accesorios compatibles.",
       "ru": "Мотокультиватор Lord 173cc gasoline (1WG-4-05B): 4.05 кВт / 5.4 л.с., ширина 800-1050 мм регулируемая, глубина 150-300 мм. Усиленная коробка из ковкого чугуна, двигатель для ежедневной фермерской работы. Ручной стартер, регулируемая рукоятка, совместимые аксессуары.",
-      "fr": "Motoculteur Lord 173cc gasoline (1WG-4-05B) : 4.05 kW / 5-15 HP @ 3600 rpm, largeur 800-1050 mm réglable, profondeur 150-300 mm. Boîte fonte ductile renforcée, moteur travail agricole quotidien. Lanceur, guidon réglable, accessoires compatibles."
+      "fr": "Motoculteur Lord 173cc gasoline (1WG-4-05B) : 4.05 kW / 5-15 HP @ 3600 rpm, largeur 800-1050 mm réglable, profondeur 150-300 mm. Boîte fonte ductile renforcée, moteur travail agricole quotidien. Lanceur, guidon réglable, accessoires compatibles.",
+      "sw": "Trekta ndogo ya mafuta ya petroli Lord 173cc (1WG-4-05B) inatoa 4.05 kW / 5-15 HP @ 3600 rpm yenye upana wa kazi unaoweza kurekebishwa wa 800-1050 mm kwa kina cha 150-300 mm. Sanduku la gia la chuma ductile lililimishwa na injini ya mafuta ya petroli yaliyoboreshwa kwa kazi ya kila siku ya shamba. Kuanzisha kwa kuvuta mkono, mpini unaoweza kurekebishwa, uoanifu kamili wa vifaa."
     },
     "bestFor": {
       "en": [
@@ -1605,6 +1887,13 @@ var PRODUCTS =
         "Sol limoneux, sableux ou mixte",
         "Entre-rangs vergers, vignobles, potagers",
         "Essence pour démarrage facile"
+      ],
+      "sw": [
+        "Mashamba ya familia madogo hadi ya kati ya hekta 0.5-2",
+        "Kazi ya kila siku ya shamba ya masaa 4-6",
+        "Udongo tifu, mchanga au mseto wa ardhi ya shamba",
+        "Kazi ya safu kati ya bustani, mizabibu, mboga",
+        "Kupendelea mafuta ya petroli kwa kuanzisha kwa urahisi"
       ]
     },
     "features": {
@@ -1672,6 +1961,19 @@ var PRODUCTS =
         "24 lames rotatives terre sèche (3+1 jeux)",
         "Guidon réglable — hauteur + horizontal",
         "Compatible avec trancheuse, buttoir, pompe, remorque"
+      ],
+      "sw": [
+        "Injini ya mafuta ya petroli 173cc 4-stroke silinda moja inayochuja hewa",
+        "Nguvu: 4.05 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 800-1050 mm, kina: 150-300 mm",
+        "Gia ya moja kwa moja, kasi 2 mbele + 1 nyuma",
+        "Sanduku la gia la chuma ductile lililimishwa",
+        "Kuanzisha: Kuvuta mkono",
+        "Uzito wa wavu: 78 kg",
+        "Tanki la mafuta: 4.5 L",
+        "24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Mpini unaoweza kurekebishwa — urefu + mlalo",
+        "Inaoana na ditcher, ridger, pampu ya maji, trela"
       ]
     },
     "gallery": [
@@ -1685,7 +1987,8 @@ var PRODUCTS =
       "zh": "178柴油微耕机(女神)",
       "es": "Motocultor 178 Diésel (Dama)",
       "ru": "Мотокультиватор 178 дизель (Леди)",
-      "fr": "Motoculteur 178 Diesel (Dame)"
+      "fr": "Motoculteur 178 Diesel (Dame)",
+      "sw": "Trekta ya Dizeli 178 (Bibi)"
     },
     "model": "1WG-4.1B",
     "cat": "tiller",
@@ -1769,6 +2072,22 @@ var PRODUCTS =
         "Démarrage: lanceur manuel",
         "Dimensions: 1540 x 730 x 970 mm",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 178cc 4-stroke au 2-stroke injini ya mafuta ya petroli, silinda moja inayochuja hewa, 5-15 HP zinapatikana katika safu kamili ya mifano",
+        "Uhamishaji: Gia ya moja kwa moja, inaokoa mafuta na kiuchumi",
+        "Ujazo: 178 cc",
+        "Nguvu iliyokadiriwa: 4.1 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 800-1050 mm (inaweza kurekebishwa)",
+        "Kina cha kazi: 150-300 mm",
+        "Sanduku la gia: chuma ductile, 2 mbele + 1 nyuma",
+        "Kibandiko: aina ya sahani ya msuguano, kawaida wazi",
+        "Mato: 24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Uzito wa wavu: 82 kg",
+        "Tanki la mafuta: 4.5 L",
+        "Kuanzisha: Kuvuta mkono",
+        "Vipimo: 1540 x 730 x 970 mm",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "tiller-009.jpg",
@@ -1778,7 +2097,8 @@ var PRODUCTS =
       "zh": "Lady Pro 178cc gasoline 微耕机（1WG-4-1B）额定功率 4.1 kW / 5.5 马力，耕幅 800-1050 mm 可调，耕深 150-300 mm。加强型球墨铸铁变速箱，耐用可靠，适合日常农场作业。手拉反启动，把手可调，全系配件兼容。",
       "es": "Motocultor Lady Pro 178cc gasoline (1WG-4-1B) entrega 4.1 kW / 5-15 HP @ 3600 rpm con ancho 800-1050 mm ajustable y profundidad 150-300 mm. Caja hierro dúctil reforzada, motor uso agrícola diario. Arranque por cuerda, manillar ajustable, accesorios compatibles.",
       "ru": "Мотокультиватор Lady Pro 178cc gasoline (1WG-4-1B): 4.1 кВт / 5.5 л.с., ширина 800-1050 мм регулируемая, глубина 150-300 мм. Усиленная коробка из ковкого чугуна, двигатель для ежедневной фермерской работы. Ручной стартер, регулируемая рукоятка, совместимые аксессуары.",
-      "fr": "Motoculteur Lady Pro 178cc gasoline (1WG-4-1B) : 4.1 kW / 5-15 HP @ 3600 rpm, largeur 800-1050 mm réglable, profondeur 150-300 mm. Boîte fonte ductile renforcée, moteur travail agricole quotidien. Lanceur, guidon réglable, accessoires compatibles."
+      "fr": "Motoculteur Lady Pro 178cc gasoline (1WG-4-1B) : 4.1 kW / 5-15 HP @ 3600 rpm, largeur 800-1050 mm réglable, profondeur 150-300 mm. Boîte fonte ductile renforcée, moteur travail agricole quotidien. Lanceur, guidon réglable, accessoires compatibles.",
+      "sw": "Trekta ndogo ya mafuta ya petroli Lady Pro 178cc (1WG-4-1B) inatoa 4.1 kW / 5-15 HP @ 3600 rpm yenye upana wa kazi unaoweza kurekebishwa wa 800-1050 mm kwa kina cha 150-300 mm. Sanduku la gia la chuma ductile lililimishwa na injini ya mafuta ya petroli yaliyoboreshwa kwa kazi ya kila siku ya shamba. Kuanzisha kwa kuvuta mkono, mpini unaoweza kurekebishwa, uoanifu kamili wa vifaa."
     },
     "bestFor": {
       "en": [
@@ -1815,6 +2135,13 @@ var PRODUCTS =
         "Sol limoneux, sableux ou mixte",
         "Entre-rangs vergers, vignobles, potagers",
         "Essence pour démarrage facile"
+      ],
+      "sw": [
+        "Mashamba ya familia madogo hadi ya kati ya hekta 0.5-2",
+        "Kazi ya kila siku ya shamba ya masaa 4-6",
+        "Udongo tifu, mchanga au mseto wa ardhi ya shamba",
+        "Kazi ya safu kati ya bustani, mizabibu, mboga",
+        "Kupendelea mafuta ya petroli kwa kuanzisha kwa urahisi"
       ]
     },
     "features": {
@@ -1882,6 +2209,19 @@ var PRODUCTS =
         "24 lames rotatives terre sèche (3+1 jeux)",
         "Guidon réglable — hauteur + horizontal",
         "Compatible avec trancheuse, buttoir, pompe, remorque"
+      ],
+      "sw": [
+        "Injini ya mafuta ya petroli 178cc 4-stroke silinda moja inayochuja hewa",
+        "Nguvu: 4.1 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 800-1050 mm, kina: 150-300 mm",
+        "Gia ya moja kwa moja, kasi 2 mbele + 1 nyuma",
+        "Sanduku la gia la chuma ductile lililimishwa",
+        "Kuanzisha: Kuvuta mkono",
+        "Uzito wa wavu: 82 kg",
+        "Tanki la mafuta: 4.5 L",
+        "24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Mpini unaoweza kurekebishwa — urefu + mlalo",
+        "Inaoana na ditcher, ridger, pampu ya maji, trela"
       ]
     },
     "gallery": [
@@ -1898,7 +2238,8 @@ var PRODUCTS =
       "zh": "186柴油微耕机(战豹)",
       "es": "Motocultor 186 Diésel (Bestia)",
       "ru": "Мотокультиватор 186 дизель (Зверь)",
-      "fr": "Motoculteur 186 Diesel (Bête)"
+      "fr": "Motoculteur 186 Diesel (Bête)",
+      "sw": "Trekta ya Dizeli 186 (Mnyama)"
     },
     "model": "1WG-6.3B",
     "cat": "tiller",
@@ -1982,6 +2323,22 @@ var PRODUCTS =
         "Démarrage: lanceur manuel",
         "Dimensions: 1680 x 980 x 1000 mm",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 186cc 4-stroke au 2-stroke injini ya dizeli, silinda moja inayochuja hewa, 5-15 HP zinapatikana katika safu kamili ya mifano",
+        "Uhamishaji: Gia ya moja kwa moja, inaokoa mafuta na kiuchumi",
+        "Ujazo: 186 cc",
+        "Nguvu iliyokadiriwa: 6.3 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 900-1200 mm (inaweza kurekebishwa)",
+        "Kina cha kazi: 180-350 mm",
+        "Sanduku la gia: chuma ductile, 2 mbele + 1 nyuma",
+        "Kibandiko: aina ya sahani ya msuguano, kawaida wazi",
+        "Mato: 24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Uzito wa wavu: 130 kg",
+        "Tanki la mafuta: 5.5 L",
+        "Kuanzisha: Kuvuta mkono",
+        "Vipimo: 1680 x 980 x 1000 mm",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "tiller-010.jpg",
@@ -1991,7 +2348,8 @@ var PRODUCTS =
       "zh": "Beast 186cc diesel 微耕机（1WG-6-3B）额定功率 6.3 kW / 8.4 马力，耕幅 900-1200 mm 可调，耕深 180-350 mm。加强型球墨铸铁变速箱，动力强劲，适合重负荷商业农场。手拉反启动，把手可调，全系配件兼容。",
       "es": "Motocultor Beast 186cc diesel (1WG-6-3B) entrega 6.3 kW / 5-15 HP @ 3600 rpm con ancho 900-1200 mm ajustable y profundidad 180-350 mm. Caja hierro dúctil reforzada, motor comercial pesado. Arranque por cuerda, manillar ajustable, accesorios compatibles.",
       "ru": "Мотокультиватор Beast 186cc diesel (1WG-6-3B): 6.3 кВт / 8.4 л.с., ширина 900-1200 мм регулируемая, глубина 180-350 мм. Усиленная коробка из ковкого чугуна, двигатель для тяжёлой коммерческой работы. Ручной стартер, регулируемая рукоятка, совместимые аксессуары.",
-      "fr": "Motoculteur Beast 186cc diesel (1WG-6-3B) : 6.3 kW / 5-15 HP @ 3600 rpm, largeur 900-1200 mm réglable, profondeur 180-350 mm. Boîte fonte ductile renforcée, moteur commercial lourd. Lanceur, guidon réglable, accessoires compatibles."
+      "fr": "Motoculteur Beast 186cc diesel (1WG-6-3B) : 6.3 kW / 5-15 HP @ 3600 rpm, largeur 900-1200 mm réglable, profondeur 180-350 mm. Boîte fonte ductile renforcée, moteur commercial lourd. Lanceur, guidon réglable, accessoires compatibles.",
+      "sw": "Trekta ndogo ya dizeli Beast 186cc (1WG-6-3B) inatoa 6.3 kW / 5-15 HP @ 3600 rpm yenye upana wa kazi unaoweza kurekebishwa wa 900-1200 mm kwa kina cha 180-350 mm. Sanduku la gia la chuma ductile lililimishwa na injini ya dizeli yaliyoboreshwa kwa mashamba ya kibiashara ya kazi nzito. Kuanzisha kwa kuvuta mkono, mpini unaoweza kurekebishwa, uoanifu kamili wa vifaa."
     },
     "bestFor": {
       "en": [
@@ -2028,6 +2386,13 @@ var PRODUCTS =
         "Sol argileux dur de secano",
         "Entre-rangs vergers, vignobles, potagers",
         "Diésel pour économie carburant"
+      ],
+      "sw": [
+        "Mashamba makubwa ya kibiashara ya hekta 2-5+",
+        "Uendeshaji wa kitaalamu wa siku nzima wa masaa 8+",
+        "Udongo wa udongo wa kauri wa nchi kavu au uliogandamizwa",
+        "Kazi ya safu kati ya bustani, mizabibu, mboga",
+        "Kupendelea dizeli kwa gharama ya chini ya mafuta"
       ]
     },
     "features": {
@@ -2095,6 +2460,19 @@ var PRODUCTS =
         "24 lames rotatives terre sèche (3+1 jeux)",
         "Guidon réglable — hauteur + horizontal",
         "Compatible avec trancheuse, buttoir, pompe, remorque"
+      ],
+      "sw": [
+        "Injini ya dizeli 186cc 4-stroke silinda moja inayochuja hewa",
+        "Nguvu: 6.3 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 900-1200 mm, kina: 180-350 mm",
+        "Gia ya moja kwa moja, kasi 2 mbele + 1 nyuma",
+        "Sanduku la gia la chuma ductile lililimishwa",
+        "Kuanzisha: Kuvuta mkono",
+        "Uzito wa wavu: 130 kg",
+        "Tanki la mafuta: 5.5 L",
+        "24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Mpini unaoweza kurekebishwa — urefu + mlalo",
+        "Inaoana na ditcher, ridger, pampu ya maji, trela"
       ]
     },
     "gallery": [
@@ -2108,7 +2486,8 @@ var PRODUCTS =
       "zh": "186柴油微耕机(战虎)",
       "es": "Motocultor 186 Diésel (Tigre)",
       "ru": "Мотокультиватор 186 дизель (Тигр)",
-      "fr": "Motoculteur 186 Diesel (Tigre)"
+      "fr": "Motoculteur 186 Diesel (Tigre)",
+      "sw": "Trekta ya Dizeli 186 (Tiger)"
     },
     "model": "1WG-6.3B-T",
     "cat": "tiller",
@@ -2192,6 +2571,22 @@ var PRODUCTS =
         "Démarrage: électrique + lanceur",
         "Dimensions: 1690 x 1000 x 1010 mm",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 186cc 4-stroke au 2-stroke injini ya dizeli, silinda moja inayochuja hewa, 5-15 HP zinapatikana katika safu kamili ya mifano",
+        "Uhamishaji: Gia ya moja kwa moja, inaokoa mafuta na kiuchumi",
+        "Ujazo: 186 cc",
+        "Nguvu iliyokadiriwa: 6.3 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 900-1200 mm (inaweza kurekebishwa)",
+        "Kina cha kazi: 180-350 mm",
+        "Sanduku la gia: chuma ductile, 2 mbele + 1 nyuma",
+        "Kibandiko: aina ya sahani ya msuguano, kawaida wazi",
+        "Mato: 24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Uzito wa wavu: 140 kg",
+        "Tanki la mafuta: 5.5 L",
+        "Kuanzisha: Umeme + Kuvuta mkono",
+        "Vipimo: 1690 x 1000 x 1010 mm",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "tiller-011.jpg",
@@ -2201,7 +2596,8 @@ var PRODUCTS =
       "zh": "Tiger 186cc diesel 微耕机（1WG-6-3B-T）额定功率 6.3 kW / 8.4 马力，耕幅 900-1200 mm 可调，耕深 180-350 mm。加强型球墨铸铁变速箱，动力强劲，适合重负荷商业农场。手拉反启动，把手可调，全系配件兼容。",
       "es": "Motocultor Tiger 186cc diesel (1WG-6-3B-T) entrega 6.3 kW / 5-15 HP @ 3600 rpm con ancho 900-1200 mm ajustable y profundidad 180-350 mm. Caja hierro dúctil reforzada, motor comercial pesado. Arranque por cuerda, manillar ajustable, accesorios compatibles.",
       "ru": "Мотокультиватор Tiger 186cc diesel (1WG-6-3B-T): 6.3 кВт / 8.4 л.с., ширина 900-1200 мм регулируемая, глубина 180-350 мм. Усиленная коробка из ковкого чугуна, двигатель для тяжёлой коммерческой работы. Ручной стартер, регулируемая рукоятка, совместимые аксессуары.",
-      "fr": "Motoculteur Tiger 186cc diesel (1WG-6-3B-T) : 6.3 kW / 5-15 HP @ 3600 rpm, largeur 900-1200 mm réglable, profondeur 180-350 mm. Boîte fonte ductile renforcée, moteur commercial lourd. Lanceur, guidon réglable, accessoires compatibles."
+      "fr": "Motoculteur Tiger 186cc diesel (1WG-6-3B-T) : 6.3 kW / 5-15 HP @ 3600 rpm, largeur 900-1200 mm réglable, profondeur 180-350 mm. Boîte fonte ductile renforcée, moteur commercial lourd. Lanceur, guidon réglable, accessoires compatibles.",
+      "sw": "Trekta ndogo ya dizeli Tiger 186cc (1WG-6-3B-T) inatoa 6.3 kW / 5-15 HP @ 3600 rpm yenye upana wa kazi unaoweza kurekebishwa wa 900-1200 mm kwa kina cha 180-350 mm. Sanduku la gia la chuma ductile lililimishwa na injini ya dizeli yaliyoboreshwa kwa mashamba ya kibiashara ya kazi nzito. Kuanzisha kwa kuvuta mkono, mpini unaoweza kurekebishwa, uoanifu kamili wa vifaa."
     },
     "bestFor": {
       "en": [
@@ -2238,6 +2634,13 @@ var PRODUCTS =
         "Sol argileux dur de secano",
         "Entre-rangs vergers, vignobles, potagers",
         "Diésel pour économie carburant"
+      ],
+      "sw": [
+        "Mashamba makubwa ya kibiashara ya hekta 2-5+",
+        "Uendeshaji wa kitaalamu wa siku nzima wa masaa 8+",
+        "Udongo wa udongo wa kauri wa nchi kavu au uliogandamizwa",
+        "Kazi ya safu kati ya bustani, mizabibu, mboga",
+        "Kupendelea dizeli kwa gharama ya chini ya mafuta"
       ]
     },
     "features": {
@@ -2305,6 +2708,19 @@ var PRODUCTS =
         "24 lames rotatives terre sèche (3+1 jeux)",
         "Guidon réglable — hauteur + horizontal",
         "Compatible avec trancheuse, buttoir, pompe, remorque"
+      ],
+      "sw": [
+        "Injini ya dizeli 186cc 4-stroke silinda moja inayochuja hewa",
+        "Nguvu: 6.3 kW / 5-15 HP @ 3600 rpm",
+        "Upana wa kazi: 900-1200 mm, kina: 180-350 mm",
+        "Gia ya moja kwa moja, kasi 2 mbele + 1 nyuma",
+        "Sanduku la gia la chuma ductile lililimishwa",
+        "Kuanzisha: Umeme + Kuvuta mkono",
+        "Uzito wa wavu: 140 kg",
+        "Tanki la mafuta: 5.5 L",
+        "24 mato ya rotary ya nchi kavu (makundi 3+1)",
+        "Mpini unaoweza kurekebishwa — urefu + mlalo",
+        "Inaoana na ditcher, ridger, pampu ya maji, trela"
       ]
     },
     "gallery": [
@@ -2319,7 +2735,8 @@ var PRODUCTS =
       "zh": "170开沟培土机(战龙号)",
       "es": "Máquina Zanjas 170 (Dragón)",
       "ru": "Машина для канав 170 (Дракон)",
-      "fr": "Machine à Fossés 170 (Dragon)"
+      "fr": "Machine à Fossés 170 (Dragon)",
+      "sw": "Kifaa cha Mifuko 170 (Joka)"
     },
     "model": "1WG-4.0ZL",
     "cat": "ditching",
@@ -2403,6 +2820,22 @@ var PRODUCTS =
         "Changement d'accessoire: moins de 10 min",
         "Bases compatibles: série 1WG-4.0",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 170cc Zhanma 4-stroke au 2-stroke injini ya dizeli, silinda moja inayochuja hewa, 8-15 HP zinapatikana katika safu kamili ya mifano",
+        "Uhamishaji: Gia ya moja kwa moja, inaokoa mafuta na kiuchumi",
+        "Nguvu: 4.0 kW / 5.4 HP @ 3600 rpm",
+        "Kina cha kuchimba mifuko: 250-400 mm",
+        "Upana wa kuchimba mifuko: 200-400 mm (inaweza kurekebishwa)",
+        "Upana wa kazi (hali ya rotary): 600-1000 mm",
+        "Sanduku la gia: chuma ductile, 2 mbele + 1 nyuma",
+        "Tanki la mafuta: 3.6 L",
+        "Uzito wa wavu: 95 kg",
+        "Kuanzisha: Kuvuta mkono",
+        "Vipimo: 1500 × 700 × 950 mm",
+        "Muda wa kubadilisha kiambatanisho: chini ya dakika 10",
+        "Misingi inayoendana: mfululizo wa 1WG-4.0",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "ditch-001.jpg",
@@ -2411,7 +2844,8 @@ var PRODUCTS =
       "zh": "170cc 汽油开沟培土机（1WG-4.0ZL），一机两用：微耕主机换上培土器，立刻变身开沟机，一次完成开沟 + 起垄 + 培土。4.0 kW 动力，开沟深度 250-400 mm，整机 95 kg。机身紧凑，大型机械进不去的菜畦、果园行间，它都能轻松进出。",
       "es": "Zanjador-aporcador 170cc gasolina (1WG-4.0ZL) para huertos y granjas hortícolas. Convierte tu motocultor en una máquina de surcos en una sola pasada — abre zanjas 250-400 mm con 4.0 kW. Mismo bastidor compacto que la base, se cuela en hileras estrechas. Motor 4-tiempos arranque por cuerda, peso total 95 kg.",
       "ru": "Дизельный окучник-канавокопатель 170cc (1WG-4.0ZL) для огородов и садов. Превращает мотокультиватор в грядоделатель за один проход — копает борозды 250-400 мм при мощности 4.0 кВт. Та же компактная рама, пролезает в узкие междурядья, куда большая техника не пройдёт. 4-тактный двигатель с ручным стартером, общий вес 95 кг.",
-      "fr": "Trancheuse-buttoir 170cc essence (1WG-4.0ZL) pour maraîchage et vergers. Convertit votre motoculteur en machine à butter en une seule passe — ouvre des tranchées 250-400 mm avec 4.0 kW. Même châssis compact que la base, se glisse dans les rangs étroits. Moteur 4-temps lanceur, poids total 95 kg."
+      "fr": "Trancheuse-buttoir 170cc essence (1WG-4.0ZL) pour maraîchage et vergers. Convertit votre motoculteur en machine à butter en une seule passe — ouvre des tranchées 250-400 mm avec 4.0 kW. Même châssis compact que la base, se glisse dans les rangs étroits. Moteur 4-temps lanceur, poids total 95 kg.",
+      "sw": "Kiambatanisho cha ditching-ridger cha mafuta ya petroli 170cc (1WG-4-0ZL) kwa mashamba ya mboga na mashamba ya matunda. Kinageuza trekta ndogo yako kuwa mashine ya kuchimbua mara moja — inachimba makorongo ya 250-400 mm kwa nguvu ya 4.0 kW. Fremu ile ile ndogo kama msingi wa trekta, kwa hivyo inaingia katika safu nyembamba ambapo vifaa vikubwa havifiiki. Injini ya 4-stroke ya kuanzisha kwa kuvuta mkono, uzito wa jumla wa kilo 95."
     },
     "bestFor": {
       "en": [
@@ -2448,6 +2882,13 @@ var PRODUCTS =
         "Planches surélevées en serres",
         "Parcelles 0.5-2 ha",
         "Remplacer le bêchage manuel en manque de main-d'œuvre"
+      ],
+      "sw": [
+        "Mashamba ya mboga yanayolima viazi, nyanya, pilipili",
+        "Mifereji ya maji ya mashamba ya matunda",
+        "Maandalizi ya mazao yaliyoinuliwa katika greenhouses",
+        "Ploti ndogo hadi za kati za hekta 0.5-2",
+        "Kubadilisha kuchimba kwa mikono kwenye mashamba yaliyo na upungufu wa wafanyakazi"
       ]
     },
     "features": {
@@ -2510,6 +2951,18 @@ var PRODUCTS =
         "Basculement rotative/buttoir sans outil",
         "Compatible avec toutes les bases 1WG-4.0",
         "Guidon réglable pour confort opérateur"
+      ],
+      "sw": [
+        "Injini ya mafuta ya petroli 170F 4-stroke — 4.0 kW / 5.4 HP",
+        "Kina cha kuchimba mifuko: 250-400 mm",
+        "Upana wa kuchimba mifuko: unaweza kurekebishwa",
+        "Trekta ya rotary ya kuendesha moja kwa moja + kiambatanisho cha ridger",
+        "Sanduku la gia la chuma ductile kwa kazi endelevu",
+        "Kuanzisha kwa kuvuta mkono — hakuna betri",
+        "Uzito wa wavu wa kilo 95",
+        "Kubadilisha kati ya hali za trekta na ridger bila zana",
+        "Inaoana na misingi yote ya trekta ya mfululizo wa 1WG-4.0",
+        "Mpini unaoweza kurekebishwa kwa faraja ya mwendeshaji"
       ]
     },
     "gallery": [
@@ -2524,7 +2977,8 @@ var PRODUCTS =
       "zh": "173开沟培土机(战马号)",
       "es": "Máquina Zanjas 173 (Caballo)",
       "ru": "Машина для канав 173 (Конь)",
-      "fr": "Machine à Fossés 173 (Cheval)"
+      "fr": "Machine à Fossés 173 (Cheval)",
+      "sw": "Kifaa cha Mifuko 173 (Farasi)"
     },
     "model": "1WG-4.05ZM",
     "cat": "ditching",
@@ -2608,6 +3062,22 @@ var PRODUCTS =
         "Changement accessoire: moins de 10 min",
         "Bases compatibles: même classe moteur",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 173cc Zhanma 4-stroke au 2-stroke injini ya dizeli, silinda moja inayochuja hewa, 8-15 HP zinapatikana katika safu kamili ya mifano",
+        "Uhamishaji: Gia ya moja kwa moja, inaokoa mafuta na kiuchumi",
+        "Nguvu: 4.05 kW / 5.4 HP @ 3600 rpm",
+        "Kina cha kuchimba mifuko: 300-450 mm",
+        "Upana wa kuchimba mifuko: 200-400 mm inaweza kurekebishwa",
+        "Upana wa kazi (hali ya rotary): 600-1050 mm",
+        "Sanduku la gia: chuma ductile, 2 mbele + 1 nyuma",
+        "Mafuta: mafuta ya petroli",
+        "Tanki la mafuta: 4.5 L",
+        "Uzito wa wavu: 98 kg",
+        "Kuanzisha: Kuvuta mkono",
+        "Kubadilisha kiambatanisho: chini ya dakika 10",
+        "Misingi inayoendana: trekta ya darasa moja la injini",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "ditch-002.jpg",
@@ -2616,7 +3086,8 @@ var PRODUCTS =
       "zh": "173cc gasoline 开沟培土机（1WG-4-05ZM）额定 4.05 kW / 5.4 马力，一次完成 300-450 mm 深沟起垄。适配同系列微耕主机，一机两用。加强型球墨铸铁变速箱，可应对重粘土碎石地。手拉反启动、把手可调、与 1WG.4.05ZM 系列主机完全兼容。",
       "es": "Zanjador-aporcador 173cc gasoline (1WG-4-05ZM) entrega 4.05 kW / 5.4 HP para abrir surcos de 300-450 mm en una pasada. Convierte cualquier motocultor compatible en aporcador dedicado. Caja hierro dúctil reforzada para suelo arcilloso y rocoso. Mismo arranque por cuerda, manillar ajustable, compatible con la base 1WG.4.05ZM.",
       "ru": "173cc gasoline окучник-канавокопатель (1WG-4-05ZM): 4.05 кВт / 5.4 л.с. для борозд 300-450 мм за один проход. Превращает любой совместимый мотокультиватор в грядоделатель. Усиленная коробка из ковкого чугуна для тяжёлой глины и каменистой почвы. Тот же ручной стартер, регулируемая рукоятка, совместим с базой 1WG.4.05ZM.",
-      "fr": "Trancheuse-buttoir 173cc gasoline (1WG-4-05ZM) : 4.05 kW / 5.4 HP pour ouvrir des tranchées de 300-450 mm en une passe. Convertit tout motoculteur compatible en buttoir dédié. Boîte fonte ductile renforcée pour sol argileux et rocheux. Même lanceur, guidon réglable, compatible avec la base 1WG.4.05ZM."
+      "fr": "Trancheuse-buttoir 173cc gasoline (1WG-4-05ZM) : 4.05 kW / 5.4 HP pour ouvrir des tranchées de 300-450 mm en une passe. Convertit tout motoculteur compatible en buttoir dédié. Boîte fonte ductile renforcée pour sol argileux et rocheux. Même lanceur, guidon réglable, compatible avec la base 1WG.4.05ZM.",
+      "sw": "Kiambatanisho cha ditching-ridger cha mafuta ya petroli 173Cc (1WG-4-05ZM) kinatoa 4.05 kW / 5.4 HP kwa kuchimba makorongo ya 300-450 mm kwa kupita moja. Kinageuza trekta ndogo yoyote inayoendana kuwa ridger maalum. Sanduku la gia la chuma ductile lililimishwa linashughulikia udongo mzito wa kauri na wenye mawe. Kuanzisha kwa kuvuta mkono kwa kawaida, mpini unaoweza kurekebishwa, uoanifu kamili na msingi wa trekta wa 1WG.4.05ZM."
     },
     "bestFor": {
       "en": [
@@ -2653,6 +3124,13 @@ var PRODUCTS =
         "Canaux drainage et irrigation vergers",
         "Fermes commerciales 2+ ha",
         "Préparation planches en serre"
+      ],
+      "sw": [
+        "Mashamba ya udongo mzito wa kauri au yenye mawe",
+        "Kilimo cha safu cha viazi, nyanya, pilipili",
+        "Mifereji ya maji na umwagiliaji wa mashamba ya matunda",
+        "Mashamba ya kibiashara ya hekta 2+",
+        "Maandalizi ya mazao yaliyoinuliwa katika greenhouse"
       ]
     },
     "features": {
@@ -2715,6 +3193,18 @@ var PRODUCTS =
         "Changement d'accessoire sans outil",
         "Guidon réglable (hauteur + horizontal)",
         "Compatible avec toutes les bases 1WG-4"
+      ],
+      "sw": [
+        "Injini ya mafuta ya petroli 173Cc 4-stroke inayochuja hewa — 4.05 kW / 5.4 HP",
+        "Kina cha kuchimba mifuko: 300-450 mm",
+        "Upana wa kuchimba mifuko unaoweza kurekebishwa 200-400 mm",
+        "Trekta ya rotary ya kuendesha moja kwa moja + mseto wa ridger",
+        "Sanduku la gia la chuma ductile, 2 mbele + 1 nyuma",
+        "Kuanzisha kwa kuvuta mkono — hakuna betri",
+        "Uzito wa wavu: 98 kg",
+        "Kubadilisha kiambatanisho bila zana",
+        "Mpini unaoweza kurekebishwa (urefu + mlalo)",
+        "Inaoana na misingi yote ya trekta ya mfululizo wa 1WG-4"
       ]
     },
     "gallery": [
@@ -2729,7 +3219,8 @@ var PRODUCTS =
       "zh": "178开沟培土机(战牛号)",
       "es": "Máquina Zanjas 178 (Toro)",
       "ru": "Машина для канав 178 (Бык)",
-      "fr": "Machine à Fossés 178 (Taureau)"
+      "fr": "Machine à Fossés 178 (Taureau)",
+      "sw": "Kifaa cha Mifuko 178 (Ng'ombe)"
     },
     "model": "1WG-4.1ZN",
     "cat": "ditching",
@@ -2813,6 +3304,22 @@ var PRODUCTS =
         "Changement accessoire: moins de 10 min",
         "Bases compatibles: même classe moteur",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 178cc Zhanma 4-stroke au 2-stroke injini ya dizeli, silinda moja inayochuja hewa, 8-15 HP zinapatikana katika safu kamili ya mifano",
+        "Uhamishaji: Gia ya moja kwa moja, inaokoa mafuta na kiuchumi",
+        "Nguvu: 4.0 kW / 5.4 HP @ 3600 rpm",
+        "Kina cha kuchimba mifuko: 300-500 mm",
+        "Upana wa kuchimba mifuko: 200-400 mm inaweza kurekebishwa",
+        "Upana wa kazi (hali ya rotary): 600-1050 mm",
+        "Sanduku la gia: chuma ductile, 2 mbele + 1 nyuma",
+        "Mafuta: dizeli #0",
+        "Tanki la mafuta: 4.5 L",
+        "Uzito wa wavu: 118 kg",
+        "Kuanzisha: Kuvuta mkono",
+        "Kubadilisha kiambatanisho: chini ya dakika 10",
+        "Misingi inayoendana: trekta ya darasa moja la injini",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "ditch-003.jpg",
@@ -2821,7 +3328,8 @@ var PRODUCTS =
       "zh": "178cc diesel 开沟培土机（1WG-4-1ZN）额定 4.0 kW / 5.4 马力，一次完成 300-500 mm 深沟起垄。适配同系列微耕主机，一机两用。加强型球墨铸铁变速箱，可应对壤土沙土地。手拉反启动、把手可调、与 1WG.4.1ZN 系列主机完全兼容。",
       "es": "Zanjador-aporcador 178cc diesel (1WG-4-1ZN) entrega 4.0 kW / 5.4 HP para abrir surcos de 300-500 mm en una pasada. Convierte cualquier motocultor compatible en aporcador dedicado. Caja hierro dúctil reforzada para suelo franco y arenoso. Mismo arranque por cuerda, manillar ajustable, compatible con la base 1WG.4.1ZN.",
       "ru": "178cc diesel окучник-канавокопатель (1WG-4-1ZN): 4.0 кВт / 5.4 л.с. для борозд 300-500 мм за один проход. Превращает любой совместимый мотокультиватор в грядоделатель. Усиленная коробка из ковкого чугуна для суглинка и песка. Тот же ручной стартер, регулируемая рукоятка, совместим с базой 1WG.4.1ZN.",
-      "fr": "Trancheuse-buttoir 178cc diesel (1WG-4-1ZN) : 4.0 kW / 5.4 HP pour ouvrir des tranchées de 300-500 mm en une passe. Convertit tout motoculteur compatible en buttoir dédié. Boîte fonte ductile renforcée pour sol limoneux et sableux. Même lanceur, guidon réglable, compatible avec la base 1WG.4.1ZN."
+      "fr": "Trancheuse-buttoir 178cc diesel (1WG-4-1ZN) : 4.0 kW / 5.4 HP pour ouvrir des tranchées de 300-500 mm en une passe. Convertit tout motoculteur compatible en buttoir dédié. Boîte fonte ductile renforcée pour sol limoneux et sableux. Même lanceur, guidon réglable, compatible avec la base 1WG.4.1ZN.",
+      "sw": "Kiambatanisho cha ditching-ridger cha dizeli 178Cc (1WG-4-1ZN) kinatoa 4.0 kW / 5.4 HP kwa kuchimba makorongo ya 300-500 mm kwa kupita moja. Kinageuza trekta ndogo yoyote inayoendana kuwa ridger maalum. Sanduku la gia la chuma ductile lililimishwa linashughulikia udongo tifu na mchanga. Kuanzisha kwa kuvuta mkono kwa kawaida, mpini unaoweza kurekebishwa, uoanifu kamili na msingi wa trekta wa 1WG.4.1ZN."
     },
     "bestFor": {
       "en": [
@@ -2858,6 +3366,13 @@ var PRODUCTS =
         "Canaux drainage et irrigation vergers",
         "Petites/moyennes fermes 0.5-2 ha",
         "Préparation planches en serre"
+      ],
+      "sw": [
+        "Ploti za mboga za udongo tifu na mchanga",
+        "Kilimo cha safu cha viazi, nyanya, pilipili",
+        "Mifereji ya maji na umwagiliaji wa mashamba ya matunda",
+        "Mashamba madogo hadi ya kati ya hekta 0.5-2",
+        "Maandalizi ya mazao yaliyoinuliwa katika greenhouse"
       ]
     },
     "features": {
@@ -2920,6 +3435,18 @@ var PRODUCTS =
         "Changement d'accessoire sans outil",
         "Guidon réglable (hauteur + horizontal)",
         "Compatible avec toutes les bases 1WG-4"
+      ],
+      "sw": [
+        "Injini ya dizeli 178Cc 4-stroke inayochuja hewa — 4.0 kW / 5.4 HP",
+        "Kina cha kuchimba mifuko: 300-500 mm",
+        "Upana wa kuchimba mifuko unaoweza kurekebishwa 200-400 mm",
+        "Trekta ya rotary ya kuendesha moja kwa moja + mseto wa ridger",
+        "Sanduku la gia la chuma ductile, 2 mbele + 1 nyuma",
+        "Kuanzisha kwa kuvuta mkono — hakuna betri",
+        "Uzito wa wavu: 118 kg",
+        "Kubadilisha kiambatanisho bila zana",
+        "Mpini unaoweza kurekebishwa (urefu + mlalo)",
+        "Inaoana na misingi yote ya trekta ya mfululizo wa 1WG-4"
       ]
     },
     "gallery": [
@@ -2934,7 +3461,8 @@ var PRODUCTS =
       "zh": "186开沟培土机(战牛Pro)",
       "es": "Máquina Zanjas 186 (Toro Pro)",
       "ru": "Машина для канав 186 (Бык Pro)",
-      "fr": "Machine à Fossés 186 (Taureau Pro)"
+      "fr": "Machine à Fossés 186 (Taureau Pro)",
+      "sw": "Kifaa cha Mifuko 186 (Ng'ombe Pro)"
     },
     "model": "1WG-6.3ZN",
     "cat": "ditching",
@@ -3018,6 +3546,22 @@ var PRODUCTS =
         "Changement accessoire: moins de 10 min",
         "Bases compatibles: même classe moteur",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 186cc Zhanma 4-stroke au 2-stroke injini ya dizeli, silinda moja inayochuja hewa, 8-15 HP zinapatikana katika safu kamili ya mifano",
+        "Uhamishaji: Gia ya moja kwa moja, inaokoa mafuta na kiuchumi",
+        "Nguvu: 6.3 kW / 8.4 HP @ 3600 rpm",
+        "Kina cha kuchimba mifuko: 350-600 mm",
+        "Upana wa kuchimba mifuko: 200-400 mm inaweza kurekebishwa",
+        "Upana wa kazi (hali ya rotary): 600-1050 mm",
+        "Sanduku la gia: chuma ductile, 2 mbele + 1 nyuma",
+        "Mafuta: dizeli #0",
+        "Tanki la mafuta: 4.5 L",
+        "Uzito wa wavu: 140 kg",
+        "Kuanzisha: Kuvuta mkono",
+        "Kubadilisha kiambatanisho: chini ya dakika 10",
+        "Misingi inayoendana: trekta ya darasa moja la injini",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "ditch-004.jpg",
@@ -3026,7 +3570,8 @@ var PRODUCTS =
       "zh": "186cc diesel 开沟培土机（1WG-6-3ZN）额定 6.3 kW / 8.4 马力，一次完成 350-600 mm 深沟起垄。适配同系列微耕主机，一机两用。加强型球墨铸铁变速箱，可应对重粘土碎石地。手拉反启动、把手可调、与 1WG.6.3ZN 系列主机完全兼容。",
       "es": "Zanjador-aporcador 186cc diesel (1WG-6-3ZN) entrega 6.3 kW / 8.4 HP para abrir surcos de 350-600 mm en una pasada. Convierte cualquier motocultor compatible en aporcador dedicado. Caja hierro dúctil reforzada para suelo arcilloso y rocoso. Mismo arranque por cuerda, manillar ajustable, compatible con la base 1WG.6.3ZN.",
       "ru": "186cc diesel окучник-канавокопатель (1WG-6-3ZN): 6.3 кВт / 8.4 л.с. для борозд 350-600 мм за один проход. Превращает любой совместимый мотокультиватор в грядоделатель. Усиленная коробка из ковкого чугуна для тяжёлой глины и каменистой почвы. Тот же ручной стартер, регулируемая рукоятка, совместим с базой 1WG.6.3ZN.",
-      "fr": "Trancheuse-buttoir 186cc diesel (1WG-6-3ZN) : 6.3 kW / 8.4 HP pour ouvrir des tranchées de 350-600 mm en une passe. Convertit tout motoculteur compatible en buttoir dédié. Boîte fonte ductile renforcée pour sol argileux et rocheux. Même lanceur, guidon réglable, compatible avec la base 1WG.6.3ZN."
+      "fr": "Trancheuse-buttoir 186cc diesel (1WG-6-3ZN) : 6.3 kW / 8.4 HP pour ouvrir des tranchées de 350-600 mm en une passe. Convertit tout motoculteur compatible en buttoir dédié. Boîte fonte ductile renforcée pour sol argileux et rocheux. Même lanceur, guidon réglable, compatible avec la base 1WG.6.3ZN.",
+      "sw": "Kiambatanisho cha ditching-ridger cha dizeli 186Cc (1WG-6-3ZN) kinatoa 6.3 kW / 8.4 HP kwa kuchimba makorongo ya 350-600 mm kwa kupita moja. Kinageuza trekta ndogo yoyote inayoendana kuwa ridger maalum. Sanduku la gia la chuma ductile lililimishwa linashughulikia udongo mzito wa kauri na wenye mawe. Kuanzisha kwa kuvuta mkono kwa kawaida, mpini unaoweza kurekebishwa, uoanifu kamili na msingi wa trekta wa 1WG.6.3ZN."
     },
     "bestFor": {
       "en": [
@@ -3063,6 +3608,13 @@ var PRODUCTS =
         "Canaux drainage et irrigation vergers",
         "Fermes commerciales 2+ ha",
         "Préparation planches en serre"
+      ],
+      "sw": [
+        "Mashamba ya udongo mzito wa kauri au yenye mawe",
+        "Kilimo cha safu cha viazi, nyanya, pilipili",
+        "Mifereji ya maji na umwagiliaji wa mashamba ya matunda",
+        "Mashamba ya kibiashara ya hekta 2+",
+        "Maandalizi ya mazao yaliyoinuliwa katika greenhouse"
       ]
     },
     "features": {
@@ -3125,6 +3677,18 @@ var PRODUCTS =
         "Changement d'accessoire sans outil",
         "Guidon réglable (hauteur + horizontal)",
         "Compatible avec toutes les bases 1WG-6"
+      ],
+      "sw": [
+        "Injini ya dizeli 186Cc 4-stroke inayochuja hewa — 6.3 kW / 8.4 HP",
+        "Kina cha kuchimba mifuko: 350-600 mm",
+        "Upana wa kuchimba mifuko unaoweza kurekebishwa 200-400 mm",
+        "Trekta ya rotary ya kuendesha moja kwa moja + mseto wa ridger",
+        "Sanduku la gia la chuma ductile, 2 mbele + 1 nyuma",
+        "Kuanzisha kwa kuvuta mkono — hakuna betri",
+        "Uzito wa wavu: 140 kg",
+        "Kubadilisha kiambatanisho bila zana",
+        "Mpini unaoweza kurekebishwa (urefu + mlalo)",
+        "Inaoana na misingi yote ya trekta ya mfululizo wa 1WG-6"
       ]
     },
     "gallery": [
@@ -3139,7 +3703,8 @@ var PRODUCTS =
       "zh": "高压抽水机(皮带款)",
       "es": "Bomba Alta Presión (Correa)",
       "ru": "Насос высокого давления (ременной)",
-      "fr": "Pompe Haute Pression (Courroie)"
+      "fr": "Pompe Haute Pression (Courroie)",
+      "sw": "Pampu ya Shinikizo la Juu (Mkanda)"
     },
     "model": "200-5 Belt",
     "cat": "pump",
@@ -3233,6 +3798,24 @@ var PRODUCTS =
         "Poids net: 25 kg",
         "Démarrage: recoil",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 168F mafuta ya petroli 4-stroke, silinda moja, inayochuja hewa",
+        "Ujazo: 196 cc",
+        "Nguvu: 4.8 kW / 6.4 HP @ 3600 rpm",
+        "Kipenyo cha mlango wa ndani / nje: 50 / 50 mm",
+        "Kiwango cha juu cha mtiririko: 30 m³/h (500 L/min)",
+        "Kimo cha juu cha kuinua maji: 30 m",
+        "Kimo cha juu cha kunyonya: 7 m",
+        "Muda wa kujisukuma: ≤ sekunde 90 kwa 6 m",
+        "Mzungumzaji: chuma cha kutupwa",
+        "Mwili wa pampu: aloi ya alumini",
+        "Muhuri wa mitambo: keramik + grafiti",
+        "Mafuta: mafuta ya petroli",
+        "Tanki la mafuta: 4.5 L",
+        "Uzito wa wavu: 25 kg",
+        "Kuanzisha: Kuvuta mkono",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "pump-001.jpg",
@@ -3245,7 +3828,8 @@ var PRODUCTS =
       "zh": "皮带传动，168F gasoline 发动机，4.8 kW / 6.4 HP。最大流量 30 m³/h，最大扬程 30 m，自吸 7 m，进出水口径 50 / 50 mm。皮带传动设计让发动机与水泵软连接，机械密封寿命更长，噪音仅 78 dB(A)。",
       "es": "Transmisión por correa con motor 168F gasoline — 4.8 kW / 6.4 HP. Caudal máx 30 m³/h, altura máx 30 m, succión 7 m, bocas 50 / 50 mm. La transmisión por correa aísla la vibración del motor de la bomba, alargando la vida del sello y bajando el ruido a 78 dB(A).",
       "ru": "Ременной привод с двигателем 168F gasoline — 4.8 кВт / 6.4 л.с. Макс. подача 30 м³/ч, макс. напор 30 м, всасывание 7 м, патрубки 50 / 50 мм. Ременной привод изолирует вибрацию двигателя от насоса — дольше служит уплотнение, тише на 78 дБ(А).",
-      "fr": "Transmission par courroie avec moteur 168F gasoline — 4.8 kW / 6.4 HP. Débit max 30 m³/h, hauteur max 30 m, aspiration 7 m, orifices 50 / 50 mm. La transmission par courroie isole les vibrations du moteur — durée de joint prolongée, bruit réduit à 78 dB(A)."
+      "fr": "Transmission par courroie avec moteur 168F gasoline — 4.8 kW / 6.4 HP. Débit max 30 m³/h, hauteur max 30 m, aspiration 7 m, orifices 50 / 50 mm. La transmission par courroie isole les vibrations du moteur — durée de joint prolongée, bruit réduit à 78 dB(A).",
+      "sw": "Inaendeshwa na mkanda na injini ya mafuta ya petroli 168F — 4.8 kW / 6.4 HP. Kiwango cha juu cha mtiririko 30 m³/h, kimo cha juu cha kuinua maji 30 m, kimo cha kunyonya 7 m, milango ya 50 / 50 mm. Muundo wa kuendesha kwa mkanda unatenga mtetemo wa injini kutoka kwa pampu kwa maisha marefu ya muhuri na utendaji wa kimya kwa 78 dB(A)."
     },
     "bestFor": {
       "en": [
@@ -3282,6 +3866,13 @@ var PRODUCTS =
         "Transfert puits vers réservoir",
         "Pompage chantier",
         "Transfert d'eau d'urgence en cas de coupure"
+      ],
+      "sw": [
+        "Umwagiliaji wa kilimo wa ardhi ya shamba na mashamba ya matunda",
+        "Kumwagilia bustani, greenhouse na uwanja wa nyasi",
+        "Kuhamisha maji kutoka kisima hadi tanki",
+        "Kuondoa maji kwenye eneo la ujenzi",
+        "Kuhamisha maji kwa dharura wakati wa kukatika kwa umeme"
       ]
     },
     "features": {
@@ -3344,6 +3935,18 @@ var PRODUCTS =
         "Auto-amorçage en moins de 90 secondes",
         "Alerte bas niveau d'huile avec arrêt",
         "Cadre acier pour portabilité"
+      ],
+      "sw": [
+        "Injini ya mafuta ya petroli 168F 4-stroke silinda moja — 4.8 kW / 6.4 HP",
+        "Kiwango cha juu cha mtiririko: 30 m³/h (500 L/min)",
+        "Kimo cha juu cha kuinua maji: 30 m",
+        "Kimo cha juu cha kunyonya: 7 m",
+        "Milango: mlango wa ndani / mlango wa nje 50 / 50 mm",
+        "Mzungumzaji wa chuma, mwili wa pampu wa aloi ya alumini",
+        "Muhuri wa mitambo: keramik + grafiti",
+        "Kujisukuma ndani ya sekunde 90",
+        "Kengele ya mafuta kidogo inayozima",
+        "Fremu ya cage ya chuma kwa kubebeka"
       ]
     }
   },
@@ -3354,7 +3957,8 @@ var PRODUCTS =
       "zh": "高压抽水机(直连款)",
       "es": "Bomba Alta Presión (Directa)",
       "ru": "Насос высокого давления (прямой)",
-      "fr": "Pompe Haute Pression (Directe)"
+      "fr": "Pompe Haute Pression (Directe)",
+      "sw": "Pampu ya Shinikizo la Juu (Moja kwa Moja)"
     },
     "model": "200-5 Direct",
     "cat": "pump",
@@ -3448,6 +4052,24 @@ var PRODUCTS =
         "Poids net: 26 kg",
         "Démarrage: recoil",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 170F mafuta ya petroli 4-stroke, silinda moja, inayochuja hewa",
+        "Ujazo: 208 cc",
+        "Nguvu: 4.5 kW / 6.0 HP @ 3600 rpm",
+        "Kipenyo cha mlango wa ndani / nje: 50 / 50 mm",
+        "Kiwango cha juu cha mtiririko: 36 m³/h (600 L/min)",
+        "Kimo cha juu cha kuinua maji: 30 m",
+        "Kimo cha juu cha kunyonya: 8 m",
+        "Muda wa kujisukuma: ≤ sekunde 90 kwa 7 m",
+        "Mzungumzaji: chuma cha kutupwa",
+        "Mwili wa pampu: aloi ya alumini",
+        "Muhuri wa mitambo: keramik + grafiti",
+        "Mafuta: mafuta ya petroli",
+        "Tanki la mafuta: 4.5 L",
+        "Uzito wa wavu: 26 kg",
+        "Kuanzisha: Kuvuta mkono",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "pump-002.jpg",
@@ -3456,7 +4078,8 @@ var PRODUCTS =
       "zh": "直连传动，170F gasoline 发动机，4.5 kW / 6.0 HP。最大流量 36 m³/h，最大扬程 30 m，自吸 8 m，进出水口径 50 / 50 mm。直连传动不打滑，发动机功率全部传到叶轮，扬程更高，几乎免维护。",
       "es": "Conexión directa con motor 170F gasoline — 4.5 kW / 6.0 HP. Caudal máx 36 m³/h, altura máx 30 m, succión 8 m, bocas 50 / 50 mm. La conexión directa elimina el deslizamiento de correa — toda la potencia llega al impulsor para mayor altura y mínimo mantenimiento.",
       "ru": "Прямой привод с двигателем 170F gasoline — 4.5 кВт / 6.0 л.с. Макс. подача 36 м³/ч, макс. напор 30 м, всасывание 8 м, патрубки 50 / 50 мм. Прямой привод без проскальзывания ремня — вся мощность идёт на крыльчатку, выше напор и минимум обслуживания.",
-      "fr": "Connexion directe avec moteur 170F gasoline — 4.5 kW / 6.0 HP. Débit max 36 m³/h, hauteur max 30 m, aspiration 8 m, orifices 50 / 50 mm. La connexion directe élimine le patinage de courroie — toute la puissance atteint la turbine pour plus de hauteur et moins d'entretien."
+      "fr": "Connexion directe avec moteur 170F gasoline — 4.5 kW / 6.0 HP. Débit max 36 m³/h, hauteur max 30 m, aspiration 8 m, orifices 50 / 50 mm. La connexion directe élimine le patinage de courroie — toute la puissance atteint la turbine pour plus de hauteur et moins d'entretien.",
+      "sw": "Inaendeshwa moja kwa moja na injini ya mafuta ya petroli 170F — 4.5 kW / 6.0 HP. Kiwango cha juu cha mtiririko 36 m³/h, kimo cha juu cha kuinua maji 30 m, kimo cha kunyonya 8 m, milango ya 50 / 50 mm. Usanifu wa kuendesha moja kwa moja unaondoa kuteleza kwa mkanda — nguvu kamili ya injini inafikia mzungumzaji kwa uwezo wa juu wa kuinua na matengenezo kidogo."
     },
     "bestFor": {
       "en": [
@@ -3493,6 +4116,13 @@ var PRODUCTS =
         "Transfert puits vers réservoir",
         "Pompage chantier",
         "Transfert d'eau d'urgence en cas de coupure"
+      ],
+      "sw": [
+        "Umwagiliaji wa kilimo wa ardhi ya shamba na mashamba ya matunda",
+        "Kumwagilia bustani, greenhouse na uwanja wa nyasi",
+        "Kuhamisha maji kutoka kisima hadi tanki",
+        "Kuondoa maji kwenye eneo la ujenzi",
+        "Kuhamisha maji kwa dharura wakati wa kukatika kwa umeme"
       ]
     },
     "features": {
@@ -3555,6 +4185,18 @@ var PRODUCTS =
         "Auto-amorçage en moins de 90 secondes",
         "Alerte bas niveau d'huile avec arrêt",
         "Cadre acier pour portabilité"
+      ],
+      "sw": [
+        "Injini ya mafuta ya petroli 170F 4-stroke silinda moja — 4.5 kW / 6.0 HP",
+        "Kiwango cha juu cha mtiririko: 36 m³/h (600 L/min)",
+        "Kimo cha juu cha kuinua maji: 30 m",
+        "Kimo cha juu cha kunyonya: 8 m",
+        "Milango: mlango wa ndani / mlango wa nje 50 / 50 mm",
+        "Mzungumzaji wa chuma, mwili wa pampu wa aloi ya alumini",
+        "Muhuri wa mitambo: keramik + grafiti",
+        "Kujisukuma ndani ya sekunde 90",
+        "Kengele ya mafuta kidogo inayozima",
+        "Fremu ya cage ya chuma kwa kubebeka"
       ]
     },
     "gallery": [
@@ -3569,7 +4211,8 @@ var PRODUCTS =
       "zh": "2寸离心泵",
       "es": "Bomba Centrífuga 2\"",
       "ru": "Центробежный насос 2\"",
-      "fr": "Pompe Centrifuge 2\""
+      "fr": "Pompe Centrifuge 2\"",
+      "sw": "Pampu ya Sentrifugu 2 inchi"
     },
     "model": "2\" Centrifugal",
     "cat": "pump",
@@ -3663,6 +4306,24 @@ var PRODUCTS =
         "Poids net: 24 kg",
         "Démarrage: recoil",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 170F mafuta ya petroli 4-stroke, silinda moja, inayochuja hewa",
+        "Ujazo: 208 cc",
+        "Nguvu: 4.5 kW / 6.0 HP @ 3600 rpm",
+        "Kipenyo cha mlango wa ndani / nje: 50 / 50 mm",
+        "Kiwango cha juu cha mtiririko: 36 m³/h (600 L/min)",
+        "Kimo cha juu cha kuinua maji: 30 m",
+        "Kimo cha juu cha kunyonya: 8 m",
+        "Muda wa kujisukuma: ≤ sekunde 90 kwa 7 m",
+        "Mzungumzaji: chuma cha kutupwa",
+        "Mwili wa pampu: aloi ya alumini",
+        "Muhuri wa mitambo: keramik + grafiti",
+        "Mafuta: mafuta ya petroli",
+        "Tanki la mafuta: 4.5 L",
+        "Uzito wa wavu: 24 kg",
+        "Kuanzisha: Kuvuta mkono",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "pump-003.jpg",
@@ -3671,7 +4332,8 @@ var PRODUCTS =
       "zh": "自吸离心泵，170F gasoline 发动机，4.5 kW / 6.0 HP。最大流量 36 m³/h，最大扬程 30 m，自吸 8 m，进出水口径 50 / 50 mm。铸铁叶轮 + 铝合金泵体，90 秒内可自吸完毕，即使闲置数月也能快速启动。",
       "es": "Centrífuga autocebante con motor 170F gasoline — 4.5 kW / 6.0 HP. Caudal máx 36 m³/h, altura máx 30 m, succión 8 m, bocas 50 / 50 mm. Impulsor de hierro fundido en cuerpo de aluminio — cebado en menos de 90 segundos, incluso tras meses de almacenamiento.",
       "ru": "Самовсасывающий центробежный с двигателем 170F gasoline — 4.5 кВт / 6.0 л.с. Макс. подача 36 м³/ч, макс. напор 30 м, всасывание 8 м, патрубки 50 / 50 мм. Чугунная крыльчатка в алюминиевом корпусе — самовсасывание за 90 секунд даже после месяцев простоя.",
-      "fr": "Centrifuge auto-amorçante avec moteur 170F gasoline — 4.5 kW / 6.0 HP. Débit max 36 m³/h, hauteur max 30 m, aspiration 8 m, orifices 50 / 50 mm. Turbine fonte dans corps aluminium — amorçage en moins de 90 secondes même après des mois d'arrêt."
+      "fr": "Centrifuge auto-amorçante avec moteur 170F gasoline — 4.5 kW / 6.0 HP. Débit max 36 m³/h, hauteur max 30 m, aspiration 8 m, orifices 50 / 50 mm. Turbine fonte dans corps aluminium — amorçage en moins de 90 secondes même après des mois d'arrêt.",
+      "sw": "Pampu ya sentrifugu inayojisukuma inaendeshwa na injini ya mafuta ya petroli 170F — 4.5 kW / 6.0 HP. Kiwango cha juu cha mtiririko 36 m³/h, kimo cha juu cha kuinua maji 30 m, kimo cha kunyonya 8 m, milango ya 50 / 50 mm. Mzungumzaji wa chuma katika nyumba ya alumini ya pampu — imesukama na tayari ndani ya sekunde 90, hata baada ya miezi ya kuhifadhi kavu."
     },
     "bestFor": {
       "en": [
@@ -3708,6 +4370,13 @@ var PRODUCTS =
         "Transfert puits vers réservoir",
         "Pompage chantier",
         "Transfert d'eau d'urgence en cas de coupure"
+      ],
+      "sw": [
+        "Umwagiliaji wa kilimo wa ardhi ya shamba na mashamba ya matunda",
+        "Kumwagilia bustani, greenhouse na uwanja wa nyasi",
+        "Kuhamisha maji kutoka kisima hadi tanki",
+        "Kuondoa maji kwenye eneo la ujensi",
+        "Kuhamisha maji kwa dharura wakati wa kukatika kwa umeme"
       ]
     },
     "features": {
@@ -3770,6 +4439,18 @@ var PRODUCTS =
         "Auto-amorçage en moins de 90 secondes",
         "Alerte bas niveau d'huile avec arrêt",
         "Cadre acier pour portabilité"
+      ],
+      "sw": [
+        "Injini ya mafuta ya petroli 170F 4-stroke silinda moja — 4.5 kW / 6.0 HP",
+        "Kiwango cha juu cha mtiririko: 36 m³/h (600 L/min)",
+        "Kimo cha juu cha kuinua maji: 30 m",
+        "Kimo cha juu cha kunyonya: 8 m",
+        "Milango: mlango wa ndani / mlango wa nje 50 / 50 mm",
+        "Mzungumzaji wa chuma, mwili wa pampu wa aloi ya alumini",
+        "Muhuri wa mitambo: keramik + grafiti",
+        "Kujisukuma ndani ya sekunde 90",
+        "Kengele ya mafuta kidogo inayozima",
+        "Fremu ya cage ya chuma kwa kubebeka"
       ]
     },
     "gallery": [
@@ -3784,7 +4465,8 @@ var PRODUCTS =
       "zh": "3寸离心泵",
       "es": "Bomba Centrífuga 3\"",
       "ru": "Центробежный насос 3\"",
-      "fr": "Pompe Centrifuge 3\""
+      "fr": "Pompe Centrifuge 3\"",
+      "sw": "Pampu ya Sentrifugu 3 inchi"
     },
     "model": "3\" Centrifugal",
     "cat": "pump",
@@ -3878,6 +4560,24 @@ var PRODUCTS =
         "Poids net: 26 kg",
         "Démarrage: recoil",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 212CC mafuta ya petroli 4-stroke, silinda moja, inayochuja hewa",
+        "Ujazo: 212 cc",
+        "Nguvu: 5.5 kW / 7.4 HP @ 3600 rpm",
+        "Kipenyo cha mlango wa ndani / nje: 80 / 80 mm",
+        "Kiwango cha juu cha mtiririko: 60 m³/h (1000 L/min)",
+        "Kimo cha juu cha kuinua maji: 28 m",
+        "Kimo cha juu cha kunyonya: 8 m",
+        "Muda wa kujisukuma: ≤ sekunde 90 kwa 7 m",
+        "Mzungumzaji: chuma cha kutupwa",
+        "Mwili wa pampu: aloi ya alumini",
+        "Muhuri wa mitambo: keramik + grafiti",
+        "Mafuta: mafuta ya petroli",
+        "Tanki la mafuta: 5.5 L",
+        "Uzito wa wavu: 26 kg",
+        "Kuanzisha: Kuvuta mkono",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "pump-004.jpg",
@@ -3886,7 +4586,8 @@ var PRODUCTS =
       "zh": "自吸离心泵，212CC gasoline 发动机，5.5 kW / 7.4 HP。最大流量 60 m³/h，最大扬程 28 m，自吸 8 m，进出水口径 80 / 80 mm。铸铁叶轮 + 铝合金泵体，90 秒内可自吸完毕，即使闲置数月也能快速启动。",
       "es": "Centrífuga autocebante con motor 212CC gasoline — 5.5 kW / 7.4 HP. Caudal máx 60 m³/h, altura máx 28 m, succión 8 m, bocas 80 / 80 mm. Impulsor de hierro fundido en cuerpo de aluminio — cebado en menos de 90 segundos, incluso tras meses de almacenamiento.",
       "ru": "Самовсасывающий центробежный с двигателем 212CC gasoline — 5.5 кВт / 7.4 л.с. Макс. подача 60 м³/ч, макс. напор 28 м, всасывание 8 м, патрубки 80 / 80 мм. Чугунная крыльчатка в алюминиевом корпусе — самовсасывание за 90 секунд даже после месяцев простоя.",
-      "fr": "Centrifuge auto-amorçante avec moteur 212CC gasoline — 5.5 kW / 7.4 HP. Débit max 60 m³/h, hauteur max 28 m, aspiration 8 m, orifices 80 / 80 mm. Turbine fonte dans corps aluminium — amorçage en moins de 90 secondes même après des mois d'arrêt."
+      "fr": "Centrifuge auto-amorçante avec moteur 212CC gasoline — 5.5 kW / 7.4 HP. Débit max 60 m³/h, hauteur max 28 m, aspiration 8 m, orifices 80 / 80 mm. Turbine fonte dans corps aluminium — amorçage en moins de 90 secondes même après des mois d'arrêt.",
+      "sw": "Pampu ya sentrifugu inayojisukuma inaendeshwa na injini ya mafuta ya petroli 212CC — 5.5 kW / 7.4 HP. Kiwango cha juu cha mtiririko 60 m³/h, kimo cha juu cha kuinua maji 28 m, kimo cha kunyonya 8 m, milango ya 80 / 80 mm. Mzungumzaji wa chuma katika nyumba ya alumini ya pampu — imesukama na tayari ndani ya sekunde 90, hata baada ya miezi ya kuhifadhi kavu."
     },
     "bestFor": {
       "en": [
@@ -3923,6 +4624,13 @@ var PRODUCTS =
         "Drainage rizières et lutte contre inondations",
         "Pompage chantier",
         "Transfert d'eau d'urgence en cas de coupure"
+      ],
+      "sw": [
+        "Umwagiliaji wa kilimo wa ardhi ya shamba na mashamba ya matunda",
+        "Kumwagilia bustani, greenhouse na uwanja wa nyasi",
+        "Kumaliza maji ya shamba la mchele na kudhibiti mafuriko",
+        "Kuondoa maji kwenye eneo la ujenzi",
+        "Kuhamisha maji kwa dharura wakati wa kukatika kwa umeme"
       ]
     },
     "features": {
@@ -3985,6 +4693,18 @@ var PRODUCTS =
         "Auto-amorçage en moins de 90 secondes",
         "Alerte bas niveau d'huile avec arrêt",
         "Cadre acier pour portabilité"
+      ],
+      "sw": [
+        "Injini ya mafuta ya petroli 212Cc 4-stroke silinda moja — 5.5 kW / 7.4 HP",
+        "Kiwango cha juu cha mtiririko: 60 m³/h (1000 L/min)",
+        "Kimo cha juu cha kuinua maji: 28 m",
+        "Kimo cha juu cha kunyonya: 8 m",
+        "Milango: mlango wa ndani / mlango wa nje 80 / 80 mm",
+        "Mzungumzaji wa chuma, mwili wa pampu wa aloi ya alumini",
+        "Muhuri wa mitambo: keramik + grafiti",
+        "Kujisukuma ndani ya sekunde 90",
+        "Kengele ya mafuta kidogo inayozima",
+        "Fremu ya cage ya chuma kwa kubebeka"
       ]
     },
     "gallery": [
@@ -3999,7 +4719,8 @@ var PRODUCTS =
       "zh": "自吸泵",
       "es": "Bomba Auto-aspirante",
       "ru": "Самовсасывающий насос",
-      "fr": "Pompe Auto-amorçante"
+      "fr": "Pompe Auto-amorçante",
+      "sw": "Pampu ya Kujisukuma"
     },
     "model": "Self-Priming 2~3\"",
     "cat": "pump",
@@ -4093,6 +4814,24 @@ var PRODUCTS =
         "Poids net: 27 kg",
         "Démarrage: recoil",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 170F mafuta ya petroli 4-stroke, silinda moja, inayochuja hewa",
+        "Ujazo: 208 cc",
+        "Nguvu: 4.5 kW / 6.0 HP @ 3600 rpm",
+        "Kipenyo cha mlango wa ndani / nje: 50-80 / 50-80 mm",
+        "Kiwango cha juu cha mtiririko: 50 m³/h (834 L/min)",
+        "Kimo cha juu cha kuinua maji: 30 m",
+        "Kimo cha juu cha kunyonya: 8 m",
+        "Muda wa kujisukuma: ≤ sekunde 90 kwa 7 m",
+        "Mzungumzaji: chuma cha kutupwa",
+        "Mwili wa pampu: aloi ya alumini",
+        "Muhuri wa mitambo: keramik + grafiti",
+        "Mafuta: mafuta ya petroli",
+        "Tanki la mafuta: 4.5 L",
+        "Uzito wa wavu: 27 kg",
+        "Kuanzisha: Kuvuta mkono",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "pump-005.jpg",
@@ -4101,7 +4840,8 @@ var PRODUCTS =
       "zh": "自吸离心泵，170F gasoline 发动机，4.5 kW / 6.0 HP。最大流量 50 m³/h，最大扬程 30 m，自吸 8 m，进出水口径 50-80 / 50-80 mm。铸铁叶轮 + 铝合金泵体，90 秒内可自吸完毕，即使闲置数月也能快速启动。",
       "es": "Centrífuga autocebante con motor 170F gasoline — 4.5 kW / 6.0 HP. Caudal máx 50 m³/h, altura máx 30 m, succión 8 m, bocas 50-80 / 50-80 mm. Impulsor de hierro fundido en cuerpo de aluminio — cebado en menos de 90 segundos, incluso tras meses de almacenamiento.",
       "ru": "Самовсасывающий центробежный с двигателем 170F gasoline — 4.5 кВт / 6.0 л.с. Макс. подача 50 м³/ч, макс. напор 30 м, всасывание 8 м, патрубки 50-80 / 50-80 мм. Чугунная крыльчатка в алюминиевом корпусе — самовсасывание за 90 секунд даже после месяцев простоя.",
-      "fr": "Centrifuge auto-amorçante avec moteur 170F gasoline — 4.5 kW / 6.0 HP. Débit max 50 m³/h, hauteur max 30 m, aspiration 8 m, orifices 50-80 / 50-80 mm. Turbine fonte dans corps aluminium — amorçage en moins de 90 secondes même après des mois d'arrêt."
+      "fr": "Centrifuge auto-amorçante avec moteur 170F gasoline — 4.5 kW / 6.0 HP. Débit max 50 m³/h, hauteur max 30 m, aspiration 8 m, orifices 50-80 / 50-80 mm. Turbine fonte dans corps aluminium — amorçage en moins de 90 secondes même après des mois d'arrêt.",
+      "sw": "Pampu ya sentrifugu inayojisukuma inaendeshwa na injini ya mafuta ya petroli 170F — 4.5 kW / 6.0 HP. Kiwango cha juu cha mtiririko 50 m³/h, kimo cha juu cha kuinua maji 30 m, kimo cha kunyonya 8 m, milango ya 50-80 / 50-80 mm. Mzungumzaji wa chuma katika nyumba ya alumini ya pampu — imesukama na tayari ndani ya sekunde 90, hata baada ya miezi ya kuhifadhi kavu."
     },
     "bestFor": {
       "en": [
@@ -4138,6 +4878,13 @@ var PRODUCTS =
         "Drainage rizières et lutte contre inondations",
         "Pompage chantier",
         "Transfert d'eau d'urgence en cas de coupure"
+      ],
+      "sw": [
+        "Umwagiliaji wa kilimo wa ardhi ya shamba na mashamba ya matunda",
+        "Kumwagilia bustani, greenhouse na uwanja wa nyasi",
+        "Kumaliza maji ya shamba la mchele na kudhibiti mafuriko",
+        "Kuondoa maji kwenye eneo la ujenzi",
+        "Kuhamisha maji kwa dharura wakati wa kukatika kwa umeme"
       ]
     },
     "features": {
@@ -4200,6 +4947,18 @@ var PRODUCTS =
         "Auto-amorçage en moins de 90 secondes",
         "Alerte bas niveau d'huile avec arrêt",
         "Cadre acier pour portabilité"
+      ],
+      "sw": [
+        "Injini ya mafuta ya petroli 170F 4-stroke silinda moja — 4.5 kW / 6.0 HP",
+        "Kiwango cha juu cha mtiririko: 50 m³/h (834 L/min)",
+        "Kimo cha juu cha kuinua maji: 30 m",
+        "Kimo cha juu cha kunyonya: 8 m",
+        "Milango: mlango wa ndani / mlango wa nje 50-80 / 50-80 mm",
+        "Mzungumzaji wa chuma, mwili wa pampu wa aloi ya alumini",
+        "Muhuri wa mitambo: keramik + grafiti",
+        "Kujisukuma ndani ya sekunde 90",
+        "Kengele ya mafuta kidogo inayozima",
+        "Fremu ya cage ya chuma kwa kubebeka"
       ]
     },
     "gallery": [
@@ -4214,7 +4973,8 @@ var PRODUCTS =
       "zh": "消防泵",
       "es": "Bomba Contra Incendios",
       "ru": "Пожарный насос",
-      "fr": "Pompe à Incendie"
+      "fr": "Pompe à Incendie",
+      "sw": "Pampu ya Zimamoto"
     },
     "model": "Fire 2\"",
     "cat": "pump",
@@ -4308,6 +5068,24 @@ var PRODUCTS =
         "Poids net: 26 kg",
         "Démarrage: recoil",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 170F mafuta ya petroli 4-stroke, silinda moja, inayochuja hewa",
+        "Ujazo: 208 cc",
+        "Nguvu: 4.5 kW / 6.0 HP @ 3600 rpm",
+        "Kipenyo cha mlango wa ndani / nje: 50 / 50 mm",
+        "Kiwango cha juu cha mtiririko: 36 m³/h (600 L/min)",
+        "Kimo cha juu cha kuinua maji: 60 m",
+        "Kimo cha juu cha kunyonya: 8 m",
+        "Muda wa kujisukuma: ≤ sekunde 90 kwa 7 m",
+        "Mzungumzaji: chuma cha kutupwa",
+        "Mwili wa pampu: aloi ya alumini",
+        "Muhuri wa mitambo: keramik + grafiti",
+        "Mafuta: mafuta ya petroli",
+        "Tanki la mafuta: 4.5 L",
+        "Uzito wa wavu: 26 kg",
+        "Kuanzisha: Kuvuta mkono",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "pump-006.jpg",
@@ -4316,7 +5094,8 @@ var PRODUCTS =
       "zh": "高压消防泵，170F gasoline 发动机，4.5 kW / 6.0 HP。最大流量 36 m³/h，最大扬程 60 m，自吸 8 m，进出水口径 50 / 50 mm。高压 60 m 扬程，可用于消防、果园喷雾、屋顶水箱供水，针对长时间高压循环作业设计。",
       "es": "Bomba contra incendios con motor 170F gasoline — 4.5 kW / 6.0 HP. Caudal máx 36 m³/h, altura máx 60 m, succión 8 m, bocas 50 / 50 mm. Alta presión 60 m de altura para extinción de incendios, fumigación de huertos y suministro a tanques de techo — diseñada para ciclos de alta elevación sostenidos.",
       "ru": "Пожарный насос с двигателем 170F gasoline — 4.5 кВт / 6.0 л.с. Макс. подача 36 м³/ч, макс. напор 60 м, всасывание 8 м, патрубки 50 / 50 мм. Высокий напор 60 м для пожаротушения, опрыскивания садов и подачи на крышу — рассчитан на длительные циклы высокого давления.",
-      "fr": "Pompe à incendie avec moteur 170F gasoline — 4.5 kW / 6.0 HP. Débit max 36 m³/h, hauteur max 60 m, aspiration 8 m, orifices 50 / 50 mm. Haute pression 60 m de hauteur pour lutte incendie, pulvérisation vergers et alimentation réservoir en hauteur — conçu pour cycles soutenue haute pression."
+      "fr": "Pompe à incendie avec moteur 170F gasoline — 4.5 kW / 6.0 HP. Débit max 36 m³/h, hauteur max 60 m, aspiration 8 m, orifices 50 / 50 mm. Haute pression 60 m de hauteur pour lutte incendie, pulvérisation vergers et alimentation réservoir en hauteur — conçu pour cycles soutenue haute pression.",
+      "sw": "Pampu ya zimamoto ya shinikizo la juu inaendeshwa na injini ya mafuta ya petroli 170F — 4.5 kW / 6.0 HP. Kiwango cha juu cha mtiririko 36 m³/h, kimo cha juu cha kuinua maji 60 m, kimo cha kunyonya 8 m, milango ya 50 / 50 mm. Kimo cha juu cha shinikizo 60 m kwa kuzima moto, kupulizia mashamba ya matunda, na usambazaji wa tanki la paa — imeundwa kwa mizunguko ya kazi ya kudumu ya juu."
     },
     "bestFor": {
       "en": [
@@ -4353,6 +5132,13 @@ var PRODUCTS =
         "Transfert puits vers réservoir",
         "Approvisionnement multi-étages longue distance",
         "Transfert d'eau d'urgence en cas de coupure"
+      ],
+      "sw": [
+        "Umwagiliaji wa kilimo wa ardhi ya shamba na mashamba ya matunda",
+        "Kumwagilia bustani, greenhouse na uwanja wa nyasi",
+        "Kuhamisha maji kutoka kisima hadi tanki",
+        "Usambazaji wa maji wa jengo la mbali na lenye sakafu nyingi",
+        "Kuhamisha maji kwa dharura wakati wa kukatika kwa umeme"
       ]
     },
     "features": {
@@ -4415,6 +5201,18 @@ var PRODUCTS =
         "Auto-amorçage en moins de 90 secondes",
         "Alerte bas niveau d'huile avec arrêt",
         "Cadre acier pour portabilité"
+      ],
+      "sw": [
+        "Injini ya mafuta ya petroli 170F 4-stroke silinda moja — 4.5 kW / 6.0 HP",
+        "Kiwango cha juu cha mtiririko: 36 m³/h (600 L/min)",
+        "Kimo cha juu cha kuinua maji: 60 m",
+        "Kimo cha juu cha kunyonya: 8 m",
+        "Milango: mlango wa ndani / mlango wa nje 50 / 50 mm",
+        "Mzungumzaji wa chuma, mwili wa pampu wa aloi ya alumini",
+        "Muhuri wa mitambo: keramik + grafiti",
+        "Kujisukuma ndani ya sekunde 90",
+        "Kengele ya mafuta kidogo inayozima",
+        "Fremu ya cage ya chuma kwa kubebeka"
       ]
     },
     "gallery": [
@@ -4429,7 +5227,8 @@ var PRODUCTS =
       "zh": "柴油井泵",
       "es": "Bomba de Pozo Diésel",
       "ru": "Дизельный скважинный насос",
-      "fr": "Pompe de Puits Diesel"
+      "fr": "Pompe de Puits Diesel",
+      "sw": "Pampu ya Kisima ya Dizeli"
     },
     "model": "195 Diesel",
     "cat": "pump",
@@ -4523,6 +5322,24 @@ var PRODUCTS =
         "Poids net: 100 kg",
         "Démarrage: recoil",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 195 dizeli 4-stroke, silinda moja, inayochuja hewa",
+        "Ujazo: 632 cc",
+        "Nguvu: 8.8 kW / 11.8 HP @ 3600 rpm",
+        "Kipenyo cha mlango wa ndani / nje: 50 / 50 mm",
+        "Kiwango cha juu cha mtiririko: 50 m³/h (834 L/min)",
+        "Kimo cha juu cha kuinua maji: 30 m",
+        "Kimo cha juu cha kunyonya: 7 m",
+        "Muda wa kujisukuma: ≤ sekunde 90 kwa 6 m",
+        "Mzungumzaji: chuma cha kutupwa",
+        "Mwili wa pampu: aloi ya alumini",
+        "Muhuri wa mitambo: keramik + grafiti",
+        "Mafuta: dizeli #0",
+        "Tanki la mafuta: 5.5 L",
+        "Uzito wa wavu: 100 kg",
+        "Kuanzisha: Kuvuta mkono",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "pump-007.jpg",
@@ -4531,7 +5348,8 @@ var PRODUCTS =
       "zh": "柴油井泵，195 diesel 发动机，8.8 kW / 11.8 HP。最大流量 50 m³/h，最大扬程 30 m，自吸 7 m，进出水口径 50 / 50 mm。195 柴油机配重型铸铁泵，专为深井、偏远无汽油供应农场设计。风冷反启动直连泵轴。",
       "es": "Bomba diésel de pozo con motor 195 diesel — 8.8 kW / 11.8 HP. Caudal máx 50 m³/h, altura máx 30 m, succión 7 m, bocas 50 / 50 mm. Motor diésel 195 con bomba de hierro fundido de alta resistencia — para pozos profundos y granjas remotas sin gasolina. Refrigerado por aire, arranque por cuerda, conexión directa al eje.",
       "ru": "Дизельный скважинный насос с двигателем 195 diesel — 8.8 кВт / 11.8 л.с. Макс. подача 50 м³/ч, макс. напор 30 м, всасывание 7 м, патрубки 50 / 50 мм. Дизель 195 с тяжёлым чугунным насосом — для глубоких скважин и удалённых ферм без бензина. Воздушное охлаждение, ручной стартер, прямое соединение с валом насоса.",
-      "fr": "Pompe de puits diésel avec moteur 195 diesel — 8.8 kW / 11.8 HP. Débit max 50 m³/h, hauteur max 30 m, aspiration 7 m, orifices 50 / 50 mm. Moteur diésel 195 avec pompe en fonte robuste — pour puits profonds et fermes isolées sans essence. Refroidi par air, lanceur, connexion directe à l'arbre de pompe."
+      "fr": "Pompe de puits diésel avec moteur 195 diesel — 8.8 kW / 11.8 HP. Débit max 50 m³/h, hauteur max 30 m, aspiration 7 m, orifices 50 / 50 mm. Moteur diésel 195 avec pompe en fonte robuste — pour puits profonds et fermes isolées sans essence. Refroidi par air, lanceur, connexion directe à l'arbre de pompe.",
+      "sw": "Pampu ya kisima ya dizeli inaendeshwa na injini ya dizeli 195 — 8.8 kW / 11.8 HP. Kiwango cha juu cha mtiririko 50 m³/h, kimo cha juu cha kuinua maji 30 m, kimo cha kunyonya 7 m, milango ya 50 / 50 mm. Injini ya dizeli 195 imeochana na pampu ya chuma nzito — imejengwa kwa kazi ya kisima kirefu na shamba la mbali ambapo mafuta ya petroli hayapatikani. Inayochuja hewa, kuanzisha kwa kuvuta mkono, imeochana moja kwa moja na mhimili wa pampu."
     },
     "bestFor": {
       "en": [
@@ -4568,6 +5386,13 @@ var PRODUCTS =
         "Drainage rizières et lutte contre inondations",
         "Pompage chantier",
         "Transfert d'eau d'urgence en cas de coupure"
+      ],
+      "sw": [
+        "Umwagiliaji wa kilimo wa ardhi ya shamba na mashamba ya matunda",
+        "Kumwagilia bustani, greenhouse na uwanja wa nyasi",
+        "Kumaliza maji ya shamba la mchele na kudhibiti mafuriko",
+        "Kuondoa maji kwenye eneo la ujenzi",
+        "Kuhamisha maji kwa dharura wakati wa kukatika kwa umeme"
       ]
     },
     "features": {
@@ -4630,6 +5455,18 @@ var PRODUCTS =
         "Auto-amorçage en moins de 90 secondes",
         "Alerte bas niveau d'huile avec arrêt",
         "Cadre acier pour portabilité"
+      ],
+      "sw": [
+        "Injini ya dizeli 195 4-stroke silinda moja — 8.8 kW / 11.8 HP",
+        "Kiwango cha juu cha mtiririko: 50 m³/h (834 L/min)",
+        "Kimo cha juu cha kuinua maji: 30 m",
+        "Kimo cha juu cha kunyonya: 7 m",
+        "Milango: mlango wa ndani / mlango wa nje 50 / 50 mm",
+        "Mzungumzaji wa chuma, mwili wa pampu wa aloi ya alumini",
+        "Muhuri wa mitambo: keramik + grafiti",
+        "Kujisukuma ndani ya sekunde 90",
+        "Kengele ya mafuta kidogo inayozima",
+        "Fremu ya cage ya chuma kwa kubebeka"
       ]
     },
     "gallery": [
@@ -4644,7 +5481,8 @@ var PRODUCTS =
       "zh": "双叶轮压井泵",
       "es": "Bomba Doble Impulsor",
       "ru": "Двухлопастной насос",
-      "fr": "Pompe Double Roue"
+      "fr": "Pompe Double Roue",
+      "sw": "Pampu ya Mzungumzaji Mara Mbili"
     },
     "model": "Double-Impeller",
     "cat": "pump",
@@ -4738,6 +5576,24 @@ var PRODUCTS =
         "Poids net: 78 kg",
         "Démarrage: electric + recoil",
         "Garantie: 1 an"
+      ],
+      "sw": [
+        "Injini: 186F dizeli 4-stroke, silinda moja, inayochuja hewa",
+        "Ujazo: 418 cc",
+        "Nguvu: 6.6 kW / 8.9 HP @ 3600 rpm",
+        "Kipenyo cha mlango wa ndani / nje: 50-80 / 50-80 mm",
+        "Kiwango cha juu cha mtiririko: 70 m³/h (1167 L/min)",
+        "Kimo cha juu cha kuinua maji: 50 m",
+        "Kimo cha juu cha kunyonya: 7 m",
+        "Muda wa kujisukuma: ≤ sekunde 90 kwa 6 m",
+        "Mzungumzaji: chuma cha kutupwa",
+        "Mwili wa pampu: aloi ya alumini",
+        "Muhuri wa mitambo: keramik + grafiti",
+        "Mafuta: dizeli #0",
+        "Tanki la mafuta: 5.5 L",
+        "Uzito wa wavu: 78 kg",
+        "Kuanzisha: Umeme + Kuvuta mkono",
+        "Dhamana: mwaka 1"
       ]
     },
     "img": "pump-008.jpg",
@@ -4746,7 +5602,8 @@ var PRODUCTS =
       "zh": "双叶轮高压泵，186F diesel 发动机，6.6 kW / 8.9 HP。最大流量 70 m³/h，最大扬程 50 m，自吸 7 m，进出水口径 50-80 / 50-80 mm。双叶轮串联设计，两个叶轮叠加工作，高扬程中等流量，适合多层建筑供水、果园喷雾、长距离输水。",
       "es": "Bomba doble impulsor con motor 186F diesel — 6.6 kW / 8.9 HP. Caudal máx 70 m³/h, altura máx 50 m, succión 7 m, bocas 50-80 / 50-80 mm. Doble impulsor en serie: dos impulsores apilados para alta altura con caudal moderado — ideal para edificios de varias plantas, fumigación y transferencia a larga distancia.",
       "ru": "Двухкрыльчатый насос с двигателем 186F diesel — 6.6 кВт / 8.9 л.с. Макс. подача 70 м³/ч, макс. напор 50 м, всасывание 7 м, патрубки 50-80 / 50-80 мм. Две крыльчатки последовательно: высокое давление при средней подаче — идеально для многоэтажных зданий, опрыскивания садов, перекачки на дальние расстояния.",
-      "fr": "Pompe double turbine avec moteur 186F diesel — 6.6 kW / 8.9 HP. Débit max 70 m³/h, hauteur max 50 m, aspiration 7 m, orifices 50-80 / 50-80 mm. Double turbine en série : deux turbines empilées pour haute hauteur à débit modéré — parfait pour bâtiments à étages, pulvérisation vergers, transfert longue distance."
+      "fr": "Pompe double turbine avec moteur 186F diesel — 6.6 kW / 8.9 HP. Débit max 70 m³/h, hauteur max 50 m, aspiration 7 m, orifices 50-80 / 50-80 mm. Double turbine en série : deux turbines empilées pour haute hauteur à débit modéré — parfait pour bâtiments à étages, pulvérisation vergers, transfert longue distance.",
+      "sw": "Pampu ya shinikizo la juu ya mzungumzaji mara mbili inaendeshwa na injini ya dizeli 186F — 6.6 kW / 8.9 HP. Kiwango cha juu cha mtiririko 70 m³/h, kimo cha juu cha kuinua maji 50 m, kimo cha kunyonya 7 m, milango ya 50-80 / 50-80 mm. Muundo wa mzungumzaji mara mbili unapanga mzungumzaji wawili mfululizo kwa kimo cha juu kwa mtiririko wa wastani — kamili kwa usambazaji wa jengo la sakafu nyingi, kupulizia mashamba ya matunda, kuhamisha kwa mbali."
     },
     "bestFor": {
       "en": [
@@ -4783,6 +5640,13 @@ var PRODUCTS =
         "Drainage rizières et lutte contre inondations",
         "Approvisionnement multi-étages longue distance",
         "Transfert d'eau d'urgence en cas de coupure"
+      ],
+      "sw": [
+        "Umwagiliaji wa kilimo wa ardhi ya shamba na mashamba ya matunda",
+        "Kumwagilia bustani, greenhouse na uwanja wa nyasi",
+        "Kumaliza maji ya shamba la mchele na kudhibiti mafuriko",
+        "Usambazaji wa maji wa jengo la mbali na lenye sakafu nyingi",
+        "Kuhamisha maji kwa dharura wakati wa kukatika kwa umeme"
       ]
     },
     "features": {
@@ -4845,6 +5709,18 @@ var PRODUCTS =
         "Auto-amorçage en moins de 90 secondes",
         "Alerte bas niveau d'huile avec arrêt",
         "Cadre acier pour portabilité"
+      ],
+      "sw": [
+        "Injini ya dizeli 186F 4-stroke silinda moja — 6.6 kW / 8.9 HP",
+        "Kiwango cha juu cha mtiririko: 70 m³/h (1167 L/min)",
+        "Kimo cha juu cha kuinua maji: 50 m",
+        "Kimo cha juu cha kunyonya: 7 m",
+        "Milango: mlango wa ndani / mlango wa nje 50-80 / 50-80 mm",
+        "Mzungumzaji wa chuma, mwili wa pampu wa aloi ya alumini",
+        "Muhuri wa mitambo: keramik + grafiti",
+        "Kujisukuma ndani ya sekunde 90",
+        "Kengele ya mafuta kidogo inayozima",
+        "Fremu ya cage ya chuma kwa kubebeka"
       ]
     },
     "gallery": [
