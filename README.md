@@ -108,7 +108,7 @@ title: "Your New Title Here",
 - ✅ `sitemap.xml` 24 条 URL 全部补 `lastmod`；新增 `404.html`（robots.txt 早已引用但文件缺失）
 - ✅ 修掉 `index.html` 里重复的 `alt` 属性
 
-### P1：多语言静态站（已写好生成器，尚未生成/上线）
+### P1：多语言静态站（✅ 2026-11-15 已上线：165 个页面 + 新 sitemap）
 
 站点根目录现在只有 24 个可索引 URL，6 个语种在爬虫眼里是同一个页面 —— 这是 SEO 的天花板。
 P1 用静态生成把每个语种拆成真实 URL：
@@ -120,7 +120,7 @@ P1 用静态生成把每个语种拆成真实 URL：
 /zh/…  /sw/…  /es/…  /ru/…  /fr/…        同一套结构，各语种独立
 ```
 
-合计 **162 个页面**，每个页面都有自己的 title / description / canonical / hreflang 互指 / JSON-LD。
+合计 **165 个页面**（162 主体 + EN 的 FAQ / 指南索引 / 指南文章 3 个），每个页面都有自己的 title / description / canonical / hreflang 互指 / JSON-LD。
 
 **生成器**：`scripts/build-static.js`（Node，零依赖）
 
@@ -196,10 +196,10 @@ P1 的 162 个页面全是产品说明书型页面，接得住"型号""参数"�
 ### 待做
 
 - ⚠️ **P2 内容**：EN 母稿还差 14 篇（选型 7 + 对比 3 + 使用维护 2 + FAQ 1），见 `docs/P2-content-plan.md`
-- ⚠️ 上线后到 Google Search Console 提交 sitemap：`https://haogeng.net/sitemap.xml`，用 URL 检查工具批量请求索引
-- ⚠️ 上线后到 Bing Webmaster 提交一次
+- ⚠️ **待老板操作**：到 Google Search Console 提交 sitemap `https://haogeng.net/sitemap.xml`（站内已上线），用 URL 检查工具批量请求索引
+- ⚠️ **待老板操作**：到 Bing Webmaster 提交一次 `https://haogeng.net/sitemap.xml`
 - ⚠️ 用 Rich Results Test 验证结构化数据
-- ⚠️ ES / RU / FR 三个语种缺 `news` 字典键，新闻区会回落成英文（生成器会在报告里列出来）
+- ✅ ES / RU / FR 的 `news` 字典键、`nav.news`、6 语种 `brand.tagline` 已补齐，生成器报告 [i18n 缺失] = 0
 
 自检脚本：`python scripts/seo_check.py`
 
