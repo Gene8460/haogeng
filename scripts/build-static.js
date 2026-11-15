@@ -599,26 +599,41 @@ function productByModel(model) {
   return PRODUCTS.find(function (p) { return normModel(p.model) === k; }) || null;
 }
 
-/* 取某个型号的某个参数值（字段名不区分大小写；先精确匹配，再包含匹配） */
-function specValue(product, field, lang) {
-  const specs = (product.specs && (product.specs[lang] || product.specs.en)) || [];
-  const f = String(field == null ? '' : field).trim().toLowerCase();
-  if (!f) return null;
-  let hit = null;
-  specs.forEach(function (line) {
-    if (hit) return;
+/* 在参数表里按字段名找行号（字段名不区分大小写；先精确匹配，再包含匹配） */
+function findSpecIndex(specs, f) {
+  let hit = -1;
+  specs.forEach(function (line, i) {
+    if (hit >= 0) return;
     const key = String(line).split(/[:：]/)[0].trim().toLowerCase();
-    if (key === f) hit = line;
+    if (key === f) hit = i;
   });
-  if (!hit) {
-    specs.forEach(function (line) {
-      if (hit) return;
-      if (String(line).toLowerCase().indexOf(f) >= 0) hit = line;
+  if (hit < 0) {
+    specs.forEach(function (line, i) {
+      if (hit >= 0) return;
+      if (String(line).toLowerCase().indexOf(f) >= 0) hit = i;
     });
   }
-  if (!hit) return null;
-  const idx = hit.search(/[:：]/);
-  return idx === -1 ? String(hit).trim() : String(hit).substring(idx + 1).trim();
+  return hit;
+}
+
+/* 取某个型号的某个参数值。
+   参数表 6 个语种「行序完全一致」（js/products.js），所以先用英文参数表
+   定位行号，再取目标语种同一行的值 —— 这样文章正文统一写英文字段名
+   {{spec:型号:Rated power}}，翻成中/西/斯/俄/法后仍然取得到数。 */
+function specValue(product, field, lang) {
+  const f = String(field == null ? '' : field).trim().toLowerCase();
+  if (!f) return null;
+  const enSpecs = (product.specs && product.specs.en) || [];
+  const langSpecs = (product.specs && (product.specs[lang] || product.specs.en)) || [];
+  let idx = findSpecIndex(langSpecs, f);
+  if (idx < 0) {
+    const enIdx = findSpecIndex(enSpecs, f);
+    if (enIdx < 0 || enIdx >= langSpecs.length) return null;
+    idx = enIdx;
+  }
+  const line = langSpecs[idx];
+  const cut = line.search(/[:：]/);
+  return cut === -1 ? String(line).trim() : String(line).substring(cut + 1).trim();
 }
 
 /* 把 {{spec:型号:字段}} 换成真实参数值 */
@@ -858,6 +873,7 @@ function buildHome(lang) {
 
   // 导航加 Guides 入口
   html = addGuidesNav(html, lang);
+  html = addFactoryEntry(html, lang);
 
   // 首页挂「选型指南」区块（消孤岛页，把长尾内容引到首页）
   const guidesBlock = guidesSectionHtml(lang, 6);
@@ -1116,6 +1132,10 @@ function addGuidesNav(html, lang) {
     return html.replace(/(<ul class="nav-menu" id="navMenu">)/, '$1\n        <li>' + link + '</li>');
   }
   return html;
+}
+
+function addFactoryEntry(html, lang) {
+  return html.replace(/href="\/en\/factory\.html"/g, 'href="/' + lang + '/factory.html"');
 }
 
 /* 首页的「选型指南」区块 */
@@ -1407,6 +1427,113 @@ function buildFaq(lang) {
 }
 
 /* ---------------------------------------------------------
+   5.5 工厂实拍页
+   --------------------------------------------------------- */
+const FACTORY_PHOTOS = [
+  { file: 'news-showroom.jpg', cap: 'factory.capShowroom' },
+  { file: 'news-assembly.jpg', cap: 'factory.capAssembly' },
+  { file: 'news-packing.jpg', cap: 'factory.capPacking' },
+  { file: 'tiller-001.jpg', cat: 'tiller' },
+  { file: 'ditch-001.jpg', cat: 'ditching' },
+  { file: 'pump-001.jpg', cat: 'pump' }
+];
+
+function factoryGalleryHtml(lang) {
+  const t = function (k) { return T(lang, k); };
+  return '<div class="factory-gallery">' +
+    FACTORY_PHOTOS.filter(function (p) { return imgExists(p.file); }).map(function (p) {
+      const cap = p.cap ? (t(p.cap) || '') : (urls.catLabel(p.cat, lang) || '');
+      const webp = webpOf(p.file);
+      return '<figure class="factory-photo">' +
+        '<picture>' +
+        (imgExists(webp) ? '<source srcset="/images/' + esc(webp) + '" type="image/webp">' : '') +
+        '<img src="/images/' + esc(p.file) + '" alt="' + esc(cap) + '" loading="lazy">' +
+        '</picture>' +
+        '<figcaption>' + esc(cap) + '</figcaption>' +
+        '</figure>';
+    }).join('') +
+    '</div>';
+}
+
+function buildFactory(lang) {
+  let html = productHtml;
+  html = setHtmlLang(html, lang);
+  html = absolutize(html);
+  html = applyI18n(html, lang);
+  html = html.replace(/href="index\.html#/g, 'href="/' + lang + '/#');
+  html = replaceLangSwitcher(html, lang, function (l) { return urls.factoryPath(l); });
+  html = html.replace(/[ \t]*<script src="\/js\/products\.js[^"]*"><\/script>\n?/g, '');
+  html = html.replace(/[ \t]*<script src="\/js\/product\.js[^"]*"><\/script>\n?/g, '');
+  html = addGuidesNav(html, lang);
+
+  const t = function (k) { return T(lang, k); };
+  const title = t('factory.title');
+  const canonical = urls.abs(urls.factoryPath(lang));
+
+  let main = '<main class="section article-page" id="factoryPage">' +
+    '<div class="container">' +
+    '<div class="pd-breadcrumb" style="padding-top:0;"><div class="container" style="padding:0;">' +
+    '<a href="' + urls.homePath(lang) + '">' + esc(t('nav.home') || 'Home') + '</a>' +
+    '<span class="pd-sep">/</span>' +
+    '<span class="pd-current">' + esc(title) + '</span>' +
+    '</div></div>' +
+    '<h1 class="pd-title" style="margin:10px 0 8px;">' + esc(title) + '</h1>' +
+    '<p class="section-lead">' + esc(t('factory.lead')) + '</p>' +
+    factoryGalleryHtml(lang);
+
+  for (let i = 1; i <= 5; i++) {
+    const h = t('factory.s' + i + 'Title');
+    const p = t('factory.s' + i + 'Text');
+    if (!h || !p) continue;
+    main += '<section class="factory-block">' +
+      '<h2 class="factory-h2">' + esc(h) + '</h2>' +
+      '<p class="factory-p">' + esc(p) + '</p>' +
+      '</section>';
+  }
+
+  main += '<section class="pd-bottom-cta">' +
+    '<h2>' + esc(t('factory.cta')) + '</h2>' +
+    '<p>' + esc(t('products.detail.contactSection')) + '</p>' +
+    '<div class="pd-cta-row">' +
+    '<a class="btn btn-primary" href="' + urls.homePath(lang) + '#contact">' + esc(t('nav.inquiry')) + '</a>' +
+    '<a class="btn btn-ghost" href="' + urls.catPath('tiller', lang) + '">' + esc(urls.catLabel('tiller', lang)) + '</a>' +
+    '</div></section>' +
+    '</div></main>';
+
+  html = mustReplace(html, /<main id="productDetail" class="product-detail">[\s\S]*?<\/main>/, main, '工厂页 main');
+
+  const seo = {
+    lang: lang,
+    title: title + ' | Liuzhou Haogeng',
+    description: truncateWordsByLang(t('factory.lead'), 160, lang),
+    canonical: canonical,
+    ogType: 'website',
+    image: SITE + '/images/og-image.jpg',
+    imageAlt: title,
+    alternates: LANGS.map(function (l) { return { lang: l, href: urls.abs(urls.factoryPath(l)) }; })
+      .concat([{ lang: 'x-default', href: urls.abs(urls.factoryPath('en')) }])
+  };
+  html = setHead(html, seo);
+
+  const graph = [organizationNode(), websiteNode(), {
+    '@type': 'WebPage',
+    '@id': canonical + '#webpage',
+    url: canonical,
+    name: seo.title,
+    description: seo.description,
+    isPartOf: { '@id': SITE + '/#website' },
+    about: { '@id': SITE + '/#organization' },
+    inLanguage: lang
+  }, breadcrumbNode([
+    { name: t('nav.home') || 'Home', url: urls.abs(urls.homePath(lang)) },
+    { name: title, url: canonical }
+  ], canonical)];
+  html = setJsonLd(html, graph);
+
+  return { html: html, path: urls.factoryPath(lang) };
+}
+
+/* ---------------------------------------------------------
    6. sitemap
    --------------------------------------------------------- */
 function buildSitemap(pages) {
@@ -1516,6 +1643,17 @@ function main() {
       });
     });
 
+    // 工厂实拍页
+    {
+      const page = buildFactory(lang);
+      writeFile(lang + '/factory.html', page.html);
+      written.push(page.path);
+      sitemapPages.push({
+        key: 'factory{' + lang + '}', lang: lang, url: urls.abs(page.path),
+        defaultUrl: urls.abs(urls.factoryPath('en')), priority: '0.7'
+      });
+    }
+
     // P2：指南索引页（该语种一篇文章都没有就不生成，避免空页面）
     if (articlesOfLang(lang).length) {
       const page = buildGuidesIndex(lang);
@@ -1604,6 +1742,23 @@ function main() {
         console.log('    - ' + m.slug + ' : ' + m.lang + ' : ' + m.field + (m.fellBackToEn ? ' (回落 en)' : ' (没有英文!)'));
       }
     });
+  }
+
+  const specRowIssues = [];
+  PRODUCTS.forEach(function (p) {
+    const en = (p.specs && p.specs.en) || [];
+    LANGS.forEach(function (lang) {
+      const rows = (p.specs && p.specs[lang]) || [];
+      if (rows.length !== en.length) {
+        specRowIssues.push(p.model + ' / ' + lang + ': ' + rows.length + ' 行 != en ' + en.length + ' 行');
+      }
+    });
+  });
+  if (specRowIssues.length) {
+    console.log('\n  [参数表行数不一致] 共 ' + specRowIssues.length + ' 处 —— 跨语种取参数会串行，必须修：');
+    specRowIssues.forEach(function (x) { console.log('    - ' + x); });
+  } else {
+    console.log('\n  [参数表行数] 6 个语种与 en 完全一致');
   }
 
   if (specIssues.length) {

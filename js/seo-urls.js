@@ -8,6 +8,7 @@
      指南索引 /{lang}/guides.html
      指南文章 /{lang}/guide/{slug}.html
      FAQ 页   /{lang}/faq.html
+     工厂页   /{lang}/factory.html
 
    例：/en/product/1wg-4-05a-gasoline-micro-tiller.html
        /zh/wei-geng-ji.html
@@ -134,6 +135,7 @@
   function guidesIndexPath(lang) { return '/' + lang + '/guides.html'; }
   function guidePath(slug, lang) { return '/' + lang + '/guide/' + slugify(slug) + '.html'; }
   function faqPath(lang) { return '/' + lang + '/faq.html'; }
+  function factoryPath(lang) { return '/' + lang + '/factory.html'; }
 
   function abs(p) { return SITE + p; }
 
@@ -152,6 +154,7 @@
     guidesIndexPath: guidesIndexPath,
     guidePath: guidePath,
     faqPath: faqPath,
+    factoryPath: factoryPath,
     abs: abs
   };
 });

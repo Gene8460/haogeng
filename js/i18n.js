@@ -8,7 +8,7 @@ var I18N = {
   en: {
     brand: { name: "HAOGENG", tagline: "Agricultural Machinery", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Guigeng Agricultural Machinery", lichuang: "Guangxi Lichuang Machinery" },
     topbar: { hint: "Factory-Direct · OEM/ODM Welcome" },
-    nav: { home: "Home", about: "About", products: "Products", why: "Why Us", contact: "Contact", inquiry: "Get a Quote", news: "News", guides: "Guides" },
+    nav: { home: "Home", about: "About", products: "Products", why: "Why Us", contact: "Contact", inquiry: "Get a Quote", news: "News", guides: "Guides", factory: "Factory" },
     articles: {
       indexTitle: "Guides & Selection Help",
       indexLead: "Practical guides to choosing, comparing and using our micro tillers, ditching machines and water pumps.",
@@ -20,6 +20,24 @@ var I18N = {
       faqTitle: "Frequently asked questions",
       faqLead: "Answers to the questions buyers ask us most.",
       readMore: "Read guide"
+    },
+    factory: {
+      title: "Inside Our Factory",
+      lead: "Haogeng is the export arm of Guigeng Agricultural Machinery, and every machine on this site is built in our own plant. Below is what the workshop looks like — the equipment, the assembly work, and the packing we do before a machine leaves.",
+      s1Title: "Our own manufacturing plant",
+      s1Text: "All of our machines are built at the Guangxi Lichuang plant of the same group. We do not buy machines from other factories and re-label them, and there is no trading company between the plant and you.",
+      s2Title: "Metal fabrication and welding",
+      s2Text: "CNC laser cutting, CNC bending, laser pipe cutting and laser welding produce the frames, handles and gearbox housings. Working the metal inside the plant is what keeps the fit between parts consistent from one batch to the next.",
+      s3Title: "Assembly",
+      s3Text: "Frame, engine, gearbox and handle are fitted and checked one machine at a time. The gearbox is the part that carries the daily work, so it is the part we look at most closely.",
+      s4Title: "Packing and loading",
+      s4Text: "Each machine is packed with the attachments it is sold with, and the packed machine is protected for container transport, so it arrives without handling damage.",
+      s5Title: "Patents and promoted-product status",
+      s5Text: "Our R&D holds national utility-model patents, and our flagship 4WD micro tiller is listed by China's agricultural machinery authority as a National Agricultural Machinery Promoted Product. Certificate details are available on request.",
+      capShowroom: "Product showroom",
+      capAssembly: "Production assembly",
+      capPacking: "Quality inspection and packing",
+      cta: "Tell us your field size and we will match you with a model"
     },
     hero: {
       title: "Factory-Direct Agricultural Machinery",
@@ -114,7 +132,7 @@ var I18N = {
   zh: {
     brand: { name: "浩耕", tagline: "农业机械", full: "柳州浩耕国际贸易有限责任公司", guigeng: "桂耕农机", lichuang: "立创机械" },
     topbar: { hint: "工厂直供 · 支持OEM/ODM定制" },
-    nav: { home: "首页", about: "关于我们", products: "产品中心", why: "我们的优势", contact: "联系我们", inquiry: "获取报价", news: "媒体报道", guides: "选型指南" },
+    nav: { home: "首页", about: "关于我们", products: "产品中心", why: "我们的优势", contact: "联系我们", inquiry: "获取报价", news: "媒体报道", guides: "选型指南", factory: "工厂实拍" },
     articles: {
       indexTitle: "选型指南",
       indexLead: "微耕机、开沟培土机、抽水机的选型、对比与使用指南。",
@@ -126,6 +144,24 @@ var I18N = {
       faqTitle: "常见问题",
       faqLead: "买家最常问的问题，这里有答案。",
       readMore: "阅读指南"
+    },
+    factory: {
+      title: "工厂实拍",
+      lead: "浩耕是桂耕农机的出口公司，本站上的每一台机器都在自有工厂制造。下面是车间实拍：设备、装配工序，以及机器出厂前的打包。",
+      s1Title: "自有制造工厂",
+      s1Text: "我们所有机型都在同一集团的广西立创工厂生产。不从别的工厂进货贴牌，中间也没有贸易商——你拿到的是工厂直出的机器。",
+      s2Title: "钣金与焊接",
+      s2Text: "数控激光切割、数控折弯、激光切管与激光焊接负责车架、手柄和齿轮箱壳体。金属件在厂内自己做，批次之间的配合尺寸才稳定。",
+      s3Title: "装配",
+      s3Text: "车架、发动机、变速箱与手柄逐台装配、逐台检查。变速箱是承受日常作业负荷的部位，也是我们检查得最细的地方。",
+      s4Title: "打包与装柜",
+      s4Text: "机器与所售配件一起打包，按柜运要求做防护，避免装卸和长途运输中的磕碰损伤。",
+      s5Title: "专利与推广产品资质",
+      s5Text: "研发团队持有国家实用新型专利，主打的 4WD 微耕机被中国农机主管部门列为国家农机推广产品。证书资料可提供。",
+      capShowroom: "产品展厅",
+      capAssembly: "生产装配",
+      capPacking: "质检与打包",
+      cta: "告诉我们地块大小和用途，我们帮你配型号"
     },
     hero: {
       title: "工厂直供农业机械",
@@ -220,7 +256,7 @@ var I18N = {
   es: {
     brand: { name: "HAOGENG", tagline: "Maquinaria Agrícola", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Guigeng Maquinaria Agrícola", lichuang: "Lichuang Maquinaria Guangxi" },
     topbar: { hint: "Directo de fábrica · OEM/ODM bienvenido" },
-    nav: { home: "Inicio", about: "Nosotros", products: "Productos", why: "Ventajas", contact: "Contacto", inquiry: "Solicitar cotización", news: "Noticias", guides: "Guías" },
+    nav: { home: "Inicio", about: "Nosotros", products: "Productos", why: "Ventajas", contact: "Contacto", inquiry: "Solicitar cotización", news: "Noticias", guides: "Guías", factory: "Fábrica" },
     articles: {
       indexTitle: "Guías y consejos de selección",
       indexLead: "Guías prácticas para elegir, comparar y usar motocultores, máquinas zanjas y bombas de agua.",
@@ -232,6 +268,24 @@ var I18N = {
       faqTitle: "Preguntas frecuentes",
       faqLead: "Respuestas a las preguntas que más nos hacen los compradores.",
       readMore: "Leer guía"
+    },
+    factory: {
+      title: "Dentro de nuestra fábrica",
+      lead: "Haogeng es el brazo exportador de Guigeng Agricultural Machinery, y cada máquina de este sitio se fabrica en nuestra propia planta. Abajo está el taller: el equipo, el montaje y el embalaje antes de que una máquina salga.",
+      s1Title: "Nuestra propia planta",
+      s1Text: "Todas nuestras máquinas se construyen en la planta de Guangxi Lichuang, del mismo grupo. No compramos máquinas a otras fábricas para reetiquetarlas, y no hay ninguna casa de comercio entre la planta y usted.",
+      s2Title: "Fabricación de metal y soldadura",
+      s2Text: "Corte láser CNC, plegado CNC, corte de tubos láser y soldadura láser producen los chasis, manillares y cárteres de la caja. Trabajar el metal dentro de la planta es lo que mantiene el ajuste de las piezas constante de un lote a otro.",
+      s3Title: "Montaje",
+      s3Text: "Chasis, motor, caja de cambios y manillar se montan y revisan máquina a máquina. La caja de cambios es la pieza que aguanta el trabajo diario, y por eso es la que revisamos con más detalle.",
+      s4Title: "Embalaje y carga",
+      s4Text: "Cada máquina se embala con los accesorios con los que se vende, y la máquina embalada se protege para el transporte en contenedor, para que llegue sin daños por manipulación.",
+      s5Title: "Patentes y condición de producto promovido",
+      s5Text: "Nuestro I+D posee patentes de modelo de utilidad nacionales, y nuestro motocultor 4WD insignia está registrado por la autoridad china de maquinaria agrícola como Producto Promovido Nacional de Maquinaria Agrícola. Los detalles del certificado están disponibles bajo petición.",
+      capShowroom: "Showroom de productos",
+      capAssembly: "Montaje en producción",
+      capPacking: "Inspección de calidad y embalaje",
+      cta: "Díganos el tamaño de su parcela y le proponemos el modelo"
     },
     hero: {
       title: "Maquinaria agrícola directa de fábrica",
@@ -326,7 +380,7 @@ var I18N = {
   ru: {
     brand: { name: "HAOGENG", tagline: "Сельскохозяйственная техника", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Гуйгэн Сельхозтехника", lichuang: "Гуанси Личуан Машиностроение" },
     topbar: { hint: "Напрямую с завода · OEM/ODM приветствуется" },
-    nav: { home: "Главная", about: "О нас", products: "Продукция", why: "Преимущества", contact: "Контакты", inquiry: "Запросить цену", news: "Новости", guides: "Руководства" },
+    nav: { home: "Главная", about: "О нас", products: "Продукция", why: "Преимущества", contact: "Контакты", inquiry: "Запросить цену", news: "Новости", guides: "Руководства", factory: "Завод" },
     articles: {
       indexTitle: "Руководства и советы по выбору",
       indexLead: "Практические руководства по выбору, сравнению и эксплуатации мотокультиваторов, машин для канав и водяных насосов.",
@@ -338,6 +392,24 @@ var I18N = {
       faqTitle: "Частые вопросы",
       faqLead: "Ответы на вопросы, которые нам чаще всего задают покупатели.",
       readMore: "Читать руководство"
+    },
+    factory: {
+      title: "Наша фабрика",
+      lead: "Haogeng — экспортное подразделение Guigeng Agricultural Machinery, и каждая машина на сайте изготовлена на нашем собственном заводе. Ниже — цех: оборудование, сборка и упаковка перед отгрузкой.",
+      s1Title: "Собственное производство",
+      s1Text: "Все наши машины выпускаются на заводе Guangxi Lichuang, принадлежащем той же группе. Мы не закупаем технику у других заводов и не переклеиваем этикетки — между заводом и вами нет торговой компании.",
+      s2Title: "Обработка металла и сварка",
+      s2Text: "Раскрой лазером на ЧПУ, гибка на ЧПУ, лазерная резка труб и лазерная сварка дают рамы, рукоятки и корпуса коробок передач. Собственная обработка металла держит постоянный зазор между деталями от партии к партии.",
+      s3Title: "Сборка",
+      s3Text: "Рама, двигатель, коробка передач и рукоятка собираются и проверяются на каждой машине. Коробка передач — узел, который принимает ежедневную нагрузку, поэтому мы проверяем её внимательнее всего.",
+      s4Title: "Упаковка и погрузка",
+      s4Text: "Каждая машина упаковывается вместе с продаваемыми навесным оборудованием, а упакованная машина защищается для перевозки в контейнере, чтобы прибыть без повреждений при погрузке.",
+      s5Title: "Патенты и статус продвигаемой продукции",
+      s5Text: "Наше конструкторское бюро имеет национальные патенты на полезную модель, а флагманский 4WD мотокультиватор включён Управлением сельскохозяйственной техники Китая в перечень продвигаемой национальной продукции. Данные сертификата предоставляются по запросу.",
+      capShowroom: "Выставочный зал продукции",
+      capAssembly: "Сборка на производстве",
+      capPacking: "Контроль качества и упаковка",
+      cta: "Напишите нам размер участка и задачи — мы подберём модель"
     },
     hero: {
       title: "Сельхозтехника напрямую с завода",
@@ -432,7 +504,7 @@ var I18N = {
   fr: {
     brand: { name: "HAOGENG", tagline: "Machinerie Agricole", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Guigeng Machinisme Agricole", lichuang: "Lichuang Guangxi Machines" },
     topbar: { hint: "Direct usine · OEM/ODM bienvenu" },
-    nav: { home: "Accueil", about: "À propos", products: "Produits", why: "Nos atouts", contact: "Contact", inquiry: "Demander un devis", news: "Actualités", guides: "Guides" },
+    nav: { home: "Accueil", about: "À propos", products: "Produits", why: "Nos atouts", contact: "Contact", inquiry: "Demander un devis", news: "Actualités", guides: "Guides", factory: "Notre usine" },
     articles: {
       indexTitle: "Guides et conseils de choix",
       indexLead: "Des guides pratiques pour choisir, comparer et utiliser motoculteurs, machines à fossés et pompes à eau.",
@@ -444,6 +516,24 @@ var I18N = {
       faqTitle: "Questions fréquentes",
       faqLead: "Les réponses aux questions que les acheteurs nous posent le plus souvent.",
       readMore: "Lire le guide"
+    },
+    factory: {
+      title: "Dans notre usine",
+      lead: "Haogeng est la branche export de Guigeng Agricultural Machinery, et chaque machine de ce site est fabriquée dans notre propre usine. Voici l'atelier : les équipements, l'assemblage et l'emballage avant le départ de la machine.",
+      s1Title: "Notre propre usine",
+      s1Text: "Toutes nos machines sont construites dans l'usine de Guangxi Lichuang, qui appartient au même groupe. Nous n'achetons pas de machines chez d'autres fabricants pour les réétiqueter, et il n'y a aucune société de négoce entre l'usine et vous.",
+      s2Title: "Usinage des pièces métalliques et soudure",
+      s2Text: "Découpe laser CNC, cintrage CNC, découpe de tubes au laser et soudage laser produisent les châssis, guidons et carters de boîte. Travailler le métal sur place est ce qui garde l'ajustement des pièces constant d'un lot à l'autre.",
+      s3Title: "Assemblage",
+      s3Text: "Châssis, moteur, boîte de vitesses et guidon sont montés et contrôlés machine par machine. La boîte de vitesses est l'organe qui encaisse le travail quotidien ; c'est donc celui que nous vérifions le plus attentivement.",
+      s4Title: "Emballage et chargement",
+      s4Text: "Chaque machine est emballée avec les accessoires vendus avec elle, et la machine emballée est protégée pour le transport en conteneur, afin d'arriver sans dommage de manutention.",
+      s5Title: "Brevets et statut de produit promu",
+      s5Text: "Notre bureau d'études détient des brevets de modèle d'utilité nationaux, et notre motoculteur 4WD phare est inscrit par l'autorité chinoise de la machinerie agricole au titre des produits agricoles nationaux promus. Les détails du certificat sont fournis sur demande.",
+      capShowroom: "Showroom produits",
+      capAssembly: "Assemblage en production",
+      capPacking: "Contrôle qualité et emballage",
+      cta: "Dites-nous la taille de votre parcelle et nous vous proposerons le modèle"
     },
     hero: {
       title: "Machines agricoles directes d'usine",
@@ -538,7 +628,7 @@ var I18N = {
   sw: {
     brand: { name: "HAOGENG", tagline: "Mashine za Kilimo", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Mashine za Kilimo za Guigeng", lichuang: "Mashine za Lichuang Guangxi" },
     topbar: { hint: "Moja kwa moja kutoka kiwanda · OEM/ODM yanakaribishwa" },
-    nav: { home: "Mwanzo", about: "Kuhusu sisi", products: "Bidhaa", why: "Kwa nini sisi", contact: "Wasiliana nasi", inquiry: "Omba bei", news: "Habari", guides: "Miongozo" },
+    nav: { home: "Mwanzo", about: "Kuhusu sisi", products: "Bidhaa", why: "Kwa nini sisi", contact: "Wasiliana nasi", inquiry: "Omba bei", news: "Habari", guides: "Miongozo", factory: "Kiji" },
     articles: {
       indexTitle: "Miongozo na Ushauri",
       indexLead: "Miongozo ya kuchagua, kulinganisha na kutumia trekta ndogo, mashine za makorongo na pampu za maji.",
@@ -550,6 +640,24 @@ var I18N = {
       faqTitle: "Maswali yanayoulizwa mara kwa mara",
       faqLead: "Majibu ya maswali yanayoulizwa na watanunaji wengi.",
       readMore: "Soma miongozo"
+    },
+    factory: {
+      title: "Ndani ya kiji chetu",
+      lead: "Haogeng ni tanzu ya kuuza nje ya Guigeng Agricultural Machinery, na kila mashine kwenye tovuti hii hutengenezwa katika kiji chetu mwenyewe. Hapa chini ndani ya kiji: vifaa, kusanya na kupanga kabla ya mashine kuondoka.",
+      s1Title: "Kiji chetu mwenyewe",
+      s1Text: "Mashine zote zetu huzalishwa katika kiji cha Guangxi Lichuang kilichomo kundi moja. Hatuizi mashine kutoka kwa viwanda vingine kuzipiga jina jipya, na hakuna kampuni ya biashara kati ya kiji nawewe.",
+      s2Title: "Uchakataji wa vyuma na kuchomea",
+      s2Text: "Kukata laseri ya CNC, kugonga CNC, kukata miri ya laseri na kuchomea laseri hutengeneza frame za mashine, mikono na vyumba vya gearbox. Kushughulika na vyuma ndani ya kiji ndiyo kinachowafanya vipimo vya sehemu zake kuwa sawa kati ya batch moja na nyingine.",
+      s3Title: "Kusanya",
+      s3Text: "Frame, injini, sanduku la gia na mkono husanywa na kukaguliwa moja kwa moja. Sanduku la gia ndio sehemu inayobeba kazi ya kila siku, kwa hivyo ndicho tunachokagua kwa makini zaidi.",
+      s4Title: "Kupanga na kupakia",
+      s4Text: "Kila mashine hupangwa pamoja na vifaa unavyonunua nazo, na mashine iliyopangwa inalindwa kwa usafirishaji wa kontena, ili ipate bila uharibifu wa kushughulishia.",
+      s5Title: "Hakiki za patenti na hadhi ya bidhaa inayopendekezwa",
+      s5Text: "Timu yetu ya utafiti ina patenti za manufaa ya taifa, na matrekta yetu makuu ya 4WD yameandikwa na mamlaka ya mashine za kilimo ya China kama Bidhaa ya Kilimo Inayopendekezwa na Taifa. Taaruma za cheti zinapatikana pale mtu atakapoziomba.",
+      capShowroom: "Onyesho la bidhaa",
+      capAssembly: "Uusambazi wa utengenezaji",
+      capPacking: "Ukaguzi wa ubora na upackaji",
+      cta: "Tuambie ukubwa wa ploti yako na tutakupendekeza modeli inayofaa"
     },
     hero: {
       title: "Mashine za Kilimo Moja kwa Moja kutoka Kiwanda",

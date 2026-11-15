@@ -437,3 +437,38 @@ a:hover { color: var(--green-dark); }
   .guide-grid { grid-template-columns: 1fr; }
   .article-related-list li { flex-direction: column; gap: 4px; }
 }
+
+/* ===== 工厂实拍页（P2-批1） ===== */
+.about-card-wide { grid-column: 1 / -1; }
+.about-card-link-btn { display: inline-block; margin-top: 14px; }
+.factory-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 28px 0 8px;
+}
+.factory-photo {
+  margin: 0;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.factory-photo img { display: block; width: 100%; height: 190px; object-fit: cover; }
+.factory-photo figcaption {
+  padding: 10px 14px;
+  font-size: 13px;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--border);
+}
+.factory-block { margin: 34px 0 0; }
+.factory-h2 { font-size: 22px; color: var(--green-dark); margin-bottom: 10px; }
+.factory-p { color: var(--ink-soft); font-size: 15px; line-height: 1.8; }
+@media (max-width: 900px) {
+  .factory-gallery { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .factory-gallery { grid-template-columns: 1fr; }
+  .factory-photo img { height: 210px; }
+}

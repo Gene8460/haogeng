@@ -255,3 +255,20 @@ var ARTICLES = [
 - 数据待澄清（**未擅自改动**）：`1WG-4.1B` 名称写 "Diesel" 但参数是汽油；`1WG-4.05ZM` 的 `features.zh` 写 "173cc gasoline" 但发动机是柴油 → 生成出的 URL 会与页面标题对不上
 - 首图：当前用 `news-showroom.jpg`（真实展厅照）顶着，正式图待补
 
+---
+
+## 2026-11-15 执行记录 · 阶段 A（基建）
+
+| 项 | 结果 |
+|---|---|
+| 页面数 | 165 → **171**（新增 `/{lang}/factory.html` × 6 语种） |
+| T1 参数跨语种 | `specValue()` 改为「先在 `specs.en` 定位行号 → 取目标语种同一行」，并新增「各语种参数行数与 en 一致」报告（当前 0 问题） |
+| 工厂页 | 新 URL `/{lang}/factory.html`；`js/seo-urls.js` 加 `factoryPath()`；`js/i18n.js` 加 `factory` 字典（6 语种）+ `nav.factory`；生成器加 `buildFactory()`，JSON-LD 为 WebPage + BreadcrumbList，**不含 offers** |
+| 图集 | `news-showroom.jpg` / `news-assembly.jpg` / `news-packing.jpg` + `tiller-001.jpg` / `ditch-001.jpg` / `pump-001.jpg`（全部现有实拍，无新造图） |
+| 首页入口 | about 区第 4 张卡片「工厂实拍」，按语种指向 `/{lang}/factory.html` |
+| CSS | 新增 `.factory-gallery` / `.factory-photo` / `.factory-block`，`style.css?v=15` → `v=16`（index.html + product.html 同步） |
+| 自检 | `node scripts/build-static.js .` → i18n 齐全、参数占位符全解析、sitemap 171 条无重复；`python scripts/seo_check.py` → **全部通过** |
+
+**文案红线**：工厂页只复用站内既有事实（CNC 激光切割/折弯/切管/焊接、国家实用新型专利、4WD 微耕机为国家农机推广产品、斯里兰卡单年 300 台），不写产能、面积、人数、认证清单、出口国家数。
+
+**后续**：B 英文 10 篇（→180）· C SW+FR（→204）· D ES+RU（→228）· E ZH（→240）。
