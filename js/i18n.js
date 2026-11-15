@@ -6,22 +6,34 @@
 
 var I18N = {
   en: {
-    brand: { name: "HAOGENG", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Guigeng Agricultural Machinery", lichuang: "Guangxi Lichuang Machinery" },
+    brand: { name: "HAOGENG", tagline: "Agricultural Machinery", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Guigeng Agricultural Machinery", lichuang: "Guangxi Lichuang Machinery" },
     topbar: { hint: "Factory-Direct · OEM/ODM Welcome" },
-    nav: { home: "Home", about: "About", products: "Products", why: "Why Us", contact: "Contact", inquiry: "Get a Quote", news: "News" },
+    nav: { home: "Home", about: "About", products: "Products", why: "Why Us", contact: "Contact", inquiry: "Get a Quote", news: "News", guides: "Guides" },
+    articles: {
+      indexTitle: "Guides & Selection Help",
+      indexLead: "Practical guides to choosing, comparing and using our micro tillers, ditching machines and water pumps.",
+      related: "Related guides",
+      allGuides: "All guides",
+      backToGuides: "← All guides",
+      updated: "Updated",
+      published: "Published",
+      faqTitle: "Frequently asked questions",
+      faqLead: "Answers to the questions buyers ask us most.",
+      readMore: "Read guide"
+    },
     hero: {
       title: "Factory-Direct Agricultural Machinery",
-      sub: "Micro tillers · Ditching machines · Water pumps. Backed by our own manufacturing plant — better price, guaranteed delivery.",
+      sub: "Micro tillers · Ditching machines · Water pumps. Backed by our own manufacturing plant — factory-direct pricing and steady production capacity.",
       cta1: "View Products", cta2: "Send Inquiry",
-      stat1: { num: "15+", label: "Years Experience" },
+      stat1: { num: "15+", label: "Years Manufacturing" },
       stat2: { num: "30+", label: "Product Models" },
-      stat3: { num: "50+", label: "Export Countries" }
+      stat3: { num: "1", label: "Own Factory" }
     },
     about: {
       title: "About Us",
       lead: "Liuzhou Haogeng International Trade Co., Ltd. (Haogeng) is the export and trading arm of Guigeng Agricultural Machinery. As the brand's international sales company, we work directly with our own manufacturing plant — giving overseas buyers true factory-direct pricing and reliable supply.",
       c1: { title: "One Company, Factory-Backed", text: "Guigeng Agricultural Machinery is manufactured by Guangxi Lichuang Machinery Manufacturing Co., Ltd. — our own factory. Haogeng handles all international trade: export, documentation and after-sales. When you buy from Haogeng, you buy straight from the Guigeng factory, with no middlemen." },
-      c2: { title: "Patented Technology", text: "Our R&D team holds national utility-model patents and agricultural machinery certification, ensuring every design is tested and field-proven." },
+      c2: { title: "Patented Technology", text: "Our R&D team holds national utility-model patents, and our flagship 4WD micro tiller is listed by China's agricultural machinery authority as a National Agricultural Machinery Promoted Product. Certificate details available on request." },
       c3: { title: "Advanced Equipment", text: "CNC laser cutting, CNC bending, laser pipe cutting and laser welding lines guarantee precision, durability and a consistent finish." }
     },
     products: {
@@ -58,7 +70,7 @@ var I18N = {
       w2: { title: "OEM / ODM", text: "Custom brand, color and specifications for your market." },
       w3: { title: "Quality Control", text: "Strict QC on every unit before shipment, durable in the field." },
       w4: { title: "Reliable Delivery", text: "Steady production capacity ensures on-time delivery." },
-      w5: { title: "Export Experience", text: "Exporting to 50+ countries with full documentation support." },
+      w5: { title: "Export Experience", text: "Shipping to Southeast Asia, India and Sri Lanka — 300 micro tillers shipped to Sri Lanka in a single year, with full export documentation." },
       w6: { title: "After-Sales", text: "Spare parts and technical support available for all models." }
     },
     contact: {
@@ -100,22 +112,34 @@ var I18N = {
   },
 
   zh: {
-    brand: { name: "浩耕", full: "柳州浩耕国际贸易有限责任公司", guigeng: "桂耕农机", lichuang: "立创机械" },
+    brand: { name: "浩耕", tagline: "农业机械", full: "柳州浩耕国际贸易有限责任公司", guigeng: "桂耕农机", lichuang: "立创机械" },
     topbar: { hint: "工厂直供 · 支持OEM/ODM定制" },
-    nav: { home: "首页", about: "关于我们", products: "产品中心", why: "我们的优势", contact: "联系我们", inquiry: "获取报价", news: "媒体报道" },
+    nav: { home: "首页", about: "关于我们", products: "产品中心", why: "我们的优势", contact: "联系我们", inquiry: "获取报价", news: "媒体报道", guides: "选型指南" },
+    articles: {
+      indexTitle: "选型指南",
+      indexLead: "微耕机、开沟培土机、抽水机的选型、对比与使用指南。",
+      related: "相关指南",
+      allGuides: "全部指南",
+      backToGuides: "← 返回指南列表",
+      updated: "更新于",
+      published: "发布于",
+      faqTitle: "常见问题",
+      faqLead: "买家最常问的问题，这里有答案。",
+      readMore: "阅读指南"
+    },
     hero: {
       title: "工厂直供农业机械",
-      sub: "微耕机 · 开沟培土机 · 抽水机。自有工厂生产，价格更优、交货有保障。",
+      sub: "微耕机 · 开沟培土机 · 抽水机。自有工厂生产，工厂直供价格，产能稳定。",
       cta1: "查看产品", cta2: "发送询盘",
-      stat1: { num: "15+", label: "年行业经验" },
+      stat1: { num: "15+", label: "年制造经验" },
       stat2: { num: "30+", label: "产品型号" },
-      stat3: { num: "50+", label: "出口国家" }
+      stat3: { num: "1", label: "自有工厂" }
     },
     about: {
       title: "关于我们",
       lead: "柳州浩耕国际贸易有限责任公司（浩耕）是桂耕农机品牌的对外贸易公司，直接对接背后的自有工厂。工贸一体，让海外买家享受真正的工厂直供价格与稳定货源。",
       c1: { title: "工贸一体 · 自有工厂", text: "桂耕农机由广西立创机械制造有限公司生产制造，浩耕国际负责全部国际贸易业务——出口、单证、售后。从浩耕采购，就是从桂耕工厂直接采购，没有中间商。" },
-      c2: { title: "专利技术", text: "研发团队拥有国家实用新型专利和农机鉴定证书，每项设计均经过反复验证。" },
+      c2: { title: "专利技术", text: "研发团队拥有国家实用新型专利，主打4WD微耕机为“国家农机推广产品”，证书资料可提供。" },
       c3: { title: "先进设备", text: "数控激光切割、数控折弯、激光切管、激光焊接生产线，保证精度与耐用性。" }
     },
     products: {
@@ -152,7 +176,7 @@ var I18N = {
       w2: { title: "OEM / ODM 定制", text: "按您的市场定制品牌、颜色和规格。" },
       w3: { title: "质量控制", text: "每台设备出厂前严格质检，田间耐用。" },
       w4: { title: "交货可靠", text: "稳定的产能确保准时交货。" },
-      w5: { title: "出口经验", text: "出口50多个国家，提供全套单据支持。" },
+      w5: { title: "出口经验", text: "产品出口东南亚、印度和斯里兰卡 —— 单年出口斯里兰卡微耕机300台，提供全套出口单据支持。" },
       w6: { title: "售后服务", text: "所有型号均有配件和技术支持。" }
     },
     contact: {
@@ -194,22 +218,34 @@ var I18N = {
   },
 
   es: {
-    brand: { name: "HAOGENG", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Guigeng Maquinaria Agrícola", lichuang: "Lichuang Maquinaria Guangxi" },
+    brand: { name: "HAOGENG", tagline: "Maquinaria Agrícola", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Guigeng Maquinaria Agrícola", lichuang: "Lichuang Maquinaria Guangxi" },
     topbar: { hint: "Directo de fábrica · OEM/ODM bienvenido" },
-    nav: { home: "Inicio", about: "Nosotros", products: "Productos", why: "Ventajas", contact: "Contacto", inquiry: "Solicitar cotización" },
+    nav: { home: "Inicio", about: "Nosotros", products: "Productos", why: "Ventajas", contact: "Contacto", inquiry: "Solicitar cotización", news: "Noticias", guides: "Guías" },
+    articles: {
+      indexTitle: "Guías y consejos de selección",
+      indexLead: "Guías prácticas para elegir, comparar y usar motocultores, máquinas zanjas y bombas de agua.",
+      related: "Guías relacionadas",
+      allGuides: "Todas las guías",
+      backToGuides: "← Todas las guías",
+      updated: "Actualizado",
+      published: "Publicado",
+      faqTitle: "Preguntas frecuentes",
+      faqLead: "Respuestas a las preguntas que más nos hacen los compradores.",
+      readMore: "Leer guía"
+    },
     hero: {
       title: "Maquinaria agrícola directa de fábrica",
-      sub: "Motocultores · Máquinas de zanjeo · Bombas de agua. Respaldados por nuestra propia planta — mejor precio, entrega garantizada.",
+      sub: "Motocultores · Máquinas de zanjeo · Bombas de agua. Respaldados por nuestra propia planta — precio directo de fábrica y capacidad de producción estable.",
       cta1: "Ver productos", cta2: "Enviar consulta",
-      stat1: { num: "15+", label: "Años de experiencia" },
+      stat1: { num: "15+", label: "Años de fabricación" },
       stat2: { num: "30+", label: "Modelos" },
-      stat3: { num: "50+", label: "Países exportados" }
+      stat3: { num: "1", label: "Fábrica propia" }
     },
     about: {
       title: "Sobre nosotros",
       lead: "Liuzhou Haogeng es el brazo exportador de la fábrica Guigeng — una verdadera empresa integrada de comercio y fabricación.",
       c1: { title: "Nuestra propia fábrica", text: "Respaldados por Guangxi Lichuang Machinery (marca Guigeng), fabricante moderno con diseño y producción propios." },
-      c2: { title: "Tecnología patentada", text: "Nuestro equipo de I+D posee patentes nacionales y certificación de maquinaria agrícola." },
+      c2: { title: "Tecnología patentada", text: "Nuestro equipo de I+D posee patentes nacionales de modelo de utilidad, y nuestro microtractor 4WD insignia figura en la lista de la autoridad china de maquinaria agrícola como Producto Nacional de Maquinaria Agrícola Promovido. Certificados disponibles bajo solicitud." },
       c3: { title: "Equipo avanzado", text: "Líneas de corte láser CNC, plegado, corte de tubos y soldadura láser que garantizan precisión y durabilidad." }
     },
     products: {
@@ -233,8 +269,8 @@ var I18N = {
         accessories: {
           title: "Qué Incluye la Caja",
           subtitle: "Todos los accesorios mostrados abajo están INCLUIDOS GRATIS al comprar esta máquina — lista para usar al sacarla de la caja.",
-          item1: { name: "Juego de Ruedas para Arrozales", qty: "1 juego", desc: "Ruedas de paletas anchas dise馻das para arrozales blandos e inundados. Se montan directo en el eje del rotor reemplazando las cuchillas de tierra seca." },
-          item2: { name: "Juego de Cuchillas Anti-Enredo", qty: "1 juego", desc: "Cuchillas curvas dise馻das para resistir el enredo de maleza. La geometr韆 swept evita que el pasto alto y los residuos de cultivo se enrollen en el rotor." },
+          item1: { name: "Juego de Ruedas para Arrozales", qty: "1 juego", desc: "Ruedas de paletas anchas diseñadas para arrozales blandos e inundados. Se montan directo en el eje del rotor reemplazando las cuchillas de tierra seca." },
+          item2: { name: "Juego de Cuchillas Anti-Enredo", qty: "1 juego", desc: "Cuchillas curvas diseñadas para resistir el enredo de maleza. La geometría de barrido evita que el pasto alto y los residuos de cultivo se enrollen en el rotor." },
           item3: { name: "Juego de Neumáticos de Caucho", qty: "1 juego", desc: "Ruedas de caucho con tacos para transporte, con cubos metálicos y eje cuadrado. Ideales para trasladar la máquina entre parcelas sin dañar el suelo." },
           item4: { name: "Juego de Cuchillas para Tierra Seca", qty: "1 juego", desc: "Cuchillas rotativas tipo H endurecidas para romper tierra firme y seca. Pre-ensambladas en el bastidor, listas para montar al sacarlas de la caja." }
         }
@@ -246,7 +282,7 @@ var I18N = {
       w2: { title: "OEM / ODM", text: "Marca, color y especificaciones personalizadas para su mercado." },
       w3: { title: "Control de calidad", text: "Control estricto en cada unidad antes del envío." },
       w4: { title: "Entrega confiable", text: "Capacidad de producción estable para entrega puntual." },
-      w5: { title: "Experiencia exportadora", text: "Exportamos a más de 50 países con documentación completa." },
+      w5: { title: "Experiencia exportadora", text: "Enviamos al Sudeste Asiático, la India y Sri Lanka — 300 motocultores exportados a Sri Lanka en un solo año, con documentación completa de exportación." },
       w6: { title: "Posventa", text: "Repuestos y soporte técnico para todos los modelos." }
     },
     contact: {
@@ -271,26 +307,51 @@ var I18N = {
         copySub: "Pegar en cualquier lugar"
       }
     },
-    footer: { rights: "Todos los derechos reservados." }
+    footer: { rights: "Todos los derechos reservados." },
+    news: {
+      title: "En las noticias",
+      source: "Departamento de Agricultura y Asuntos Rurales de Guangxi · Liuzhou Daily · 2025-02-24",
+      headline: "“Aumentando la producción para apoyar la arada de primavera”",
+      intro: "Tras el término solar de la Lluvia, con los campos ocupados en la arada de primavera, la producción de maquinaria agrícola también está a pleno rendimiento. El 19 de febrero, periodistas visitaron un fabricante de maquinaria agrícola en la Avenida Liugong y vieron sus líneas de producción funcionando a plena capacidad para acelerar la fabricación de motocultores para la arada de primavera.",
+      quote: "“Director general Wu, ¿cuándo se nos puede enviar el pedido?” Esa mañana, el Sr. Zeng, un distribuidor de maquinaria agrícola de Hunan, fue a Guangxi Lichuang Machinery Manufacturing Co., Ltd. a recoger su mercancía. “La temporada de arada de primavera es el pico de ventas, por eso nos dimos prisa en venir a Liuzhou a recoger la mercancía”, respondió el responsable de la empresa, Wu Siyu: “Estamos acelerando la producción: lo que esté listo, lo enviamos primero”. Inmediatamente organizó la entrega por camión.",
+      factory: "Lichuang Machinery se dedica a producir y desarrollar nuevos motocultores 4WD, máquinas de gestión de parcelas y máquinas de zanjeo. Wu Siyu explicó que el motocultor 4WD de rotación frontal de la marca Guigeng está diseñado para zonas accidentadas y montañosas con parcelas pequeñas y fuertes desniveles: es ligero, compacto, potente y fácil de manejar, ideal para las regiones del sur y el producto de maquinaria agrícola más vendido en temporada de arada de primavera. Además de abastecer el mercado local, sus productos también se venden en Hunan, Jiangxi, Hainan y Hubei.",
+      capacity: "En el taller de producción, los trabajadores estaban ocupados montando piezas en la línea de montaje. En cuanto una máquina salía de la línea, se sometía a control de calidad, se embalaba y quedaba a la espera de envío. “Empezamos a trabajar el cuarto día del Año Nuevo Lunar. Ahora tenemos dos líneas de producción funcionando a plena capacidad, con unas 130 unidades de motocultor al día”, dijo Wu. Aun así, esto todavía no cubre la demanda actual de pedidos. El mes que viene, la empresa abrirá una nueva línea de producción de maquinaria agrícola grande de cuatro ruedas para aumentar la capacidad.",
+      export: "En los últimos años, Lichuang Machinery ha sabido aprovechar las oportunidades de la Iniciativa de la Franja y la Ruta, exportando productos a los mercados del Sudeste Asiático. Wu dijo que los motocultores también son muy populares en la India, Vietnam y otros mercados. El año pasado, la empresa exportó 300 motocultores a Sri Lanka. Este año la empresa explora más el potencial del mercado del Sudeste Asiático y desarrolla máquinas para la recolección de nuez de areca según las necesidades agrícolas locales, para mejorar su competitividad en los mercados de la región.",
+      h1: { num: "300", label: "Unidades exportadas a Sri Lanka" },
+      h2: { num: "130", label: "Unidades de capacidad diaria" },
+      h3: { num: "2", label: "Líneas de producción a plena capacidad" }
+    }
   },
 
   ru: {
-    brand: { name: "HAOGENG", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Гуйгэн Сельхозтехника", lichuang: "Гуанси Личуан Машиностроение" },
+    brand: { name: "HAOGENG", tagline: "Сельскохозяйственная техника", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Гуйгэн Сельхозтехника", lichuang: "Гуанси Личуан Машиностроение" },
     topbar: { hint: "Напрямую с завода · OEM/ODM приветствуется" },
-    nav: { home: "Главная", about: "О нас", products: "Продукция", why: "Преимущества", contact: "Контакты", inquiry: "Запросить цену" },
+    nav: { home: "Главная", about: "О нас", products: "Продукция", why: "Преимущества", contact: "Контакты", inquiry: "Запросить цену", news: "Новости", guides: "Руководства" },
+    articles: {
+      indexTitle: "Руководства и советы по выбору",
+      indexLead: "Практические руководства по выбору, сравнению и эксплуатации мотокультиваторов, машин для канав и водяных насосов.",
+      related: "Похожие руководства",
+      allGuides: "Все руководства",
+      backToGuides: "← Все руководства",
+      updated: "Обновлено",
+      published: "Опубликовано",
+      faqTitle: "Частые вопросы",
+      faqLead: "Ответы на вопросы, которые нам чаще всего задают покупатели.",
+      readMore: "Читать руководство"
+    },
     hero: {
       title: "Сельхозтехника напрямую с завода",
-      sub: "Мотокультиваторы · Машины для нарезки канав · Водяные насосы. Собственное производство — лучшая цена, гарантированная поставка.",
+      sub: "Мотокультиваторы · Машины для нарезки канав · Водяные насосы. Собственное производство — цена напрямую с завода и стабильные производственные мощности.",
       cta1: "Смотреть продукцию", cta2: "Отправить запрос",
-      stat1: { num: "15+", label: "Лет опыта" },
+      stat1: { num: "15+", label: "Лет производства" },
       stat2: { num: "30+", label: "Моделей" },
-      stat3: { num: "50+", label: "Стран экспорта" }
+      stat3: { num: "1", label: "Собственное производство" }
     },
     about: {
       title: "О нас",
       lead: "Liuzhou Haogeng — экспортное подразделение завода Guigeng, полностью интегрированная торгово-производственная компания.",
       c1: { title: "Собственный завод", text: "За нами стоит Guangxi Lichuang Machinery (бренд Guigeng) — современный производитель с полным циклом разработки и производства." },
-      c2: { title: "Запатентованные технологии", text: "Наша команда R&D имеет национальные патенты и сертификацию сельхозтехники." },
+      c2: { title: "Запатентованные технологии", text: "Наша команда R&D имеет национальные патенты на полезную модель, а наш флагманский 4WD микрокультиватор включён китайским органом по сельскохозяйственной технике в перечень «Продвигаемая национальная сельскохозяйственная техника». Документы предоставляются по запросу." },
       c3: { title: "Современное оборудование", text: "Линии лазерной резки ЧПУ, гибки, резки труб и лазерной сварки обеспечивают точность и долговечность." }
     },
     products: {
@@ -327,7 +388,7 @@ var I18N = {
       w2: { title: "OEM / ODM", text: "Индивидуальные бренд, цвет и характеристики под ваш рынок." },
       w3: { title: "Контроль качества", text: "Строгий контроль каждой единицы перед отгрузкой." },
       w4: { title: "Надёжная поставка", text: "Стабильные мощности обеспечивают своевременную доставку." },
-      w5: { title: "Опыт экспорта", text: "Экспорт в 50+ стран с полным документальным сопровождением." },
+      w5: { title: "Опыт экспорта", text: "Поставки в юго-Восточную Азию, Индию и Шри-Ланку — 300 мотокультиваторов поставлено в Шри-Ланку за один год, с полным пакетом экспортных документов." },
       w6: { title: "Послепродажное обслуживание", text: "Запчасти и техподдержка для всех моделей." }
     },
     contact: {
@@ -352,26 +413,51 @@ var I18N = {
         copySub: "Вставьте куда угодно"
       }
     },
-    footer: { rights: "Все права защищены." }
+    footer: { rights: "Все права защищены." },
+    news: {
+      title: "В новостях",
+      source: "Департамент сельского хозяйства и сельских территорий Гуанси · газета «Лючжоу» · 2025-02-24",
+      headline: "«Ускоряем производство, помогая весенним полевым работам»",
+      intro: "После солнечного термина «Дождь», когда поля заняты весенней пашкой, производство сельхозтехники тоже идёт полным ходом. 19 февраля журналисты побывали на предприятии по производству сельхозтехники на автодороге Люгун и увидели, как производственные линии работают на полную мощность, чтобы успеть с микрокультиваторами к весенней паште.",
+      quote: "«Директор Ву, когда отгрузить наш заказ?» Утром того дня господин Цзэн, дилер сельхозтехники из Хунаня, приехал на Guangxi Lichuang Machinery Manufacturing Co., Ltd. за товаром. «Весенняя пашка — пик продаж, поэтому мы поспешили в Лючжоу за товаром», ответил руководитель компании Ву Сыюй: «Мы ускоряем производство — что готово, отправляем первым». Сразу же он организовал доставку грузовиком.",
+      factory: "Как сообщается, Lichuang Machinery — предприятие, специализирующееся на производстве и разработке новых четырёхколёсных микрокультиваторов, машин для ухода за посевами и машин для нарезки канав. Ву Сыюй рассказал, что четырёхколёсный микрокультиватор с передним ротором марки Guigeng предназначен для холмистых и горных районов с небольшими участками и большими перепадами высот: он лёгкий, компактный, мощный и простой в управлении — идеален для южных регионов и стал самым продаваемым товаром сельхозтехники в сезон весенней пашки. Кроме местного рынка, продукция также поставляется в Хунань, Цзянси, Хайнань и Хубэй.",
+      capacity: "В производственном цехе рабочие были заняты сборкой комплектующих на конвейере. Как только машина сходила с линии, её сразу отправляли на контроль качества, упаковывали и готовили к отгрузке. «Мы приступили к работе на четвёртый день Лунного Нового года. Сейчас две производственные линии работают на полную мощность, выпуская около 130 микрокультиваторов в день», — сказал Ву. И всё же этого пока не хватает, чтобы удовлетворить текущий спрос. В следующем месяце компания откроет новую производственную линию крупной четырёхколёсной сельхозтехники, чтобы увеличить мощности.",
+      export: "В последние годы Lichuang Machinery использует возможности инициативы «Один пояс — один путь» и экспортирует продукцию на рынки Юго-Восточной Азии. По словам Ву, микрокультиваторы также очень популярны в Индии, Вьетнаме и на других рынках. В прошлом году компания экспортировала в Шри-Ланку 300 микрокультиваторов. В этом году она будет дальше изучать потенциал рынка Юго-Восточной Азии и разрабатывать технику для сбора орехов ареки под местные сельскохозяйственные нужды, повышая конкурентоспособность на рынках этого региона.",
+      h1: { num: "300", label: "Единиц экспортировано в Шри-Ланку" },
+      h2: { num: "130", label: "Единиц в сутки (мощность)" },
+      h3: { num: "2", label: "Линии на полной мощности" }
+    }
   },
 
   fr: {
-    brand: { name: "HAOGENG", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Guigeng Machinisme Agricole", lichuang: "Lichuang Guangxi Machines" },
+    brand: { name: "HAOGENG", tagline: "Machinerie Agricole", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Guigeng Machinisme Agricole", lichuang: "Lichuang Guangxi Machines" },
     topbar: { hint: "Direct usine · OEM/ODM bienvenu" },
-    nav: { home: "Accueil", about: "À propos", products: "Produits", why: "Nos atouts", contact: "Contact", inquiry: "Demander un devis" },
+    nav: { home: "Accueil", about: "À propos", products: "Produits", why: "Nos atouts", contact: "Contact", inquiry: "Demander un devis", news: "Actualités", guides: "Guides" },
+    articles: {
+      indexTitle: "Guides et conseils de choix",
+      indexLead: "Des guides pratiques pour choisir, comparer et utiliser motoculteurs, machines à fossés et pompes à eau.",
+      related: "Guides associés",
+      allGuides: "Tous les guides",
+      backToGuides: "← Tous les guides",
+      updated: "Mis à jour",
+      published: "Publié",
+      faqTitle: "Questions fréquentes",
+      faqLead: "Les réponses aux questions que les acheteurs nous posent le plus souvent.",
+      readMore: "Lire le guide"
+    },
     hero: {
       title: "Machines agricoles directes d'usine",
-      sub: "Motoculteurs · Machines à fossés · Pompes à eau. Adossés à notre propre usine — meilleur prix, livraison garantie.",
+      sub: "Motoculteurs · Machines à fossés · Pompes à eau. Adossés à notre propre usine — prix direct usine et capacité de production stable.",
       cta1: "Voir les produits", cta2: "Envoyer une demande",
-      stat1: { num: "15+", label: "Ans d'expérience" },
+      stat1: { num: "15+", label: "Ans de fabrication" },
       stat2: { num: "30+", label: "Modèles" },
-      stat3: { num: "50+", label: "Pays d'export" }
+      stat3: { num: "1", label: "Usine intégrée" }
     },
     about: {
       title: "À propos",
       lead: "Liuzhou Haogeng est le bras export de l'usine Guigeng — une véritable entreprise intégrée commerce + fabrication.",
       c1: { title: "Notre propre usine", text: "Adossés à Guangxi Lichuang Machinery (marque Guigeng), fabricant moderne avec conception et production internes." },
-      c2: { title: "Technologie brevetée", text: "Notre équipe R&D détient des brevets nationaux et la certification de machines agricoles." },
+      c2: { title: "Technologie brevetée", text: "Notre équipe R&D détient des brevets nationaux de modèle d'utilité, et notre micro-culteur 4WD phare est inscrit par l'autorité chinoise de la machinerie agricole parmi les Produits Agricoles Nationaux Promus. Certificats disponibles sur demande." },
       c3: { title: "Équipement avancé", text: "Lignes de découpe laser CNC, pliage, découpe de tubes et soudage laser garantissant précision et durabilité." }
     },
     products: {
@@ -395,10 +481,10 @@ var I18N = {
         accessories: {
           title: "Ce Que Comprend la Boîte",
           subtitle: "Tous les accessoires ci-dessous sont INCLUS GRATUITEMENT à l'achat de cette machine — prête à l'emploi dès la sortie du carton.",
-          item1: { name: "Jeu de Roues pour Rizi猫res", qty: "1 jeu", desc: "Roues 脿 palettes larges con莽ues pour les rizi猫res meubles et inond茅es. Se montent directement sur l'arbre du rotor en remplacement des lames pour terre s猫che." },
-          item2: { name: "Jeu de Lames Anti-Enroulement", qty: "1 jeu", desc: "Lames courbes con莽ues pour r茅sister 脿 l'enroulement des mauvaises herbes. La g茅om茅trie swept emp锚che l'herbe haute et les r茅sidus de culture de s'enrouler autour du rotor." },
-          item3: { name: "Jeu de Pneumatiques en Caoutchouc", qty: "1 jeu", desc: "Roues de transport en caoutchouc cramponn茅 avec moyeux m茅talliques et al茅sage carr茅. Id茅ales pour d茅placer la machine entre parcelles sans ab卯mer le sol." },
-          item4: { name: "Jeu de Lames pour Terre S猫che", qty: "1 jeu", desc: "Lames rotatives type H tremp茅es pour briser les sols fermes et secs. Pr茅-assembl茅es sur le cadre de cage, pr锚tes 脿 monter d猫s la sortie du carton." }
+          item1: { name: "Jeu de Roues pour Rizières", qty: "1 jeu", desc: "Roues à palettes larges conçues pour les rizières meubles et inondées. Se montent directement sur l'arbre du rotor en remplacement des lames pour terre sèche." },
+          item2: { name: "Jeu de Lames Anti-Enroulement", qty: "1 jeu", desc: "Lames courbes conçues pour résister à l'enroulement des mauvaises herbes. La géométrie balayée empêche l'herbe haute et les résidus de culture de s'enrouler autour du rotor." },
+          item3: { name: "Jeu de Pneumatiques en Caoutchouc", qty: "1 jeu", desc: "Roues de transport en caoutchouc cramponnées avec moyeux métalliques et alésage carré. Idéales pour déplacer la machine entre parcelles sans abîmer le sol." },
+          item4: { name: "Jeu de Lames pour Terre Sèche", qty: "1 jeu", desc: "Lames rotatives type H trempées pour briser les sols fermes et secs. Pré-assemblées sur le cadre de cage, prêtes à monter dès la sortie du carton." }
         }
       }
     },
@@ -408,7 +494,7 @@ var I18N = {
       w2: { title: "OEM / ODM", text: "Marque, couleur et spécifications personnalisées pour votre marché." },
       w3: { title: "Contrôle qualité", text: "Contrôle strict de chaque unité avant expédition." },
       w4: { title: "Livraison fiable", text: "Capacité de production stable pour une livraison ponctuelle." },
-      w5: { title: "Expérience export", text: "Export vers plus de 50 pays avec documentation complète." },
+      w5: { title: "Expérience export", text: "Exports vers l'Asie du Sud-Est, l'Inde et le Sri Lanka — 300 motoculteurs expédiés au Sri Lanka en une seule année, avec documentation complète d'export." },
       w6: { title: "Service après-vente", text: "Pièces détachées et support technique pour tous les modèles." }
     },
     contact: {
@@ -433,27 +519,52 @@ var I18N = {
         copySub: "Coller n'importe où"
       }
     },
-    footer: { rights: "Tous droits réservés." }
+    footer: { rights: "Tous droits réservés." },
+    news: {
+      title: "Dans l'actualité",
+      source: "Département de l'Agriculture et des Affaires Rurales du Guangxi · Liuzhou Daily · 2025-02-24",
+      headline: "« Accélérer la production pour soutenir le labour de printemps »",
+      intro: "Après le terme solaire de la Pluie, alors que les champs sont occupés par le labour de printemps, la production de machines agricoles est elle aussi en plein élan. Le 19 février, des journalistes ont visité un fabricant de machines agricoles situé avenue Liugong et ont vu les lignes de production fonctionner à pleine capacité pour accélérer les motoculteurs destinés au labour de printemps.",
+      quote: "« Directeur Wu, quand notre commande pourra-t-elle être expédiée ? » Ce matin-là, M. Zeng, concessionnaire de machines agricoles originaire du Hunan, s'est rendu chez Guangxi Lichuang Machinery Manufacturing Co., Ltd. pour retirer sa marchandise. « La saison de labour de printemps est le pic des ventes, nous avons donc fait diligence pour venir à Liuzhou », a répondu le responsable de l'entreprise, Wu Siyu : « Nous accélérons la production — tout ce qui est prêt part en premier. » Il a aussitôt organisé l'expédition par camion.",
+      factory: "Lichuang Machinery est une entreprise spécialisée dans la production et le développement de nouveaux motoculteurs 4WD, de machines d'entretien des parcelles et de machines à fossés. Wu Siyu explique que le motoculteur 4WD à rotation frontale de la marque Guigeng est conçu pour les zones vallonnées et montagneuses aux petites parcelles et aux forts dénivelés : il est léger, compact, puissant et facile à manier, idéal pour les régions du Sud, et c'est la machine agricole la plus vendue pendant la saison du labour de printemps. Outre le marché local, ses produits sont également vendus au Hunan, au Jiangxi, à Hainan et au Hubei.",
+      capacity: "Dans l'atelier de production, les ouvriers assemblaient sans relâche les pièces sur la ligne de montage. Dès qu'une machine sortait de la ligne, elle passait au contrôle qualité, était emballée et attendait l'expédition. « Nous avons repris le travail le quatrième jour du Nouvel An lunaire. Deux lignes de production fonctionnent aujourd'hui à pleine capacité, avec environ 130 motoculteurs par jour », a déclaré Wu. Cela ne suffit pourtant pas encore à couvrir la demande actuelle. Le mois prochain, l'entreprise ouvrira une nouvelle ligne de production de grandes machines agricoles à quatre roues afin d'accroître ses capacités.",
+      export: "Ces dernières années, Lichuang Machinery a saisi les opportunités offertes par l'Initiative Belt and Road et exporte ses produits vers les marchés d'Asie du Sud-Est. Wu indique que les motoculteurs sont également très appréciés en Inde, au Vietnam et sur d'autres marchés. L'an dernier, l'entreprise a exporté 300 motoculteurs au Sri Lanka. Cette année, elle approfondit le potentiel du marché d'Asie du Sud-Est et développe du matériel pour la récolte de la noix d'arec selon les besoins agricoles locaux, afin de renforcer sa compétitivité sur ces marchés.",
+      h1: { num: "300", label: "Unités exportées au Sri Lanka" },
+      h2: { num: "130", label: "Unités de capacité journalière" },
+      h3: { num: "2", label: "Lignes de production à pleine capacité" }
+    }
   },
 
   sw: {
-    brand: { name: "HAOGENG", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Mashine za Kilimo za Guigeng", lichuang: "Mashine za Lichuang Guangxi" },
+    brand: { name: "HAOGENG", tagline: "Mashine za Kilimo", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Mashine za Kilimo za Guigeng", lichuang: "Mashine za Lichuang Guangxi" },
     topbar: { hint: "Moja kwa moja kutoka kiwanda · OEM/ODM yanakaribishwa" },
-    nav: { home: "Mwanzo", about: "Kuhusu sisi", products: "Bidhaa", why: "Kwa nini sisi", contact: "Wasiliana nasi", inquiry: "Omba bei", news: "Habari" },
+    nav: { home: "Mwanzo", about: "Kuhusu sisi", products: "Bidhaa", why: "Kwa nini sisi", contact: "Wasiliana nasi", inquiry: "Omba bei", news: "Habari", guides: "Miongozo" },
+    articles: {
+      indexTitle: "Miongozo na Ushauri",
+      indexLead: "Miongozo ya kuchagua, kulinganisha na kutumia trekta ndogo, mashine za makorongo na pampu za maji.",
+      related: "Miongozo inayohusiana",
+      allGuides: "Miongozo zote",
+      backToGuides: "← Miongozo zote",
+      updated: "Imesasishwa",
+      published: "Imechapishwa",
+      faqTitle: "Maswali yanayoulizwa mara kwa mara",
+      faqLead: "Majibu ya maswali yanayoulizwa na watanunaji wengi.",
+      readMore: "Soma miongozo"
+    },
     hero: {
       title: "Mashine za Kilimo Moja kwa Moja kutoka Kiwanda",
-      sub: "Matrekta · Vifaa vya mifuko · Pampu za maji. Zinazozalishwa na kiwanda chetu mwenyewe — bei nzuri, utoaji unaohakikishwa.",
+      sub: "Matrekta · Vifaa vya mifuko · Pampu za maji. Zinazozalishwa na kiwanda chetu mwenyewe — bei moja kwa moja na uwezo wa uzalishaji thabiti.",
       cta1: "Tazama Bidhaa",
       cta2: "Tuma Uchunguzi",
-      stat1: { num: "15+", label: "Miaka ya Uzoefu" },
+      stat1: { num: "15+", label: "Miaka ya Uzalishaji" },
       stat2: { num: "30+", label: "Mifano ya Bidhaa" },
-      stat3: { num: "50+", label: "Nchi za Usafirishaji" }
+      stat3: { num: "1", label: "Kiwanda chetu" }
     },
     about: {
       title: "Kuhusu Sisi",
       lead: "Liuzhou Haogeng International Trade Co., Ltd. (Haogeng) ndiye mkono wa nje wa mauzo wa Guigeng Agricultural Machinery. Kama kampuni ya mauzo ya kimataifa ya chapa hii, tunafanya kazi moja kwa moja na kiwanda chetu mwenyewe — tukitoa wateja wa nje bei ya kweli ya moja kwa moja kutoka kiwanda na ugavi unaotegemewa.",
       c1: { title: "Kampuni Moja, Inayoungwa mkono na Kiwanda", text: "Mashine za Kilimo za Guigeng zinazalishwa na Guangxi Lichuang Machinery Manufacturing Co., Ltd. — kiwanda chetu mwenyewe. Haogeng inashughulikia biashara yote ya kimataifa: usafirishaji, nyaraka na huduma baada ya kuuza. Unaponunua kutoka Haogeng, unanunua moja kwa moja kutoka kiwanda cha Guigeng, bila mawakala wa kati." },
-      c2: { title: "Teknolojia Iliyopata Hataza", text: "Timu yetu ya R&D ina hataza za kitaifa za muundo wa vitendo na vyeti vya mashine za kilimo, kuhakikisha kila muundo unajaribiwa na kuthibitishwa shambani." },
+      c2: { title: "Teknolojia Iliyopata Hataza", text: "Timu yetu ya R&D ina hataza za kitaifa za muundo wa vitendo, na trekta yetu ya 4WD inayoongoza imeorodheshwa na mamlaka ya mashine za kilimo ya China kama Bidhaa ya Kilimo ya Taifa Inayopendekezwa. Vyeti vinapatikana kwa ombi." },
       c3: { title: "Vifaa vya Kisasa", text: "Kukata kwa laser ya CNC, kupinda kwa CNC, kukata kwa mabomba kwa laser na mistari ya kulehemu kwa laser vinahakikisha usahihi, uimara na kumaliza thabiti." }
     },
     products: {
@@ -490,7 +601,7 @@ var I18N = {
       w2: { title: "OEM / ODM", text: "Chapa, rangi na vipimo vilivyobinafsishwa kwa soko lako." },
       w3: { title: "Udhibiti wa Ubora", text: "Udhibiti mkali wa ubora kwa kila kitengo kabla ya kusafirishwa, kudumu shambani." },
       w4: { title: "Utoaji Unaotegemewa", text: "Uwezo thabiti wa uzalishaji unahakikisha utoaji kwa wakati." },
-      w5: { title: "Uzoefu wa Usafirishaji", text: "Kusafirisha bidhaa kwa nchi 50+ kwa msaada kamili wa nyaraka." },
+      w5: { title: "Uzoefu wa Usafirishaji", text: "Tumia kwa Asia ya Kusini-mashariki, India na Sri Lanka — matrekta madogo 300 yaliyotumwa Sri Lanka katika mwaka mmoja, kwa msaada kamili wa nyaraka za uagizaji." },
       w6: { title: "Huduma Baada ya Kuuza", text: "Vipuri na msaada wa kiufundi unapatikana kwa mifano yote." }
     },
     contact: {

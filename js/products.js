@@ -5786,9 +5786,14 @@ function renderProducts(category) {
       ? `<div class="product-img"><picture><source srcset="images/${p.img.replace(/\.(jpg|jpeg|png)$/i, '.webp')}" type="image/webp"><img src="images/${p.img}" alt="${name}" loading="lazy" style="width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;"></picture></div>`
       : `<div class="product-img">📷 <span style="margin-left:8px">${name}</span></div>`;
 
+    // 产品链接：静态多语言站上线后指向 /{lang}/product/...，没有就回落到旧地址
+    const productHref = (typeof window !== 'undefined' && window.HaogengUrls && window.HaogengUrls.productPath)
+      ? window.HaogengUrls.productPath(p, lang)
+      : 'product.html?id=' + encodeURIComponent(p.id);
+
     return `
       <div class="product-card" data-cat="${p.cat}">
-        <a class="product-link" href="product.html?id=${encodeURIComponent(p.id)}">
+        <a class="product-link" href="${productHref}">
           ${imgHtml}
           <div class="product-body">
             <span class="product-cat">${catLabel}</span>

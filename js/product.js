@@ -6,6 +6,138 @@
 (function() {
   'use strict';
 
+  // ===== 全局常量（SEO） =====
+  const SITE = 'https://haogeng.net';
+  const OG_LOCALE = { en: 'en_US', zh: 'zh_CN', sw: 'sw_KE', es: 'es_ES', ru: 'ru_RU', fr: 'fr_FR' };
+  const DESC_SUFFIX = {
+    en: ' Factory-direct from Liuzhou Haogeng, China. Request a quote.',
+    zh: ' 工厂直供，柳州浩耕出品，欢迎询价。',
+    sw: ' Moja kwa moja kutoka kiwanda cha Liuzhou Haogeng, China. Tuma uchunguzi wako.',
+    es: ' Directo de fábrica de Liuzhou Haogeng, China. Solicite cotización.',
+    ru: ' Напрямую с завода Liuzhou Haogeng, Китай. Запросите цену.',
+    fr: ' Direct usine de Liuzhou Haogeng, Chine. Demandez un devis.'
+  };
+  const CAT_LABEL_MAP = {
+    tiller: { en: 'Micro Tiller', zh: '微耕机', es: 'Motocultor', ru: 'Мотокультиватор', fr: 'Motoculteur', sw: 'Matrekta' },
+    ditching: { en: 'Ditching Machine', zh: '开沟培土机', es: 'Máquina Zanjas', ru: 'Машина для канав', fr: 'Machine à Fossés', sw: 'Mashine ya Makorongo' },
+    pump: { en: 'Water Pump', zh: '抽水机', es: 'Bomba de Agua', ru: 'Водяной насос', fr: 'Pompe à Eau', sw: 'Pampu ya Maji' }
+  };
+
+  function catLabelFor(cat, lang) {
+    const m = CAT_LABEL_MAP[cat];
+    if (!m) return cat || '';
+    return m[lang] || m.en || cat;
+  }
+
+  // 按词截断，避免把单词/词组切一半（比 substring(0,160) 干净）
+  function truncateWords(str, max) {
+    const s = String(str == null ? '' : str).replace(/\s+/g, ' ').trim();
+    if (!s) return '';
+    if (s.length <= max) return s;
+    const cut = s.slice(0, max);
+    const sp = cut.lastIndexOf(' ');
+    const body = (sp > max * 0.6) ? cut.slice(0, sp) : cut;
+    return body.replace(/[\s,;:.·、，。；：-]+$/, '') + '…';
+  }
+
+  function setAttr(selector, attr, value) {
+    let el = document.querySelector(selector);
+    if (!el) {
+      // meta[property="og:xxx"] / meta[name="twitter:xxx"] 不存在时自动补一个
+      const m = selector.match(/^meta\[(?:property|name)="([^"]+)"\]$/);
+      if (!m) return;
+      el = document.createElement('meta');
+      el.setAttribute(m[1].indexOf('og:') === 0 ? 'property' : 'name', m[1]);
+      document.head.appendChild(el);
+    }
+    el.setAttribute(attr, value);
+  }
+
+  function ensureLink(rel, href) {
+    let el = document.querySelector('link[rel="' + rel + '"]');
+    if (!el) {
+      el = document.createElement('link');
+      el.setAttribute('rel', rel);
+      document.head.appendChild(el);
+    }
+    el.setAttribute('href', href);
+  }
+
+  // hreflang 互指（静态多语言 URL 上线后，6 个语种各指向自己的真实页面）
+  function ensureAlternates(list) {
+    list.forEach(function (a) {
+      let el = document.querySelector('link[rel="alternate"][hreflang="' + a.lang + '"]');
+      if (!el) {
+        el = document.createElement('link');
+        el.setAttribute('rel', 'alternate');
+        el.setAttribute('hreflang', a.lang);
+        document.head.appendChild(el);
+      }
+      el.setAttribute('href', a.href);
+    });
+  }
+
+  // 产品页的规范 URL：优先用静态多语言地址（/{lang}/product/...），
+  // 没有 seo-urls.js 时回落到旧的 product.html?id=xx
+  function canonicalUrlFor(product) {
+    if (window.HaogengUrls && window.HaogengUrls.productPath) {
+      return SITE + window.HaogengUrls.productPath(product, 'en');
+    }
+    return SITE + '/product.html?id=' + encodeURIComponent(product.id || '');
+  }
+
+  // ===== 标题 / 描述 / canonical / OG / Twitter =====
+  function applySeoMeta(product, lang) {
+    const name = pickI18n(product.name, lang) || product.model || '';
+    const desc = pickI18n(product.desc, lang) || '';
+    const model = product.model || '';
+    const title = name + (model ? ' (' + model + ')' : '') + ' | Liuzhou Haogeng';
+    const pageUrl = canonicalUrlFor(product);
+
+    document.title = title;
+    document.documentElement.lang = lang;
+
+    // description：产品简介 + 工厂直供补充句，整体控制在 ~160 字符以内
+    const suffix = DESC_SUFFIX[lang] || DESC_SUFFIX.en;
+    let metaDesc;
+    if (!desc) {
+      metaDesc = suffix.trim();
+    } else if (desc.length + suffix.length <= 160) {
+      metaDesc = desc + suffix;
+    } else {
+      metaDesc = truncateWords(desc, 160 - suffix.length) + suffix;
+    }
+    setAttr('meta[name="description"]', 'content', metaDesc);
+
+    // canonical：指向静态多语言产品页，避免新旧两套 URL 抢同一页权重
+    ensureLink('canonical', pageUrl);
+
+    // hreflang：6 个语种互指
+    if (window.HaogengUrls && window.HaogengUrls.LANGS) {
+      const alts = window.HaogengUrls.LANGS.map(function (l) {
+        return { lang: l, href: SITE + window.HaogengUrls.productPath(product, l) };
+      });
+      alts.push({ lang: 'x-default', href: SITE + window.HaogengUrls.productPath(product, 'en') });
+      ensureAlternates(alts);
+    }
+
+    // Open Graph
+    const img = product.img ? SITE + '/images/' + product.img : SITE + '/images/og-image.jpg';
+    setAttr('meta[property="og:title"]', 'content', title);
+    setAttr('meta[property="og:description"]', 'content', metaDesc);
+    setAttr('meta[property="og:url"]', 'content', pageUrl);
+    setAttr('meta[property="og:type"]', 'content', 'product');
+    setAttr('meta[property="og:image"]', 'content', img);
+    setAttr('meta[property="og:image:alt"]', 'content', name);
+    setAttr('meta[property="og:locale"]', 'content', OG_LOCALE[lang] || 'en_US');
+
+    // Twitter Card
+    setAttr('meta[name="twitter:card"]', 'content', 'summary_large_image');
+    setAttr('meta[name="twitter:title"]', 'content', title);
+    setAttr('meta[name="twitter:description"]', 'content', metaDesc);
+    setAttr('meta[name="twitter:image"]', 'content', img);
+  }
+
   function getQueryParam(name) {
     const m = location.search.match(new RegExp('[?&]' + name + '=([^&#]*)'));
     return m ? decodeURIComponent(m[1]) : null;
@@ -33,12 +165,7 @@
     const features = pickI18n(product.features, lang);
     const specs = pickI18n(product.specs, lang);
     const cat = product.cat || '';
-    const catLabelMap = {
-      tiller: { en: 'Micro Tiller', zh: '微耕机', es: 'Motocultor', ru: 'Мотокультиватор', fr: 'Motoculteur', sw: 'Matrekta' },
-      ditching: { en: 'Ditching Machine', zh: '开沟培土机', es: 'Máquina Zanjas', ru: 'Машина для канав', fr: 'Machine à Fossés', sw: 'Mashine ya Makorongo' },
-      pump: { en: 'Water Pump', zh: '抽水机', es: 'Bomba de Agua', ru: 'Водяной насос', fr: 'Pompe à Eau', sw: 'Pampu ya Maji' }
-    };
-    const catLabel = (catLabelMap[cat] && catLabelMap[cat][lang]) || (catLabelMap[cat] && catLabelMap[cat].en) || cat;
+    const catLabel = catLabelFor(cat, lang);
 
     const t = (key) => getByPath((window.I18N && window.I18N[lang]) || {}, key);
 
@@ -295,12 +422,7 @@
 
     main.innerHTML = renderDetail(product, lang);
 
-    const name = pickI18n(product.name, lang);
-    const desc = pickI18n(product.desc, lang);
-    document.title = `${name} (${product.model}) | Liuzhou Haogeng`;
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', desc.substring(0, 160));
-
+    applySeoMeta(product, lang);
     injectProductJsonLd(product, lang);
 
     bindQuoteButtons(product, lang);
@@ -312,11 +434,15 @@
       main.innerHTML = renderDetail(product, newLang);
       bindQuoteButtons(product, newLang);
       bindGallery();
+      applySeoMeta(product, newLang);
       injectProductJsonLd(product, newLang);
     });
   }
 
-  // ===== JSON-LD Product schema (SEO) =====
+  // ===== JSON-LD：Product + BreadcrumbList + WebPage (SEO) =====
+  // ⚠️ 关于 offers：原版写了 price:"0"，Google 富媒体结果会直接判 "Missing field price"
+  //    并忽略整段结构化数据。这里按"不编造价格"的原则先整块移除 Offer，
+  //    等拿到真实 FOB 价后，把下面注释里的 offers 段加回来即可解锁价格富摘要。
   function injectProductJsonLd(product, lang) {
     let script = document.getElementById('product-jsonld');
     if (!script) {
@@ -325,41 +451,89 @@
       script.id = 'product-jsonld';
       document.head.appendChild(script);
     }
+    const t = (key) => getByPath((window.I18N && window.I18N[lang]) || {}, key);
     const name = pickI18n(product.name, lang);
     const desc = pickI18n(product.desc, lang);
     const imgFile = product.img || '';
     const gallery = Array.isArray(product.gallery) ? product.gallery : [];
-    const images = [imgFile, ...gallery].filter(Boolean).map(f => `https://haogeng.net/images/${f}`);
+    const images = [imgFile, ...gallery].filter(Boolean).map(f => SITE + '/images/' + f);
+    const pageUrl = canonicalUrlFor(product);
+    const catLabel = catLabelFor(product.cat || '', lang);
+    const homeUrl = (window.HaogengUrls && window.HaogengUrls.homePath)
+      ? SITE + window.HaogengUrls.homePath(lang)
+      : SITE + '/';
 
-    const ld = {
-      '@context': 'https://schema.org/',
+    // 参数表 → additionalProperty（Google 商品规格富摘要）
+    const specs = pickI18n(product.specs, lang) || [];
+    const additionalProperty = specs.map(function (line) {
+      const m = String(line).match(/^(.+?)\s*[:：]\s*(.+)$/);
+      if (!m) return null;
+      return { '@type': 'PropertyValue', name: m[1].trim(), value: m[2].trim() };
+    }).filter(Boolean);
+
+    const productNode = {
       '@type': 'Product',
+      '@id': pageUrl + '#product',
       name: name,
-      model: product.model || '',
+      url: pageUrl,
       sku: product.id || '',
+      mpn: product.model || '',
+      model: product.model || '',
       description: desc,
-      image: images.length ? images : undefined,
-      brand: { '@type': 'Brand', name: 'Guigeng / Haogeng' },
+      image: images,
+      category: catLabel,
+      inLanguage: lang,
+      brand: { '@type': 'Brand', name: 'Guigeng', alternateName: 'Haogeng' },
       manufacturer: {
         '@type': 'Organization',
         name: 'Guangxi Lichuang Machinery Manufacturing Co., Ltd.',
-        address: 'No. 86, Liugong Avenue, Liunan District, Liuzhou City, Guangxi, China'
-      },
-      offers: {
-        '@type': 'Offer',
-        url: `https://haogeng.net/product.html?id=${encodeURIComponent(product.id || '')}`,
-        priceCurrency: 'USD',
-        price: '0',
-        priceValidUntil: '2027-12-31',
-        availability: 'https://schema.org/InStock',
-        itemCondition: 'https://schema.org/NewCondition',
-        seller: {
-          '@type': 'Organization',
-          name: 'Liuzhou Haogeng International Trade Co., Ltd.'
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'No. 86, Liugong Avenue, Liunan District',
+          addressLocality: 'Liuzhou',
+          addressRegion: 'Guangxi',
+          addressCountry: 'CN'
         }
-      }
+      },
+      additionalProperty: additionalProperty
+      // ── 有真实 FOB 价后，把 Offer 加回来（price 必须 > 0，否则 Google 报错）──
+      // offers: {
+      //   '@type': 'Offer',
+      //   url: pageUrl,
+      //   priceCurrency: 'USD',
+      //   price: 'xxx.xx',
+      //   priceValidUntil: '2027-12-31',
+      //   availability: 'https://schema.org/InStock',
+      //   itemCondition: 'https://schema.org/NewCondition',
+      //   seller: { '@id': SITE + '/#organization' }
+      // }
     };
-    script.textContent = JSON.stringify(ld);
+
+    const breadcrumbNode = {
+      '@type': 'BreadcrumbList',
+      '@id': pageUrl + '#breadcrumb',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: t('nav.home') || 'Home', item: homeUrl },
+        { '@type': 'ListItem', position: 2, name: t('nav.products') || 'Products', item: homeUrl + '#products' },
+        { '@type': 'ListItem', position: 3, name: name }
+      ]
+    };
+
+    const webPageNode = {
+      '@type': 'WebPage',
+      '@id': pageUrl + '#webpage',
+      url: pageUrl,
+      name: document.title,
+      isPartOf: { '@id': SITE + '/#website' },
+      about: { '@id': SITE + '/#organization' },
+      breadcrumb: { '@id': pageUrl + '#breadcrumb' },
+      inLanguage: lang
+    };
+
+    script.textContent = JSON.stringify({
+      '@context': 'https://schema.org/',
+      '@graph': [webPageNode, breadcrumbNode, productNode]
+    });
   }
 
   if (document.readyState === 'loading') {

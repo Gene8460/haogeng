@@ -2,21 +2,27 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   // 语言切换
+  // 静态多语言站里 .lang-btn 是 <a>（点一下就是跳到对应语种的真实 URL），
+  // 只有 JS 版的按钮才需要在这里切语言。
   document.querySelectorAll('.lang-btn').forEach(btn => {
+    if (btn.tagName === 'A') return;
     btn.addEventListener('click', () => setLang(btn.getAttribute('data-lang')));
   });
 
   // 恢复上次语言
-  const saved = localStorage.getItem('haogeng_lang');
+  // 静态多语言页用 <html data-lang="xx"> 钉死语言（优先级最高），
+  // 否则用户上次选的语种会把页面语言改掉，hreflang 就对不上了。
+  const forcedLang = document.documentElement.getAttribute('data-lang');
+  const saved = forcedLang || localStorage.getItem('haogeng_lang');
   if (saved && I18N[saved]) {
     setLang(saved);
   } else {
     setLang('en');
   }
 
-  // 渲染产品
-  renderProducts('all');
-  initFilters();
+  // 渲染产品（静态页已服务端渲染，没有 products.js 时跳过）
+  if (typeof renderProducts === 'function') renderProducts('all');
+  if (typeof initFilters === 'function') initFilters();
 
   // 移动端菜单
   const toggle = document.getElementById('menuToggle');

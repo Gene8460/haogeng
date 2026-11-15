@@ -1,0 +1,5 @@
+# 本地临时文件，不要提交
+_preview/
+preview/
+_chk_live.py
+_list_ids.py
