@@ -329,3 +329,59 @@ C SW + FR（→204）· D ES + RU（→228）· E ZH（→240）。翻译时**�
 **死链防护**：注入条件仍是 `articlesOfLang(lang).length` —— 该语种没有文章时，`guides.html` / `faq.html` 两个页面根本不生成，导航也不会出现这两个链接。目前 zh/sw/es/ru/fr 0 篇 → 导航无这两个入口（线上实测 `zh/` 的 `nav-faq` 计数 = 0）。
 
 **线上实测**：`/en/` → `nav-faq` 1 处、`style.css?v=17` 1 处；`/en/faq.html`、`/en/guides.html`、产品页均 200；`/zh/` 无 `nav-faq`；sitemap 180 条。`seo_check.py` 八项全过。
+
+## 2026-11-15 执行记录 · 阶段 C（斯瓦希里语 + 法语 10 篇）
+
+提交 `91793b3`。页面数 **180 → 204**（+24 = 2 语种 × (10 篇文章 + guides 索引 + faq 聚合)）。
+
+### 为什么 SW / FR 先做
+
+老板拍板「EN 10 篇 + 全 6 语种」，语种顺序按主战场排：**EN → SW（肯尼亚/东非）→ FR（西非）→ ES（拉美）→ RU（独联体）→ ZH（华人经销商，最后做）**。
+
+### 做法：`_meta_lang/` 覆盖层 + 按索引合并 FAQ
+
+原 `_asm.py` 的写法是「每语种把 FAQ 数组 append 进去」，一旦多语种就会**条目重复**；而 `faqText(f, lang, where)` 的取值是 `f.q[lang] || f.q.en`，取不到就**回落成英文** —— SW/FR 的 FAQ 页面会混进大段英文。
+
+改成：EN 母稿仍放 `_meta/*.json`，每个译语种单独放 `_meta_lang/<slug>.<lang>.json`（`title` / `desc` / `faq[{q,a}]`），组装时
+
+1. 以 `_meta/*.json` 为底，叠加 `_meta_lang/` 覆盖层，得到每语种一份完整条目；
+2. **FAQ 按索引合并**：`entry['faq'][i]['q'][lang] = ...` —— 第 i 条问答在所有语种间一一对应，不会重复、也不会掉进英文回落；
+3. 正文从 `_bodies/<slug>.<lang>.md` 读取，缺失即该语种不生成文章（`[文章缺翻译]` 报错）。
+
+组装脚本仍是沙盒临时文件 `_asm.py`（**不入库**），生成物只有 `content/articles.js`。
+
+### 本阶段产出
+
+| 项 | 数量 |
+|---|---|
+| 正文分片 `_bodies/*.sw.md` / `*.fr.md` | 20 篇（每篇 1 个 H2 + 3–4 个 H3，3 条以上内链） |
+| 元数据覆盖层 `_meta_lang/*.json` | 20 个（title + desc + 6–8 条 FAQ） |
+| 新增页面 | `/sw/guide/*` 10、`/fr/guide/*` 10、`/sw/guides.html`、`/fr/guides.html`、`/sw/faq.html`、`/fr/faq.html` |
+| FAQ 聚合 | 每语种 78 条（10 篇 × 6–8 条），FAQPage 结构化数据同步生成 |
+
+### 翻译红线执行情况
+
+- **数字全部走 `{{spec:}}` 占位符**（`Rated power` / `Working width` / `Max total head` / `Net weight` …），生成时从 `js/products.js` 现取现填，译文不可能写错参数；
+- 泵类型号带英寸符号（`2" Centrifugal`），组装时用 `@@` 占位再还原成 ASCII 双引号，避免与 Python 字符串引号冲突；
+- 术语沿用站内既有叫法：SW `matrekta / mashine ya makorongo / pampu ya maji`、FR `motoculteur / machine à fosses / pompe à eau`；产品显示名直接取 `js/products.js` 的 `name[sw]` / `name[fr]`；
+- **英文漏词自检**：对 20 篇译文做词表扫描，命中并修正：`throughout` → `kwa kipindi chote cha msimu`、`gears` → `gear`、`blade` → `mata`、`meta`（错字）→ `mata`、`fixed` → `thabiti`；FR 侧扫描命中项经复核全部是法语正词（machine / diesel / simple / service …），无需改。
+
+### 验证（本地 + 线上）
+
+| 项 | 结果 |
+|---|---|
+| 页面数 | 204（sitemap 204 条，无重复） |
+| 生成器报告 | `[i18n 缺失]` 0 · `[文章缺翻译]` 0 · `[参数占位符错误]` 0 · `[文章缺首图]` 0 · 参数行数 6 语种与 en 一致 |
+| `seo_check.py` | 八项全过（JSON-LD 206 页可解析、hreflang 双向互指、canonical 自指、无乱码、sitemap 全覆盖） |
+| 占位符残留 | 全库 grep `{{spec:` 与 `[Rated power]` = 0 |
+| 语言泄漏 | SW/FR 的 78 条 FAQ 与 EN 逐条比对，重复 = 0 |
+| 线上实测 | `/sw/` `/fr/` `/sw/guides.html` `/fr/guides.html` `/sw/faq.html`（78 条）`/fr/faq.html`（78 条）`/sw/guide/*` `/fr/guide/*` 全部 200；EN 文章页 hreflang 已指向 sw/fr 对应译文，语言切换器也指向译文页 |
+
+### 副作用（预期内）
+
+- EN 文章页新增 `hreflang="sw"` / `hreflang="fr"` 互指，语言切换器 SW/FR 从首页改为跳对应译文页；
+- SW / FR 首页、品类页、产品页顶部导航出现「Guides / FAQ」入口，产品页出现「Miongozo zinazohusiana / Guides associés」相关指南区块。
+
+### 后续
+
+D ES + RU（→228）· E ZH（→240）。临时文件 `_asm.py` `_meta/` `_meta_lang/` `_bodies/` `_articles_header.txt` **只留在沙盒**（`~/.claude/workspace/haogeng-p0-sandbox`），不入库。
