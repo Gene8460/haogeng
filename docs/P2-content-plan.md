@@ -310,3 +310,22 @@ var ARTICLES = [
 ### 后续
 
 C SW + FR（→204）· D ES + RU（→228）· E ZH（→240）。翻译时**只动文字不动数字**：`{{spec:}}` `[[model:]]` `[[cat:]]` 原样保留，型号与单位不翻译。
+
+## 2026-11-15 执行记录 · 阶段 B.1（顶部导航补「常见问题」入口）
+
+提交 `2dc6b1b`，185 files changed。页面数不变（180）。
+
+**问题**：`/{lang}/faq.html`（78 条问答）原本只能从 `/{lang}/guides.html` 进入 —— 首页一跳到 FAQ 页面是 **2 跳**，且首页 / 品类页 / 产品页全都没有入口。FAQ 页是最容易被搜索引擎收录成"答案页"的一块内容。
+
+**改动**：
+
+| 文件 | 改动 |
+|---|---|
+| `scripts/build-static.js` | `addGuidesNav` → `addContentNav`，一次注入「选型指南 / 常见问题」两个入口；链接**追加在导航末尾**（原来 Guides 被插在最前面，顺序不合理）；注入前先 trim 掉 nav 内尾部空白 |
+| `js/i18n.js` | 6 语种 `nav` 各加 `faq: "FAQ"` |
+| `css/style.css` | 新增 `@media (max-width: 1100px) { .menu { gap: 13px; } }`（C/D/E 完成后导航变 8 项，防中屏溢出）；`?v=16` → `?v=17` |
+| `index.html` / `product.html` | CSS 版本号同步 bump |
+
+**死链防护**：注入条件仍是 `articlesOfLang(lang).length` —— 该语种没有文章时，`guides.html` / `faq.html` 两个页面根本不生成，导航也不会出现这两个链接。目前 zh/sw/es/ru/fr 0 篇 → 导航无这两个入口（线上实测 `zh/` 的 `nav-faq` 计数 = 0）。
+
+**线上实测**：`/en/` → `nav-faq` 1 处、`style.css?v=17` 1 处；`/en/faq.html`、`/en/guides.html`、产品页均 200；`/zh/` 无 `nav-faq`；sitemap 180 条。`seo_check.py` 八项全过。
