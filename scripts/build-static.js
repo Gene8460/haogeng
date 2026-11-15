@@ -878,7 +878,7 @@ function buildHome(lang) {
   html = html.replace(/[ \t]*<script src="\/js\/products\.js[^"]*"><\/script>\n?/g, '');
 
   // 导航加 Guides 入口
-  html = addGuidesNav(html, lang);
+  html = addContentNav(html, lang);
   html = addFactoryEntry(html, lang);
 
   // 首页挂「选型指南」区块（消孤岛页，把长尾内容引到首页）
@@ -930,7 +930,7 @@ function buildCategory(cat, lang) {
   html = replaceLangSwitcher(html, lang, function (l) { return urls.catPath(cat, l); });
   html = html.replace(/[ \t]*<script src="\/js\/products\.js[^"]*"><\/script>\n?/g, '');
   html = html.replace(/[ \t]*<script src="\/js\/product\.js[^"]*"><\/script>\n?/g, '');
-  html = addGuidesNav(html, lang);
+  html = addContentNav(html, lang);
 
   const modelsLabel = T(lang, 'hero.stat2.label') || 'Product Models';
   const lead = T(lang, 'products.lead') || '';
@@ -1013,7 +1013,7 @@ function buildProduct(p, lang) {
   html = replaceLangSwitcher(html, lang, function (l) { return urls.productPath(p, l); });
   html = html.replace(/[ \t]*<script src="\/js\/products\.js[^"]*"><\/script>\n?/g, '');
   html = html.replace(/[ \t]*<script src="\/js\/product\.js[^"]*"><\/script>\n?/g, '');
-  html = addGuidesNav(html, lang);
+  html = addContentNav(html, lang);
 
   const name = pickI18n(p.name, lang);
   const desc = pickI18n(p.desc, lang);
@@ -1126,16 +1126,24 @@ function faqTarget(lang) {
 
 /* 导航里插入 Guides 入口（首页 <nav class="menu">，详情页 <ul class="nav-menu">）
    该语种一篇文章都没有时不做入口 —— 否则导航指向不存在的页面。 */
-function addGuidesNav(html, lang) {
+/* 顶部导航：有文章的语种才注入「选型指南 / 常见问题」两个入口（其余语种无这两页，避免死链） */
+/* 顶部导航：有文章的语种才注入「选型指南 / 常见问题」两个入口（其余语种无这两页，避免死链） */
+function addContentNav(html, lang) {
   if (!articlesOfLang(lang).length) return html;
   if (html.indexOf('nav-guides') >= 0) return html;
-  const label = T(lang, 'nav.guides') || 'Guides';
-  const link = '<a href="' + urls.guidesIndexPath(lang) + '" class="nav-guides">' + esc(label) + '</a>';
+  const gLabel = T(lang, 'nav.guides') || 'Guides';
+  const fLabel = T(lang, 'nav.faq') || 'FAQ';
+  const gLink = '<a href="' + urls.guidesIndexPath(lang) + '" class="nav-guides">' + esc(gLabel) + '</a>';
+  const fLink = '<a href="' + urls.faqPath(lang) + '" class="nav-faq">' + esc(fLabel) + '</a>';
   if (/<nav class="menu" id="menu">/.test(html)) {
-    return html.replace(/(<nav class="menu" id="menu">)/, '$1\n        ' + link);
+    return html.replace(/(<nav class="menu" id="menu">)([\s\S]*?)(<\/nav>)/, function (m, a, body, c) {
+      return a + body.replace(/([\s]+)$/, '') + '\n        ' + gLink + '\n        ' + fLink + '\n      ' + c;
+    });
   }
   if (/<ul class="nav-menu" id="navMenu">/.test(html)) {
-    return html.replace(/(<ul class="nav-menu" id="navMenu">)/, '$1\n        <li>' + link + '</li>');
+    return html.replace(/(<ul class="nav-menu" id="navMenu">)([\s\S]*?)(<\/ul>)/, function (m, a, body, c) {
+      return a + body.replace(/([\s]+)$/, '') + '\n        <li>' + gLink + '</li>\n        <li>' + fLink + '</li>\n      ' + c;
+    });
   }
   return html;
 }
@@ -1169,7 +1177,7 @@ function buildGuidesIndex(lang) {
   html = replaceLangSwitcher(html, lang, function (l) { return guidesTarget(l); });
   html = html.replace(/[ \t]*<script src="\/js\/products\.js[^"]*"><\/script>\n?/g, '');
   html = html.replace(/[ \t]*<script src="\/js\/product\.js[^"]*"><\/script>\n?/g, '');
-  html = addGuidesNav(html, lang);
+  html = addContentNav(html, lang);
 
   const list = articlesOfLang(lang);
   const t = function (k) { return T(lang, k); };
@@ -1257,7 +1265,7 @@ function buildArticle(a, lang) {
   html = replaceLangSwitcher(html, lang, function (l) { return guideTarget(l, a); });
   html = html.replace(/[ \t]*<script src="\/js\/products\.js[^"]*"><\/script>\n?/g, '');
   html = html.replace(/[ \t]*<script src="\/js\/product\.js[^"]*"><\/script>\n?/g, '');
-  html = addGuidesNav(html, lang);
+  html = addContentNav(html, lang);
 
   const t = function (k) { return T(lang, k); };
   const title = articleTitle(a, lang);
@@ -1361,7 +1369,7 @@ function buildFaq(lang) {
   html = replaceLangSwitcher(html, lang, function (l) { return faqTarget(l); });
   html = html.replace(/[ \t]*<script src="\/js\/products\.js[^"]*"><\/script>\n?/g, '');
   html = html.replace(/[ \t]*<script src="\/js\/product\.js[^"]*"><\/script>\n?/g, '');
-  html = addGuidesNav(html, lang);
+  html = addContentNav(html, lang);
 
   const t = function (k) { return T(lang, k); };
   const allFaq = [];
@@ -1470,7 +1478,7 @@ function buildFactory(lang) {
   html = replaceLangSwitcher(html, lang, function (l) { return urls.factoryPath(l); });
   html = html.replace(/[ \t]*<script src="\/js\/products\.js[^"]*"><\/script>\n?/g, '');
   html = html.replace(/[ \t]*<script src="\/js\/product\.js[^"]*"><\/script>\n?/g, '');
-  html = addGuidesNav(html, lang);
+  html = addContentNav(html, lang);
 
   const t = function (k) { return T(lang, k); };
   const title = t('factory.title');

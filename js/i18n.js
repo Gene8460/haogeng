@@ -8,7 +8,7 @@ var I18N = {
   en: {
     brand: { name: "HAOGENG", tagline: "Agricultural Machinery", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Guigeng Agricultural Machinery", lichuang: "Guangxi Lichuang Machinery" },
     topbar: { hint: "Factory-Direct · OEM/ODM Welcome" },
-    nav: { home: "Home", about: "About", products: "Products", why: "Why Us", contact: "Contact", inquiry: "Get a Quote", news: "News", guides: "Guides", factory: "Factory" },
+    nav: { home: "Home", about: "About", products: "Products", why: "Why Us", contact: "Contact", inquiry: "Get a Quote", news: "News", guides: "Guides", factory: "Factory", faq: "FAQ" },
     articles: {
       indexTitle: "Guides & Selection Help",
       indexLead: "Practical guides to choosing, comparing and using our micro tillers, ditching machines and water pumps.",
@@ -132,7 +132,7 @@ var I18N = {
   zh: {
     brand: { name: "浩耕", tagline: "农业机械", full: "柳州浩耕国际贸易有限责任公司", guigeng: "桂耕农机", lichuang: "立创机械" },
     topbar: { hint: "工厂直供 · 支持OEM/ODM定制" },
-    nav: { home: "首页", about: "关于我们", products: "产品中心", why: "我们的优势", contact: "联系我们", inquiry: "获取报价", news: "媒体报道", guides: "选型指南", factory: "工厂实拍" },
+    nav: { home: "首页", about: "关于我们", products: "产品中心", why: "我们的优势", contact: "联系我们", inquiry: "获取报价", news: "媒体报道", guides: "选型指南", factory: "工厂实拍", faq: "FAQ" },
     articles: {
       indexTitle: "选型指南",
       indexLead: "微耕机、开沟培土机、抽水机的选型、对比与使用指南。",
@@ -256,7 +256,7 @@ var I18N = {
   es: {
     brand: { name: "HAOGENG", tagline: "Maquinaria Agrícola", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Guigeng Maquinaria Agrícola", lichuang: "Lichuang Maquinaria Guangxi" },
     topbar: { hint: "Directo de fábrica · OEM/ODM bienvenido" },
-    nav: { home: "Inicio", about: "Nosotros", products: "Productos", why: "Ventajas", contact: "Contacto", inquiry: "Solicitar cotización", news: "Noticias", guides: "Guías", factory: "Fábrica" },
+    nav: { home: "Inicio", about: "Nosotros", products: "Productos", why: "Ventajas", contact: "Contacto", inquiry: "Solicitar cotización", news: "Noticias", guides: "Guías", factory: "Fábrica", faq: "FAQ" },
     articles: {
       indexTitle: "Guías y consejos de selección",
       indexLead: "Guías prácticas para elegir, comparar y usar motocultores, máquinas zanjas y bombas de agua.",
@@ -380,7 +380,7 @@ var I18N = {
   ru: {
     brand: { name: "HAOGENG", tagline: "Сельскохозяйственная техника", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Гуйгэн Сельхозтехника", lichuang: "Гуанси Личуан Машиностроение" },
     topbar: { hint: "Напрямую с завода · OEM/ODM приветствуется" },
-    nav: { home: "Главная", about: "О нас", products: "Продукция", why: "Преимущества", contact: "Контакты", inquiry: "Запросить цену", news: "Новости", guides: "Руководства", factory: "Завод" },
+    nav: { home: "Главная", about: "О нас", products: "Продукция", why: "Преимущества", contact: "Контакты", inquiry: "Запросить цену", news: "Новости", guides: "Руководства", factory: "Завод", faq: "FAQ" },
     articles: {
       indexTitle: "Руководства и советы по выбору",
       indexLead: "Практические руководства по выбору, сравнению и эксплуатации мотокультиваторов, машин для канав и водяных насосов.",
@@ -504,7 +504,7 @@ var I18N = {
   fr: {
     brand: { name: "HAOGENG", tagline: "Machinerie Agricole", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Guigeng Machinisme Agricole", lichuang: "Lichuang Guangxi Machines" },
     topbar: { hint: "Direct usine · OEM/ODM bienvenu" },
-    nav: { home: "Accueil", about: "À propos", products: "Produits", why: "Nos atouts", contact: "Contact", inquiry: "Demander un devis", news: "Actualités", guides: "Guides", factory: "Notre usine" },
+    nav: { home: "Accueil", about: "À propos", products: "Produits", why: "Nos atouts", contact: "Contact", inquiry: "Demander un devis", news: "Actualités", guides: "Guides", factory: "Notre usine", faq: "FAQ" },
     articles: {
       indexTitle: "Guides et conseils de choix",
       indexLead: "Des guides pratiques pour choisir, comparer et utiliser motoculteurs, machines à fossés et pompes à eau.",
@@ -628,7 +628,7 @@ var I18N = {
   sw: {
     brand: { name: "HAOGENG", tagline: "Mashine za Kilimo", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Mashine za Kilimo za Guigeng", lichuang: "Mashine za Lichuang Guangxi" },
     topbar: { hint: "Moja kwa moja kutoka kiwanda · OEM/ODM yanakaribishwa" },
-    nav: { home: "Mwanzo", about: "Kuhusu sisi", products: "Bidhaa", why: "Kwa nini sisi", contact: "Wasiliana nasi", inquiry: "Omba bei", news: "Habari", guides: "Miongozo", factory: "Kiji" },
+    nav: { home: "Mwanzo", about: "Kuhusu sisi", products: "Bidhaa", why: "Kwa nini sisi", contact: "Wasiliana nasi", inquiry: "Omba bei", news: "Habari", guides: "Miongozo", factory: "Kiji", faq: "FAQ" },
     articles: {
       indexTitle: "Miongozo na Ushauri",
       indexLead: "Miongozo ya kuchagua, kulinganisha na kutumia trekta ndogo, mashine za makorongo na pampu za maji.",

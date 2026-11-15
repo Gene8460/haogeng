@@ -52,6 +52,7 @@ a:hover { color: var(--green-dark); }
 .about-brand-text .brand-sep { font-size: 0.9rem; color: var(--text-light); }
 .about-brand-text .brand-en { font-size: 1rem; font-weight: 600; color: var(--blue); }
 .menu { display: flex; gap: 24px; }
+@media (max-width: 1100px) { .menu { gap: 13px; } }
 .menu a { color: var(--ink-soft); font-weight: 500; }
 .menu a:hover { color: var(--green); }
 .nav-cta { white-space: nowrap; }
