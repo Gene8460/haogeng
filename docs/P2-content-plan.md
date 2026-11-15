@@ -272,3 +272,41 @@ var ARTICLES = [
 **文案红线**：工厂页只复用站内既有事实（CNC 激光切割/折弯/切管/焊接、国家实用新型专利、4WD 微耕机为国家农机推广产品、斯里兰卡单年 300 台），不写产能、面积、人数、认证清单、出口国家数。
 
 **后续**：B 英文 10 篇（→180）· C SW+FR（→204）· D ES+RU（→228）· E ZH（→240）。
+
+
+---
+
+## 2026-11-15 执行记录 · 阶段 B（英文母稿 10 篇）
+
+| 项 | 结果 |
+|---|---|
+| 页面数 | 171 → **180**（新增 `/{lang}/guide/*.html` × 10 + `/{lang}/guides.html` + `/{lang}/faq.html`） |
+| 文章 | 10 篇 EN：选型 5（how-to-choose-a-micro-tiller / gasoline-vs-diesel / smallholder / orchards-and-vineyards / how-to-choose-a-water-pump）+ 对比 3（170-vs-173-vs-178-vs-186 / tiller-vs-ditching / self-priming-vs-centrifugal）+ 使用维护 2（maintenance-schedule / how-to-start-and-operate） |
+| 每篇规格 | 600–1100 词 · 1 个 H2 + 3–4 个 H3 · ≥3 条内链 · 6–8 条 FAQ；FAQ 合计 **78 条** 聚合到 `/en/faq.html` |
+| 参数 | 全部走 `{{spec:型号:字段}}`，从 `js/products.js` 现取现填，文章与产品表永远一致；生成器报告「参数占位符错误」= **0** |
+| 内链 | `[[model:]]` / `[[cat:]]` / `[[home]]` 占位符，跨语种自动改路径；产品页新增「Related guides」区块，按品类自动挂对应指南 |
+| 首图 | 全部换成现有实拍：`tiller-001/002/005/007/009/011.jpg`、`ditch-002.jpg`、`pump-001/003.jpg`、`news-assembly.jpg` |
+| 结构化数据 | Article + FAQPage + BreadcrumbList + WebPage（**无 offers**），无 `price:0` |
+| 上线 | 提交 `2b3210e` 已 push；线上实测 `/en/guides.html`、`/en/faq.html`、`/en/guide/*.html` 全部 200 |
+
+### 本阶段修掉的两个生成器 bug
+
+**1. 型号含双引号的产品无法解析（`inlineMd` 转义顺序）**
+
+泵类产品的 `model` 字段带英寸符号：`2" Centrifugal`、`3" Centrifugal`、`Self-Priming 2~3"`、`Fire 2"`、`195 Diesel`。
+原来的 `inlineMd()` 先整体 `esc()`（把 `"` 变成 `&quot;`）再解析 `[[model:...]]`，导致查不到型号，占位符渲染成方括号文字。
+
+改为「占位符先解析 → 转义 → 回填」：占位符换成哨兵 token → 整体转义 → 按 token 回填 HTML。
+同时 `[[model:型号|文字]]` 支持可选锚文本，泵类链接显示产品名（`2-inch Centrifugal Pump`）而不是型号原文。
+
+**2. 泵的 `model` 字段与 `id` 字段不是一回事**
+
+`productByModel()` 匹配的是 `model` 字段，不是 `id`。泵的 `id` 是 `2in-Centrifugal`，`model` 是 `2" Centrifugal`，写错会静默解析成裸文本。**已核对 23 个产品的 `model` 值**（tiller 11 + ditching 4 + pump 8）。
+
+### 内容红线自检
+
+10 篇正文 grep `price|USD|lead time|payment terms|MOQ|testimonial|certificate|stock` → 唯一命中是「the petrol machines still win on purchase price」这句**相对比较**，不含任何具体价格、交期、付款条件、证言或认证声明。
+
+### 后续
+
+C SW + FR（→204）· D ES + RU（→228）· E ZH（→240）。翻译时**只动文字不动数字**：`{{spec:}}` `[[model:]]` `[[cat:]]` 原样保留，型号与单位不翻译。
