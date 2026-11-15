@@ -653,30 +653,36 @@ function resolveSpecs(text, lang, where) {
   });
 }
 
-/* 行内 Markdown：**加粗** · [文字](链接) · [[model:型号]]（自动链产品页）
+/* 行内 Markdown：**加粗** · [文字](链接) · [[model:型号|文字]]（自动链产品页）
    · [[cat:品类|文字]]（链到品类页） · [[home|文字]]（链到首页联系区）
    —— 分类/首页链接必须用占位符，否则翻译成别的语种时链接还是英文路径。 */
 function inlineMd(s, lang) {
-  let out = esc(s);
-  out = out.replace(/\[\[model:([^\]]+)\]\]/g, function (m, model) {
+  /* 占位符先解析、转义后再回填 —— 型号里带 " 的（如 2" Centrifugal）
+     若先整体转义，型号就查不到了。 */
+  const slots = [];
+  function hold(html) { slots.push(html); return '\u0000' + (slots.length - 1) + '\u0000'; }
+  let raw = String(s == null ? '' : s);
+  raw = raw.replace(/\[\[model:([^\]|]+)(?:\|([^\]]+))?\]\]/g, function (m, model, text) {
     const p = productByModel(model);
     if (!p) {
       specIssues.push({ where: 'model link', model: model, field: '-', reason: '找不到型号' });
-      return esc(model);
+      return hold(esc(model));
     }
-    return '<a href="' + urls.productPath(p, lang) + '">' + esc(model) + '</a>';
+    return hold('<a href="' + urls.productPath(p, lang) + '">' + esc(text || model) + '</a>');
   });
-  out = out.replace(/\[\[cat:([^\]|]+)(?:\|([^\]]+))?\]\]/g, function (m, cat, text) {
+  raw = raw.replace(/\[\[cat:([^\]|]+)(?:\|([^\]]+))?\]\]/g, function (m, cat, text) {
     const c = String(cat).trim();
     if (CATS.indexOf(c) < 0) {
       specIssues.push({ where: 'cat link', model: c, field: '-', reason: '品类不存在' });
-      return esc(text || c);
+      return hold(esc(text || c));
     }
-    return '<a href="' + urls.catPath(c, lang) + '">' + esc(text || urls.catLabel(c, lang)) + '</a>';
+    return hold('<a href="' + urls.catPath(c, lang) + '">' + esc(text || urls.catLabel(c, lang)) + '</a>');
   });
-  out = out.replace(/\[\[home(?:\|([^\]]+))?\]\]/g, function (m, text) {
-    return '<a href="' + urls.homePath(lang) + '#contact">' + esc(text || 'Contact us') + '</a>';
+  raw = raw.replace(/\[\[home(?:\|([^\]]+))?\]\]/g, function (m, text) {
+    return hold('<a href="' + urls.homePath(lang) + '#contact">' + esc(text || 'Contact us') + '</a>');
   });
+  let out = esc(raw);
+  out = out.replace(/\u0000(\d+)\u0000/g, function (m, i) { return slots[Number(i)]; });
   out = out.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
   out = out.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
   return out;
