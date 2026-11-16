@@ -458,3 +458,22 @@ Rendering Liquid: docs/P2-content-plan.md
 并在 `scripts/seo_check.py` 加了**第 9 项检查**：扫描仓库内所有 `.md` / `.html`，裸双花括号、raw 块嵌套错乱、raw 未闭合一律判失败——以后再往文档里写占位符，不会再把线上打挂。
 
 > 教训：文档里出现 Liquid 语法 = 线上发布事故。以后写文档避免裸双花括号，或统一逐行 raw 包裹。
+
+---
+
+## 2026-11-16 工厂实拍换图（老板指定素材）
+
+老板指令：产品展厅用 `D:/外贸/商品调研/1.jpeg`、生产装配用 `2.jpeg`、质检与打包用 `3.jpg`。
+
+三张都是老板自己厂里的真实照片（展厅里挂"桂耕动力"标牌的成品微耕机 / 装配线上正在装机的工人 / 仓库里成排待发货的整机），比原来的图库图更能立信任。
+
+**做法**：原位替换 `images/news-showroom.jpg`、`news-assembly.jpg`、`news-packing.jpg` 三张文件（不动任何 HTML / 不动 URL），因为这三个文件同时被工厂实拍页图集、首页"In the News"新闻区、以及文章《Micro Tiller Maintenance Schedule》的封面引用 —— 换文件一次，三处同步生效，图注文字也不用改（本来就是"产品展厅 / 生产装配 / 质检与打包"）。
+
+**图片处理**（Pillow 12.3）：
+- EXIF 方向校正 + 转 RGB（源图都是竖构图 1440x1920 / 1440x2560 / 1280x1706）；
+- 缩到最长边 1200px、去掉 EXIF（不带拍摄设备/GPS 信息上线）→ JPEG q84 progressive 401/452/292 KB；
+- 同步重生成 `.webp`（q78, method 6）248/248/151 KB —— 站点 `<picture>` 优先走 webp。
+
+**裁切检查**：`.factory-photo img` 是 `height:190px; object-fit:cover`，首页 `.news-photo` 是 `aspect-ratio:4/3` —— 竖图都会被裁成横带，实拍截图确认三张裁出来分别是"成品机+标牌""装配工位""成排待发货整机"，主体都能认出来，没有裁废。
+
+页面数仍为 240，`seo_check.py` 九项全过。
