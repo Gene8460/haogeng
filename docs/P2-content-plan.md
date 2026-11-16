@@ -604,3 +604,32 @@ Rendering Liquid: docs/P2-content-plan.md
 - 线上（提交 58fc9cf，Pages 构建 success）：`/zh/` 6 个 CTA、`/zh/guides.html` 10 个、`/en/` 6 个、`/sw/` 6 个，残留 span 0 个，css v=20；真浏览器点 CTA / 点描述文字均正常跳转
 
 **教训（写进长期记忆）**：老板报「点了没反应」，十有八九是**纯文本元素冒充链接**。诊断顺序固定：先查 `getAttribute('href')` + computed `cursor`，再看生成器源码；页面是服务端渲染的，**改 `scripts/build-static.js`，不是改 js 里的前端脚本**。
+
+
+## 2026-11-16 首页「关于我们」第 1 张卡片改成老板原话 —— 工贸一体 / 工厂直出 / 全部立创自产
+
+**老板原话**（拍板放在首页「关于我们」第 1 张卡片，标题「工贸一体 · 自有工厂」）：
+
+> 我们是工贸一体，你拿到的是工厂直出的机器。所有机型都是广西立创工厂生产，不从别的工厂进货贴牌。
+
+**为什么值得单独做**：这是全站最强的信任牌 —— 海外买家对中国农机出口商最大的顾虑就是「贸易商贴牌」，老板本人给的这句话直接把它堵死。
+
+**改动**：
+
+| 文件 | 改动 |
+|---|---|
+| `js/i18n.js` | 6 个语种 `about.c1` 的 title + text。**es / ru / fr 原本最弱**（只说「我们背后有立创机械」），一并补成同强度的说法，标题也补上「工贸一体」概念 |
+| `templates/index.html` | 英文兜底文案同步（模板里的 `data-i18n` 兜底值）；js 版本 `v=41` → `v=42` |
+| `product.html` | js 版本 `v=41` → `v=42` |
+
+**关键坑**：`js/i18n.js` 改了**必须 bump js 版本号**。静态页是服务端渲染（`applyI18n()` 把 `data-i18n` 元素内容替换成目标语种），但页面仍会加载 `js/i18n.js`；老用户浏览器里缓存着旧 i18n.js 时，客户端 i18n 会把服务端渲染好的**新文案覆盖回旧的**。bump 到 v=42 才根治。
+
+**6 语种成稿**：
+
+- zh：`我们是工贸一体，你拿到的是工厂直出的机器。所有机型都是广西立创工厂生产，不从别的工厂进货贴牌。`
+- en：`We combine manufacturing and international trade in one company. What you receive is shipped straight from our own plant: every model we sell is made by Guangxi Lichuang Machinery. We do not buy machines from other factories and put our label on them.`
+- es / ru / fr / sw：同义成稿（es/ru/fr 的标题分别改成 `Industria y Comercio Integrados · Fábrica Propia` / `Производство и Торговля в одной компании · Собственный Завод` / `Industrie et Commerce Réunis · Notre Usine`）
+
+**验证**：`node scripts/build-static.js .` → 240 页；`python scripts/seo_check.py` → 十项全过；6 语种首页 `about.c1` 文案逐条核对；线上真浏览器（等客户端 i18n 跑完 1.5s）显示的仍是新文案 → 证明没有旧 i18n.js 覆盖。提交 `ba0354b`，Pages 构建 success。
+
+**没动的地方**：工厂实拍页 `factory.s1Text` 本来就有近似说法（措辞不同、页面内容以实拍图为主），保留；首页「关于我们」的 `about.lead` 也保留（它讲的是公司主体与货源稳定，跟卡片的「证明」分工不同）。
