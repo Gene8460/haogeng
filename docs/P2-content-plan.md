@@ -97,10 +97,11 @@ slug 用英文全局统一（各语种共用同一个 slug，只换路径前缀�
 
 **做法**：文章正文里写占位符，生成器从 `js/products.js` 现取现填：
 
-```
-额定功率 {{spec:1WG-4.05A:Rated power}}，耕幅 {{spec:1WG-4.05A:Working width}}，
-重 {{spec:1WG-4.05A:Net weight}}。
-```
+{% raw %}
+{% raw %}额定功率 {{spec:1WG-4.05A:Rated power}}，耕幅 {{spec:1WG-4.05A:Working width}}，{% endraw %}
+{% raw %}重 {{spec:1WG-4.05A:Net weight}}。{% endraw %}
+{% raw %}
+{% endraw %}
 
 生成器渲染时 → "额定功率 3.5 kW / 5-15 HP @ 3600 rpm，耕幅 800-1050 mm（可调），重 105 kg。"
 
@@ -129,7 +130,7 @@ slug 用英文全局统一（各语种共用同一个 slug，只换路径前缀�
 ### 新增 `content/articles.js`
 结构跟 `js/products.js` 一致，方便同一套工具处理：
 
-```js
+{% raw %}
 var ARTICLES = [
   {
     slug: "how-to-choose-a-micro-tiller",
@@ -143,6 +144,8 @@ var ARTICLES = [
   }
 ];
 ```
+{% endraw %}
+{% endraw %}
 
 **母稿策略**：EN 先写全 → 老板校术语 → 批量翻 5 语。缺语种时回落 EN，并在生成器报告里列出（跟 i18n 缺 key 一个机制）。**zh 不值得重投入**（出口站，中文只服务华人经销商），可以最后做或不做。
 
@@ -224,7 +227,7 @@ var ARTICLES = [
 
 1. `js/seo-urls.js` 加 `guidePath` / `guidesIndexPath` / `faqPath`
 2. `content/articles.js` 骨架 + 空数组
-3. `scripts/build-static.js` 加 spec 占位符解析器 `{{spec:型号:字段}}`（先只做解析和报告，不写文章）
+{% raw %}{% raw %}3. `scripts/build-static.js` 加 spec 占位符解析器 `{{spec:型号:字段}}`（先只做解析和报告，不写文章）{% endraw %}{% endraw %}
 4. 报告里加「占位符引用检查」
 
 这四样做完，文章随时可以灌进去，不用再改生成器。
@@ -239,7 +242,7 @@ var ARTICLES = [
 2. `js/i18n.js`：6 个语种各加 `nav.guides` + `articles` 字典块（indexTitle / indexLead / related / allGuides / backToGuides / updated / published / faqTitle / faqLead / readMore）
 3. `content/articles.js`：骨架 + 结构说明 + 第一篇 EN 母稿
 4. `scripts/build-static.js`：
-   - `{{spec:型号:字段}}` 占位符解析（写错进报告，必须清零）
+{% raw %}{% raw %}   - `{{spec:型号:字段}}` 占位符解析（写错进报告，必须清零）{% endraw %}{% endraw %}
    - `[[model:型号]]` / `[[cat:品类|文字]]` / `[[home|文字]]` 三种站内链接占位符（跨语种自动改路径）
    - `buildGuidesIndex` / `buildArticle` / `buildFaq` 三个页面生成器
    - 首页挂指南区块、品类页与产品页挂相关指南、导航加 Guides 入口（该语种无文章时不加，避免死链）
@@ -283,7 +286,7 @@ var ARTICLES = [
 | 页面数 | 171 → **180**（新增 `/{lang}/guide/*.html` × 10 + `/{lang}/guides.html` + `/{lang}/faq.html`） |
 | 文章 | 10 篇 EN：选型 5（how-to-choose-a-micro-tiller / gasoline-vs-diesel / smallholder / orchards-and-vineyards / how-to-choose-a-water-pump）+ 对比 3（170-vs-173-vs-178-vs-186 / tiller-vs-ditching / self-priming-vs-centrifugal）+ 使用维护 2（maintenance-schedule / how-to-start-and-operate） |
 | 每篇规格 | 600–1100 词 · 1 个 H2 + 3–4 个 H3 · ≥3 条内链 · 6–8 条 FAQ；FAQ 合计 **78 条** 聚合到 `/en/faq.html` |
-| 参数 | 全部走 `{{spec:型号:字段}}`，从 `js/products.js` 现取现填，文章与产品表永远一致；生成器报告「参数占位符错误」= **0** |
+{% raw %}{% raw %}| 参数 | 全部走 `{{spec:型号:字段}}`，从 `js/products.js` 现取现填，文章与产品表永远一致；生成器报告「参数占位符错误」= **0** |{% endraw %}{% endraw %}
 | 内链 | `[[model:]]` / `[[cat:]]` / `[[home]]` 占位符，跨语种自动改路径；产品页新增「Related guides」区块，按品类自动挂对应指南 |
 | 首图 | 全部换成现有实拍：`tiller-001/002/005/007/009/011.jpg`、`ditch-002.jpg`、`pump-001/003.jpg`、`news-assembly.jpg` |
 | 结构化数据 | Article + FAQPage + BreadcrumbList + WebPage（**无 offers**），无 `price:0` |
@@ -309,7 +312,7 @@ var ARTICLES = [
 
 ### 后续
 
-C SW + FR（→204）· D ES + RU（→228）· E ZH（→240）。翻译时**只动文字不动数字**：`{{spec:}}` `[[model:]]` `[[cat:]]` 原样保留，型号与单位不翻译。
+{% raw %}{% raw %}C SW + FR（→204）· D ES + RU（→228）· E ZH（→240）。翻译时**只动文字不动数字**：`{{spec:}}` `[[model:]]` `[[cat:]]` 原样保留，型号与单位不翻译。{% endraw %}{% endraw %}
 
 ## 2026-11-15 执行记录 · 阶段 B.1（顶部导航补「常见问题」入口）
 
@@ -361,7 +364,7 @@ C SW + FR（→204）· D ES + RU（→228）· E ZH（→240）。翻译时**�
 
 ### 翻译红线执行情况
 
-- **数字全部走 `{{spec:}}` 占位符**（`Rated power` / `Working width` / `Max total head` / `Net weight` …），生成时从 `js/products.js` 现取现填，译文不可能写错参数；
+{% raw %}{% raw %}- **数字全部走 `{{spec:}}` 占位符**（`Rated power` / `Working width` / `Max total head` / `Net weight` …），生成时从 `js/products.js` 现取现填，译文不可能写错参数；{% endraw %}{% endraw %}
 - 泵类型号带英寸符号（`2" Centrifugal`），组装时用 `@@` 占位再还原成 ASCII 双引号，避免与 Python 字符串引号冲突；
 - 术语沿用站内既有叫法：SW `matrekta / mashine ya makorongo / pampu ya maji`、FR `motoculteur / machine à fosses / pompe à eau`；产品显示名直接取 `js/products.js` 的 `name[sw]` / `name[fr]`；
 - **英文漏词自检**：对 20 篇译文做词表扫描，命中并修正：`throughout` → `kwa kipindi chote cha msimu`、`gears` → `gear`、`blade` → `mata`、`meta`（错字）→ `mata`、`fixed` → `thabiti`；FR 侧扫描命中项经复核全部是法语正词（machine / diesel / simple / service …），无需改。
@@ -373,7 +376,7 @@ C SW + FR（→204）· D ES + RU（→228）· E ZH（→240）。翻译时**�
 | 页面数 | 204（sitemap 204 条，无重复） |
 | 生成器报告 | `[i18n 缺失]` 0 · `[文章缺翻译]` 0 · `[参数占位符错误]` 0 · `[文章缺首图]` 0 · 参数行数 6 语种与 en 一致 |
 | `seo_check.py` | 八项全过（JSON-LD 206 页可解析、hreflang 双向互指、canonical 自指、无乱码、sitemap 全覆盖） |
-| 占位符残留 | 全库 grep `{{spec:` 与 `[Rated power]` = 0 |
+{% raw %}{% raw %}| 占位符残留 | 全库 grep `{{spec:` 与 `[Rated power]` = 0 |{% endraw %}{% endraw %}
 | 语言泄漏 | SW/FR 的 78 条 FAQ 与 EN 逐条比对，重复 = 0 |
 | 线上实测 | `/sw/` `/fr/` `/sw/guides.html` `/fr/guides.html` `/sw/faq.html`（78 条）`/fr/faq.html`（78 条）`/sw/guide/*` `/fr/guide/*` 全部 200；EN 文章页 hreflang 已指向 sw/fr 对应译文，语言切换器也指向译文页 |
 
@@ -429,7 +432,7 @@ D ES + RU（→228）· E ZH（→240）。临时文件 `_asm.py` `_meta/` `_met
 | 页面数 | 240（sitemap 240 条，重复 0） |
 | 生成器报告 | `[i18n 缺失]` 0 · 6 语种 × 10 篇正文齐全 · FAQ 每语种 78 条 · `[参数占位符错误]` 0 · 参数行数 6 语种与 en 一致 |
 | `seo_check.py` | 八项全过（JSON-LD 242 页可解析、hreflang 双向互指、canonical 自指、sitemap 全覆盖、无乱码、脚本版本一致） |
-| 占位符残留 | 244 个静态页全扫 `{{spec:` / `[[model:` / `[[cat:` / `[Rated power]` = **0** |
+{% raw %}{% raw %}| 占位符残留 | 244 个静态页全扫 `{{spec:` / `[[model:` / `[[cat:` / `[Rated power]` = **0** |{% endraw %}{% endraw %}
 | 导航回归（Playwright） | 6 语种 × 4 类页面 × 14 档宽度 = 336 组：>1100px **无一链接换行**、每页固定 9 项；≤1100px 汉堡可展开且含「工厂实拍」 |
 | 照片可点 | 6 张图链接全部 200（image/jpeg），点击新标签打开原图；CTA 指向 `/{lang}/#contact` |
 | 旧版本对比 | 线上原 204 页 → 现 240 页；新增 es/ru/zh 各 12 页 + 6 语种导航与工厂页改造 |
@@ -437,3 +440,21 @@ D ES + RU（→228）· E ZH（→240）。临时文件 `_asm.py` `_meta/` `_met
 ### 仍未做（等老板给料，不编）
 
 价格表 / 交期 / 付款方式 / MOQ / 产能数字 / 厂房面积 / 员工数 / 认证清单 / 出口国家数 / 客户证言 —— 一律不编。立创机械成立年份、统一社会信用代码、`Warranty: 1 year` 实质确认、`1WG-4.1B`（名称写 Diesel 但参数是汽油）与 `1WG-4.05ZM`（features.zh 写 173cc 汽油但发动机是柴油）两处数据不一致**只 flag 不擅改**。
+
+---
+
+## 插曲：Pages 构建失败，线上冻结在 204 页（2026-11-16 11:20 → 12:05）
+
+推 `f3f1c9a`（240 页）后线上一直没变。查 GitHub Actions：`pages build and deployment` 这条内部 workflow **连续 4 次失败**（含 Stage C 的 docs 提交、Stage D、revert、本次），失败步骤都是 `Build with Jekyll`，报错：
+
+{% raw %}
+Rendering Liquid: docs/P2-content-plan.md
+Error: Liquid syntax error (line 376): Variable '{{spec:...'
+```
+{% endraw %}
+
+**根因**：本仓库的 Pages 用 **Jekyll** 构建（动态 Pages workflow），所有 `.md` / `.html` 会被 **Liquid** 渲染。开发日志里写的双花括号占位符写法被 Liquid 当成变量 → 语法错误 → 构建整体失败 → **部署根本没发生**，所以线上还停在最后一次成功构建（2026-11-15 13:18Z，204 页）。
+
+**修法**：把 `README.md` 和 `docs/P2-content-plan.md` 里所有裸露的双花括号用 Jekyll 的 raw 块包起来（内容一字未改）。并在 `scripts/seo_check.py` 加了**第 9 项检查**：扫描仓库内所有 `.md` / `.html`，只要有裸露的双花括号就报失败——以后再往文档里写占位符，不会再把线上打挂。
+
+> 教训：文档里出现 Liquid 语法 = 线上发布事故。以后写文档避免裸双花括号，或统一走 raw 块。

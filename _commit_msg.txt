@@ -1,0 +1,21 @@
+fix(pages): 修复 Jekyll/Liquid 冲突导致 Pages 构建失败（线上冻结在 204 页的根因）
+
+现象：推 f3f1c9a（240 页）后线上一直没更新。查 Actions 发现
+`pages build and deployment` 连续 4 次失败，失败步骤均为 `Build with Jekyll`：
+  Rendering Liquid: docs/P2-content-plan.md
+  Error: Liquid syntax error (line 376): Variable '{{spec:...
+
+根因：本仓库 Pages 走 Jekyll 动态构建，.md / .html 会被 Liquid 渲染。
+开发日志里的双花括号占位符写法被 Liquid 当成变量 → 语法错误 → 构建整体失败
+→ 部署从未发生，线上一直停在 2026-11-15 13:18Z 最后一次成功构建（204 页）。
+
+修法：
+- README.md、docs/P2-content-plan.md 中裸露的双花括号统一用 Jekyll raw 块包起来
+  （正文一字未改，只是加包裹标签）
+- scripts/seo_check.py 新增第 9 项检查：扫描仓库内所有 .md / .html，
+  出现裸露双花括号即判失败 —— 以后写文档不会再把线上打挂
+- docs/P2-content-plan.md 补记本次事故根因与教训
+
+验证：seo_check.py 九项全过；构建器 240 页、sitemap 240 条；仓库内 Liquid 危险点 = 0
+
+Co-Authored-By: Claude Code <noreply@anthropic.com>

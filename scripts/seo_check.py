@@ -240,6 +240,28 @@ for f in ("index.html", "product.html"):
     vers = set(v for _, v in vs)
     (good if len(vers) == 1 else fail)("%s 缓存版本: %s" % (f, sorted(vers)))
 
+print("=== 9. GitHub Pages / Jekyll 构建安全（Liquid 冲突） ===")
+# Pages 用 Jekyll 构建，.md / .html 会被 Liquid 渲染；正文里出现 {{...}} 会直接让构建失败
+liq_bad = []
+liq_files = [f for f in os.listdir(".") if f.lower().endswith((".md", ".markdown", ".html", ".htm"))]
+if os.path.isdir("docs"):
+    liq_files += ["docs/" + f for f in os.listdir("docs")]
+for rel in sorted(set(liq_files)):
+    if not os.path.isfile(rel):
+        continue
+    in_raw = False
+    for n, line in enumerate(read(rel).split("\n"), 1):
+        if "{% raw %}" in line:
+            in_raw = True
+        if not in_raw and "{{" in line:
+            liq_bad.append("%s L%d" % (rel, n))
+        if "{% endraw %}" in line:
+            in_raw = False
+if liq_bad:
+    fail("这些文件里的 {{ 会被 Jekyll 当成 Liquid 变量，构建必挂（用 {% raw %} 包起来）: %s" % liq_bad[:6])
+else:
+    good("Markdown / HTML 里没有裸露的 {{ }}，Jekyll 构建不会被 Liquid 打挂")
+
 print()
 print("结果: " + ("全部通过 ✅" if ok else "有失败项 ❌"))
 sys.exit(0 if ok else 1)
