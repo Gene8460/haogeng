@@ -650,3 +650,24 @@ Rendering Liquid: docs/P2-content-plan.md
 **验证**：`node scripts/build-static.js .` → 240 页；`python scripts/seo_check.py` → 十项全过；6 语种工厂页 s1 标题+正文逐条核对；线上 6 语种工厂页与首页卡片文案完全一致。提交 `6372f99`，Pages 构建 success。
 
 **教训**：改文案时先问「这句在全站还有没有第二处副本」。这次首页改完、工厂页留着旧话，两处口径不一致 —— 老板一眼就看出来。**同一句核心口径就该只存一份**（同一个 i18n key 在两个位置被引用），别手抄两遍。
+
+## 首页「工厂实拍」卡片去重 —— 标题即按钮（2026-11-16）
+
+**老板原话**：「工厂实拍，这个页面不需要两个工厂实拍，只要上面第一个有按钮就可以了。」（贴的是首页「关于我们」第 4 张卡片：标题「工厂实拍」+ 正文「浩耕是桂耕农机的出口公司…」）
+
+**问题**：那张卡里 `h3` 是「工厂实拍」，下面又挂了一个同名按钮「工厂实拍」（中文下 `factory.title` 与 `nav.factory` 是同一个词），同一个词在一张卡里出现两次。
+
+**顺带修掉的老 bug**：那个按钮用的是 `btn btn-ghost`，而 `.btn-ghost` 是「白字 + 白边 + 透明底」，给深色背景（首页 hero、内页橙色 CTA 条）用的 —— 落在白卡片上**完全看不见**（`color: rgb(255,255,255)` / `background: transparent`）。
+
+**改法**：
+- 删掉下面那个重复按钮
+- 标题改成真链接：`<h3 class="about-card-title"><a href="/{lang}/factory.html" data-i18n="factory.title">…</a><span class="about-card-arrow">→</span></h3>`
+- 整张卡片可点（stretched link：`.about-card-wide{position:relative}` + `a::after{inset:0}`），点标题、点正文都跳工厂页
+- `css/style.css` v=20 → v=21（`templates/index.html` / `product.html` / `404.html` 三个文件同步 bump）
+- 没动 `js/i18n.js` → js 版本仍是 v=43
+
+**验证**：240 页重新生成、`seo_check` 十项全过；本地 + 线上 Playwright 实测 6 语种标题 `cursor:pointer`、点击标题/正文都跳到 `/{lang}/factory.html`；线上 HTML 已是新结构、css v=21。
+
+**提交**：`740b5d0`（代码）→ Pages 构建 success。
+
+**教训**：同一个词别在一张卡里当两次标题/按钮；深色背景专用的 `.btn-ghost` 放到白底元素上 = 隐形按钮（页面看起来「没有按钮」，实际 DOM 里有）。
