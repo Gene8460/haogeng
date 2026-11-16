@@ -37,7 +37,8 @@ var I18N = {
       capShowroom: "Product showroom",
       capAssembly: "Production assembly",
       capPacking: "Quality inspection and packing",
-      cta: "Tell us your field size and we will match you with a model"
+      cta: "Tell us your field size and we will match you with a model",
+      full: "View full size"
     },
     hero: {
       title: "Factory-Direct Agricultural Machinery",
@@ -68,7 +69,6 @@ var I18N = {
         getQuote: "Get Quote Now",
         copyInquiry: "Copy Inquiry",
         copy: "Copy",
-        copied: "Copied!",
         whatsapp: "WhatsApp",
         email: "Email",
         contactSection: "Send us your requirements and we will reply within 24 hours.",
@@ -110,7 +110,9 @@ var I18N = {
         mail: "Email",
         mailSub: "Opens your email client",
         copy: "Copy Inquiry",
-        copySub: "Paste anywhere"
+        copySub: "Paste anywhere",
+        webmail: "No mail app? Try the web version:",
+        copied: "✓ Inquiry text copied — paste it anywhere to send"
       }
     },
     footer: { rights: "All rights reserved." },
@@ -161,7 +163,8 @@ var I18N = {
       capShowroom: "产品展厅",
       capAssembly: "生产装配",
       capPacking: "质检与打包",
-      cta: "告诉我们地块大小和用途，我们帮你配型号"
+      cta: "告诉我们地块大小和用途，我们帮你配型号",
+      full: "查看大图"
     },
     hero: {
       title: "工厂直供农业机械",
@@ -192,7 +195,6 @@ var I18N = {
         getQuote: "立即询盘",
         copyInquiry: "复制询盘",
         copy: "复制",
-        copied: "已复制！",
         whatsapp: "WhatsApp",
         email: "邮件",
         contactSection: "告诉我们您的需求，24 小时内回复。",
@@ -234,7 +236,9 @@ var I18N = {
         mail: "邮件",
         mailSub: "打开您的邮箱客户端",
         copy: "复制询盘",
-        copySub: "可粘贴到任何地方"
+        copySub: "可粘贴到任何地方",
+        webmail: "未打开邮箱？试试网页版：",
+        copied: "✓ 询盘文案已复制，可粘贴到任何地方发送"
       }
     },
     footer: { rights: "版权所有。" },
@@ -285,7 +289,8 @@ var I18N = {
       capShowroom: "Showroom de productos",
       capAssembly: "Montaje en producción",
       capPacking: "Inspección de calidad y embalaje",
-      cta: "Díganos el tamaño de su parcela y le proponemos el modelo"
+      cta: "Díganos el tamaño de su parcela y le proponemos el modelo",
+      full: "Ver imagen completa"
     },
     hero: {
       title: "Maquinaria agrícola directa de fábrica",
@@ -316,7 +321,6 @@ var I18N = {
         getQuote: "Solicitar Cotización",
         copyInquiry: "Copiar Consulta",
         copy: "Copiar",
-        copied: "¡Copiado!",
         whatsapp: "WhatsApp",
         email: "Correo",
         contactSection: "Envíenos sus requisitos y responderemos en 24 horas.",
@@ -358,7 +362,9 @@ var I18N = {
         mail: "Correo",
         mailSub: "Abre su cliente de correo",
         copy: "Copiar consulta",
-        copySub: "Pegar en cualquier lugar"
+        copySub: "Pegar en cualquier lugar",
+        webmail: "¿No se abrió tu correo? Prueba la versión web:",
+        copied: "✓ Texto de la consulta copiado: pégalo donde quieras enviarlo"
       }
     },
     footer: { rights: "Todos los derechos reservados." },
@@ -378,9 +384,9 @@ var I18N = {
   },
 
   ru: {
-    brand: { name: "HAOGENG", tagline: "Сельскохозяйственная техника", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Гуйгэн Сельхозтехника", lichuang: "Гуанси Личуан Машиностроение" },
+    brand: { name: "HAOGENG", tagline: "Сельхозтехника", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Гуйгэн Сельхозтехника", lichuang: "Гуанси Личуан Машиностроение" },
     topbar: { hint: "Напрямую с завода · OEM/ODM приветствуется" },
-    nav: { home: "Главная", about: "О нас", products: "Продукция", why: "Преимущества", contact: "Контакты", inquiry: "Запросить цену", news: "Новости", guides: "Руководства", factory: "Завод", faq: "FAQ" },
+    nav: { home: "Главная", about: "О нас", products: "Продукция", why: "Плюсы", contact: "Контакты", inquiry: "Запросить цену", news: "Новости", guides: "Руководства", factory: "Завод", faq: "FAQ" },
     articles: {
       indexTitle: "Руководства и советы по выбору",
       indexLead: "Практические руководства по выбору, сравнению и эксплуатации мотокультиваторов, машин для канав и водяных насосов.",
@@ -409,7 +415,8 @@ var I18N = {
       capShowroom: "Выставочный зал продукции",
       capAssembly: "Сборка на производстве",
       capPacking: "Контроль качества и упаковка",
-      cta: "Напишите нам размер участка и задачи — мы подберём модель"
+      cta: "Напишите нам размер участка и задачи — мы подберём модель",
+      full: "Открыть фото"
     },
     hero: {
       title: "Сельхозтехника напрямую с завода",
@@ -440,7 +447,6 @@ var I18N = {
         getQuote: "Запросить цену",
         copyInquiry: "Копировать запрос",
         copy: "Копировать",
-        copied: "Скопировано!",
         whatsapp: "WhatsApp",
         email: "Email",
         contactSection: "Отправьте ваши требования, ответим в течение 24 часов.",
@@ -482,7 +488,9 @@ var I18N = {
         mail: "Email",
         mailSub: "Откроет почтовый клиент",
         copy: "Скопировать запрос",
-        copySub: "Вставьте куда угодно"
+        copySub: "Вставьте куда угодно",
+        webmail: "Почта не открылась? Попробуйте веб-версию:",
+        copied: "✓ Текст запроса скопирован — вставьте его куда угодно"
       }
     },
     footer: { rights: "Все права защищены." },
@@ -504,7 +512,7 @@ var I18N = {
   fr: {
     brand: { name: "HAOGENG", tagline: "Machinerie Agricole", full: "Liuzhou Haogeng International Trade Co., Ltd.", guigeng: "Guigeng Machinisme Agricole", lichuang: "Lichuang Guangxi Machines" },
     topbar: { hint: "Direct usine · OEM/ODM bienvenu" },
-    nav: { home: "Accueil", about: "À propos", products: "Produits", why: "Nos atouts", contact: "Contact", inquiry: "Demander un devis", news: "Actualités", guides: "Guides", factory: "Notre usine", faq: "FAQ" },
+    nav: { home: "Accueil", about: "À propos", products: "Produits", why: "Nos atouts", contact: "Contact", inquiry: "Devis", news: "Actualités", guides: "Guides", factory: "L'usine", faq: "FAQ" },
     articles: {
       indexTitle: "Guides et conseils de choix",
       indexLead: "Des guides pratiques pour choisir, comparer et utiliser motoculteurs, machines à fossés et pompes à eau.",
@@ -533,7 +541,8 @@ var I18N = {
       capShowroom: "Showroom produits",
       capAssembly: "Assemblage en production",
       capPacking: "Contrôle qualité et emballage",
-      cta: "Dites-nous la taille de votre parcelle et nous vous proposerons le modèle"
+      cta: "Dites-nous la taille de votre parcelle et nous vous proposerons le modèle",
+      full: "Voir en grand"
     },
     hero: {
       title: "Machines agricoles directes d'usine",
@@ -564,7 +573,6 @@ var I18N = {
         getQuote: "Demander un devis",
         copyInquiry: "Copier la demande",
         copy: "Copier",
-        copied: "Copié !",
         whatsapp: "WhatsApp",
         email: "Courriel",
         contactSection: "Envoyez-nous vos besoins, nous répondrons sous 24 heures.",
@@ -606,7 +614,9 @@ var I18N = {
         mail: "Email",
         mailSub: "Ouvre votre client email",
         copy: "Copier la demande",
-        copySub: "Coller n'importe où"
+        copySub: "Coller n'importe où",
+        webmail: "Votre messagerie ne s'ouvre pas ? Essayez la version web :",
+        copied: "✓ Texte de la demande copié — collez-le où vous voulez"
       }
     },
     footer: { rights: "Tous droits réservés." },
@@ -657,7 +667,8 @@ var I18N = {
       capShowroom: "Onyesho la bidhaa",
       capAssembly: "Uusambazi wa utengenezaji",
       capPacking: "Ukaguzi wa ubora na upackaji",
-      cta: "Tuambie ukubwa wa ploti yako na tutakupendekeza modeli inayofaa"
+      cta: "Tuambie ukubwa wa ploti yako na tutakupendekeza modeli inayofaa",
+      full: "Angalia picha kamili"
     },
     hero: {
       title: "Mashine za Kilimo Moja kwa Moja kutoka Kiwanda",
@@ -689,7 +700,6 @@ var I18N = {
         getQuote: "Omba Bei Sasa",
         copyInquiry: "Nakili Uchunguzi",
         copy: "Nakili",
-        copied: "Imenakiliwa!",
         whatsapp: "WhatsApp",
         email: "Barua pepe",
         contactSection: "Tuambie mahitaji yako na tutajibu ndani ya masaa 24.",
@@ -720,7 +730,7 @@ var I18N = {
       form: { name: "Jina lako", email: "Barua pepe yako", country: "Nchi yako", message: "Ujumbe (bidhaa, kiasi, bandari ya marudio...)", submit: "Tuma Uchunguzi", note: "Fomu hii inafungua mteja wako wa barua pepe. Kwa jibu la haraka zaidi, tutumie barua pepe moja kwa moja." }
     },
     inquiry: {
-      modal: { title: "Chagua jinsi ya kutuma uchunguzi wako", wa: "Haraka zaidi · Inapendekezwa", mail: "Barua pepe", mailSub: "Inafungua mteja wako wa barua pepe", copy: "Nakili Uchunguzi", copySub: "Bandika mahali popote" }
+      modal: { title: "Chagua jinsi ya kutuma uchunguzi wako", wa: "Haraka zaidi · Inapendekezwa", mail: "Barua pepe", mailSub: "Inafungua mteja wako wa barua pepe", copy: "Nakili Uchunguzi", copySub: "Bandika mahali popote", webmail: "Barua pepe hafunguli? Jaribu toleo la Mtandao:", copied: "✓ Maandishi ya ombi umecopiwa — bandika popote kuchapisha" }
     },
     footer: { rights: "Haki zote zimehifadhiwa." },
     news: {

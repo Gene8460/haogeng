@@ -24,13 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
   if (typeof renderProducts === 'function') renderProducts('all');
   if (typeof initFilters === 'function') initFilters();
 
-  // 移动端菜单
-  const toggle = document.getElementById('menuToggle');
-  const menu = document.getElementById('menu');
-  if (toggle && menu) {
-    toggle.addEventListener('click', () => menu.classList.toggle('open'));
-    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
-  }
+  // 移动端菜单（首页 #menuToggle/#menu，内页 #navToggle/#navMenu，两套都要能开）
+  [['menuToggle', 'menu'], ['navToggle', 'navMenu']].forEach(function (pair) {
+    const toggle = document.getElementById(pair[0]);
+    const menu = document.getElementById(pair[1]);
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => menu.classList.toggle('open'));
+      menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+    }
+  });
 
   // ===== 询盘表单：弹窗选择 WhatsApp / Email / Copy =====
   const form = document.getElementById('inquiryForm');

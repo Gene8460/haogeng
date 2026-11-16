@@ -385,3 +385,55 @@ C SW + FR（→204）· D ES + RU（→228）· E ZH（→240）。翻译时**�
 ### 后续
 
 D ES + RU（→228）· E ZH（→240）。临时文件 `_asm.py` `_meta/` `_meta_lang/` `_bodies/` `_articles_header.txt` **只留在沙盒**（`~/.claude/workspace/haogeng-p0-sandbox`），不入库。
+
+---
+
+## Stage D / E / F —— ES + RU + ZH 全部补齐 + 工厂实拍入口（2026-11-16，线上 204 → 240 页）
+
+老板指示「赶紧把网站做出来，haogeng.net 很多地方都没有数据」→ Stage D（ES+RU）与 Stage E（ZH）恢复上线，并合并本轮工厂实拍交互改造。线上页数 **204 → 240**。
+
+### Stage D（西语 + 俄语）→ 228 页（曾上线，后被 `bb2599a` 撤回，本次一并恢复）
+
+| 语种 | 指南 | 索引 | FAQ | 新增页 |
+|---|---|---|---|---|
+| ES | 10 篇 | `/es/guides.html` | `/es/faq.html`（78 条） | 12 |
+| RU | 10 篇 | `/ru/guides.html` | `/ru/faq.html`（78 条） | 12 |
+
+### Stage E（中文）→ 240 页
+
+| 语种 | 指南 | 索引 | FAQ | 新增页 |
+|---|---|---|---|---|
+| ZH | 10 篇 | `/zh/guides.html` | `/zh/faq.html`（78 条） | 12 |
+
+6 语种现共 **60 篇文章页 + 6 个指南索引 + 6 个 FAQ 聚合页 + 6 个工厂页**，总页数 240。
+
+### Stage F：工厂实拍「点击入口」改造（本轮新增，老板提的「工厂实拍没有点击按钮」）
+
+原方案只写了 `nav.factory` 字典项，**导航 HTML 从未接入**，工厂页等于没有入口。本次补齐：
+
+| 改动 | 文件 | 说明 |
+|---|---|---|
+| 导航接入「工厂实拍」 | `scripts/build-static.js`（`addContentNav`） | 首页 `<nav class="menu" id="menu">` 与内页 `<ul class="nav-menu" id="navMenu">` **两套导航结构都注入**「工厂实拍」入口，排在「媒体报道」之后、「选型指南」之前；6 语种各一条 |
+| 照片可点开大图 | `scripts/build-static.js`（`factoryGalleryHtml`） | 每张实拍图包一层 `<a class="factory-photo-link" href="/images/xxx.jpg" target="_blank" rel="noopener">`，纯 HTML 无 JS；图下加「查看大图」提示（`factory.full`，6 语种） |
+| 图集下方加 CTA | `scripts/build-static.js`（`buildFactory`） | 6 张图**正下方**直接给「获取报价」按钮（原来要翻到页面最底部才看得到） |
+| 导航字号/间距 | `css/style.css`、`css/product.css` | 导航字号 16 → 15px，间距 24 → 20px（≤1180px 时 13px）；加第 9 项后不再换行 |
+| 汉堡断点前移 | `css/style.css`、`css/product.css` | 折叠断点 640px → 1100px，平板宽度也出汉堡，避免第 9 项挤爆导航 |
+| 词条缩短（4 处） | `js/i18n.js` | RU `why`: «Преимущества» → «Плюсы»；RU `tagline` → «Сельхозтехника»；FR `factory`: «Notre usine» → «L'usine»；FR `inquiry`: «Demander un devis» → «Devis» |
+| **修掉一个线上老 bug** | `js/main.js` | 内页的 `#navToggle` / `#navMenu` **从来没被绑定** → 手机上工厂页/指南页/FAQ 页/文章页/品类页的 ☰ 按钮点了没反应、且**整站无导航**。本次让首页 `#menuToggle` 与内页 `#navToggle` 两套都绑定 |
+| 资源版本 | `index.html`、`product.html`、`404.html` | js `?v=39`、`css/style.css?v=18`、`css/product.css?v=7`（旧值 37/17/6，避免 CDN 缓存旧文件） |
+
+### 验证
+
+| 项 | 结果 |
+|---|---|
+| 页面数 | 240（sitemap 240 条，重复 0） |
+| 生成器报告 | `[i18n 缺失]` 0 · 6 语种 × 10 篇正文齐全 · FAQ 每语种 78 条 · `[参数占位符错误]` 0 · 参数行数 6 语种与 en 一致 |
+| `seo_check.py` | 八项全过（JSON-LD 242 页可解析、hreflang 双向互指、canonical 自指、sitemap 全覆盖、无乱码、脚本版本一致） |
+| 占位符残留 | 244 个静态页全扫 `{{spec:` / `[[model:` / `[[cat:` / `[Rated power]` = **0** |
+| 导航回归（Playwright） | 6 语种 × 4 类页面 × 14 档宽度 = 336 组：>1100px **无一链接换行**、每页固定 9 项；≤1100px 汉堡可展开且含「工厂实拍」 |
+| 照片可点 | 6 张图链接全部 200（image/jpeg），点击新标签打开原图；CTA 指向 `/{lang}/#contact` |
+| 旧版本对比 | 线上原 204 页 → 现 240 页；新增 es/ru/zh 各 12 页 + 6 语种导航与工厂页改造 |
+
+### 仍未做（等老板给料，不编）
+
+价格表 / 交期 / 付款方式 / MOQ / 产能数字 / 厂房面积 / 员工数 / 认证清单 / 出口国家数 / 客户证言 —— 一律不编。立创机械成立年份、统一社会信用代码、`Warranty: 1 year` 实质确认、`1WG-4.1B`（名称写 Diesel 但参数是汽油）与 `1WG-4.05ZM`（features.zh 写 173cc 汽油但发动机是柴油）两处数据不一致**只 flag 不擅改**。

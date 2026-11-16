@@ -1129,20 +1129,26 @@ function faqTarget(lang) {
 /* 顶部导航：有文章的语种才注入「选型指南 / 常见问题」两个入口（其余语种无这两页，避免死链） */
 /* 顶部导航：有文章的语种才注入「选型指南 / 常见问题」两个入口（其余语种无这两页，避免死链） */
 function addContentNav(html, lang) {
-  if (!articlesOfLang(lang).length) return html;
-  if (html.indexOf('nav-guides') >= 0) return html;
-  const gLabel = T(lang, 'nav.guides') || 'Guides';
-  const fLabel = T(lang, 'nav.faq') || 'FAQ';
-  const gLink = '<a href="' + urls.guidesIndexPath(lang) + '" class="nav-guides">' + esc(gLabel) + '</a>';
-  const fLink = '<a href="' + urls.faqPath(lang) + '" class="nav-faq">' + esc(fLabel) + '</a>';
+  if (html.indexOf('nav-factory') >= 0) return html;
+  const links = [];
+  if (articlesOfLang(lang).length) {
+    const gLabel = T(lang, 'nav.guides') || 'Guides';
+    const fLabel = T(lang, 'nav.faq') || 'FAQ';
+    links.push('<a href="' + urls.guidesIndexPath(lang) + '" class="nav-guides">' + esc(gLabel) + '</a>');
+    links.push('<a href="' + urls.faqPath(lang) + '" class="nav-faq">' + esc(fLabel) + '</a>');
+  }
+  const faLabel = T(lang, 'nav.factory') || 'Factory';
+  links.unshift('<a href="' + urls.factoryPath(lang) + '" class="nav-factory">' + esc(faLabel) + '</a>');
   if (/<nav class="menu" id="menu">/.test(html)) {
+    const items = links.join('\n        ');
     return html.replace(/(<nav class="menu" id="menu">)([\s\S]*?)(<\/nav>)/, function (m, a, body, c) {
-      return a + body.replace(/([\s]+)$/, '') + '\n        ' + gLink + '\n        ' + fLink + '\n      ' + c;
+      return a + body.replace(/([\s]+)$/, '') + '\n        ' + items + '\n      ' + c;
     });
   }
   if (/<ul class="nav-menu" id="navMenu">/.test(html)) {
+    const items = links.map(function (x) { return '<li>' + x + '</li>'; }).join('\n        ');
     return html.replace(/(<ul class="nav-menu" id="navMenu">)([\s\S]*?)(<\/ul>)/, function (m, a, body, c) {
-      return a + body.replace(/([\s]+)$/, '') + '\n        <li>' + gLink + '</li>\n        <li>' + fLink + '</li>\n      ' + c;
+      return a + body.replace(/([\s]+)$/, '') + '\n        ' + items + '\n      ' + c;
     });
   }
   return html;
@@ -1454,16 +1460,19 @@ const FACTORY_PHOTOS = [
 
 function factoryGalleryHtml(lang) {
   const t = function (k) { return T(lang, k); };
+  const full = t('factory.full') || 'View full size';
   return '<div class="factory-gallery">' +
     FACTORY_PHOTOS.filter(function (p) { return imgExists(p.file); }).map(function (p) {
       const cap = p.cap ? (t(p.cap) || '') : (urls.catLabel(p.cat, lang) || '');
       const webp = webpOf(p.file);
       return '<figure class="factory-photo">' +
+        '<a class="factory-photo-link" href="/images/' + esc(p.file) + '" target="_blank" rel="noopener" title="' + esc(full) + '">' +
         '<picture>' +
         (imgExists(webp) ? '<source srcset="/images/' + esc(webp) + '" type="image/webp">' : '') +
         '<img src="/images/' + esc(p.file) + '" alt="' + esc(cap) + '" loading="lazy">' +
         '</picture>' +
-        '<figcaption>' + esc(cap) + '</figcaption>' +
+        '</a>' +
+        '<figcaption>' + esc(cap) + '<span class="factory-photo-hint">' + esc(full) + '</span></figcaption>' +
         '</figure>';
     }).join('') +
     '</div>';
@@ -1493,7 +1502,10 @@ function buildFactory(lang) {
     '</div></div>' +
     '<h1 class="pd-title" style="margin:10px 0 8px;">' + esc(title) + '</h1>' +
     '<p class="section-lead">' + esc(t('factory.lead')) + '</p>' +
-    factoryGalleryHtml(lang);
+    factoryGalleryHtml(lang) +
+    '<div class="factory-cta">' +
+    '<a class="btn btn-primary" href="' + urls.homePath(lang) + '#contact">' + esc(t('nav.inquiry')) + '</a>' +
+    '</div>';
 
   for (let i = 1; i <= 5; i++) {
     const h = t('factory.s' + i + 'Title');
