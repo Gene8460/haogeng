@@ -137,6 +137,20 @@
   function faqPath(lang) { return '/' + lang + '/faq.html'; }
   function factoryPath(lang) { return '/' + lang + '/factory.html'; }
 
+  /* ---------- 图片版本 ----------
+     浏览器 / CDN 对 images/ 下的文件缓存 4 小时（Cache-Control: max-age=14400）。
+     换了图但 URL 不变 -> 老用户打开页面看到的还是旧图（老板 2026-11-16 在 /zh/factory.html 踩过：
+     页面里还是旧图，点开大图才是新的）。
+     所以换任何 images/ 里的图，都要把 IMG_V +1，全站图片 URL 立刻换新。
+     浏览器端（js/products.js / js/product.js）与生成器（scripts/build-static.js）共用这一份。 */
+  var IMG_V = 2;
+
+  function imgUrl(file, absolute) {
+    if (!file) return '';
+    var base = (absolute === false) ? 'images/' : '/images/';
+    return base + file + '?v=' + IMG_V;
+  }
+
   function abs(p) { return SITE + p; }
 
   return {
@@ -155,6 +169,8 @@
     guidePath: guidePath,
     faqPath: faqPath,
     factoryPath: factoryPath,
+    IMG_V: IMG_V,
+    imgUrl: imgUrl,
     abs: abs
   };
 });

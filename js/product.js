@@ -8,6 +8,10 @@
 
   // ===== 全局常量（SEO） =====
   const SITE = 'https://haogeng.net';
+  /* 图片版本号：与 js/seo-urls.js 的 IMG_V 一致（换图两边一起 +1） */
+  const IMG_V = (window.HaogengUrls && window.HaogengUrls.IMG_V) || 2;
+  const imgSrc = (f) => f ? 'images/' + f + '?v=' + IMG_V : '';
+  const imgAbs = (f) => f ? SITE + '/images/' + f + '?v=' + IMG_V : '';
   const OG_LOCALE = { en: 'en_US', zh: 'zh_CN', sw: 'sw_KE', es: 'es_ES', ru: 'ru_RU', fr: 'fr_FR' };
   const DESC_SUFFIX = {
     en: ' Factory-direct from Liuzhou Haogeng, China. Request a quote.',
@@ -122,7 +126,7 @@
     }
 
     // Open Graph
-    const img = product.img ? SITE + '/images/' + product.img : SITE + '/images/og-image.jpg';
+    const img = imgAbs(product.img || 'og-image.jpg');
     setAttr('meta[property="og:title"]', 'content', title);
     setAttr('meta[property="og:description"]', 'content', metaDesc);
     setAttr('meta[property="og:url"]', 'content', pageUrl);
@@ -173,8 +177,8 @@
     const imgWebp = imgFile.replace(/\.(jpg|jpeg|png)$/i, '.webp');
     const imgHtml = imgFile
       ? `<picture>
-           <source srcset="images/${imgWebp}" type="image/webp">
-           <img src="images/${imgFile}" alt="${name}" loading="lazy">
+           <source srcset="${imgSrc(imgWebp)}" type="image/webp">
+           <img src="${imgSrc(imgFile)}" alt="${name}" loading="lazy">
          </picture>`
       : `<div style="color:#adb5bd;">📷 No image available</div>`;
 
@@ -187,8 +191,8 @@
                const gWebp = g.replace(/\.(jpg|jpeg|png)$/i, '.webp');
                return `<div class="pd-gallery-slide${i === 0 ? ' active' : ''}" data-idx="${i}">
                  <picture>
-                   <source srcset="images/${gWebp}" type="image/webp">
-                   <img src="images/${g}" alt="${escapeHtml(name)} — view ${i + 1}" loading="lazy">
+                   <source srcset="${imgSrc(gWebp)}" type="image/webp">
+                   <img src="${imgSrc(g)}" alt="${escapeHtml(name)} — view ${i + 1}" loading="lazy">
                  </picture>
                </div>`;
              }).join('')}
@@ -237,8 +241,8 @@
           <p class="pd-acc-subtitle">${escapeHtml(t('products.detail.accessories.subtitle'))}</p>
           <div class="pd-acc-image">
             <picture>
-              <source srcset="images/${accWebp}" type="image/webp">
-              <img src="images/${accImg}" alt="${escapeHtml(name)} accessories" loading="lazy">
+              <source srcset="${imgSrc(accWebp)}" type="image/webp">
+              <img src="${imgSrc(accImg)}" alt="${escapeHtml(name)} accessories" loading="lazy">
             </picture>
           </div>
           <ol class="pd-acc-list">${accItems}</ol>
@@ -456,7 +460,7 @@
     const desc = pickI18n(product.desc, lang);
     const imgFile = product.img || '';
     const gallery = Array.isArray(product.gallery) ? product.gallery : [];
-    const images = [imgFile, ...gallery].filter(Boolean).map(f => SITE + '/images/' + f);
+    const images = [imgFile, ...gallery].filter(Boolean).map(f => imgAbs(f));
     const pageUrl = canonicalUrlFor(product);
     const catLabel = catLabelFor(product.cat || '', lang);
     const homeUrl = (window.HaogengUrls && window.HaogengUrls.homePath)

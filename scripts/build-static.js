@@ -178,6 +178,14 @@ function absolutize(html) {
   return html.replace(/(src|href|srcset)="(css|js|images)\//g, '$1="/$2/');
 }
 
+/* 图片 URL 加版本号：浏览器/CDN 缓存图片 4 小时，URL 不变老用户就看不到新图。
+   统一在这里改写，模板里写不带参数的 /images/x.jpg 也会被补上 ?v=IMG_V。 */
+function versionImages(html) {
+  return html.replace(/(\/images\/[A-Za-z0-9._-]+)(\?[^"'\s<>]*)?/g, function (m, p) {
+    return p + '?v=' + urls.IMG_V;
+  });
+}
+
 /* data-i18n / data-i18n-placeholder → 服务端渲染成目标语种 */
 function applyI18n(html, lang) {
   html = html.replace(
@@ -1597,7 +1605,7 @@ function buildSitemap(pages) {
 function writeFile(relPath, content) {
   const full = path.join(OUT, relPath);
   fs.mkdirSync(path.dirname(full), { recursive: true });
-  fs.writeFileSync(full, content, 'utf8');
+  fs.writeFileSync(full, versionImages(content), 'utf8');
 }
 
 function main() {

@@ -477,3 +477,24 @@ Rendering Liquid: docs/P2-content-plan.md
 **裁切检查**：`.factory-photo img` 是 `height:190px; object-fit:cover`，首页 `.news-photo` 是 `aspect-ratio:4/3` —— 竖图都会被裁成横带，实拍截图确认三张裁出来分别是"成品机+标牌""装配工位""成排待发货整机"，主体都能认出来，没有裁废。
 
 页面数仍为 240，`seo_check.py` 九项全过。
+
+---
+
+## 2026-11-16 换图后老板看到的是旧图 —— 图片 URL 必须带版本号
+
+上一条记录（换工厂实拍三张图）推上去后，老板反馈：`/zh/factory.html` 上"图片没有变化，要点图片才会有变化"。
+
+**现象**：页面上还是旧图，点开大图才是新图。
+
+**根因**：GitHub Pages + Cloudflare 对 `images/` 下的文件发 `Cache-Control: max-age=14400`（**4 小时**），而图片 URL 没变（`/images/news-showroom.jpg`）。老板浏览器里存着旧图，页面 HTML 刷新了但图片 URL 一样 → 直接复用旧缓存。
+"点开大图是新图"是因为 `<picture>` 里老浏览器优先下的是 `.webp`（旧的被缓存了），而 `<a href>` 指向的是 `.jpg`（老浏览器根本没下过，点开时是新请求）。
+
+**修法**（一次性把这类问题根掉）：
+- `js/seo-urls.js` 新增 `IMG_V`（当前 = 2）+ `imgUrl(file)` —— 浏览器端和生成器共用同一份版本号；
+- `scripts/build-static.js` 新增 `versionImages()`，写每个页面时把所有 `/images/xxx` 统一补成 `?v=IMG_V`（模板里写不写版本都行）；
+- 根目录 `index.html` / `product.html` 是直接对外提供的静态页（不经过生成器），里面的图片引用手工补 `?v=2`；
+- `js/products.js` / `js/product.js` 客户端拼的图片路径改走 `imgSrc()` / `imgAbs()`，版本号从 `HaogengUrls.IMG_V` 取，不各自硬编码；
+- 全部 js 的缓存版本 39 → 40（改了 seo-urls / products / product）；
+- `scripts/seo_check.py` 新增**第 10 项**：扫全部 240 页 + 两个根模板的 3747 处图片 URL，版本号必须都等于 `js/seo-urls.js` 里的 `IMG_V`；客户端 JS 里不允许再出现没带版本号的图片路径。第 8 项的正则也补了连字符文件名（`seo-urls.js` 之前被漏检）。
+
+**以后换图的规矩**：换 `images/` 里任何一张图 → 把 `js/seo-urls.js` 的 `IMG_V` +1 → 跑 `node scripts/build-static.js .` → 跑 `python scripts/seo_check.py` → 提交推送。第 10 项会强制你记得 bump。

@@ -236,7 +236,7 @@ else:
 print("=== 8. 脚本版本号一致性 ===")
 for f in ("index.html", "product.html"):
     s = read(f)
-    vs = set(re.findall(r'js/(\w+\.js)\?v=(\d+)', s))
+    vs = set(re.findall(r'js/([\w-]+\.js)\?v=(\d+)', s))
     vers = set(v for _, v in vs)
     (good if len(vers) == 1 else fail)("%s 缓存版本: %s" % (f, sorted(vers)))
 
@@ -266,6 +266,45 @@ if liq_bad:
     fail("这些文件里的 {{ 会被 Jekyll 当成 Liquid 变量，构建必挂（用 {% raw %} 包起来）: %s" % liq_bad[:6])
 else:
     good("Markdown / HTML 里没有裸露的 {{ }}，Jekyll 构建不会被 Liquid 打挂")
+
+print("=== 10. 图片 URL 版本号一致性（换图不 bust 缓存 = 老用户看旧图） ===")
+# 背景：浏览器/CDN 对 images/ 下的文件缓存 4 小时（max-age=14400）。
+#      换了图但 URL 不变，老板浏览器里还是旧图（2026-11-16 /zh/factory.html 实测）。
+#      规则：js/seo-urls.js 里的 IMG_V 是唯一版本号，换任何图都要 +1；
+#            生成器（versionImages）会给所有 /images/... 补 ?v=IMG_V。
+url_js = read("js/seo-urls.js")
+m = re.search(r"var\s+IMG_V\s*=\s*(\d+)", url_js)
+if not m:
+    fail("js/seo-urls.js 里找不到 IMG_V 定义")
+    img_v = None
+else:
+    img_v = m.group(1)
+    # 客户端 JS 必须从同一份取版本号，不能各自硬编码
+    for js in ("js/products.js", "js/product.js"):
+        s2 = read(js)
+        if "HaogengUrls" not in s2:
+            fail("%s 没有从 HaogengUrls 取 IMG_V" % js)
+        elif re.search(r"['\"]/?images/\$\{", s2):
+            fail("%s 里还有没加版本号的图片路径" % js)
+
+if img_v:
+    unversioned = []
+    checked = 0
+    targets = ["index.html", "product.html"] + pages
+    for rel in targets:
+        fp = rel_to_file(rel)
+        if not os.path.isfile(fp):
+            continue
+        s3 = read(fp)
+        for mm in re.finditer(r"""(/images/[A-Za-z0-9._-]+)(\?[^"'\s<>]*)?""", s3):
+            checked += 1
+            q = mm.group(2) or ""
+            if q != "?v=" + img_v:
+                unversioned.append("%s: %s%s" % (rel, mm.group(1), q or "(无版本号)"))
+    if unversioned:
+        fail("%d 处图片 URL 版本不对（当前 IMG_V=%s）: %s" % (len(unversioned), img_v, unversioned[:6]))
+    else:
+        good("IMG_V=%s，%d 处图片 URL 版本号全部一致" % (img_v, checked))
 
 print()
 print("结果: " + ("全部通过 ✅" if ok else "有失败项 ❌"))

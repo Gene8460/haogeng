@@ -1,3 +1,8 @@
+/* 图片版本号：与 js/seo-urls.js 的 IMG_V 一致（换图两边一起 +1）。
+   浏览器 / CDN 缓存 images/ 下文件 4 小时，URL 不带版本参数老用户会看到旧图。 */
+var IMG_V = (window.HaogengUrls && window.HaogengUrls.IMG_V) || 2;
+function imgSrc(f) { return f ? 'images/' + f + '?v=' + IMG_V : ''; }
+
 var PRODUCTS = 
 [
   {
@@ -5783,7 +5788,7 @@ function renderProducts(category) {
     const catLabel = t(CAT_LABEL_KEY[p.cat]) || p.cat;
     const inquire = t('products.inquire') || 'Send Inquiry';
     const imgHtml = p.img
-      ? `<div class="product-img"><picture><source srcset="images/${p.img.replace(/\.(jpg|jpeg|png)$/i, '.webp')}" type="image/webp"><img src="images/${p.img}" alt="${name}" loading="lazy" style="width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;"></picture></div>`
+      ? `<div class="product-img"><picture><source srcset="${imgSrc(p.img.replace(/\.(jpg|jpeg|png)$/i, '.webp'))}" type="image/webp"><img src="${imgSrc(p.img)}" alt="${name}" loading="lazy" style="width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;"></picture></div>`
       : `<div class="product-img">📷 <span style="margin-left:8px">${name}</span></div>`;
 
     // 产品链接：静态多语言站上线后指向 /{lang}/product/...，没有就回落到旧地址
