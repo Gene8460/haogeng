@@ -51,7 +51,7 @@ var I18N = {
     about: {
       title: "About Us",
       lead: "Liuzhou Haogeng International Trade Co., Ltd. (Haogeng) is the export and trading arm of Guigeng Agricultural Machinery. As the brand's international sales company, we work directly with our own manufacturing plant — giving overseas buyers true factory-direct pricing and reliable supply.",
-      c1: { title: "One Company, Factory-Backed", text: "Guigeng Agricultural Machinery is manufactured by Guangxi Lichuang Machinery Manufacturing Co., Ltd. — our own factory. Haogeng handles all international trade: export, documentation and after-sales. When you buy from Haogeng, you buy straight from the Guigeng factory, with no middlemen." },
+      c1: { title: "One Company, Factory-Backed", text: "We combine manufacturing and international trade in one company. What you receive is shipped straight from our own plant: every model we sell is made by Guangxi Lichuang Machinery. We do not buy machines from other factories and put our label on them." },
       c2: { title: "Patented Technology", text: "Our R&D team holds national utility-model patents, and our flagship 4WD micro tiller is listed by China's agricultural machinery authority as a National Agricultural Machinery Promoted Product. Certificate details available on request." },
       c3: { title: "Advanced Equipment", text: "CNC laser cutting, CNC bending, laser pipe cutting and laser welding lines guarantee precision, durability and a consistent finish." }
     },
@@ -177,7 +177,7 @@ var I18N = {
     about: {
       title: "关于我们",
       lead: "柳州浩耕国际贸易有限责任公司（浩耕）是桂耕农机品牌的对外贸易公司，直接对接背后的自有工厂。工贸一体，让海外买家享受真正的工厂直供价格与稳定货源。",
-      c1: { title: "工贸一体 · 自有工厂", text: "桂耕农机由广西立创机械制造有限公司生产制造，浩耕国际负责全部国际贸易业务——出口、单证、售后。从浩耕采购，就是从桂耕工厂直接采购，没有中间商。" },
+      c1: { title: "工贸一体 · 自有工厂", text: "我们是工贸一体，你拿到的是工厂直出的机器。所有机型都是广西立创工厂生产，不从别的工厂进货贴牌。" },
       c2: { title: "专利技术", text: "研发团队拥有国家实用新型专利，主打4WD微耕机为“国家农机推广产品”，证书资料可提供。" },
       c3: { title: "先进设备", text: "数控激光切割、数控折弯、激光切管、激光焊接生产线，保证精度与耐用性。" }
     },
@@ -303,7 +303,7 @@ var I18N = {
     about: {
       title: "Sobre nosotros",
       lead: "Liuzhou Haogeng es el brazo exportador de la fábrica Guigeng — una verdadera empresa integrada de comercio y fabricación.",
-      c1: { title: "Nuestra propia fábrica", text: "Respaldados por Guangxi Lichuang Machinery (marca Guigeng), fabricante moderno con diseño y producción propios." },
+      c1: { title: "Industria y Comercio Integrados · Fábrica Propia", text: "Somos fábrica y exportador al mismo tiempo. Lo que recibes sale directamente de nuestra planta: todos los modelos que ofrecemos los fabrica Guangxi Lichuang Machinery. No compramos máquinas a otras fábricas para ponerles nuestra marca." },
       c2: { title: "Tecnología patentada", text: "Nuestro equipo de I+D posee patentes nacionales de modelo de utilidad, y nuestro microtractor 4WD insignia figura en la lista de la autoridad china de maquinaria agrícola como Producto Nacional de Maquinaria Agrícola Promovido. Certificados disponibles bajo solicitud." },
       c3: { title: "Equipo avanzado", text: "Líneas de corte láser CNC, plegado, corte de tubos y soldadura láser que garantizan precisión y durabilidad." }
     },
@@ -429,7 +429,7 @@ var I18N = {
     about: {
       title: "О нас",
       lead: "Liuzhou Haogeng — экспортное подразделение завода Guigeng, полностью интегрированная торгово-производственная компания.",
-      c1: { title: "Собственный завод", text: "За нами стоит Guangxi Lichuang Machinery (бренд Guigeng) — современный производитель с полным циклом разработки и производства." },
+      c1: { title: "Производство и Торговля в одной компании · Собственный Завод", text: "Мы одновременно и производитель, и экспортёр. То, что вы получаете, отгружается прямо с нашего завода: все наши модели выпускает Guangxi Lichuang Machinery. Мы не закупаем технику у других заводов и не ставим на неё свою марку." },
       c2: { title: "Запатентованные технологии", text: "Наша команда R&D имеет национальные патенты на полезную модель, а наш флагманский 4WD микрокультиватор включён китайским органом по сельскохозяйственной технике в перечень «Продвигаемая национальная сельскохозяйственная техника». Документы предоставляются по запросу." },
       c3: { title: "Современное оборудование", text: "Линии лазерной резки ЧПУ, гибки, резки труб и лазерной сварки обеспечивают точность и долговечность." }
     },
@@ -555,7 +555,7 @@ var I18N = {
     about: {
       title: "À propos",
       lead: "Liuzhou Haogeng est le bras export de l'usine Guigeng — une véritable entreprise intégrée commerce + fabrication.",
-      c1: { title: "Notre propre usine", text: "Adossés à Guangxi Lichuang Machinery (marque Guigeng), fabricant moderne avec conception et production internes." },
+      c1: { title: "Industrie et Commerce Réunis · Notre Usine", text: "Nous réunissons la fabrication et le commerce international. Ce que vous recevez part directement de notre usine : tous nos modèles sont fabriqués par Guangxi Lichuang Machinery. Nous n'achetons pas de machines chez d'autres fabricants pour y apposer notre marque." },
       c2: { title: "Technologie brevetée", text: "Notre équipe R&D détient des brevets nationaux de modèle d'utilité, et notre micro-culteur 4WD phare est inscrit par l'autorité chinoise de la machinerie agricole parmi les Produits Agricoles Nationaux Promus. Certificats disponibles sur demande." },
       c3: { title: "Équipement avancé", text: "Lignes de découpe laser CNC, pliage, découpe de tubes et soudage laser garantissant précision et durabilité." }
     },
@@ -682,7 +682,7 @@ var I18N = {
     about: {
       title: "Kuhusu Sisi",
       lead: "Liuzhou Haogeng International Trade Co., Ltd. (Haogeng) ndiye mkono wa nje wa mauzo wa Guigeng Agricultural Machinery. Kama kampuni ya mauzo ya kimataifa ya chapa hii, tunafanya kazi moja kwa moja na kiwanda chetu mwenyewe — tukitoa wateja wa nje bei ya kweli ya moja kwa moja kutoka kiwanda na ugavi unaotegemewa.",
-      c1: { title: "Kampuni Moja, Inayoungwa mkono na Kiwanda", text: "Mashine za Kilimo za Guigeng zinazalishwa na Guangxi Lichuang Machinery Manufacturing Co., Ltd. — kiwanda chetu mwenyewe. Haogeng inashughulikia biashara yote ya kimataifa: usafirishaji, nyaraka na huduma baada ya kuuza. Unaponunua kutoka Haogeng, unanunua moja kwa moja kutoka kiwanda cha Guigeng, bila mawakala wa kati." },
+      c1: { title: "Kampuni Moja, Inayoungwa mkono na Kiwanda", text: "Tunaunganisha utengenezaji na biashara ya kimataifa. Unachopokea hapa ni mashine zinazotoka moja kwa moja kiwandani wetu: modeli zote tunazoziia zinatengenezwa na Guangxi Lichuang Machinery. Hatuizi mashine kutoka kwa viwanda vingine kuzibadilisha jina na kuziuza kama zilivyotengenezwa na sisi." },
       c2: { title: "Teknolojia Iliyopata Hataza", text: "Timu yetu ya R&D ina hataza za kitaifa za muundo wa vitendo, na trekta yetu ya 4WD inayoongoza imeorodheshwa na mamlaka ya mashine za kilimo ya China kama Bidhaa ya Kilimo ya Taifa Inayopendekezwa. Vyeti vinapatikana kwa ombi." },
       c3: { title: "Vifaa vya Kisasa", text: "Kukata kwa laser ya CNC, kupinda kwa CNC, kukata kwa mabomba kwa laser na mistari ya kulehemu kwa laser vinahakikisha usahihi, uimara na kumaliza thabiti." }
     },
