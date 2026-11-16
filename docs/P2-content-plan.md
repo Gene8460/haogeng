@@ -581,3 +581,26 @@ Rendering Liquid: docs/P2-content-plan.md
 - 本地实测：裸域名 → `/en/`；`/#products` → `/en/#products`；**关掉 JS 也照样跳**（meta refresh 兜底）；`/zh/` 不受影响
 
 **以后**：首页模板改 `templates/index.html`，根目录 `index.html` 是**生成物**，别手改（下次 `node scripts/build-static.js .` 会覆盖）。
+
+
+## 2026-11-16 选型指南卡片「阅读指南」点了没反应 —— CTA 是纯文本冒充链接
+
+**发现**：老板报「选型指南下面的六个小方块点击阅读指南 →都没有反应」。
+
+**根因（跟「底部选型指南」同一个病根）**：`scripts/build-static.js` 的 `guideCardsHtml()` 把卡片 CTA 渲染成 `<span class="guide-card-cta">阅读指南 →</span>` —— **没有 href**。实测：`getAttribute('href')` = null、computed `cursor` = auto、点击后 URL 不变。长得像链接，其实是个纯文本。
+
+**改法**：
+
+| 文件 | 改动 |
+|---|---|
+| `scripts/build-static.js` | `guideCardsHtml()` 的 CTA 由 `<span>` 改成真链接 `<a class="guide-card-cta" href="{guidePath}">` |
+| `css/style.css` | `.guide-card` 加 `position: relative`；新增 `.guide-card-title a::after` 用 `inset: 0` 撑满卡片（stretched link，整张卡片可点，DOM 里仍只有一个真链接）；`.guide-card-cta` 加 `position: relative; z-index: 2` 提到卡片遮罩之上 + hover 下划线 |
+| `templates/index.html` / `product.html` / `404.html` | `style.css?v=19` → `?v=20` |
+
+**验证**：
+- 全站扫描 212 个含卡片页：390 个卡片标题**全部**带链接、96 个 CTA **全部**是 `<a>`、**0** 个残留 `<span>`
+- 本地 Playwright：桌面点 CTA → 跳 `/zh/guide/...`；点卡片**描述文字** → 也跳（stretched link 生效）；手机 390px 点 CTA → 跳；无 JS 报错
+- `node scripts/build-static.js .` → 240 页 + sitemap.xml；`python scripts/seo_check.py` → 十项全过
+- 线上（提交 58fc9cf，Pages 构建 success）：`/zh/` 6 个 CTA、`/zh/guides.html` 10 个、`/en/` 6 个、`/sw/` 6 个，残留 span 0 个，css v=20；真浏览器点 CTA / 点描述文字均正常跳转
+
+**教训（写进长期记忆）**：老板报「点了没反应」，十有八九是**纯文本元素冒充链接**。诊断顺序固定：先查 `getAttribute('href')` + computed `cursor`，再看生成器源码；页面是服务端渲染的，**改 `scripts/build-static.js`，不是改 js 里的前端脚本**。
