@@ -249,14 +249,19 @@ if os.path.isdir("docs"):
 for rel in sorted(set(liq_files)):
     if not os.path.isfile(rel):
         continue
-    in_raw = False
+    depth = 0
     for n, line in enumerate(read(rel).split("\n"), 1):
-        if "{% raw %}" in line:
-            in_raw = True
-        if not in_raw and "{{" in line:
-            liq_bad.append("%s L%d" % (rel, n))
-        if "{% endraw %}" in line:
-            in_raw = False
+        opens = line.count("{% raw %}")
+        closes = line.count("{% endraw %}")
+        if depth == 0 and "{{" in line and opens == 0:
+            liq_bad.append("%s L%d 裸双花括号" % (rel, n))
+        depth += opens
+        depth -= closes
+        if depth < 0:
+            liq_bad.append("%s L%d endraw 多余（raw 块嵌套错乱）" % (rel, n))
+            depth = 0
+    if depth != 0:
+        liq_bad.append("%s raw 块未闭合" % rel)
 if liq_bad:
     fail("这些文件里的 {{ 会被 Jekyll 当成 Liquid 变量，构建必挂（用 {% raw %} 包起来）: %s" % liq_bad[:6])
 else:
