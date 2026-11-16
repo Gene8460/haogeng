@@ -530,3 +530,30 @@ Rendering Liquid: docs/P2-content-plan.md
 **防复发**：数据侧再补一条断言 —— 任何产品、任何语种，bestFor / features / specs
 不允许为空或行数不足（生成器报告里已有「参数表行数 6 语种与 en 一致」这项，可再加
 「三块内容非空」检查）。空块优先怀疑 `pickI18n` 而不是先去补文案。
+
+
+## 2026-11-16 底部「选型指南」点了没反应 —— 标题不是链接 + 页脚没有任何站内链接
+
+**老板原话**：网站最底部选型指南点击没有反应，到不了其他页面。
+
+**根因（两条，都已修）**：
+1. 首页「选型指南」区块标题是纯 `<h2 class="section-title">`，**没有 href** —— 长得像链接，点了毫无反应（实测 `cursor=auto`、URL 不变）。出在生成器 `scripts/build-static.js` 的 `guidesSectionHtml()`。
+2. 全站页脚原来**只有一行版权**（`<footer>` 里两个 `<p>`），**一个站内链接都没有**。所以老板滚到最底部，除了电话/邮箱/询盘按钮，没有任何能去别的页面的入口。
+
+**改动**：
+| 文件 | 改动 |
+|---|---|
+| `scripts/build-static.js` | `guidesSectionHtml()`：标题改成真链接 `<h2 class="section-title"><a href="/{lang}/guides.html">…</a></h2>`（6 语种一次到位） |
+| `scripts/build-static.js` | 新增 `addFooterNav(html, lang)`，在 `writeFile()` 里统一调用 → **240 页每页页脚都加一行站内导航**：首页 / 产品中心 / 选型指南 / FAQ / 工厂实拍 / 联系我们 |
+| `css/style.css` | 新增 `.section-title a`（绿色下划线 + 悬停变绿，一眼看出可点）、`.footer-nav`（深色页脚上的浅色链接行） |
+| `index.html` / `product.html` | `css/style.css?v=18` → `?v=19` |
+
+**文案来源**：页脚导航全部取现有 i18n `nav.*` 键（home / products / guides / faq / factory / contact，6 语种已齐），**没有新增任何文案、没有编任何数据**。
+
+**验证**：
+- 重新生成 240 页；`python scripts/seo_check.py` **十项全过**（canonical / hreflang / sitemap / Liquid / 图片版本号）
+- 脚本核对：240 页**全部**有页脚导航，页脚导航里的 href **零失效**
+- 本地 Playwright 实点：点标题 → 跳 `/zh/guides.html`；点页脚「选型指南」→ 跳 `/zh/guides.html`；手机端同样跳转成功；页面零报错
+- 桌面/手机页脚截图：`haogeng-review/local_zh_footer_nav.png`、`local_zh_mobile_footer.png`
+
+**顺带查清（不是本次改动）**：全站真实链接**没有别的死链**。后台逐链点测（7 个页面 × 全部链接）报出的「点了没跳转」全是自指链接 —— 语言切换按钮指向当前页、在 `/zh/guides.html` 上点导航「选型指南」指向自己、工厂实拍图片是 `target="_blank"` 开大图，属正常。

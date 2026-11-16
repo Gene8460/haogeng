@@ -1190,7 +1190,7 @@ function guidesSectionHtml(lang, limit) {
   const t = function (k) { return T(lang, k); };
   return '<section class="section section-alt" id="guides">\n' +
     '    <div class="container">\n' +
-    '      <h2 class="section-title">' + esc(t('articles.indexTitle')) + '</h2>\n' +
+    '      <h2 class="section-title"><a href="' + urls.guidesIndexPath(lang) + '">' + esc(t('articles.indexTitle')) + '</a></h2>\n' +
     '      <p class="section-lead">' + esc(t('articles.indexLead')) + '</p>\n' +
     guideCardsHtml(list, lang, limit || 6) + '\n' +
     '      <p style="text-align:center;margin-top:22px"><a class="btn btn-primary" href="' +
@@ -1619,10 +1619,35 @@ function buildSitemap(pages) {
 /* ---------------------------------------------------------
    7. 主流程
    --------------------------------------------------------- */
+/* 页脚导航（2026-11-16 老板报「网站最底部选型指南点击没反应，到不了其他页面」）。
+   页脚原来只有一行版权，全站最底下没有任何可点的站内链接 → 老板在底部找不到去别的页面的入口。
+   这里给每一页加一行站内导航：首页 / 产品中心 / 选型指南 / FAQ / 工厂实拍 / 联系我们。
+   文案全部取现有 i18n 的 nav.* 键（6 语种已齐），不新增任何文案、不编任何数据。 */
+function addFooterNav(html, lang) {
+  if (LANGS.indexOf(lang) < 0) return html;
+  if (html.indexOf('footer-nav') >= 0) return html;
+  const items = [
+    { href: urls.homePath(lang), label: T(lang, 'nav.home') },
+    { href: urls.homePath(lang) + '#products', label: T(lang, 'nav.products') },
+    { href: urls.guidesIndexPath(lang), label: T(lang, 'nav.guides') },
+    { href: urls.faqPath(lang), label: T(lang, 'nav.faq') },
+    { href: urls.factoryPath(lang), label: T(lang, 'nav.factory') },
+    { href: urls.homePath(lang) + '#contact', label: T(lang, 'nav.contact') }
+  ].filter(function (i) { return !!i.label; });
+  if (!items.length) return html;
+  const nav = '<nav class="footer-nav">' + items.map(function (i) {
+    return '<a href="' + i.href + '">' + esc(i.label) + '</a>';
+  }).join(' ') + '</nav>';
+  const marker = '<div class="container footer-inner">';
+  if (html.indexOf(marker) < 0) return html;
+  return html.replace(marker, marker + '\n      ' + nav);
+}
+
 function writeFile(relPath, content) {
   const full = path.join(OUT, relPath);
   fs.mkdirSync(path.dirname(full), { recursive: true });
-  fs.writeFileSync(full, versionImages(content), 'utf8');
+  const lang = relPath.split('/')[0];
+  fs.writeFileSync(full, versionImages(addFooterNav(content, lang)), 'utf8');
 }
 
 function main() {

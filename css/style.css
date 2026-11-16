@@ -88,6 +88,9 @@ a:hover { color: var(--green-dark); }
 .section { padding: 72px 0; }
 .section-alt { background: var(--bg-alt); }
 .section-title { font-size: 34px; text-align: center; margin-bottom: 12px; }
+/* 首页「选型指南」标题是真链接（去 /{lang}/guides.html），加下划线让人一眼看出可点 */
+.section-title a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--green); text-underline-offset: 8px; text-decoration-thickness: 2px; }
+.section-title a:hover { color: var(--green); }
 .section-lead { text-align: center; color: var(--ink-soft); max-width: 680px; margin: 0 auto 40px; }
 
 /* ===== About ===== */
@@ -168,6 +171,10 @@ a:hover { color: var(--green-dark); }
 /* ===== Footer ===== */
 .footer { background: var(--ink); color: #d1d5db; padding: 32px 0; font-size: 14px; }
 .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+/* 页脚导航：全站每一页最底下都能点到别的页面 */
+.footer-nav { display: flex; flex-wrap: wrap; gap: 8px 22px; justify-content: center; width: 100%; margin-bottom: 14px; }
+.footer-nav a { color: #e5e7eb; font-weight: 500; }
+.footer-nav a:hover { color: #fff; text-decoration: underline; }
 
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
