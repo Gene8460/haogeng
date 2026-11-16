@@ -87,7 +87,9 @@ def jsonld_check(files):
 
 pages = generated_pages()
 print("=== 1. JSON-LD 解析校验（模板 + 全部静态页）===")
-targets = ["index.html", "product.html"] + [p.replace(os.sep, "/") for p in pages]
+# 根目录 index.html 现在是「跳转到 /en/」的跳转页，没有 JSON-LD 属正常；
+# 真正的首页模板在 templates/index.html
+targets = ["templates/index.html", "product.html"] + [p.replace(os.sep, "/") for p in pages]
 if jsonld_check(targets) == 0:
     good("%d 个页面的 JSON-LD 全部可解析，且不含 price:0" % len(targets))
 
@@ -101,10 +103,20 @@ checks = {
                      ("og:title(静态兜底)", r'property="og:title"'),
                      ("twitter:card", r'name="twitter:card"')],
 }
+checks["templates/index.html"] = checks["index.html"]
 for f, cs in checks.items():
     s = read(f)
     for label, pat in cs:
         (good if re.search(pat, s) else fail)("%s: %s" % (f, label))
+
+# 根目录必须跳到 /en/（裸域名不能停在旧英文模板上）
+root = read("index.html")
+for label, pat in [("根页 meta refresh → /en/", r'http-equiv="refresh" content="0; url=/en/"'),
+                   ("根页 canonical → /en/", r'<link rel="canonical" href="https://haogeng\.net/en/">'),
+                   ("根页 noindex", r'name="robots" content="noindex, follow"'),
+                   ("根页 6 语种 hreflang", r'hreflang="zh"'),
+                   ("根页语言直链兜底", r'href="/zh/"')]:
+    (good if re.search(pat, root) else fail)(label)
 
 print("=== 3. hreflang 互指（x-default 允许与某个语种同 URL）===")
 if not pages:
@@ -234,7 +246,7 @@ else:
     good("sitemap 覆盖全部 %d 个静态页" % len(pages))
 
 print("=== 8. 脚本版本号一致性 ===")
-for f in ("index.html", "product.html"):
+for f in ("templates/index.html", "product.html"):
     s = read(f)
     vs = set(re.findall(r'js/([\w-]+\.js)\?v=(\d+)', s))
     vers = set(v for _, v in vs)
@@ -290,7 +302,7 @@ else:
 if img_v:
     unversioned = []
     checked = 0
-    targets = ["index.html", "product.html"] + pages
+    targets = ["index.html", "templates/index.html", "product.html"] + pages
     for rel in targets:
         fp = rel_to_file(rel)
         if not os.path.isfile(fp):

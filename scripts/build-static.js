@@ -157,7 +157,7 @@ const ARTICLES = fs.existsSync(ARTICLES_PATH)
   ? (new Function('return (' + extractLiteral(fs.readFileSync(ARTICLES_PATH, 'utf8'), 'var ARTICLES =', true) + ')'))()
   : [];
 
-const indexHtml = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+const indexHtml = fs.readFileSync(path.join(ROOT, 'templates', 'index.html'), 'utf8');
 const productHtml = fs.readFileSync(path.join(ROOT, 'product.html'), 'utf8');
 
 const IMG_DIR = path.join(ROOT, 'images');
@@ -1650,6 +1650,80 @@ function writeFile(relPath, content) {
   fs.writeFileSync(full, versionImages(addFooterNav(content, lang)), 'utf8');
 }
 
+/* 根目录跳转页（2026-11-16）。
+   以前仓库根目录的 index.html 既是「首页模板」又是「线上 / 的页面」，
+   于是线上 / 一直是一份没被生成器更新的旧英文站（没有选型指南 / FAQ / 工厂实拍 / 页脚导航），
+   老板一打开裸域名看到的就是老版本 —— 典型的「生成物和模板共用一个文件」漂移。
+   现在模板挪到 templates/index.html，根目录 index.html 由本函数生成：
+   / → /en/ （跳转 + canonical 收敛 + 6 语种 hreflang + 语言直链兜底）。 */
+function buildRootRedirect() {
+  const langs = [
+    { code: 'en', name: 'English' },
+    { code: 'zh', name: '中文' },
+    { code: 'sw', name: 'Kiswahili' },
+    { code: 'es', name: 'Español' },
+    { code: 'ru', name: 'Русский' },
+    { code: 'fr', name: 'Français' }
+  ];
+  const hreflang = langs.map(function (l) {
+    return '<link rel="alternate" hreflang="' + l.code + '" href="' + urls.abs(urls.homePath(l.code)) + '">';
+  }).join('\n');
+  const links = langs.map(function (l) {
+    return '<a href="' + urls.homePath(l.code) + '" hreflang="' + l.code + '">' + esc(l.name) + '</a>';
+  }).join(' · ');
+  const desc = 'Liuzhou Haogeng International Trade Co., Ltd. — micro tillers, ditching machines and water pumps from Liuzhou, Guangxi, China.';
+  return [
+    '<!DOCTYPE html>',
+    '<html lang="en">',
+    '<head>',
+    '<meta charset="UTF-8">',
+    '<meta name="viewport" content="width=device-width, initial-scale=1">',
+    '<title>Liuzhou Haogeng International Trade Co., Ltd.</title>',
+    '<meta name="description" content="' + esc(desc) + '">',
+    '<meta name="robots" content="noindex, follow">',
+    '<meta http-equiv="refresh" content="0; url=/en/">',
+    '<link rel="canonical" href="' + urls.abs(urls.homePath('en')) + '">',
+    hreflang,
+    '<link rel="alternate" hreflang="x-default" href="' + urls.abs(urls.homePath('en')) + '">',
+    '<meta property="og:type" content="website">',
+    '<meta property="og:site_name" content="Liuzhou Haogeng International Trade Co., Ltd.">',
+    '<meta property="og:title" content="Liuzhou Haogeng International Trade Co., Ltd.">',
+    '<meta property="og:description" content="' + esc(desc) + '">',
+    '<meta property="og:url" content="' + urls.abs(urls.homePath('en')) + '">',
+    '<meta property="og:image" content="' + SITE + '/images/og-image.jpg">',
+    '<meta name="twitter:card" content="summary_large_image">',
+    '<meta name="twitter:title" content="Liuzhou Haogeng International Trade Co., Ltd.">',
+    '<script>',
+    '  (function () {',
+    "    location.replace('/en/' + (location.hash || ''));",
+    '  })();',
+    '</script>',
+    '<style>',
+    '  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Roboto,Helvetica,Arial,sans-serif;',
+    '         background:#f6f9f7; color:#1f2937; display:flex; align-items:center; justify-content:center; min-height:100vh; }',
+    '  .box { background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:38px 34px; text-align:center;',
+    '         max-width:460px; margin:20px; box-shadow:0 4px 20px rgba(0,0,0,.06); }',
+    '  img { height:46px; }',
+    '  h1 { font-size:19px; margin:16px 0 6px; color:#0f5527; }',
+    '  p { font-size:14px; color:#4b5563; margin:6px 0; }',
+    '  .langs { margin-top:18px; font-size:14px; }',
+    '  .langs a { color:#1a7a3a; text-decoration:none; margin:0 3px; }',
+    '  .langs a:hover { color:#0f5527; text-decoration:underline; }',
+    '</style>',
+    '</head>',
+    '<body>',
+    '  <div class="box">',
+    '    <img src="/images/logo-haogeng.jpg" alt="Haogeng">',
+    '    <h1>Liuzhou Haogeng International Trade Co., Ltd.</h1>',
+    '    <p>Taking you to the English site…</p>',
+    '    <p class="langs">' + links + '</p>',
+    '  </div>',
+    '</body>',
+    '</html>',
+    ''
+  ].join('\n');
+}
+
 function main() {
   // 先清掉上一轮生成的语种目录：改了型号/slug 之后旧页面会残留成死链
   LANGS.forEach(function (lang) {
@@ -1767,6 +1841,9 @@ function main() {
       });
     }
   });
+
+  // 根目录：/ → /en/（模板在 templates/index.html，这里生成线上根页）
+  writeFile('index.html', buildRootRedirect());
 
   writeFile('sitemap.xml', buildSitemap(sitemapPages));
 

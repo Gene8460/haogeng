@@ -557,3 +557,27 @@ Rendering Liquid: docs/P2-content-plan.md
 - 桌面/手机页脚截图：`haogeng-review/local_zh_footer_nav.png`、`local_zh_mobile_footer.png`
 
 **顺带查清（不是本次改动）**：全站真实链接**没有别的死链**。后台逐链点测（7 个页面 × 全部链接）报出的「点了没跳转」全是自指链接 —— 语言切换按钮指向当前页、在 `/zh/guides.html` 上点导航「选型指南」指向自己、工厂实拍图片是 `target="_blank"` 开大图，属正常。
+
+
+## 2026-11-16 裸域名 haogeng.net 还是旧站 —— 根目录从「模板」改成「跳转页」
+
+**发现**：老板报底部「选型指南」没反应时顺带查出来，线上 `https://haogeng.net/`（裸域名）是**改造前的旧英文站**：没有选型指南、没有 FAQ、没有工厂实拍、页脚也没导航，只有一份 canonical 指向 `/en/`。
+
+**根因（典型的「生成物和模板共用同一个文件」漂移）**：仓库根目录的 `index.html` **既是首页模板、又是线上 `/` 的页面**。生成器读它当模板、生成 `/{lang}/index.html`，但**根目录那份从没被更新过** —— 所以模板改了 20 多次，裸域名还是第一版。
+
+**改法**：
+| 文件 | 改动 |
+|---|---|
+| `templates/index.html` | 原根目录 `index.html` 移到这里（`git mv`，历史保留），**内容一字未改** |
+| `scripts/build-static.js` | 模板改从 `templates/index.html` 读；新增 `buildRootRedirect()`，`main()` 里写出根目录 `index.html` |
+| `scripts/seo_check.py` | 第 1/2/8/10 项的 `index.html` 改成 `templates/index.html`；第 2 项新增 5 条根页检查（meta refresh / canonical / noindex / hreflang / 语言直链） |
+| `404.html` | canonical 从 `https://haogeng.net/` 改成 `https://haogeng.net/en/`；`style.css?v=18` → `?v=19` |
+
+**根页行为**：`/` → 跳 `/en/`（meta refresh + `location.replace`，JS 保留 hash，所以 `/#products` → `/en/#products`）；页面本体是带 logo 的品牌兜底页 + 6 语种直链（English / 中文 / Kiswahili / Español / Русский / Français），即使 JS 和 meta refresh 都失效也能点进去；`noindex, follow` + canonical → `/en/`，避免和 `/en/` 重复内容。
+
+**验证**：
+- 重建后 240 个生成页 **diff 为零**（模板内容没变，只有根页新增）→ 说明改动没碰到任何一个已上线页面
+- `python scripts/seo_check.py` **十项全过**
+- 本地实测：裸域名 → `/en/`；`/#products` → `/en/#products`；**关掉 JS 也照样跳**（meta refresh 兜底）；`/zh/` 不受影响
+
+**以后**：首页模板改 `templates/index.html`，根目录 `index.html` 是**生成物**，别手改（下次 `node scripts/build-static.js .` 会覆盖）。
