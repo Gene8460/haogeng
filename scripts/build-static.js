@@ -818,7 +818,7 @@ function guideCardsHtml(list, lang, limit) {
     return '<div class="guide-card">' +
       '<h3 class="guide-card-title"><a href="' + urls.guidePath(a.slug, lang) + '">' + esc(articleTitle(a, lang)) + '</a></h3>' +
       (desc ? '<p class="guide-card-desc">' + esc(truncateWordsByLang(desc, 160, lang)) + '</p>' : '') +
-      '<span class="guide-card-cta">' + esc(t('articles.readMore')) + ' →</span>' +
+      '<a class="guide-card-cta" href="' + urls.guidePath(a.slug, lang) + '">' + esc(t('articles.readMore')) + ' →</a>' +
       '</div>';
   }).join('') + '</div>';
 }

@@ -368,8 +368,12 @@ a:hover { color: var(--green-dark); }
   padding: 20px;
   display: flex;
   flex-direction: column;
+  position: relative;
   transition: box-shadow .18s, border-color .18s, transform .18s;
 }
+/* 整张卡片可点：把标题链接的点击区域撑满卡片（stretched link），
+   卡片本来的 hover 抬升效果就是这个意思，不能只让标题能点 */
+.guide-card-title a::after { content: ''; position: absolute; inset: 0; z-index: 1; }
 .guide-card:hover {
   box-shadow: var(--shadow);
   border-color: var(--green);
@@ -385,6 +389,8 @@ a:hover { color: var(--green-dark); }
   font-weight: 600;
   color: var(--green);
 }
+.guide-card-cta { position: relative; z-index: 2; }
+.guide-card-cta:hover { color: var(--green-dark); text-decoration: underline; }
 
 /* 文章页 */
 .article-meta {
