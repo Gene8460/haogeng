@@ -498,3 +498,35 @@ Rendering Liquid: docs/P2-content-plan.md
 - `scripts/seo_check.py` 新增**第 10 项**：扫全部 240 页 + 两个根模板的 3747 处图片 URL，版本号必须都等于 `js/seo-urls.js` 里的 `IMG_V`；客户端 JS 里不允许再出现没带版本号的图片路径。第 8 项的正则也补了连字符文件名（`seo-urls.js` 之前被漏检）。
 
 **以后换图的规矩**：换 `images/` 里任何一张图 → 把 `js/seo-urls.js` 的 `IMG_V` +1 → 跑 `node scripts/build-static.js .` → 跑 `python scripts/seo_check.py` → 提交推送。第 10 项会强制你记得 bump。
+
+
+## 2026-11-16 产品页三大块空白 —— 生成器 pickI18n 不认数组
+
+**现象**：老板报「产品中心里面的所有机器，适用场景 / 核心特性 / 详细参数都是空白」。
+
+**不是数据缺失**：`js/products.js` 里 23 个产品 × 6 语种 × 3 块内容 100% 齐全
+（bestFor 5 条 / features 10-11 条 / specs 14-16 行，全量审计缺失项 = 0）。
+
+**真因**：`scripts/build-static.js` 的 `pickI18n(obj, lang)` 只处理字符串字段
+（`typeof v === 'string'`），而 specs / features / bestFor 是**数组型**多语言字段
+（`{en:[...], zh:[...]}`）→ pickI18n 返回空串 → 三块容器渲染成空标签。
+浏览器端 `js/product.js` 的同名函数能取数组，所以老式 `product.html?id=` 路由一直正常，
+只有静态生成的 138 个产品页是空的 —— 视觉上像是"内容没做出来"。
+
+**修法**：
+- `scripts/build-static.js` 新增 `pickI18nList(obj, lang)`（数组专用：当前语种 → en → 任意语种）
+- `detailHtml()` 的 bestFor / features / specs 三处改用 `pickI18nList`
+- JSON-LD 的 `additionalProperty` 同样改用 `pickI18nList`
+  （顺带修复：Product 结构化数据里的 14-16 条规格以前也是空的 → 现在有了，
+  Google 商品规格富摘要解锁）
+- **参数表分行只认半角冒号**是第二个坑：中文参数行用的是全角「：」，
+  老代码 `line.indexOf(':')` 返回 -1 → 整行塞进一个合并单元格。
+  改成正则 `/^(.+?)\s*[:：]\s*(.+)$/`，生成器与 `js/product.js` 两边同步
+- 全部 js 缓存版本 40 → 41（i18n / seo-urls / products / main / product）
+
+**验证**：138 个产品页全量核对 —— 适用场景 ≥5 条、核心特性 ≥10 条、参数表 ≥14 行、
+无合并单元格行，异常页 0；seo_check 10 项全过；本地 Playwright 渲染 0 报错。
+
+**防复发**：数据侧再补一条断言 —— 任何产品、任何语种，bestFor / features / specs
+不允许为空或行数不足（生成器报告里已有「参数表行数 6 语种与 en 一致」这项，可再加
+「三块内容非空」检查）。空块优先怀疑 `pickI18n` 而不是先去补文案。

@@ -79,6 +79,23 @@ function pickI18n(obj, lang) {
   return first || '';
 }
 
+/* 数组型多语言字段（bestFor / features / specs）专用。
+   pickI18n 只认字符串：遇到 {en:[...], zh:[...]} 这种数组会返回 ''，
+   于是静态产品页的「适用场景 / 核心特性 / 详细参数」三块全渲染成空。
+   （浏览器端 js/product.js 的 pickI18n 能取数组，所以老页面看着正常，
+     只有生成出来的静态页是空的 —— 2026-11-16 老板报的"全是空白"就是这个。） */
+function pickI18nList(obj, lang) {
+  if (!obj) return [];
+  if (Array.isArray(obj)) return obj;
+  const v = obj[lang];
+  if (Array.isArray(v) && v.length) return v;
+  if (Array.isArray(obj.en) && obj.en.length) return obj.en;
+  for (const k of Object.keys(obj)) {
+    if (Array.isArray(obj[k]) && obj[k].length) return obj[k];
+  }
+  return [];
+}
+
 /* 截断到指定长度（不把单词切一半） */
 function truncateWords(str, max) {
   const s = String(str == null ? '' : str).replace(/\s+/g, ' ').trim();
@@ -395,9 +412,9 @@ function productsGridHtml(list, lang) {
 function detailHtml(p, lang, extraHtml) {
   const name = pickI18n(p.name, lang);
   const desc = pickI18n(p.desc, lang);
-  const bestFor = pickI18n(p.bestFor, lang);
-  const features = pickI18n(p.features, lang);
-  const specs = pickI18n(p.specs, lang);
+  const bestFor = pickI18nList(p.bestFor, lang);
+  const features = pickI18nList(p.features, lang);
+  const specs = pickI18nList(p.specs, lang);
   const catLabel = urls.catLabel(p.cat, lang);
 
   const t = function (key) { return T(lang, key); };
@@ -438,9 +455,9 @@ function detailHtml(p, lang, extraHtml) {
   }
 
   const specsRows = (specs || []).map(function (line) {
-    const idx = line.indexOf(':');
-    if (idx === -1) return '<tr><td colspan="2">' + esc(line) + '</td></tr>';
-    return '<tr><td>' + esc(line.substring(0, idx).trim()) + '</td><td>' + esc(line.substring(idx + 1).trim()) + '</td></tr>';
+    const m = String(line).match(/^(.+?)\s*[:：]\s*(.+)$/);
+    if (!m) return '<tr><td colspan="2">' + esc(line) + '</td></tr>';
+    return '<tr><td>' + esc(m[1]) + '</td><td>' + esc(m[2]) + '</td></tr>';
   }).join('');
 
   const bestForItems = (bestFor || []).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('');
@@ -1057,7 +1074,7 @@ function buildProduct(p, lang) {
   html = setHead(html, seo);
 
   // 参数表 → additionalProperty
-  const specs = pickI18n(p.specs, lang) || [];
+  const specs = pickI18nList(p.specs, lang);
   const additionalProperty = specs.map(function (line) {
     const m = String(line).match(/^(.+?)\s*[:：]\s*(.+)$/);
     if (!m) return null;

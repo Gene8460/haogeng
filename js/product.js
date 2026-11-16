@@ -205,10 +205,10 @@
       : '';
 
     const specsRows = (specs || []).map(line => {
-      const idx = line.indexOf(':');
-      if (idx === -1) return `<tr><td colspan="2">${escapeHtml(line)}</td></tr>`;
-      const label = line.substring(0, idx).trim();
-      const value = line.substring(idx + 1).trim();
+      const m = String(line).match(/^(.+?)\s*[:：]\s*(.+)$/);
+      if (!m) return `<tr><td colspan="2">${escapeHtml(line)}</td></tr>`;
+      const label = m[1].trim();
+      const value = m[2].trim();
       return `<tr><td>${escapeHtml(label)}</td><td>${escapeHtml(value)}</td></tr>`;
     }).join('');
 
